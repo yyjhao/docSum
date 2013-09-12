@@ -54,12 +54,18 @@ def pageRank(G, s = .85, maxerr = .001):
     return r/sum(r)
 
 
-f = open("natGeo.txt", "r")
-article = "".join(f.read().split("\n"))
+f = open("input.txt", "r")
+article = " ".join(f.read().split("\n"))
 
 article = re.sub(r"([A-Z])\.", r"\1\^", article).lower()
+article = re.sub(r"([0-9]+)\.([0-9]*)", r"\1\^\2", article)
+article = "e^g^".join(article.split("e.g."))
+article = "i^e^".join(article.split("i.e."))
+article = "al^".join(article.split("al."))
+article = "".join(article.split("'s"))
+article = "".join(re.compile("\"|\'").split(article))
 
-sentences = re.compile("\.|!|\?").split(article)
+sentences = re.compile("\. |! |\? ").split(article)
 
 adjMax = [[0 for s in sentences] for s in sentences]
 
@@ -112,6 +118,7 @@ ignored = set([
     " ",
     "or",
     "\"",
+    "'",
     "it",
     "they",
     "are",
@@ -131,7 +138,18 @@ ignored = set([
     "as",
     "like",
     "say",
-    "says"
+    "says",
+    "such",
+    "so",
+    "over",
+    "its",
+    "theirs",
+    "his",
+    "her",
+    "et",
+    "al^",
+    "i^e^",
+    "e^g^"
 ])
 
 def findOverlap(sen1, sen2):
@@ -146,6 +164,16 @@ def findOverlap(sen1, sen2):
                 if w == ww:
                     print w
                     count += 1
+    return count + 0.0
+
+def words(sentence):
+    sentence = "".join(re.compile(",|\"|\'|;|:|\]|\[|\(|\)").split(sentence))
+    count = 0
+    for w in sentence.split(" "):
+        if w not in ignored:
+            count += 1
+    if count == 0:
+        return 1
     return count
 
 for s in range(len(sentences)):
@@ -162,7 +190,7 @@ for m in adjMax:
 #             print sentences[s], "+", sentences[ss]
 
 G = np.array(adjMax)
-rank = pageRank(G,s=0.9)
+rank = pageRank(G,s=0.1)
 
 l = []
 ind = 0
@@ -175,4 +203,5 @@ l.reverse()
 
 for k in l:
     print sentences[k[1]]
+    print k[0]
     print "==============="
