@@ -200,7 +200,7 @@ for r in rank:
 
 l.sort()
 l.reverse()
-
+# print all inportant sentences
 for k in l:
     print sentences[k[1]]
     print k[0]
