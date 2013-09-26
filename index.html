@@ -165,9 +165,16 @@
 				]
 			});
 
-			setInterval(function(){
-				Reveal.next();
-			}, 45000);
+			var ticker = 0;
+			function retick(){
+				clearInterval(ticker);
+				ticker = setInterval(function(){
+					Reveal.next();
+				}, 49000);
+			}
+
+			retick();
+			Reveal.addEventListener('slidechanged', retick);
 
 		</script>
 
