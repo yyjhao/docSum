@@ -54,11 +54,12 @@ def pageRank(G, s = .85, maxerr = .001):
     return r/sum(r)
 
 
-f = open("input.txt", "r")
+f = open("long.txt.sub", "r")
 article = " ".join(f.read().split("\n"))
 
 article = re.sub(r"([A-Z])\.", r"\1\^", article).lower()
 article = re.sub(r"([0-9]+)\.([0-9]*)", r"\1\^\2", article)
+article = re.sub(r"<|>", "", article);
 article = "e^g^".join(article.split("e.g."))
 article = "i^e^".join(article.split("i.e."))
 article = "al^".join(article.split("al."))
@@ -149,8 +150,39 @@ ignored = set([
     "et",
     "al^",
     "i^e^",
-    "e^g^"
+    "e^g^",
+    "would",
+    "had",
+    "by"
 ])
+
+relates = set([
+    "this",
+    "that",
+    "these",
+    "those",
+    "because",
+    "but",
+    "however",
+    "moreover",
+    "also",
+    "there",
+    "its",
+    "theirs",
+    "his",
+    "her",
+    "exmaple",
+    "another"
+])
+
+def findRelation(csen):
+    csen = "".join(re.compile(",|\"|\'|;|:|\]|\[|\(|\)").split(csen))
+    count = 0
+    for w in csen.split(" "):
+        if w in relates:
+            count += 1
+
+    return count
 
 def findOverlap(sen1, sen2):
     sen1 = "".join(re.compile(",|\"|\'|;|:|\]|\[|\(|\)").split(sen1))
@@ -177,6 +209,8 @@ def words(sentence):
     return count
 
 for s in range(len(sentences)):
+    if s > 0:
+        adjMax[s][s - 1] += findRelation(sentences[s])
     for ss in range(len(sentences)):
         if s != ss:
             adjMax[s][ss] += findOverlap(sentences[s], sentences[ss])
