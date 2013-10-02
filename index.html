@@ -91,6 +91,10 @@
 							1. Ideas are expressed through words
 							1. Overlap of words signifies relation of ideas
 							1. Thus relation of sentences
+					</section>
+					<section data-markdown>
+						## Fomulation
+
 						* A sentence is *summarising* if ideas from many other sentences flow to it
 						* A set of sentences with such characteristics can be a summary
 					</section>
@@ -99,7 +103,8 @@
 
 						* An article is a graph of sentences
 						* Two sentences are connected if they are related
-						* The weight of the edge is proportional to their relation
+							* A sentence is more likely to flow to another if the edge has a higher weight.
+							* The weight of the edge is proportional to their relation
 						* Compute how likely it is to flow to a certain sentence
 						* Aggregate the top few sentences as summary
 
@@ -116,7 +121,9 @@
 								1. Different word forms
 								1. Synonyms
 								1. Co-reference
+									* Replacing words by considering the context
 						1. The edges are bi-directional
+							* Consider using extra infomation to add direction
 					</section>
 					<section data-markdown>
 						## Solution
