@@ -10,9 +10,6 @@ def getSentences(input):
     # decimal
     article = re.sub(r"([0-9]+)\.([0-9]*)", r"\1\^\2", article)
 
-    # ?
-    article = re.sub(r"<|>", "", article);
-
     # some words
     article = "e^g^".join(article.split("e.g."))
     article = "i^e^".join(article.split("i.e."))
@@ -21,7 +18,7 @@ def getSentences(input):
     # inverted commas
     article = "".join(re.compile("\"|\'").split(article))
 
-    return re.compile("\. *|! *|\? *").split(article)
+    return filter(lambda x: re.match(r"^ *$", x) == None, re.compile("\. *|! *|\? *").split(article))
 
 def revert(input):
     article = re.sub(r"([A-Z])\\\^", r"\1.", input)

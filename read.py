@@ -28,6 +28,8 @@ def findRelation(csen):
 
     return count
 
+words_used = set()
+
 def findOverlap(sen1, sen2):
     sen1 = "".join(re.compile(",|\"|\'|;|:|\]|\[|\(|\)").split(sen1))
     sen2 = "".join(re.compile(",|\"|\'|;|:|\]|\[|\(|\)").split(sen2))
@@ -37,24 +39,23 @@ def findOverlap(sen1, sen2):
     for w in words1:
         for ww in words2:
             if isOverlap(w, ww):
+                words_used.add((w, ww))
                 count += 1
     return count + 0.0
 
 def isOverlap(w1, w2):
     return (w1 == w2 or 
-            w1.capitalize() == w2 or
-            w2.capitalize() == w1 or
-            w1 + "'s" == w2 or
-            w2 + "'s" == w1 or
             isVerySimilar(w1, w2) or
             isVerySimilar(w2, w1))
 
 def isVerySimilar(w1, w2):
+    if w1.capitalize() == w2:
+        return True
     ws = w1.split(w2)
     if len(ws) == 1:
         return False
     if len(ws) < 3:
-        if len(ws[0]) < 4 and len(ws[1]) < 4:
+        if len(ws[0]) < 2 and len(ws[1]) < 4 and not re.match("^[A-Za-z]*$", ws[0]):
             return True
 
     return False
@@ -80,7 +81,7 @@ for s in range(len(sentences)):
 #     print " ".join([str(i) for i in m])
 
 G = np.array(adjMax)
-rank = PageRank.zeroToOne(G,s=0.1)
+rank = PageRank.pageRank(G,s=0.85)
 
 l = []
 ind = 0
@@ -90,14 +91,15 @@ for r in rank:
 
 l.sort()
 l.reverse()
+print words_used
 # print all inportant sentences
-# for k in l:
-#     print sentences[k[1]]
-#     print k[0]
-#     print "==============="
+for k in l:
+    print sentences[k[1]]
+    print k[0]
+    print "==============="
 
 def topPercentage(sentences, l):
-    percentage = 0.2
+    percentage = 0.15
     s = [k[1] for k in l[:int(len(l) * percentage + 0.5)]]
     s.sort()
     return [sentences[ss] for ss in s]
