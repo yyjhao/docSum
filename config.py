@@ -86,7 +86,8 @@ _ignored = [
     "e^g^",
     "would",
     "had",
-    "by"
+    "by",
+    "them"
 ]
 
 ignored = set(_ignored + [i.capitalize() for i in _ignored])

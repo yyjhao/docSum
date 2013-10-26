@@ -31,15 +31,18 @@ def findRelation(csen):
 words_used = set()
 
 def findOverlap(sen1, sen2):
-    sen1 = "".join(re.compile(",|\"|\'|;|:|\]|\[|\(|\)").split(sen1))
-    sen2 = "".join(re.compile(",|\"|\'|;|:|\]|\[|\(|\)").split(sen2))
+    sen1 = "".join(re.compile(",|\"|\'|;|:|\]|\[|\(|\)").split(sen1.lower()))
+    sen2 = "".join(re.compile(",|\"|\'|;|:|\]|\[|\(|\)").split(sen2.lower()))
     words1 = filter(lambda x: x not in config.ignored and not x.isdigit(), sen1.split(" "))
     words2 = filter(lambda x: x not in config.ignored and not x.isdigit(), sen2.split(" "))
     count = 0
     for w in words1:
         for ww in words2:
             if isOverlap(w, ww):
-                words_used.add((w, ww))
+                if w != ww:
+                    words_used.add((w, ww))
+                else:
+                    words_used.add(w)
                 count += 1
     return count + 0.0
 
@@ -49,8 +52,6 @@ def isOverlap(w1, w2):
             isVerySimilar(w2, w1))
 
 def isVerySimilar(w1, w2):
-    if w1.capitalize() == w2:
-        return True
     ws = w1.split(w2)
     if len(ws) == 1:
         return False
@@ -72,7 +73,7 @@ def words(sentence):
 
 for s in range(len(sentences)):
     if s > 0:
-        adjMax[s][s - 1] += findRelation(sentences[s])
+        adjMax[s][s - 1] += findRelation(sentences[s]) * 0
     for ss in range(len(sentences)):
         if s != ss:
             adjMax[s][ss] += findOverlap(sentences[s], sentences[ss])
@@ -81,7 +82,7 @@ for s in range(len(sentences)):
 #     print " ".join([str(i) for i in m])
 
 G = np.array(adjMax)
-rank = PageRank.pageRank(G,s=0.85)
+rank = PageRank.pageRank(G,s=0.9)
 
 l = []
 ind = 0

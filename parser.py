@@ -13,7 +13,7 @@ def getSentences(input):
     # some words
     article = "e^g^".join(article.split("e.g."))
     article = "i^e^".join(article.split("i.e."))
-    article = "al^".join(article.split("al."))
+    article = " al^".join(article.split(" al."))
 
     # inverted commas
     article = "".join(re.compile("\"|\'").split(article))
