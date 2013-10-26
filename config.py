@@ -1,4 +1,5 @@
 _ignored = [
+    "",
     "for",
     "in",
     "is",

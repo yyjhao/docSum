@@ -31,15 +31,33 @@ def findRelation(csen):
 def findOverlap(sen1, sen2):
     sen1 = "".join(re.compile(",|\"|\'|;|:|\]|\[|\(|\)").split(sen1))
     sen2 = "".join(re.compile(",|\"|\'|;|:|\]|\[|\(|\)").split(sen2))
-    words1 = sen1.split(" ")
-    words2 = sen2.split(" ")
+    words1 = filter(lambda x: x not in config.ignored and not x.isdigit(), sen1.split(" "))
+    words2 = filter(lambda x: x not in config.ignored and not x.isdigit(), sen2.split(" "))
     count = 0
     for w in words1:
-        if w not in config.ignored:
-            for ww in words2:
-                if w == ww or w.capitalize() == ww or ww.capitalize() == w:
-                    count += 1
+        for ww in words2:
+            if isOverlap(w, ww):
+                count += 1
     return count + 0.0
+
+def isOverlap(w1, w2):
+    return (w1 == w2 or 
+            w1.capitalize() == w2 or
+            w2.capitalize() == w1 or
+            w1 + "'s" == w2 or
+            w2 + "'s" == w1 or
+            isVerySimilar(w1, w2) or
+            isVerySimilar(w2, w1))
+
+def isVerySimilar(w1, w2):
+    ws = w1.split(w2)
+    if len(ws) == 1:
+        return False
+    if len(ws) < 3:
+        if len(ws[0]) < 4 and len(ws[1]) < 4:
+            return True
+
+    return False
 
 def words(sentence):
     sentence = "".join(re.compile(",|\"|\'|;|:|\]|\[|\(|\)").split(sentence))
@@ -79,7 +97,7 @@ l.reverse()
 #     print "==============="
 
 def topPercentage(sentences, l):
-    percentage = 0.15
+    percentage = 0.2
     s = [k[1] for k in l[:int(len(l) * percentage + 0.5)]]
     s.sort()
     return [sentences[ss] for ss in s]

@@ -18,13 +18,10 @@ def getSentences(input):
     article = "i^e^".join(article.split("i.e."))
     article = "al^".join(article.split("al."))
 
-    # someone's
-    article = "".join(article.split("'s"))
-
     # inverted commas
     article = "".join(re.compile("\"|\'").split(article))
 
-    return re.compile("\. |! |\? ").split(article)
+    return re.compile("\. *|! *|\? *").split(article)
 
 def revert(input):
     article = re.sub(r"([A-Z])\\\^", r"\1.", input)
