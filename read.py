@@ -33,13 +33,11 @@ def findOverlap(sen1, sen2):
     sen2 = "".join(re.compile(",|\"|\'|;|:|\]|\[|\(|\)").split(sen2))
     words1 = sen1.split(" ")
     words2 = sen2.split(" ")
-    words2 = [w.lower() for w in words2]
-    words2 += [w.capitalize() for w in words2]
     count = 0
     for w in words1:
         if w not in config.ignored:
             for ww in words2:
-                if w == ww:
+                if w == ww or w.capitalize() == ww or ww.capitalize() == w:
                     count += 1
     return count + 0.0
 
@@ -81,7 +79,7 @@ l.reverse()
 #     print "==============="
 
 def topPercentage(sentences, l):
-    percentage = 0.1
+    percentage = 0.15
     s = [k[1] for k in l[:int(len(l) * percentage + 0.5)]]
     s.sort()
     return [sentences[ss] for ss in s]
@@ -96,7 +94,7 @@ def cutoffScore(sentences, l):
     return [sentences[ss] for ss in r]
 
 def output(sentences):
-    print parser.revert(".\n".join([s.capitalize() for s in sentences])) + "."
+    print parser.revert(".\n".join(sentences)) + "."
 
 # output(cutoffScore(sentences, l))
 output(topPercentage(sentences, l))
