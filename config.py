@@ -1,4 +1,4 @@
-ignored = set([
+_ignored = [
     "for",
     "in",
     "is",
@@ -82,7 +82,9 @@ ignored = set([
     "would",
     "had",
     "by"
-])
+]
+
+ignored = set(_ignored + [i.capitalize() for i in _ignored])
 
 relates = set([
     "this",
