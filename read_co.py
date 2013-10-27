@@ -84,7 +84,7 @@ for m in adjMax:
 
 G = np.array(adjMax)
 # rank = PageRank.pageRank(G,s=0.9)
-rank = PageRank.zeroToOne(G, s=0.9)
+rank = PageRank.zeroToOne(G, s=0.5)
 
 l = []
 ind = 0
