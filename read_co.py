@@ -27,7 +27,7 @@ for co in coref:
     for s in dic:
         for ss in dic:
             if s != ss:
-                adjMax[s][ss] += (dic[ss] + 0.0) / dic[s]
+                adjMax[s][ss] += (dic[s] + 0.0) / dic[ss]
 
 words_used = set()
 
@@ -74,7 +74,8 @@ for m in adjMax:
     print " ".join([str(i) for i in m])
 
 G = np.array(adjMax)
-rank = PageRank.pageRank(G,s=0.9)
+# rank = PageRank.pageRank(G,s=0.9)
+rank = PageRank.zeroToOne(G, s=0.9)
 
 l = []
 ind = 0
@@ -111,7 +112,9 @@ def output(sentences):
 
 def de_nlp(article):
     article = "(".join(article.split("-LRB- "))
+    article = "[".join(article.split("-LSB- "))
     article = ")".join(article.split(" -RRB-"))
+    article = "]".join(article.split(" -RSB-"))
     article = "-".join(article.split(" -- "))
     article = re.sub(r" ([^a-zA-Z])", r"\1", article)
     return article
