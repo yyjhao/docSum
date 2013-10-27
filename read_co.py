@@ -125,7 +125,12 @@ def de_nlp(article):
     article = ")".join(article.split(" -RRB-"))
     article = "]".join(article.split(" -RSB-"))
     article = "-".join(article.split(" -- "))
-    article = re.sub(r" ([^a-zA-Z])", r"\1", article)
+    article = re.sub(r" ([^a-zA-Z]) ", r"\1 ", article)
+    article = re.sub(r" \.", ".", article)
+    article = re.sub(r" 's ", "'s ", article)
+    article = re.sub(r" n't ", "n't ", article)
+    article = re.sub(r"`` ", "\"", article)
+    article = re.sub(r" ''", "\"", article)
     return article
 
 # output(cutoffScore(sentences, l))
