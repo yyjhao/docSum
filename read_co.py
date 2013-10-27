@@ -4,6 +4,8 @@ import PageRank
 import sys
 import config
 import splitAndParse
+import os
+import shutil
 
 if len(sys.argv) < 2:
     print "usage: python read.py filename"
@@ -11,7 +13,14 @@ if len(sys.argv) < 2:
 
 filename = sys.argv[1];
 
-sentences, coref = splitAndParse.splitSentencesAndParse(filename)
+if not os.path.isdir("stanford-corenlp"):
+    print "Please put the Stanford CoreNLP package into the stanford-corenlp directory."
+    quit()
+
+shutil.copyfile(filename, "stanford-corenlp/" + filename)
+os.system("cd stanford-corenlp && java -cp stanford-corenlp-3.2.0.jar:stanford-corenlp-3.2.0-models.jar:xom.jar:joda-time.jar:jollyday.jar -Xmx3g edu.stanford.nlp.pipeline.StanfordCoreNLP -file " + filename)
+
+sentences, coref = splitAndParse.splitSentencesAndParse("stanford-corenlp/" + filename + ".xml")
 
 print coref
 
