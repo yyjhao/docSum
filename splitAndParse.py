@@ -29,4 +29,3 @@ def splitSentencesAndParse(fileName):
 	coreference.append(sen)
 	print sentences
 	return [sentences, coreference]
-splitSentencesAndParse("input.txt.xml")
