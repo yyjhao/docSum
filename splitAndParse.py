@@ -24,9 +24,13 @@ def splitSentencesAndParse(fileName):
 			if (line.find("<sentence>") != -1):
 				start = line.find("<sentence>") + 10
 				end = line.find("</sentence>")
-				sen.append(int(line[start:end]))
+				sen.append(int(line[start:end]) - 1)
 	sentences.append(word)
 	coreference.append(sen)
+<<<<<<< HEAD
 	print sentences
 	return [sentences, coreference]
 splitSentencesAndParse("tech2.ascii.txt.xml")
+=======
+	return (sentences, coreference)
+>>>>>>> 7cfd61faa833d8ec7011e10d2110ec8805d7ab2d

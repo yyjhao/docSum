@@ -82,7 +82,7 @@ for s in range(len(sentences)):
 #     print " ".join([str(i) for i in m])
 
 G = np.array(adjMax)
-rank = PageRank.pageRank(G,s=0.9)
+rank = PageRank.pageRank(G,s=0.5)
 
 l = []
 ind = 0
