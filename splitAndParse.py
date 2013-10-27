@@ -24,8 +24,7 @@ def splitSentencesAndParse(fileName):
 			if (line.find("<sentence>") != -1):
 				start = line.find("<sentence>") + 10
 				end = line.find("</sentence>")
-				sen.append(int(line[start:end]))
+				sen.append(int(line[start:end]) - 1)
 	sentences.append(word)
 	coreference.append(sen)
-	print sentences
-	return [sentences, coreference]
+	return (sentences, coreference)
