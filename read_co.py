@@ -18,7 +18,11 @@ if not os.path.isdir("stanford-corenlp"):
     quit()
 
 shutil.copyfile(filename, "stanford-corenlp/" + filename)
-os.system("cd stanford-corenlp && java -cp stanford-corenlp-3.2.0.jar:stanford-corenlp-3.2.0-models.jar:xom.jar:joda-time.jar:jollyday.jar -Xmx3g edu.stanford.nlp.pipeline.StanfordCoreNLP -file " + filename)
+if os.name == "nt":
+    os.system("cd stanford-corenlp && java -cp stanford-corenlp-3.2.0.jar;stanford-corenlp-3.2.0-models.jar;xom.jar;joda-time.jar;jollyday.jar -Xmx3g edu.stanford.nlp.pipeline.StanfordCoreNLP -file " + filename)
+else:
+    os.system("cd stanford-corenlp && java -cp stanford-corenlp-3.2.0.jar:stanford-corenlp-3.2.0-models.jar:xom.jar:joda-time.jar:jollyday.jar -Xmx3g edu.stanford.nlp.pipeline.StanfordCoreNLP -file " + filename)
+
 
 sentences, coref = splitAndParse.splitSentencesAndParse("stanford-corenlp/" + filename + ".xml")
 
