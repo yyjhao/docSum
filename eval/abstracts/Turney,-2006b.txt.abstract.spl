@@ -1,0 +1,12 @@
+there are at least two kinds of similarity .
+relational similarity is correspondence between relations , in contrast with attributional similarity , which is correspondence between attributes .
+when two words have a high degree of attributional similarity , we call them synonyms .
+when two pairs of words have a high degree of relational similarity , we say that their relations are analogous .
+for example , the word pair mason : stone is analogous to the pair carpenter : wood .
+this paper introduces latent relational analysis ( lra ) , a method for measuring relational similarity .
+lra has potential applications in many areas , including information extraction , word sense disambiguation , and information retrieval .
+recently the vector space model ( vsm ) of information retrieval has been adapted to measuring relational similarity , achieving a score of 47 % on a collection of 374 college-level multiple-choice word analogy questions .
+in the vsm approach , the relation between a pair of words is characterized by a vector offrequencies of predefined patterns in a large corpus .
+lra extends the vsm approach in three ways : ( 1 ) the patterns are derived automatically from the corpus , ( 2 ) the singular value decomposition ( s vd ) is used to smooth the frequency data , and ( 3 ) automatically generated synonyms are used to explore variations of the word pairs .
+lra achieves 56 % on the 374 analogy questions , statistically equivalent to the average human score of 57 % .
+on the related problem of classifying semantic relations , lra achieves similar gains over the vsm .

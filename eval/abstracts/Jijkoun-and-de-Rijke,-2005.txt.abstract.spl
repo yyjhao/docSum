@@ -1,0 +1,6 @@
+we describe our participation in the pascal-2005 recognizing textual entailment challenge .
+our method is based on calculating directed sentence similarity : checking the directed semantic word overlap between the text and the hypothesis .
+we use frequency-based term weighting in combination with two different lexical similarity measures .
+our best run shows 0.55 accuracy on the test data , although the difference between our two runs is not significant .
+we found remarkably different optimal threshold values for the development and test data .
+we argue that , in addition to accuracy , precision and recall are valuable measures to consider for textual entailment .

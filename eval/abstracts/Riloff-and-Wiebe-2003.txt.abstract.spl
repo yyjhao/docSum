@@ -1,0 +1,4 @@
+this paper presents a bootstrapping process that learns linguistically rich extraction patterns for subjective ( opinionated ) expressions .
+high-precision classifiers label unannotated data to automatically create a large training set , which is then given to an extraction pattern learning algorithm .
+the learned patterns are then used to identify more subjective sentences .
+the bootstrapping process learns many subjective patterns and increases recall while maintaining high precision .

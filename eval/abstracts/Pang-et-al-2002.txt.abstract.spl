@@ -1,0 +1,4 @@
+we consider the problem of classifying documents not by topic , but by overall sentiment , e.g. , determining whether a review is positive or negative .
+using movie reviews as data , we find that standard machine learning techniques definitively outperform human-produced baselines .
+however , the three machine learning methods we employed ( naive bayes , maximum entropy classification , and support vector machines ) do not perform as well on sentiment classification as on traditional topic-based categorization .
+we conclude by examining factors that make the sentiment classification problem more challenging .

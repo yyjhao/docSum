@@ -1,0 +1,6 @@
+computing semantic relatedness of natural language texts requires access to vast amounts of common-sense and domain-specific world knowledge .
+we propose explicit semantic analysis ( esa ) , a novel method that represents the meaning of texts in a high-dimensional space of concepts derived from wikipedia .
+we use machine learning techniques to explicitly represent the meaning of any text as a weighted vector of wikipedia-based concepts .
+assessing the relatedness of texts in this space amounts to comparing the corresponding vectors using conventional metrics ( e.g. , cosine ) .
+compared with the previous state of the art , using esa results in substantial improvements in correlation of computed relatedness scores with human judgments : from r = 0.56 to 0.75 for individual words and from r = 0.60 to 0.72 for texts .
+importantly , due to the use of natural concepts , the esa model is easy to explain to human users .

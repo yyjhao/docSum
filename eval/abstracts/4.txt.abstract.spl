@@ -1,0 +1,3 @@
+we investigate important differences between two styles of document clustering in the context of topic detection and tracking .
+converting a topic detection system into a topic tracking system exposes fundamental differences between these two tasks that are important to consider in both the design and the evaluation of tdt systems .
+we also identify features that can be used in systems for both tasks .

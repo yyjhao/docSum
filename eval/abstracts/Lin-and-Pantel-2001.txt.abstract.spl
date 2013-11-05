@@ -1,0 +1,7 @@
+one of the main challenges in question-answering is the potential mismatch between the expressions in questions and the expressions in texts .
+while humans appear to use inference rules such as " x writes y " implies " x is the author of y " in answering questions , such rules are generally unavailable to question-answering systems due to the inherent difficulty in constructing them .
+in this paper , we present an unsupervised algorithm for discovering inference rules from text .
+our algorithm is based on an extended version of harris ' distributional hypothesis , which states that words that occurred in the same contexts tend to be similar .
+instead of using this hypothesis on words , we apply it to paths in the dependency trees of a parsed corpus .
+essentially , if two paths tend to link the same set of words , we hypothesize that their meanings are similar .
+we use examples to show that our system discovers many inference rules easily missed by humans .

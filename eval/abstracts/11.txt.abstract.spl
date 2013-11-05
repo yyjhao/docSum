@@ -1,0 +1,2 @@
+we describe the system that generated our submission for the 2006 clef question answering dutch monolingual task .
+our system for this years task features entirely new question classification , data storage and access , and answer processing components .

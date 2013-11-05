@@ -1,0 +1,3 @@
+this paper summarizes our approach to the semeval 2007 shared task on classification of semantic relations between nominals .
+our overall strategy is to develop machine-learning classifiers making use of a few easily computable and effective features , selected independently for each classifier in wrapper experiments .
+we train two types of classifiers for each of the seven relations : with and without any wordnet information .

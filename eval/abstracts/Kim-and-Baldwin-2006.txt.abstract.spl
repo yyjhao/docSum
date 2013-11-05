@@ -1,0 +1,5 @@
+we propose a novel method for automatically interpreting compound nouns based on a predefined set of semantic relations .
+first we map verb tokens in sentential contexts to a fixed set of seed verbs using wordnet : : similarity and moby � s thesaurus .
+we then match the sentences with semantic relations based on the semantics of the seed verbs and grammatical roles of the head noun and modifier .
+based on the semantics of the matched sentences , we then build a classifier using timbl .
+the performance of our final system at interpreting ncs is 52.6 % .

@@ -1,0 +1,5 @@
+this paper describes a system for classifying semantic relations among nominals , as in semeval task 4 .
+this system uses a corpus of 2,500 compounds annotated with wordnet senses and covering 139 different semantic relations .
+given a set of nominal pairs for training , as provided in the semeval task 4 training data , this system constructs for each training pair a set of features made up of relations and wordnet sense pairs which occurred with those nominals in the corpus .
+a naive bayes learning algorithm learns associations between these features and relation membership categories .
+the identification of relations among nominals in test items takes place on the basis of these associations .

@@ -1,0 +1,2 @@
+this paper describes a novel framework for using scenario knowledge in open- domain question answering ( q / a ) applications that uses a state-of-the-art textual entailment system ( hickl et al. , 2006b ) in order to discover textual information relevant to the set of topics associated with a scenario description .
+an intrinsic and an extrinsic evaluation of this method is presented in the context of an automatic q / a system and results from several user scenarios are discussed .

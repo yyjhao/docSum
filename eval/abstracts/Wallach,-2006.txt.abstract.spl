@@ -1,0 +1,6 @@
+some models of textual corpora employ text generation methods involving n-gram statistics , while others use latent topic variables inferred using the bag-of-words assumption , in which word order is ignored .
+previously , these methods have not been combined .
+in this work , i explore a hierarchical generative probabilistic model that incorporates both n-gram statistics and latent topic variables by extending a unigram topic model to include properties of a hierarchical dirichlet bigram language model .
+the model hyperparameters are inferred using a gibbs em algorithm .
+on two data sets , each of 150 documents , the new model exhibits better predictive accuracy than either a hierarchical dirichlet bigram language model or a unigram topic model .
+additionally , the inferred topics are less dominated by function words than are topics discovered using unigram statistics , potentially making them more meaningful .

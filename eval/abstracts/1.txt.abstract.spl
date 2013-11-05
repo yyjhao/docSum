@@ -1,0 +1,5 @@
+we present a technique to group search-engine returned citations for person-name queries , such that the search-engine returned citations in each group belong to the same person .
+to group the returned citations , we use a multi-faceted approach that considers evidence from three facets : ( 1 ) attributes , ( 2 ) links , and ( 3 ) page similarity .
+based on the three facets , we construct a relatedness confidence matrix for pairs of citations .
+we then merge pairs whose matching confidence value is above an empirically determined threshold .
+experimental results from the implementation of our multi-faceted approach are promising .

@@ -1,0 +1,11 @@
+retrieving images in response to textual queries requires some knowledge of the semantics of the picture .
+here , we show how we can do both automatic image annotation and retrieval ( using one word queries ) from images and videos using a multiple bernoulli relevance model .
+the model assumes that a training set of images or videos along with keyword annotations is provided .
+multiple keywords are provided for an image and the specific correspondence between a keyword and an image is not provided .
+each image is partitioned into a set of rectangular regions and a real-valued feature vector is computed over these regions .
+the relevance model is a joint probability distribution of the word annotations and the image feature vectors and is computed using the training set .
+the word probabilities are estimated using a multiple bernoulli model and the image feature probabilities using a non -parametric kernel density estimate .
+the model is then used to annotate images in a test set .
+we show experiments on both images from a standard corel data set and a set of video key frames from nist s video trec .
+comparative experiments show that the model performs better than a model based on estimating word probabilities using the popular multinomial distribution .
+the results also show that our model significantly outperforms previously reported results on the task of image and video annotation .

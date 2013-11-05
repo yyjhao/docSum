@@ -1,0 +1,4 @@
+this paper presents a large-scale system for the recognition and semantic disambiguation of named entities based on information extracted from a large encyclopedic collection and web search results .
+it describes in detail the disambiguation paradigm employed and the information extraction process from wikipedia .
+through a process of maximizing the agreement between the contextual information extracted from wikipedia and the context of a document , as well as the agreement among the category tags associated with the candidate entities , the implemented system shows high disambiguation accuracy on both news stories and wikipedia articles .
+introduction and related work .

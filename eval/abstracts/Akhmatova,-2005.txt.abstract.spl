@@ -1,0 +1,5 @@
+this paper presents an approach to solving the problem of textual entailment recognition and describes the computer application built to demonstrate the performance of the proposed approach .
+the method presented here is based on syntax-driven semantic analysis and uses the notion of atomic proposition as its main element for entailment recognition .
+the idea is to find the entailment relation in the sentence pairs by comparing the atomic propositions contained in the text and hypothesis sentences .
+the comparison of atomic propositions is performed via an automated deduction system otter ; the propositions are extracted from the output of the link parser ; and semantic knowledge is taken from the wordnet database .
+on its current stage the system is capable to recognize basic semantically and syntactically based entailments and is potentially capable to use more external and internal knowledge to deal with more complex entailments .

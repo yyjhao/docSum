@@ -1,0 +1,6 @@
+recent trec results have demonstrated the need for deeper text understanding methods .
+this paper introduces the idea of automated reasoning applied to question answering and shows the feasibility of integrating a logic prover into a question answering system .
+the approach is to transform questions and answer passages into logic representations .
+world knowledge axioms as well as linguistic axioms are supplied to the prover which renders a deep understanding of the relationship between question text and answer text .
+moreover , the trace of the proofs provide answer justifications .
+the results show that the prover boosts the performance of the qa system on trec questions by 30 % .

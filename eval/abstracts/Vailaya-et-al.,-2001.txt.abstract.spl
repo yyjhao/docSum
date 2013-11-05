@@ -1,0 +1,9 @@
+grouping images into ( semantically ) meaningful categories using low-level visual features is a challenging and important problem in content-based image retrieval .
+using binary bayesian classifiers , we attempt to capture high-level concepts from low-level image features under the constraint that the test image does belong to one of the classes .
+specifically , we consider the hierarchical classification of vacation images ; at the highest level , images are classified as indoor or outdoor ; outdoor images are further classified as city or landscape ; finally , a subset of landscape images is classified into sunset , forest , and mountain classes .
+we demonstrate that a small vector quantizer ( whose optimal size is selected using a modified mdl criterion ) can be used to model the class-conditional densities of the features , required by the bayesian methodology .
+the classifiers have been designed and evaluated on a database of 6931 vacation photographs .
+our system achieved a classification accuracy of 90.5 % for indoor / outdoor , 95.3 % for city / landscape , 96.6 % for sunset / forest & mountain , and 96 % for forest / mountain classification problems .
+we further develop a learning method to incrementally train the classifiers as additional data become available .
+we also show preliminary results for feature reduction using clustering techniques .
+our goal is to combine multiple two-class classifiers into a single hierarchical classifier .

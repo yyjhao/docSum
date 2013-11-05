@@ -1,0 +1,5 @@
+this paper reports some experiments that compare the accuracy and performance of two stochastic parsing systems .
+the currently popular collins parser is a shallow parser whose output contains more detailed semantically- relevant information than other such parsers .
+the xle parser is a deep-parsing system that couples a lexical functional grammar to a log- linear disambiguation component and provides much richer representations theory .
+we measured the accuracy of both systems against a gold standard of the parc 700 dependency bank , and also measured their processing times .
+we found the deep-parsing system to be more accurate than the collins parser with only a slight reduction in parsing speed .

@@ -1,0 +1,4 @@
+even if no written records of a protolanguage remain , it is possible to estimate what some of the words in that language might have been , by comparison of its reflexes in the more recent daughter languages .
+this method of protolanguage reconstruction is called the comparative method , and is described by crowley ( 1992 , chapter 5 ) .
+although long practiced by human linguists , the comparative method is extremely time consuming , and only a few parts of the process have previously been automated .
+this paper describes a program which attempts to replicate the methodology described by crowley almost in its entirety .

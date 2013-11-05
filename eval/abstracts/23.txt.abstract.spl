@@ -1,0 +1,120 @@
+the automated categorization ( or classification ) of texts into predefined categories has witnessed a booming interest in the last 10 years , due to the increased availability of documents in digital form and the ensuing need to organize them .
+in the research community the dominant approach to this problem is based on machine learning techniques : a general inductive process automatically builds a classifier by learning , from a set of preclassified documents , the characteristics of the categories .
+the advantages of this approach over the knowledge engineering approach ( consisting in the manual definition of a classifier by domain experts ) are a very good effectiveness , considerable savings in terms of expert labor power , and straightforward portability to different domains .
+this survey discusses the main approaches to text categorization that fall within the machine learning paradigm .
+we will discuss in detail issues pertaining to three different problems , namely , document representation , classifier construction , and classifier evaluation .
+introduction .
+in the last 10 years content-based document management tasks ( collectively known as information retrieval ir ) have gained a prominent status in the information systems field , due to the increased availability of documents in digital form and the ensuing need to access them in flexible ways .
+text categorization ( tc a.k.a. text classification , or topic spotting ) , the activity of labeling natural language texts with thematic categories from a predefined set , is one such task .
+tc dates back to the early 60s , but only in the early 90s did it become a major subfield of the information systems discipline , thanks to increased applicative interest and to the availability of more powerful hardware .
+tc is now being applied in many contexts , ranging from document indexing based on a controlled vocabulary , to document filtering , automated metadata generation , word sense disambiguation , population of hierarchical catalogues of web resources , and in general any application requiring document organization or selective and adaptive document dispatching .
+until the late 80s the most popular approach to tc , at least in the operational ( i.e. , real-world applications ) community , was a knowledge engineering ( ke ) one , consisting in manually defining a set of rules encoding expert knowledge on how to classify documents under the given categories .
+in the 90s this approach has increasingly lost popularity ( especially in the research community ) in favor of the machine learning ( ml ) paradigm , according to which a general inductive process automatically builds an automatic text classifier by learning , from a set of preclassified documents , the characteristics of the categories of interest .
+the advantages of this approach are an accuracy comparable to that achieved by human experts , and a considerable savings in terms of expert labor power , since no intervention from either knowledge engineers or domain experts is needed for the construction of the classifier or for its porting to a different set of categories .
+it is the ml approach to tc that this paper concentrates on .
+current-day tc is thus a discipline at the crossroads of ml and ir , and as such it shares a number of characteristics with other tasks such as information / knowledge extraction from texts and text mining [ knight 1999 ; pazienza 1997 ] .
+there is still considerable debate on where the exact border between these disciplines lies , and the terminology is still evolving .
+text mining is increasingly being used to denote all the tasks that , by analyzing large quantities of text and detecting usage patterns , try to extract probably useful ( although only probably correct ) information .
+according to this view , tc is an instance of text mining .
+tc enjoys quite a rich literature now , but this is still fairly scattered.1 although two international journals have devoted special issues to this topic [ joachims and sebastiani 2002 ; lewis and hayes 1994 ] , there are no systematic treatments of the subject : there are neither textbooks nor journals entirely devoted to tc yet , and manning and sch utze [ 1999 , chapter 16 ] is the only chapter-length treatment of the subject .
+as a note , we should warn the reader that the term automatic text classification has sometimes been used in the literature to mean things quite different from the ones discussed here .
+aside from ( i ) the automatic assignment of documents to a predefined set of categories , which is the main topic of this paper , the term has also been used to mean ( ii ) the automatic identification of such a set of categories ( e.g. , borko and bernick [ 1963 ] ) , or ( iii ) the automatic identification of such a set of categories and the grouping of documents under them ( e.g. , merkl [ 1998 ] ) , a task usually called text clustering , or ( iv ) any activity of placing text items into groups , a task that has thus both tc and text clustering as particular instances [ manning and sch utze 1999 ] .
+this paper is organized as follows .
+in section 2 we formally define tc and its various subcases , and in section 3 we review its most important applications .
+section 4 describes the main ideas underlying the ml approach to classification .
+our discussion of text classification starts in section 5 by introducing text indexing , that is , the transformation of textual documents into a form that can be interpreted by a classifier-building algorithm and by the classifier eventually built by it .
+section 6 tackles the inductive construction of a text classifier from a training set of preclassified documents .
+section 7 discusses the evaluation of text classifiers .
+section 8 concludes , discussing open issues and possible avenues of further research for tc .
+text categorization .
+a definition of text categorization .
+a value of t assigned to ~ d ; , ci ) indicates a decision to file d ; under ci , while a value of f indicates a decision not to file d ; under ci .
+more formally , the task is to approximate the unknown target function 4 ) ^ : d x c -- > { t , f } ( that describes how documents ought to be classified ) by means of a function 4 ) : d x c -- > { t , f } called the classifier ( aka rule , or hypothesis , or model ) such that 4 ) ^ and 4 ) coincide as much as possible .
+how to precisely define and measure this coincidence ( called effectiveness ) will be discussed in section 7.1 .
+from now on we will assume that : the categories are just symbolic labels , and no additional knowledge ( of a procedural or declarative nature ) of their meaning is available .
+no exogenous knowledge ( i.e. , data provided for classification purposes by an external source ) is available ; therefore , classification must be accomplished on the basis of endogenous knowledge only ( i.e. , knowledge extracted from the documents ) .
+in particular , this means that metadata such as , for example , publication date , document type , publication source , etc . , is not assumed to be available .
+the tc methods we will discuss are thus completely general , and do not depend on the availability of special-purpose resources that might be unavailable or costly to develop .
+of course , these assumptions need not be verified in operational settings , where it is legitimate to use any source of information that might be available or deemed worth developing [ diaz esteban et al. 1998 ; junker and abecker 1997 ] .
+relying only on endogenous knowledge means classifying a document based solely on its semantics , and given that the semantics of a document is a sub ; ective notion , it follows that the membership of a document in a category ( pretty much as the relevance of a document to an information need in ir [ saracevic 1975 ] ) cannot be decided deterministically .
+this is exemplified by the phenomenon of inter-indexer inconsistency [ cleverdon 1984 ] : when two human experts decide whether to classify document d ; under category ci , they may disagree , and this in fact happens with relatively high frequency .
+a news article on clinton attending dizzy gillespie s funeral could be filed under politics , or under jazz , or under both , or even under neither , depending on the subjective judgment of the expert .
+single-label versus multilabel text categorization .
+different constraints may be enforced on the tc task , depending on the application .
+for instance we might need that , for a given integer k , exactly k ( or < k , or > k ) elements of c be assigned to each d ; e d. the case in which exactly one category must be assigned to each d ; e d is often called the single-label ( a.k.a. nonoverlapping categories ) case , while the case in which any number of categories from 0 to ici may be assigned to the same d ; e d is dubbed the multilabel ( aka overlapping categories ) case .
+a special case of single- label tc is binary tc , in which each d ; e d must be assigned either to category ci or to its complement ci .
+from a theoretical point of view , the binary case ( hence , the single-label case , too ) is more general than the multilabel , since an algorithm for binary classification can also be used for multilabel classification : one needs only transform the problem of multilabel classification under { c1 , ... , cici } into ici independent problems of binary classification under { ci , ci } , for i = 1 , . . . , ici .
+however , this requires that categories be stochastically independent of each other , that is , for any c ' , c " , the value of ^ 4 ) ( d ; , c ' ) does not depend on the value of ^ 4 ) ( d ; , c " ) and vice versa ; this is usually assumed to be the case ( applications in which this is not the case are discussed in section 3.5 ) .
+the converse is not true : an algorithm for multilabel classification cannot be used for either binary or single-label classification .
+in fact , given a document d ; to classify , ( i ) the classifier might attribute k > 1 categories to d ; , and it might not be obvious how to choose a most appropriate category from them ; or ( ii ) the classifier might attribute to d ; no category at all , and it might not be obvious how to choose a least inappropriate category from c. in the rest of the paper , unless explicitly mentioned , we will deal with the binary case .
+there are various reasons for this : the binary case is important in itself because important tc applications , including filtering ( see section 3.3 ) , consist of binary classification problems ( e.g. , deciding whether d ; is about jazz or not ) .
+in tc , most binary classification problems feature unevenly populated categories ( e.g. , much fewer documents are about jazz than are not ) and unevenly characterized categories ( e.g. , what is about jazz can be characterized much better than what is not ) .
+solving the binary case also means solving the multilabel case , which is also representative of important tc applications , including automated indexing for boolean systems ( see section 3.1 ) .
+most of the tc literature is couched in terms of the binary case .
+most techniques for binary classification are just special cases of existing techniques for the single-label case , and are simpler to illustrate than these latter .
+category-pivoted versus document-pivoted text categorization .
+there are two different ways of using a text classifier .
+given d ; ed , we might want to find all the ci e c under which it should be filed ( document -pivoted categorization dpc ) ; alternatively , given ci e c , we might want to find all the d ; e d that should be filed under it ( category -pivoted categorization cpc ) .
+this distinction is more pragmatic than conceptual , but is important since the sets c and d might not be available in their entirety right from the start .
+it is also relevant to the choice of the classifier-building method , as some of these methods ( see section 6.9 ) allow the construction of classifiers with a definite slant toward one or the other style .
+dpc is thus suitable when documents become available at different moments in time , e.g. , in filtering e-mail .
+cpc is instead suitable when ( i ) a new category cci + 1 may be added to an existing set c = { c1 , ... , cici 1 after a number of documents have already been classified under c , and ( ii ) these documents need to be reconsidered for classification under cici + 1 ( e.g. , larkey [ 1999 ] ) .
+dpc is used more often than cpc , as the former situation is more common than the latter .
+although some specific techniques apply to one style and not to the other ( e.g. , the proportional thresholding method discussed in section 6.1 applies only to cpc ) , this is more the exception than the rule : most of the techniques we will discuss allow the construction of classifiers capable of working in either mode .
+hard categorization versus .
+ranking categorization .
+while a complete automation of the tc task requires a t or f decision for each pair ( d ; , ci ~ , a partial automation of this process might have different requirements .
+for instance , given d ; ed a system might simply rank the categories in c = { c1 , ... , cici 1 according to their estimated appropriateness to d ; , without taking any hard decision on any of them .
+such a ranked list would be of great help to a human expert in charge of taking the final categorization decision , since she could thus restrict the choice to the category ( or categories ) at the top of the list , rather than having to examine the entire set .
+alternatively , given ci e c a system might simply rank the documents in d according to their estimated appropriateness to ci ; symmetrically , for classification under ci a human expert would just examine the top-ranked documents instead of the entire document set .
+these two modalities are sometimes called category-ranking tc and document- ranking tc [ yang 1999 ] , respectively , and are the obvious counterparts of dpc and cpc .
+semiautomated , interactive classification systems [ larkey and croft 1996 ] are useful especially in critical applications in which the effectiveness of a fully automated system may be expected to be significantly lower than that of a human expert .
+this may be the case when the quality of the training data ( see section 4 ) is low , or when the training documents cannot be trusted to be a representative sample of the unseen documents that are to come , so that the results of a completely automatic classifier could not be trusted completely .
+in the rest of the paper , unless explicitly mentioned , we will deal with hard classification ; however , many of the algorithms we will discuss naturally lend themselves to ranking tc too ( more details on this in section 6.1 ) .
+applications of text categorization .
+tc goes back to maron s [ 1961 ] seminal work on probabilistic text classification .
+since then , it has been used for a number of different applications , of which we here briefly review the most important ones .
+note that the borders between the different classes of applications listed here are fuzzy and somehow artificial , and some of these may be considered special cases of others .
+other applications we do not explicitly discuss are speech categorization by means of a combination of speech recognition and tc [ myers et al. 2000 ; schapire and singer 2000 ] , multimedia document categorization through the analysis of textual captions [ sable and hatzivassiloglou 2000 ] , author identification for literary texts of unknown or disputed authorship [ forsyth 1999 ] , language identification for texts of unknown language [ cavnar and trenkle 1994 ] , automated identification of text genre [ kessler et al. 1997 ] , and automated essay grading [ larkey 1998 ] .
+automatic indexing for boolean information retrieval systems .
+the application that has spawned most of the early research in the field [ borko and bernick 1963 ; field 1975 ; gray and harley 1971 ; heaps 1973 ; maron 1961 ] is that of automatic document indexing for ir systems relying on a controlled dictionary , the most prominent example of which is boolean systems .
+in these latter each document is assigned one or more key words or key phrases describing its content , where these key words and key phrases belong to a finite set called controlled dictionary , often consisting of a thematic hierarchical thesaurus ( e.g. , the nasa thesaurus for the aerospace discipline , or the mesh thesaurus for medicine ) .
+usually , this assignment is done by trained human indexers , and is thus a costly activity .
+if the entries in the controlled vocabulary are viewed as categories , text indexing is an instance of tc , and may thus be addressed by the automatic techniques described in this paper .
+recalling section 2.2 , note that this application may typically require that k1 < x < k2 key words are assigned to each document , for given k1 , k2 .
+document-pivoted tc is probably the best option , so that new documents may be classified as they become available .
+various text classifiers explicitly conceived for document indexing have been described in the literature ; see , for example , fuhr and knorz [ 1984 ] , robertson and harding [ 1984 ] , and tzeras and hartmann [ 1993 ] .
+automatic indexing with controlled dictionaries is closely related to automated metadata generation .
+in digital libraries , one is usually interested in tagging documents by metadata that describes them under a variety of aspects ( e.g. , creation date , document type or format , availability , etc . ) .
+some of this metadata is thematic , that is , its role is to describe the semantics of the document by means of bibliographic codes , key words or key phrases .
+the generation of this metadata may thus be viewed as a problem of document indexing with controlled dictionary , and thus tackled by means of tc techniques .
+document organization .
+indexing with a controlled vocabulary is an instance of the general problem of document base organization .
+in general , many other issues pertaining to document organization and filing , be it for purposes of personal organization or structuring of a corporate document base , may be addressed by tc techniques .
+for instance , at the offices of a newspaper incoming classified ads must be , prior to publication , categorized under categories such as personals , cars for sale , real estate , etc .
+newspapers dealing with a high volume of classified ads would benefit from an automatic system that chooses the most suitable category for a given ad .
+other possible applications are the organization of patents into categories for making their search easier [ larkey 1999 ] , the automatic filing of newspaper articles under the appropriate sections ( e.g. , politics , home news , lifestyles , etc . ) , or the automatic grouping of conference papers into sessions .
+text filtering .
+text filtering is the activity of classifying a stream of incoming documents dispatched in an asynchronous way by an information producer to an information consumer [ belkin and croft 1992 ] .
+a typical case is a newsfeed , where the producer is a news agency and the consumer is a newspaper [ hayes et al. 1990 ] .
+in this case , the filtering system should block the delivery of the documents the consumer is likely not interested in ( e.g. , all news not concerning sports , in the case of a sports newspaper ) .
+filtering can be seen as a case of single-label tc , that is , the classification of incoming documents into two disjoint categories , the relevant and the irrelevant .
+additionally , a filtering system may also further classify the documents deemed relevant to the consumer into thematic categories ; in the example above , all articles about sports should be further classified according to which sport they deal with , so as to allow journalists specialized in individual sports to access only documents of prospective interest for them .
+similarly , an e-mail filter might be trained to discard junk mail [ androutsopoulos et al. 2000 ; drucker et al. 1999 ] and further classify nonjunk mail into topical categories of interest to the user .
+a filtering system may be installed at the producer end , in which case it must route the documents to the interested consumers only , or at the consumer end , in which case it must block the delivery of documents deemed uninteresting to the consumer .
+in the former case , the system builds and updates a profile for each consumer [ liddy et al. 1994 ] , while in the latter case ( which is the more common , and to which we will refer in the rest of this section ) a single profile is needed .
+a profile may be initially specified by the user , thereby resembling a standing ir query , and is updated by the system by using feedback information provided ( either implicitly or explicitly ) by the user on the relevance or nonrelevance of the delivered messages .
+in the trec community [ lewis 1995c ] , this is called adaptive filtering , while the case in which no user- specified profile is available is called either routing or batch filtering , depending on whether documents have to be ranked in decreasing order of estimated relevance or just accepted / rejected .
+batch filtering thus coincides with single-label tc under | c | = 2 categories ; since this latter is a completely general tc task , some authors [ hull 1994 ; hull et al.1996 ; schapire et al. 1998 ; sch utze et al. 1995 ] , somewhat confusingly , use the term filtering in place of the more appropriate term categorization .
+in information science , document filtering has a tradition dating back to the 60s , when , addressed by systems of various degrees of automation and dealing with the multiconsumer case discussed above , it was called selective dissemination of information or current awareness ( see korfhage [ 1997 , chapter 6 ] ) .
+the explosion in the availability of digital information has boosted the importance of such systems , which are nowadays being used in contexts such as the creation of personalized web newspapers , junk e-mail blocking , and usenet news selection .
+information filtering by ml techniques is widely discussed in the literature : see amati and crestani [ 1999 ] , iyer et al. [ 2000 ] , kim et al. [ 2000 ] , tauritz et al. [ 2000 ] , and yu and lam [ 1998 ] .
+word sense disambiguation .
+word sense disambiguation ( wsd ) is the activity of finding , given the occurrence in a text of an ambiguous ( i.e. , polysemous or homonymous ) word , the sense of this particular word occurrence .
+for instance , bank may have ( at least ) two different senses in english , as in the bank of england ( a financial institution ) or the bank of river thames ( a hydraulic engineering artifact ) .
+it is thus a wsd task to decide which of the above senses the occurrence of bank in last week i borrowed some money from the bank has .
+wsd is very important for many applications , including natural language processing , and indexing documents byword senses rather than by words for ir purposes .
+wsd may be seen as a tc task ( see gale et al. [ 1993 ] ; escudero et al. [ 2000 ] ) once we view word occurrence contexts as documents and word senses as categories .
+quite obviously , this is a single-label tc case , and one in which document-pivoted tc is usually the right choice .
+wsd is just an example of the more general issue of resolving natural language ambiguities , one of the most important problems in computational linguistics .
+other examples , which may all be tackled by means of tc techniques along the lines discussed for wsd , are context-sensitive spelling correction , prepositional phrase attachment , part of speech tagging , and word choice selection in machine translation ; see roth [ 1998 ] for an 

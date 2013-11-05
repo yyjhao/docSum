@@ -1,0 +1,4 @@
+in this paper , we present espresso , a weakly-supervised , general-purpose , and accurate algorithm for harvesting semantic relations .
+the main contributions are : i ) a method for exploiting generic patterns by filtering incorrect instances using the web ; and ii ) a principled measure of pattern and instance reliability enabling the filtering algorithm .
+we present an empirical comparison of espresso with various state of the art systems , on different size and genre corpora , on extracting various general and specific relations .
+experimental results show that our exploitation of generic patterns substantially increases system recall with small effect on overall precision .

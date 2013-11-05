@@ -1,0 +1,6 @@
+this paper investigates adapting a lexicalized probabilistic context-free grammar ( pcfg ) to a novel domain , using maximum a posteriori ( map ) estimation .
+the map framework is general enough to include some previous model adaptation approaches , such as corpus mixing in gildea ( 2001 ) , for example .
+other approaches falling within this framework are more effective .
+in contrast to the results in gildea ( 2001 ) , we show f-measure parsing accuracy gains of as much as 2.5 % for high accuracy lexicalized parsing through the use of out-of-domain treebanks , with the largest gains when the amount of in- domain data is small .
+map adaptation can also be based on either supervised or unsupervised adaptation data .
+even when no in-domain treebank is available , unsupervised techniques provide a substantial accuracy gain over unadapted grammars , as much as nearly 5 % f-measure improvement .

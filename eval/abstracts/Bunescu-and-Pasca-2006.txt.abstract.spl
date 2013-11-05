@@ -1,0 +1,3 @@
+we present a new method for detecting and disambiguating named entities in open domain text .
+a disambiguation svm kernel is trained to exploit the high coverage and rich structure of the knowledge encoded in an online encyclopedia .
+the resulting model significantly outperforms a less informed baseline .

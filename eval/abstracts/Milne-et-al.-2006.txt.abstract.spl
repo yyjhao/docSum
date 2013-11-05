@@ -1,0 +1,4 @@
+domain-specific thesauri are high-cost , high- maintenance , high-value knowledge structures .
+we show how the classic thesaurus structure of terms and links can be mined automatically from wikipedia , a vast , open encyclopedia .
+in a comparison with a professional thesaurus for agriculture ( agrovoc ) we find that wikipedia contains a substantial proportion of its domain-specific concepts and semantic relations ; furthermore it has impressive coverage of a collection of contemporary documents in the domain .
+thesauri derived using these techniques are attractive because they capitalize on existing public efforts and tend to reflect contemporary language usage better than their costly , painstakingly-constructed manual counterparts .

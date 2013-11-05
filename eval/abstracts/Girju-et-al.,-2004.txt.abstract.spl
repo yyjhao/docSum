@@ -1,0 +1,5 @@
+the discovery of semantic relations in text plays an important role in many nlp applications .
+this paper presents a method for the automatic classification of semantic relations in nominalized noun phrases .
+nominalizations represent a subclass of np constructions in which either the head or the modifier noun is derived from a verb while the other noun is an argument of this verb .
+especially designed features are extracted automatically and used in a support vector machine learning model .
+the paper presents preliminary results for the semantic classification of the most representative np patterns using four distinct learning models .

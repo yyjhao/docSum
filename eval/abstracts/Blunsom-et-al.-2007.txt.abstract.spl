@@ -1,0 +1,5 @@
+large-scale discriminative machine translation promises to further the state-of-the-art , but has failed to deliver convincing gains over current heuristic frequency count systems .
+we argue that a principle reason for this failure is not dealing with multiple , equivalent translations .
+we present a translation model which models derivations as a latent variable , in both training and decoding , and is fully discriminative and globally optimised .
+results show that accounting for multiple derivations does indeed improve performance .
+additionally , we show that regularisation is essential for maximum conditional likelihood models in order to avoid degenerate solutions .

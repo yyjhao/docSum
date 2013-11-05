@@ -1,0 +1,6 @@
+we present an automatic method for weighting the contributions of preference functions used in disambiguation .
+initial scaling factors are derived as the solution to a least-squares minimization problem , and improvements are then made by hill-climbing .
+the method is applied to disambiguating sentences in the atis ( air travel information system corpus , and the performance of the resulting scaling factors is compared with hand-tuned factors .
+we then focus on one class of preference function , those based on semantic lexical collocations .
+experimental results are presented showing that such functions vary considerably in selecting correct analyses .
+in particular we define a function that performs significantly better than ones based on mutual information and likelihood ratios of lexical associations .

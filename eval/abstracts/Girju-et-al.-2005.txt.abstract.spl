@@ -1,0 +1,6 @@
+this paper provides new insights on the semantic characteristics of two and three noun compounds .
+an analysis is performed using two sets of semantic classification categories : a list of 8 prepositional paraphrases previously proposed by lauer [ designing statistical language learners : experiments on noun compounds , ph.d.
+thesis , macquarie university , australia ] and a new set of 35 semantic relations introduced by us .
+we show the distribution of these semantic categories on a corpus of noun compounds and present several models for the bracketing and the semantic classification of noun compounds .
+the results are compared against state-of-the-art models reported in the literature .
+introduction .

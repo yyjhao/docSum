@@ -1,0 +1,13 @@
+semantic relationships among words and phrases are often marked by explicit syntactic or lexical clues that help recognize such relationships in texts .
+within complex nominals , however , few overt clues are available .
+systems that analyze such nominals must compensate for the lack of surface clues with other information .
+one way is to load the system with lexical semantics for nouns or adjectives .
+this merely shifts the problem elsewhere : how do we define the lexical semantics and build large semantic lexicons ?
+another way is to find constructions similar to a given complex nominal , for which the relationships are already known .
+this is the way we chose , but it too has drawbacks .
+similarity is not easily assessed , similar analyzed constructions may not exist , and if they do exist , their analysis may not be appropriate for the current nominal .
+we present a semi-automatic system that identifies semantic relationships in noun phrases without using precoded noun or adjective semantics .
+instead , partial matching on previously analyzed noun phrases leads to a tentative interpretation of a new input .
+processing can start without prior analyses , but the early stage requires user interaction .
+as more noun phrases are analyzed , the system learns to find better interpretations and reduces its reliance on the user .
+in experiments on english technical texts the system correctly identified 60-70 % of relationships automatically .

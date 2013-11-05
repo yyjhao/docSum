@@ -1,0 +1,4 @@
+in this paper , we outline our approach to interpreting semantic relations in nominal pairs in semeval-2007 task # 4 : classification of semantic relations between nominals .
+we build on two baseline approaches to interpreting noun compounds : sense collocation , and constituent similarity .
+these are consolidated into an overall system in combination with co-training , to expand the training data .
+our two systems attained an average f-score over the test data of 58.7 % and 57.8 % , respectively .

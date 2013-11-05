@@ -1,0 +1,6 @@
+we show for the first time that incorporating the predictions of a word sense disambiguation system within a typical phrase-based statistical machine translation ( smt ) model consistently improves translation quality across all three different iwslt chinese- english test sets , as well as producing statistically significant improvements on the larger nist chinese-english mt task and moreover never hurts performance on any test set , according not only to bleu but to all eight most commonly used automatic evaluation metrics .
+recent work has challenged the assumption that word sense disambiguation ( wsd ) systems are useful for smt .
+yet smt translation quality still obviously suffers from inaccurate lexical choice .
+in this paper , we address this problem by investigating a new strategy for integrating wsd into an smt system , that performs fully phrasal multi-word disambiguation .
+instead of directly incorporating a senseval-style wsd system , we redefine the wsd task to match the exact same phrasal translation disambiguation task faced by phrase-based smt systems .
+our results provide the first known empirical evidence that lexical semantics are indeed useful for smt , despite claims to the contrary .

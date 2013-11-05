@@ -1,0 +1,4 @@
+we explore the use of wikipedia as external knowledge to improve named entity recognition ( ner ) .
+our method retrieves the corresponding wikipedia entry for each candidate word sequence and extracts a category label from the first sentence of the entry , which can be thought of as a definition part .
+these category labels are used as features in a crf-based ne tagger .
+we demonstrate using the conll 2003 dataset that the wikipedia category labels extracted by such a simple method actually improve the accuracy of ner .

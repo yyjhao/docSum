@@ -1,0 +1,3 @@
+this paper describes a supervised , knowledge-intensive approach to the automatic identification of semantic relations between nominals in english sentences .
+the system employs different sets of new and previously used lexical , syntactic , and semantic features extracted from various knowledge sources .
+at semeval 2007 the system achieved an f-measure of 72.4 % and an accuracy of 76.3 % .

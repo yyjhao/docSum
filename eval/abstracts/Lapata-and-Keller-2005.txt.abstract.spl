@@ -1,0 +1,7 @@
+previous work demonstrated that web counts can be used to approximate bigram counts , thus suggesting that web-based frequencies should be useful for a wide variety of nlp tasks .
+however , only a limited number of tasks have so far been tested using web-scale data sets .
+the present paper overcomes this limitation by systematically investigating the performance of web-based models for several nlp tasks , covering both syntax and semantics , both generation and analysis , and a wider range of n-grams and parts of speech than have been previously explored .
+for the majority of our tasks , we find that simple , unsupervised models perform better when n-gram counts are obtained from the web rather than from a large corpus .
+in some cases , performance can be improved further by using backoff or interpolation techniques that combine web counts and corpus counts .
+however , unsupervised web-based models generally fail to outperform supervised state-of-the-art models trained on smaller corpora .
+we argue that web-based models should therefore be used as a baseline for , rather than an alternative to , standard supervised models .

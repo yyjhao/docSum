@@ -1,0 +1,6 @@
+we compare and combine two methods to approach the second textual entailment challenge ( rte-2 ) : a shallow method based mainly on word-overlap and a method based on logical inference , using first-order theorem proving and model building techniques .
+we use a machine learning technique to combine features of both methods .
+we submitted two runs , one using only the shallow features , yielding an accuracy of 61.6 % , and one using features of both methods , performing with an accuracy score of 60.6 % .
+these figures suggest that logical inference didnt help much .
+closer inspection of the results revealed that only for some of the subtasks logical inference played a significant role in performance .
+we try to explain the reason for these results .

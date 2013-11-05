@@ -1,0 +1,9 @@
+intelligent access to information requires semantic integration of structured databases with unstructured textual resources .
+while the semantic integration problem has been widely studied in the database domain on structured data , it has not been fully recognized nor studied on unstructured or semi-structured textual resources .
+this paper presents a first step towards this goal by studying semantic integration in natural language texts identifying whether different mentions of real world entities , within and across documents , actually represent the same concept .
+we present a machine learning study of this problem .
+the first approach is a discriminative approach a pairwise local classifier is trained in a supervised way to determine whether two given mentions represent the same real world entity .
+this is followed , potentially , by a global clustering algorithm that uses the classifier as its similarity metric .
+our second approach is a global generative model , at the heart of which is a view on how documents are generated and how names ( of different entity types ) are sprinkled into them .
+in its most general form , our model assumes : ( 1 ) a joint distribution over entities ( e.g. , a document that mentions president kennedy is more likely to mention oswald or white house than roger clemens ) , ( 2 ) an author model , that assumes that at least one mention of an entity in a document is easily identifiable , and then generates other mentions via ( 3 ) an appearance model , governing how mentions are transformed from the representative mention .
+we show that both approaches perform very accurately , in the range of 90 % 95 % fl measure for different entity types , much better than previous approaches to ( some aspects of ) this problem .

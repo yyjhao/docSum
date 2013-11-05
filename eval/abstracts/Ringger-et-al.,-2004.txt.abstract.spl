@@ -1,0 +1,4 @@
+this paper describes a method for conducting evaluations of treebank and non-treebank parsers alike against the english language u. penn treebank ( marcus et al. , 1993 ) using a metric that focuses on the accuracy of relatively non-controversial aspects of parse structure .
+our conjecture is that if we focus on maximal projections of heads ( mph ) , we are likely to find much broader agreement than if we try to evaluate based on order of attachment .
+we hope that this method may find wider acceptance and be useful in establishing a generally applicable framework for evaluation in natural language parsing .
+we employ this method in an evaluation of nlpwin ( heidorn , 2000 ) , a parser developed at microsoft research without reference to the penn treebank , and , for comparison , the well-known statistical treebank parser of charniak ( 2000 ) .

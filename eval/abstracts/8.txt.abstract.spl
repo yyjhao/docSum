@@ -1,0 +1,6 @@
+supervised learning approaches to text classification are in practice often required to work with small and unsystematically collected training sets .
+the alternative is usually viewed as building classifiers by hand , using an expert s understanding of what features of the text are related to the class of interest .
+this is expensive , requires a degree of computational and linguistic sophistication , and makes it difficult to use combinations of weak predictors .
+we propose instead combining domain knowledge with training examples in a bayesian framework .
+domain knowledge is used to specify a prior distribution for parameters of a logistic regression model , and labeled training data is used to produce and find the mode of the posterior distribution .
+we show on three text categorization data sets that this approach can rescue what would otherwise be disastrously bad training situations , producing much more effective classifiers .

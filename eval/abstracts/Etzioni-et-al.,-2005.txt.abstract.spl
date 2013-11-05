@@ -1,0 +1,11 @@
+the knowitall system aims to automate the tedious process of extracting large collections of facts ( e.g. , names of scientists or politicians ) from the web in an unsupervised , domain-independent , and scalable manner .
+the paper presents an overview of knowitalls novel architecture and design principles , emphasizing its distinctive ability to extract information without any hand-labeled training examples .
+in its first major run , knowitall extracted over 50,000 class instances , but suggested a challenge : how can we improve knowitalls recall and extraction rate without sacrificing precision ?
+this paper presents three distinct ways to address this challenge and evaluates their performance .
+pattern learning learns domain-specific extraction rules , which enable additional extractions .
+subclass extraction automatically identifies sub-classes in order to boost recall ( e.g. , chemist and biologist are identified as sub-classes of scientist ) .
+list extraction locates lists of class instances , learns a wrapper for each list , and extracts elements of each list .
+since each method bootstraps from knowitalls domain-independent methods , the methods also obviate hand-labeled training examples .
+the paper reports on experiments , focused on building lists of named entities , that measure the relative efficacy of each method and demonstrate their synergy .
+in concert , our methods gave knowitall a 4-fold to 8-fold increase in recall at precision of 0.90 , and discovered over 10,000 cities missing from the tipster gazetteer .
+introduction and motivation .

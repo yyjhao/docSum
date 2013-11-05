@@ -1,0 +1,2 @@
+we target the problem of linking source mentions that belong to the same entity ( source coreference resolution ) , which is needed for creating opinion summaries .
+in this paper we describe how source coreference resolution can be transformed into standard noun phrase coreference resolution , apply a state-of-the-art coreference resolution approach to the transformed data , and evaluate on an available corpus of manually annotated opinions .

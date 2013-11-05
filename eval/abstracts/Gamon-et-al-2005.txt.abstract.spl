@@ -1,0 +1,5 @@
+we present a prototype system , code-named pulse , for mining topics and sentiment orientation jointly from free text customer feedback .
+we describe the application of the prototype system to a database of car reviews .
+pulse enables the exploration of large quantities of customer free text .
+the user can examine customer opinion � at a glance � or explore the data at a finer level of detail .
+we describe a simple but effective technique for clustering sentences , the application of a bootstrapping approach to sentiment classification , and a novel user-interface .

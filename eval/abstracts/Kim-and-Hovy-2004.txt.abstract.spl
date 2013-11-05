@@ -1,0 +1,4 @@
+identifying sentiments ( the affective parts of opinions ) is a challenging problem .
+we present a system that , given a topic , automatically finds the people who hold opinions about that topic and the sentiment of each opinion .
+the system contains a module for determining word sentiment and another for combining sentiments within a sentence .
+we experiment with various models of classifying and combining sentiment at word and sentence levels , with promising results .

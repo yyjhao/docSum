@@ -1,0 +1,10 @@
+this paper is a comparative study of feature selection methods in statistical learning of text categorization .
+the focus is on aggressive dimensionality reduction .
+five methods were evaluated , including term selection based on document frequency ( df ) , information gain ( ig ) , mutual information ( mi ) , a xz-test ( chi ) , and term strength ( ts ) .
+we found ig and chi most effective in our experiments .
+using ig thresholding with a k- nearest neighbor classifier on the reuters corpus , removal of up to 98 % removal of unique terms actually yielded an improved classification accuracy ( measured by average precision ) .
+df thresholding performed similarly .
+indeed we found strong correlations between the df , ig and chi values of a term .
+this suggests that df thresholding , the simplest method with the lowest cost in computation , can be reliably used instead of ig or chi when the computation of these measures are too expensive .
+ts compares favorably with the other methods with up to 50 % vocabulary reduction but is not competitive at higher vocabulary reduction levels .
+in contrast , mi had relatively poor performance due to its bias towards favoring rare terms , and its sensitivity to probability estimation errors .

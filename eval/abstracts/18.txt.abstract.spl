@@ -1,0 +1,6 @@
+we extend the traditional active learning framework to include feedback on features in addition to labeling instances , and we execute a careful study of the effects of feature selection and human feedback on features in the setting of text categorization .
+our experiments on a variety of categorization tasks indicate that there is significant potential in improving classifier performance by feature re-weighting , beyond that achieved via membership queries alone ( traditional active learning ) if we have access to an oracle that can point to the important ( most predictive ) features .
+our experiments on human subjects indicate that human feedback on feature relevance can identify a sufficient proportion of the most relevant features ( over 50 % in our experiments ) .
+we find that on average , labeling a feature takes much less time than labeling a document .
+we devise an algorithm that interleaves labeling features and documents which significantly accelerates standard active learning in our simulation experiments .
+feature feedback can complement traditional active learning in applications such as news filtering , e-mail classification , and personalization , where the human teacher can have significant knowledge on the relevance of features .

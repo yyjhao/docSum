@@ -1,0 +1,6 @@
+the pascal rte challenge has helped lcc to explore the applicability of enhancements that have been made to our logic form representation and wordnet lexical chains generator .
+our system transforms each t-h pair into logic form representation with semantic relations .
+the system automatically generates nlp axioms serving as linguistic rewriting rules and lexical chain axioms that connect concepts in the hypothesis and text .
+a light set of simple hand-coded world knowledge axioms are also included .
+our cogex logic prover is then used to attempt to prove entailment .
+semantic relations , wordnet lexical chains , and nlp axioms all helped the logic prover detect entailment .

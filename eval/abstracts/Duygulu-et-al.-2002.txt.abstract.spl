@@ -1,0 +1,11 @@
+we describe a model of object recognition as machine translation .
+in this model , recognition is a process of annotating image regions with words .
+firstly , images are segmented into regions , which are classified into region types using a variety of features .
+a mapping between region types and keywords supplied with the images , is then learned , using a method based around em .
+this process is analogous with learning a lexicon from an aligned bitext .
+for the implementation we describe , these words are nouns taken from a large vocabulary .
+on a large test set , the method can predict numerous words with high accuracy .
+simple methods identify words that cannot be predicted well .
+we show how to cluster words that individually are difficult to predict into clusters that can be predicted well for example , we cannot predict the distinction between train and locomotive using the current set of features , but we can predict the underlying concept .
+the method is trained on a substantial collection of images .
+extensive experimental results illustrate the strengths and weaknesses of the approach .

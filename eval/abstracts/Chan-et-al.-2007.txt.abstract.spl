@@ -1,0 +1,4 @@
+recent research presents conflicting evidence on whether word sense disambiguation ( wsd ) systems can help to improve the performance of statistical machine translation ( mt ) systems .
+in this paper , we successfully integrate a state-of-the-art wsd system into a state-of-the-art hierarchical phrase-based mt system , hiero .
+we show for the first time that integrating a wsd system improves the performance of a state-of- the-art statistical mt system on an actual translation task .
+furthermore , the improvement is statistically significant .

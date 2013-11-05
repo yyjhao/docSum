@@ -1,0 +1,6 @@
+like many purely data-driven machine learning methods , support vector machine ( svm ) classifiers are learned exclusively from the evidence presented in the training dataset ; thus a larger training dataset is required for better performance .
+in some applications , there might be human knowledge available that , in principle , could compensate for the lack of data .
+in this paper , we propose a simple generalization of svm : weighted margin svm ( wmsvms ) that permits the incorporation of prior knowledge .
+we show that sequential minimal optimization can be used in training wmsvm .
+we discuss the issues of incorporating prior knowledge using this rather general formulation .
+the experimental results show that the proposed methods of incorporating prior knowledge is effective .

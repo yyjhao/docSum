@@ -1,0 +1,4 @@
+frequency information on co-occurrence patterns can be automatically collected from a syntactically analyzed corpus ; tins information can then serve as the basis for selectional constraints when analyzing new text from the same domain .
+this information , however , is necessarily incomplete .
+we report on measurements of the degree of selectional coverage obtained with different sizes of corpora .
+we then describe a technique for using the corpus to identify selectionally similar terms , and for using this similarity to broaden the selectional coverage for a fixed corpus size .

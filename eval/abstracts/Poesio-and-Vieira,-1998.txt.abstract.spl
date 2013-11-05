@@ -1,0 +1,8 @@
+we present the results of a study of definite descriptions use in written texts aimed at assessing the feasibility of annotating corpora with information about definite description interpretation .
+we ran two experiments , in which subjects were asked to classify the uses of definite descriptions in a corpus of 33 newspaper articles , containing a total of 1412 definite descriptions .
+we measured the agreement among annotators about the classes assigned to definite descriptions , as well as the agreement about the antecedent assigned to those definites that the annotators classified as being related to an antecedent in the text .
+the most interesting result of this study from a corpus annotation perspective was the rather low agreement ( k = 0.63 ) that we obtained using versions of hawkins and princes classification schemes ; better results ( k = 0.76 ) were obtained using the simplified scheme proposed by fraurud that includes only two classes , first-mention and subsequent-mention .
+the agreement about antecedents was also not complete .
+these findings raise questions concerning the strategy of evaluating systems for definite description interpretation by comparing their results with a standardized annotation .
+from a linguistic point of view , the most interesting observations were the great number of discourse-new definites in our corpus ( in one of our experiments , about 50 % of the definites in the collection were classified as discourse-new , 30 % as anaphoric , and 18 % as associative / bridging ) and the presence of definites which did not seem to require a complete disambiguation .
+this paper will appear in computational linguistics .

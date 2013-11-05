@@ -1,0 +1,4 @@
+we explore the semantic similarity between base noun phrases in clusters determined by a comprehensive set of semantic relations .
+the attributes that characterize modifiers and nouns are extracted from wordnet and from roget 's thesaurus .
+we use various machine learning tools to find combinations of attributes that explain the similarities in each category .
+the experiments gave promising results , with a good level of generalization and interesting sets of rules .

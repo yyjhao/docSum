@@ -1,0 +1,3 @@
+this paper introduces our technique for integrating wikipedia as a broad-coverage knowledge base for use in document classification .
+we outline an algorithm for integrating the wikipedia categories found from named entities in the articles .
+we then demonstrate this algorithm on a toy corpus , where we are able to successfully classify our documents .

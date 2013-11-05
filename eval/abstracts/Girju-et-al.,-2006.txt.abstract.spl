@@ -1,0 +1,10 @@
+an important problem in knowledge discovery from text is the automatic extraction of semantic relations .
+this paper presents a supervised , semantically intensive , domain independent approach for the automatic detection of part -whole relations in text .
+first an algorithm is described that identifies lexico-syntactic patterns that encode part-whole relations .
+a difficulty is that these patterns also encode other semantic relations , and a learning method is necessary to discriminate whether or not a pattern contains a part-whole relation .
+a large set of training examples have been annotated and fed into a specialized learning system that learns classification rules .
+the rules are learned through an iterative semantic specialization ( iss ) method applied to noun phrase constituents .
+classification rules have been generated this way for different patterns such as genitives , noun compounds , and noun phrases containing prepositional phrases to extract part -whole relations from them .
+the applicability of these rules has been tested on a test corpus obtaining an overall average precision of 80.95 % and recall of 75.91 % .
+the results demonstrate the importance of word sense disambiguation for this task .
+they also demonstrate that different lexico-syntactic patterns encode different semantic information and should be treated separately in the sense that different clarification rules apply to different patterns .

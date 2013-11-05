@@ -1,0 +1,10 @@
+we present an algorithm for learning from unlabeled text , based on the vector space model ( vsm ) of information retrieval , that can solve verbal analogy questions of the kind found in the sat college entrance exam .
+a verbal analogy has the form a : b : : c : d , meaning a is to b as c is to d ; for example , mason : stone : : carpenter : wood .
+sat analogy questions provide a word pair , a : b , and the problem is to select the most analogous word pair , c : d , from a set of five choices .
+the vsm algorithm correctly answers 47 % of a collection of 374 college- level analogy questions ( random guessing would yield 20 % correct ; the average college-bound senior high school student answers about 57 % correctly ) .
+we motivate this research by applying it to a difficult problem in natural language processing , determining semantic relations in noun-modifier pairs .
+the problem is to classify a noun-modifier pair , such as laser printer , according to the semantic relation between the noun ( printer ) and the modifier ( laser ) .
+we use a supervised nearest- neighbour algorithm that assigns a class to a given noun-modifier pair by finding the most analogous noun-modifier pair in the training data .
+with 30 classes of semantic relations , on a collection of 600 labeled noun-modifier pairs , the learning algorithm attains an f value of 26.5 % ( random guessing : 3.3 % ) .
+with 5 classes of semantic relations , the f value is 43.2 % ( random : 20 % ) .
+the performance is state-of-the-art for both verbal analogies and noun-modifier relations .

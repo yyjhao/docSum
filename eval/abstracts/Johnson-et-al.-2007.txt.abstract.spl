@@ -1,0 +1,3 @@
+it is possible to reduce the bulk of phrase- tables for statistical machine translation using a technique based on the significance testing of phrase pair co-occurrence in the parallel corpus .
+the savings can be quite substantial ( up to 90 % ) and cause no reduction in bleu score .
+in some cases , an improvement in bleu is obtained at the same time although the effect is less pronounced if state-of-the-art phrasetable smoothing is employed .

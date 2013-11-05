@@ -1,0 +1,7 @@
+we study the performance of two representations of word meaning in learning noun-modifier semantic relations .
+one representation is based on lexical resources , in particular wordnet , the other on a corpus .
+we experimented with decision trees , instance-based learning and support vector machines .
+all these methods work well in this learning task .
+we report high precision , recall and f-score , and small variation in performance across several 10-fold cross-validation runs .
+the corpus-based method has the advantage of working with data without word-sense annotations and performs well over the baseline .
+the wordnet-based method , requiring word- sense annotated data , has higher precision .

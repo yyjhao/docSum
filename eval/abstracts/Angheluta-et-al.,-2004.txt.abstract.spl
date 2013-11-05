@@ -1,0 +1,5 @@
+in this paper , we present four clustering algorithms for noun phrase coreference resolution .
+we developed two novel algorithms for this task , a fuzzy algorithm and its hard variant and evaluated their performance on two different sets of texts in comparison with an existing fuzzy and a hard clustering algorithm that are described in the literature .
+our algorithms perform slightly better and do not rely on a predefined threshold distance value for cluster membership .
+in addition , our fuzzy clustering algorithm seems to perform better than a hard clustering on a pronoun resolution task .
+keywords : coreference resolution , clustering .

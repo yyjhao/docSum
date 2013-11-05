@@ -1,0 +1,4 @@
+this paper describes the pascal network of excellence recognising textual entailment ( rte ) challenge benchmark ' .
+the rte task is defined as recognizing , given two text fragments , whether the meaning of one text can be inferred ( entailed ) from the other .
+this application- independent task is suggested as capturing major inferences about the variability of semantic expression which are commonly needed across multiple applications .
+the challenge has raised noticeable attention in the research community , attracting 17 submissions from diverse groups , suggesting the generic relevance of the task .

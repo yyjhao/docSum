@@ -1,0 +1,4 @@
+we explore some of the issues and challenges created by the incompatibility of diverse representation schemes for syntactic parsing .
+in particular , we examine the problem of output format conversion for evaluation of parsers that use different formalisms .
+we discuss recent related efforts , and present an evaluation of different parsers that use representations that vary not only in formalisms , but also in depth of syntactic information .
+we attempt to compare these parsers in a domain widely used for parser evaluation , the wall street journal section of the penn treebank , and in the academic biomedical literature , where the use of parsing technologies is expected to contribute in practical applications , such as information extraction and text mining .

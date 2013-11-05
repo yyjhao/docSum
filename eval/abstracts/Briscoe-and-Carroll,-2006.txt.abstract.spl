@@ -1,0 +1,4 @@
+we evaluate the accuracy of an unlexicalized statistical parser , trained on 4k treebanked sentences from balanced data and tested on the parc depbank .
+we demonstrate that a parser which is competitive in accuracy ( without sacrificing processing speed ) can be quickly tuned without reliance on large in-domain manually- constructed treebanks .
+this makes it more practical to use statistical parsers in applications that need access to aspects of predicate-argument structure .
+the comparison of systems using depbank is not straightforward , so we extend and validate depbank and highlight a number of representation and scoring issues for relational evaluation schemes .

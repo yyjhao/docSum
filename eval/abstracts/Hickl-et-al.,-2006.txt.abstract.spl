@@ -1,0 +1,2 @@
+we introduce a new system for recognizing textual entailment ( known as groundhog ) which utilizes a classification-based approach to combine lexico-semantic information derived from text processing applications with a large collection of paraphrases acquired automatically from the www .
+trained on 200,000 examples of textual entailment extracted from newswire corpora , our system managed to classify more than 75 % of the pairs in the 2006 pascal rte test set correctly .

@@ -1,0 +1,3 @@
+interest is growing in the application of syntactic parsers to natural language processing problems in biology , but assessing their performance is difficult because differences in linguistic convention can falsely appear to be errors .
+we present a method for evaluating their accuracy using an intermediate representation based on dependency graphs , in which the semantic relationships important in most information extraction tasks are closer to the surface .
+we also demonstrate how this method can be easily tailored to various application-driven 

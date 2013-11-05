@@ -1,0 +1,10 @@
+this paper introduces latent relational analysis ( lra ) , a method for measuring semantic similarity .
+lra measures similarity in the semantic relations between two pairs of words .
+when two pairs have a high degree of relational similarity , they are analogous .
+for example , the pair cat : meow is analogous to the pair dog : bark .
+there is evidence from cognitive science that relational similarity is fundamental to many cognitive and linguistic tasks ( e.g. , analogical reasoning ) .
+in the vector space model ( vsm ) approach to measuring relational similarity , the similarity between two pairs is calculated by the cosine of the angle between the vectors that represent the two pairs .
+the elements in the vectors are based on the frequencies of manually constructed patterns in a large corpus .
+lra extends the vsm approach in three ways : ( 1 ) patterns are derived automatically from the corpus , ( 2 ) singular value decomposition is used to smooth the frequency data , and ( 3 ) synonyms are used to reformulate word pairs .
+this paper describes the lra algorithm and experimentally compares lra to vsm on two tasks , answering college-level multiple-choice word analogy questions and classifying semantic relations in noun-modifier expressions .
+lra achieves state-of-the-art results , reaching human-level performance on the analogy questions and significantly exceeding vsm performance on both tasks .

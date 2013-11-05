@@ -1,0 +1,6 @@
+we present minimum bayes-risk ( mbr ) decoding over translation lattices that compactly encode a huge number of translation hypotheses .
+we describe conditions on the loss function that will enable efficient implementation of mbr decoders on lattices .
+we introduce an approximation to the bleu score ( papineni et al. , 2001 ) that satisfies these conditions .
+the mbr decoding under this approximate bleu is realized using weighted finite state automata .
+our experiments show that the lattice mbr decoder yields moderate , consistent gains in translation performance over n-best mbr decoding on arabicto-english , chinese-to-english and englishto-chinese translation tasks .
+we conduct a range of experiments to understand why lattice mbr improves upon n-best mbr and study the impact of various parameters on mbr performance .

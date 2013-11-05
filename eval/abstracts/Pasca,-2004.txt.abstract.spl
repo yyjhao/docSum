@@ -1,0 +1,8 @@
+the recognition of names and their associated categories within unstructured text traditionally relies on semantic lexicons and gazetteers .
+the amount of effort required to assemble large lexicons confines the recognition to either a limited domain ( e.g. , medical imaging ) , or a small set of predefined , broader categories of interest ( e.g. , persons , countries , organizations , products ) .
+this constitutes a serious limitation in an information seeking context .
+in this case , the categories of potential interest to users are more diverse ( universities , agencies , retailers , celebrities ) , often refined ( e.g. , slr digital cameras , programming languages , multinational oil companies ) , and usually overlapping ( e.g. , the same entity may be concurrently a brand name , a technology company , and an industry leader ) .
+we present a lightly-supervised method for acquiring named entities in arbitrary categories .
+the method applies lightweight lexico-syntactic extraction patterns to the unstructured text of web documents .
+the method is a departure from traditional approaches to named entity recognition in that : 1 ) it does not require any start-up seed names or training ; 2 ) it does not encode any domain knowledge in its extraction patterns ; 3 ) it is only lightly supervised , and data-driven ; 4 ) it does not impose any a-priori restriction on the categories of extracted names .
+we illustrate applications of the method in web search , and describe experiments on 500 million web documents and news articles .

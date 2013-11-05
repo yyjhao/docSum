@@ -1,0 +1,5 @@
+we propose a method to make a relationship between images and words .
+we adopt two processes in the method , one is a process to uniformly divide each image into sub-images with key words , and the other is a process to carry out vector quantization of the sub-images .
+these processes lead to results which show that each sub-image can be correlated to a set of words each of which is selected from words assigned to whole images .
+original aspects of the method are , ( 1 ) all words assigned to a whole image are inherited to each divided sub-image , ( 2 ) the voting probability of each word for a set of divided images is estimated by the result of a vector quantization of the feature vector of sub-images .
+some experiments show the effectiveness of the proposed method .

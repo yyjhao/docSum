@@ -1,0 +1,5 @@
+we describe bbn � s question answering work at trec 2002 .
+we focus on two issues : answer selection and confidence estimation .
+we found that some simple constraints on the candidate answers can improve a pure irbased technique for answer selection .
+we also found that a few simple features derived from the question-answer pairs can be used for effective confidence estimation .
+our results also confirmed earlier findings that the world-wide web is a very useful resource for answering trec-style factoid questions .

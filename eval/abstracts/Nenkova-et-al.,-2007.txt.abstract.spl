@@ -1,0 +1,6 @@
+human variation in content selection in summarization has given rise to some fundamental research questions : how can one incorporate the observed variation in suitable evaluation measures ?
+how can such measures reflect the fact that summaries conveying different content can be equally good and informative ?
+in this paper we address these very questions by proposing a method for analysis of multiple human abstracts into semantic content units .
+such analysis allows us not only to quantify human variation in content selection , but also to assign empirical importance weight to different content units .
+it serves as the basis for an evaluation method , the pyramid method , that incorporates the observed variation and is predictive of different equally informative summaries .
+we discuss the reliability of content unit annotation , the properties of pyramid scores , and their correlation with other evaluation methods .

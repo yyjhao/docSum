@@ -1,0 +1,4 @@
+although vast amounts of textual data are freely available , many nlp algorithms exploit only a minute percentage of it .
+in this paper , we study the challenges of working at the terascale .
+we present an algorithm , designed for the terascale , for mining is-a relations that achieves similar performance to a state-of-the-art linguistically-rich method .
+we focus on the accuracy of these two systems as a function of processing time and corpus size .

@@ -1,0 +1,4 @@
+we present a novel , simple , unsupervised method for characterizing the semantic relations that hold between nouns in noun-noun compounds .
+the main idea is to discover predicates that make explicit the hidden relations between the nouns .
+this is accomplished by writing web search engine queries that restate the noun compound as a relative clause containing a wildcard character to be filled in with a verb .
+a comparison to results from the literature suggest this is a promising approach .

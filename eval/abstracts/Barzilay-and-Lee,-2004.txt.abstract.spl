@@ -1,0 +1,4 @@
+we consider the problem of modeling the content structure of texts within a specific domain , in terms of the topics the texts address and the order in which these topics appear .
+we first present an effective knowledge-lean method for learning content models from unannotated documents , utilizing a novel adaptation of algorithms for hidden markov models .
+we then apply our method to two complementary tasks : information ordering and extractive summarization .
+our experiments show that incorporating content models in these applications yields substantial improvement over previously-proposed methods .

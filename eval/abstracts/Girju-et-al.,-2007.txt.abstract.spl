@@ -1,0 +1,5 @@
+the nlp community has shown a renewed interest in deeper semantic analyses , among them automatic recognition of relations between pairs of words in a text .
+we present an evaluation task designed to provide a framework for comparing different approaches to classifying semantic relations between nominals in a sentence .
+this is part of semeval , the 4th edition of the semantic evaluation event previously known as senseval .
+we define the task , describe the training / test data and their creation , list the participating systems and discuss their results .
+there were 14 teams who submitted 15 systems .

@@ -1,0 +1,13 @@
+traditionally , information extraction ( ie ) has focused on satisfying precise , narrow , pre-specified requests from small homogeneous corpora ( e.g. , extract the location and time of seminars from a set of announcements ) .
+shifting to a new domain requires the user to name the target relations and to manually create new extraction rules or hand-tag new training examples .
+this manual labor scales linearly with the number of target relations .
+this paper introduces open ie ( oie ) , a new extraction paradigm where the system makes a single data-driven pass over its corpus and extracts a large set of relational tuples without requiring any human input .
+the paper also introduces textrunner , a fully implemented , highly scalable oie system where the tuples are assigned a probability and indexed to support efficient extraction and exploration via user queries .
+we report on experiments over a 9,000,000 web page corpus that compare textrunner with knowitall , a state-of-the-art web ie system .
+textrunner achieves an error reduction of 33 % on a comparable set of extractions .
+furthermore , in the amount of time it takes knowitall to perform extraction for a handful of pre-specified relations , textrunner extracts a far broader set of facts reflecting orders of magnitude more relations , discovered on the fly .
+we report statistics on textrunner s 11,000,000 highest probability tuples , and show that they contain over 1,000,000 concrete facts and over 6,500,000 more abstract assertions .
+introduction and motivation .
+this paper introduces open information extraction ( oie ) a novel extraction paradigm that facilitates domain- independent discovery of relations extracted from text and readily scales to the diversity and size of the web corpus .
+the sole input to an oie system is a corpus , and its output is a set of extracted relations .
+an oie system makes a single pass over its corpus guaranteeing scalability with the size of the corpus .

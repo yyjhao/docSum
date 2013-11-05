@@ -1,0 +1,5 @@
+wikipedia provides a knowledge base for computing word relatedness in a more structured fashion than a search engine and with more coverage than wordnet .
+in this work we present experiments on using wikipedia for computing semantic relatedness and compare it to wordnet on various benchmarking datasets .
+existing relatedness measures perform better using wikipedia than a baseline given by google counts , and we show that wikipedia outperforms wordnet when applied to the largest available dataset designed for that purpose .
+the best results on this dataset are obtained by integrating google , wordnet and wikipedia based measures .
+we also show that including wikipedia improves the performance of an nlp application processing naturally occurring texts .

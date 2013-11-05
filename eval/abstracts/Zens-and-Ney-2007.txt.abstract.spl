@@ -1,0 +1,8 @@
+in phrase-based statistical machine translation , the phrase-table requires a large amount of memory .
+we will present an efficient representation with two key properties : on-demand loading and a prefix tree structure for the source phrases .
+we will show that this representation scales well to large data tasks and that we are able to store hundreds of millions of phrase pairs in the phrase-table .
+for the large chinese english kist task , the memory requirements of the phrase-table are reduced to less than 20 mb using the new representation with no loss in translation quality and speed .
+additionally , the new representation is not limited to a specific test set , which is important for online or real-time machine translation .
+one problem in speech translation is the matching of phrases in the input word graph and the phrase-table .
+we will describe a novel algorithm that effectively solves this combinatorial problem exploiting the prefix tree data structure of the phrase-table .
+this algorithm enables the use of significantly larger input word graphs in a more efficient way resulting in improved translation quality .

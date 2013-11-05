@@ -1,0 +1,5 @@
+previous work has used monolingual parallel corpora to extract and generate paraphrases .
+we show that this task can be done using bilingual parallel corpora , a much more commonly available resource .
+using alignment techniques from phrase- based statistical machine translation , we show how paraphrases in one language can be identified using a phrase in another language as a pivot .
+we define a paraphrase probability that allows paraphrases extracted from a bilingual parallel corpus to be ranked using translation probabilities , and show how it can be refined to take contextual information into account .
+we evaluate our paraphrase extraction and ranking methods using a set of manual word alignments , and contrast the quality with paraphrases extracted from automatic alignments .

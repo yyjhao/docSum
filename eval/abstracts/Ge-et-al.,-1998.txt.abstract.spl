@@ -1,0 +1,6 @@
+this paper presents an algorithm for identifying pronominal anaphora and two experiments based upon this algorithm .
+we incorporate multiple anaphora resolution factors into a statistical framework � specifically the distance between the pronoun and the proposed antecedent , gender / number / animaticity of the proposed antecedent , governing head information and noun phrase repetition .
+we combine them into a single probability that enables to identify the referent .
+our first experiment shows the relative contribution of each source of information and demonstrates a success rate of 82.9 % for all sources combined .
+the second experiment investigates a method for unsupervised learning of gender / number / animaticity information .
+we present some experiments illustrating the accuracy of the method and note that with this information added , our pronoun resolution method achieves 84.2 % accuracy .

@@ -1,0 +1,5 @@
+this paper defines a generative probabilistic model of parse trees , which we call pcfg-la .
+this model is an extension of pcfg in which non-terminal symbols are augmented with latent variables .
+fine- grained cfg rules are automatically induced from a parsed corpus by training a pcfg-la model using an em-algorithm .
+because exact parsing with a pcfg-la is np-hard , several approximations are described and empirically compared .
+in experiments using the penn wsj corpus , our automatically trained model gave a performance of 86.6 % ( f , sentences 40 words ) , which is comparable to that of an unlexicalized pcfg parser created using extensive manual feature selection .

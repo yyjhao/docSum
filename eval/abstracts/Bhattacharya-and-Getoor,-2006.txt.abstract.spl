@@ -1,0 +1,8 @@
+entity resolution has received considerable attention in recent years .
+given many references to underlying entities , the goal is to predict which references correspond to the same entity .
+we show how to extend the latent dirichlet allocation model for this task and propose a probabilistic model for collective entity resolution for relational domains where references are connected to each other .
+our approach differs from other recently proposed entity resolution approaches in that it is a ) generative , b ) does not make pair-wise decisions and c ) captures relations between entities through a hidden group variable .
+we propose a novel sampling algorithm for collective entity resolution which is unsupervised and also takes entity relations into account .
+additionally , we do not assume the domain of entities to be known and show how to infer the number of entities from the data .
+we demonstrate the utility and practicality of our relational entity resolution approach for author resolution in two real-world bibliographic datasets .
+in addition , we present preliminary results on characterizing conditions under which relational information is useful .

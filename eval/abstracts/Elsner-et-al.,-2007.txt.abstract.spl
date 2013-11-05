@@ -1,0 +1,9 @@
+note to readers : we have recently detected a software bug which affects the results of our standalone entity grid experiments . ( the bug was in our syntactic analysis code , which incorrectly failed to label the second object of a conjoint vp ; in the phrase wash the dishes and clean the sink , dishes would be correctly labeled as o but sink mislabeled as x. )
+this bug happened to have an unfortunate interaction with the this is preliminary information preamble mentioned in section 5 .
+the results in table 2 above the line are incorrect ; our relaxed entity grid does not outperform the naive grid on the discriminative test .
+this implies that our argument motivating the relaxed model at the end of section 2 is misguided .
+the design and performance of the joint model is unaffected .
+we present a model for discourse coherence which combines the local entity- based approach of ( barzilay and lapata , 2005 ) and the hmm-based content model of ( barzilay and lee , 2004 ) .
+unlike the mixture model of ( soricut and marcu , 2006 ) , we learn local and global features jointly , providing a better theoretical explanation of how they are useful .
+as the local component of our model we adapt ( barzilay and lapata , 2005 ) by relaxing independence assumptions so that it is effective when estimated generatively .
+our model performs the ordering task competitively with ( soricut and marcu , 2006 ) , and significantly better than either of the models it is based on .

@@ -1,0 +1,7 @@
+in this paper , a system for named entity recognition in the open domain ( nero ) is described .
+it is concerned with recognition of various types of entity , types that will be appropriate for information extraction in any scenario context .
+the recognition task is performed by identifying normally capitalised phrases in a document and then submitting queries to a search engine to find potential hypernyms of the capitalised sequences .
+these hypernyms are then clustered to derive a typology of named entities for the document .
+the hypernyms of the normally capitalised phrases are used to classify them with respect to this typology .
+the method is tested on a small corpus and its classifications are evaluated .
+finally , conclusions are drawn and future work considered .

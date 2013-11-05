@@ -1,0 +1,3 @@
+we present a method for unsupervised topic modelling which adapts methods used in document classification ( blei et al. , 2003 ; griffiths and steyvers , 2004 ) to unsegmented multi-party discourse transcripts .
+we show how bayesian inference in this generative model can be used to simultaneously address the problems of topic segmentation and topic identification : automatically segmenting multi-party meetings into topically coherent segments with performance which compares well with previous unsupervised segmentation-only methods ( galley et al. , 2003 ) while simultaneously extracting topics which rate highly when assessed for coherence by human judges .
+we also show that this method appears robust in the face of off-topic dialogue and speech recognition errors .

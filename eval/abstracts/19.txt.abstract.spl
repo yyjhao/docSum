@@ -1,0 +1,2 @@
+this paper presents the current status of work to extend the javelin qa system with domain semantics for question answering in restricted domains .
+we discuss how the original architecture was extended , and how the system modules must be adjusted to incorporate knowledge from existing ontologies and information provided by third-party annotation tools .

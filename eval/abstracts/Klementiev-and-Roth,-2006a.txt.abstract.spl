@@ -1,0 +1,7 @@
+named entity recognition ( ner ) is an important part of many natural language processing tasks .
+most current approaches employ machine learning techniques and require supervised data .
+however , many languages lack such resources .
+this paper presents an algorithm to automatically discover named entities ( nes ) in a resource free language , given a bilingual corpora in which it is weakly temporally aligned with a resource rich language .
+we observe that nes have similar time distributions across such corpora , and that they are often transliterated , and develop an algorithm that exploits both iteratively .
+the algorithm makes use of a new , frequency based , metric for time distributions and a resource free discriminative approach to transliteration .
+we evaluate the algorithm on an english-russian corpus , and show high level of nes discovery in russian .

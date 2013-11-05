@@ -1,0 +1,6 @@
+we present an automatic approach to tree annotation in which basic nonterminal symbols are alternately split and merged to maximize the likelihood of a training treebank .
+starting with a simple x- bar grammar , we learn a new grammar whose non- terminals are subsymbols of the original nonterminals .
+in contrast with previous work , we are able to split various terminals to different degrees , as appropriate to the actual complexity in the data .
+our grammars automatically learn the kinds of linguistic distinctions exhibited in previous work on manual tree annotation .
+on the other hand , our grammars are much more compact and substantially more accurate than previous work on automatic annotation .
+despite its simplicity , our best grammar achieves an f , of 90.2 % on the penn treebank , higher than fully lexicalized systems .

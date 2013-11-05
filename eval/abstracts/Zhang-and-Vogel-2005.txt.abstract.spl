@@ -1,0 +1,5 @@
+most statistical machine translation ( smt ) systems use phrase-to-phrase translations to capture local context information , leading to better lexical choices and more reliable word reordering .
+long phrases capture more contexts than short phrases and result in better translation qualities .
+on the other hand , the increasing amount of bilingual data poses serious problems for storing all possible phrases .
+in this paper , we describe a novel phraseto-phrase alignment model which allows for arbitrarily long phrases and works for very large bilingual corpora .
+this model is very efficient in both time and space and the resulting translations are better than the state-of-the-art systems .

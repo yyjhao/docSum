@@ -1,0 +1,3 @@
+in this paper we compare pronoun resolution algorithms and introduce a centering algorithm ( left- right centering ) that adheres to the constraints and rules of centering theory and is an alternative to brennan , friedman , and pollard 's ( 1987 ) algorithm .
+we then use the left-right centering algorithm to see if two psycholinguistic claims on cf-list ranking will actually improve pronoun resolution accuracy .
+our results from this investigation lead to the development of a new syntax- based ranking of the cf-list and corpus-based evidence that contradicts the psycholinguistic claims .

@@ -1,0 +1,6 @@
+this paper introduces a new method for identifying named-entity ( ne ) transliterations within bilingual corpora .
+current state-of-the- art approaches usually require annotated data and relevant linguistic knowledge which may not be available for all languages .
+we show how to effectively train an accurate transliteration classifier using very little data , obtained automatically .
+to perform this task , we introduce a new active sampling paradigm for guiding and adapting the sample selection process .
+we also investigate how to improve the classifier by identifying repeated patterns in the training data .
+we evaluated our approach using english , russian and hebrew corpora .

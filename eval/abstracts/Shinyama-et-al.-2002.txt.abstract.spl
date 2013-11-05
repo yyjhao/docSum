@@ -1,0 +1,9 @@
+paraphrases play an important role in the variety and complexity of natural language documents .
+however they adds to the difficulty of natural language processing .
+here we describe a procedure for obtaining paraphrases from news article .
+a set of paraphrases can be useful for various kinds of applications .
+articles derived from different newspapers can contain paraphrases if they report the same event of the same day .
+we exploit this feature by using named entity recognition .
+our basic approach is based on the assumption that named entities are preserved across paraphrases .
+we applied our method to articles of two domains and obtained notable examples .
+although this is our initial attempt to automatically extracting paraphrases from a corpus , the results are promising .

@@ -1,0 +1,7 @@
+we investigate unsupervised techniques for acquiring monolingual sentence-level paraphrases from a corpus of temporally and topically clustered news articles collected from thousands of web-based news sources .
+two techniques are employed : ( 1 ) simple string edit distance , and ( 2 ) a heuristic strategy that pairs initial ( presumably summary ) sentences from different news stories in the same cluster .
+we evaluate both datasets using a word alignment algorithm and a metric borrowed from machine translation .
+results show that edit distance data is cleaner and more easily-aligned than the heuristic data , with an overall alignment error rate ( aer ) of 11.58 % on a similarly-extracted test set .
+on test data extracted by the heuristic strategy , however , performance of the two training sets is similar , with aers of 13.2 % and 14.7 % respectively .
+analysis of 100 pairs of sentences from each set reveals that the edit distance data lacks many of the complex lexical and syntactic alternations that characterize monolingual paraphrase .
+the summary sentences , while less readily alignable , retain more of the non-trivial alternations that are of greatest interest learning paraphrase relationships .

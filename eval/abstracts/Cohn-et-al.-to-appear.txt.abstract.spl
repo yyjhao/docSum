@@ -1,0 +1,5 @@
+automatic paraphrasing is an important component in many natural language processing tasks .
+in this article we present a new parallel corpus with paraphrase annotations .
+we adopt a definition of paraphrase based on word alignments and show that it yields high inter-annotator agreement .
+as kappa is suited to nominal data , we employ an alternative agreement statistic which is appropriate for structured alignment tasks .
+we discuss how the corpus can be usefully employed in evaluating paraphrase systems automatically ( e.g. , by measuring precision , recall , and f1 ) and also in developing linguistically rich paraphrase models based on syntactic structure .

@@ -1,0 +1,6 @@
+answer validation is an emerging topic in question answering , where open domain systems are often required to rank huge amounts of candidate answers .
+we present a novel approach to answer validation based on the intuition that the amount of implicit knowledge which connects an answer to a question can be estimated by exploiting the redundancy of web information .
+two techniques are considered in this paper : a statistical approach , which uses the web to obtain a large amount of pages , and a content-based approach , which analyses text snippets retrieved by the search engine .
+both the approaches do not require to download the documents .
+experiments carried out on the trec-2001 judged-answer collection show that a combination of the two approaches achieves a high level ofperformance ( i.e. about 88 % success rate ) .
+the simplicity and the efficiency of these web-based techniques make them suitable to be used as a module in question answering systems .

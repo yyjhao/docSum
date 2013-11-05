@@ -1,0 +1,4 @@
+we propose the use of the text of the sentences surrounding citations as an important tool for semantic interpretation of bioscience text .
+we hypothesize several different uses of citation sentences ( which we call citances ) , including the creation of training and testing data for semantic analysis ( especially for entity and relation recognition ) , synonym set creation , database curation , document summarization , and information retrieval generally .
+we illustrate some of these ideas , showing that citations to one document in particular align well with what a hand-built curator extracted .
+we also show preliminary results on the problem of normalizing the different ways that the same concepts are expressed within a set of citances , using and improving on existing techniques in automatic paraphrase generation .
