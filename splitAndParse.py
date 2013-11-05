@@ -6,12 +6,12 @@ def splitSentencesAndParse(fileName):
 	with open(fileName) as f:
 		for line in f:
 			#split sentences
-			if (line.find("sentence id") != -1):
+			if (line.find("<sentence id=") != -1):
 				if (num != -1):
 					sentences.append(word)
 				num += 1
 				word = []
-			if (line.find("word") != -1):
+			if (line.find("<word>") != -1):
 				start = line.find("<word>") + 6
 				end = line.find("</word>")
 				word.append(line[start:end])

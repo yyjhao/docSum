@@ -26,21 +26,9 @@ else:
 
 sentences, coref = splitAndParse.splitSentencesAndParse("stanford-corenlp/" + filename + ".xml")
 
-print coref
+#print coref
 
 adjMax = [[0 for s in sentences] for s in sentences]
-
-for co in coref:
-    dic = {}
-    for s in co:
-        if s in dic:
-            dic[s] += 1
-        else:
-            dic[s] = 1
-    for s in dic:
-        for ss in dic:
-            if s != ss:
-                adjMax[s][ss] += (dic[s] + 0.0) / dic[ss]
 
 words_used = set()
 

@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>CS2309 Project Presentation</title>
+		<base target="_blank">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<style>
+			.reveal pre:not(.small-code){
+				font-size: 1.2em;
+				line-height: 1;
+			}
+
+			.reveal .slide-background .present{
+				opacity: 0.2;
+			}
+
+			.reveal code{
+				color: darkgreen;
+			}
+
+			.reveal pre code{
+				color: #eee;
+			}
+
+			.reveal strong{
+				color: brown;
+			}
+
+			.reveal .huge{
+				font-size: 1.5em;
+				line-height: 1.2;
+				height: auto;
+				color: brown;
+			}
+
+			.reveal .dark-back h2{
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-markdown data-background="images/info.jpg" class="dark-back">
+					## Document Summarisation
+				</section>
+				<section>
+					<section data-markdown data-background="images/Infomation-Overload.jpg" data-background-position="130% 130%" data-background-size="60%">
+						## Motivation
+
+						1. Explosive number of documents online
+						1. Necessitates a fast way to filter the information
+						1. Automatic summarisation aids readers in such processes
+
+					</section>
+					<section data-markdown>
+						## Examples: 
+						![](images/search-engine.png)
+
+						1. Search engine previews
+						1. Automatic highlights
+
+						![](images/Highlight.jpg)
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Fomulation
+
+						* Assumption
+							1. Articles consist of ideas
+							1. Ideas flow
+							1. Each sentence presents some ideas
+							1. Ideas are expressed through words
+							1. Overlap of words signifies relation of ideas
+							1. Thus relation of sentences
+					</section>
+					<section data-markdown>
+						## Fomulation
+
+						* A sentence is *summarising* if ideas from many other sentences flow to it
+						* A set of sentences with such characteristics can be a summary
+					</section>
+					<section data-markdown>
+						## Fomulation
+
+						* An article is a graph of sentences
+						* Two sentences are connected if they are related
+							* A sentence is more likely to flow to another if the edge has a higher weight.
+							* The weight of the edge is proportional to their relation
+						* Compute how likely it is to flow to a certain sentence
+						* Aggregate the top few sentences as summary
+
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						## Solution
+
+						1. The relation of two sentence, therefore the weight of edge connecting them
+							* = number of word overlaps
+							* An improvement will be to consider
+								1. Different word forms
+								1. Synonyms
+								1. Co-reference
+									* Replacing words by considering the context
+						1. The edges are bi-directional
+							* Consider using extra infomation to add direction
+					</section>
+					<section data-markdown>
+						## Solution
+
+						1. Simulate a random walk on such a graph
+							* With PageRank&trade;
+						1. Rank the sentences with their PageRank&trade; score
+						1. Pick the top sentences
+					</section>
+					<section data-markdown>
+						## Solution
+						### Potential problems	
+
+						1. Repeated *summarising* sentences may be picked
+						2. Number of top sentences to be picked is unsure
+					</section>
+				</section>
+				<section data-markdown>
+					# Q ? A : done();
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: "beige", // available themes are in /css/theme
+				transition: "linear", // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+			var ticker = 0;
+			function retick(){
+				clearInterval(ticker);
+				ticker = setInterval(function(){
+					Reveal.next();
+				}, 49000);
+			}
+
+			retick();
+			Reveal.addEventListener('slidechanged', retick);
+
+		</script>
+
+	</body>
+</html>
