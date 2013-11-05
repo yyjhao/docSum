@@ -1,0 +1,1 @@
+./ROUGE-1.5.5.pl -e data -n 4 -z SPL DUC2002-ROUGE.in.26.spl.lst 26
