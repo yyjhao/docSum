@@ -111,6 +111,9 @@ def cutoffScore(sentences, l):
 def output(sentences):
     print de_nlp("\n".join([" ".join(s) for s in sentences]))
 
+def outputspl(sentences):
+    print "\n".join([" ".join(s) for s in sentences])
+
 def de_nlp(article):
     article = "(".join(article.split("-LRB- "))
     article = "[".join(article.split("-LSB- "))
@@ -126,4 +129,5 @@ def de_nlp(article):
     return article
 
 # output(cutoffScore(sentences, l))
-output(topPercentage(sentences, l))
+# output(topPercentage(sentences, l))
+outputspl(sentences)

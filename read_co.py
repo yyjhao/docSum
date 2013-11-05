@@ -26,7 +26,7 @@ else:
 
 sentences, coref = splitAndParse.splitSentencesAndParse("stanford-corenlp/" + filename + ".xml")
 
-print coref
+# print coref
 
 adjMax = [[0 for s in sentences] for s in sentences]
 

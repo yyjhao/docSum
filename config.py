@@ -68,6 +68,7 @@ _ignored = [
     "it",
     "they",
     "are",
+    "we",
     "will",
     "-",
     "he",
@@ -99,7 +100,13 @@ _ignored = [
     "would",
     "had",
     "by",
-    "them"
+    "them",
+    "in",
+    "our",
+    "e.g.",
+    "et",
+    "al.",
+    "seem"
 ]
 
 ignored = set(_ignored + [i.capitalize() for i in _ignored])
