@@ -169,6 +169,9 @@ def summarise(filename, co_ref=True, page_rank=True, debug_output=True, num_word
             print sentences[k[1]]
             print k[0]
             print "==============="
-    ls = [k[1] for k in l]
-    ls.sort()
-    return cutoff_words([sentences[i] for i in ls], 200)
+    best_first = cutoff_words([sentences[k[1]] for k in l], 200)
+    by_order = []
+    for i in range(0, len(best_first)):
+        by_order.append((l[i][1], best_first[i]))
+    by_order.sort()
+    return [s[1] for s in by_order]
