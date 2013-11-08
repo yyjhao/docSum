@@ -89,7 +89,7 @@ def output(sentences):
     return de_nlp("\n".join([" ".join(s) for s in sentences]))
 
 def outputspl(sentences):
-    print "\n".join([" ".join(s) for s in sentences])
+    return "\n".join([" ".join(s) for s in sentences])
 
 def de_nlp(article):
     article = "(".join(article.split("-LRB- "))
@@ -105,13 +105,14 @@ def de_nlp(article):
     article = re.sub(r" ''", "\"", article)
     return article
 
-def summarise(filename, co_ref=True, page_rank=True, debug_output=True, num_words=200):
+def summarise(filepath, co_ref=True, page_rank=True, debug_output=True, num_words=200):
     if not os.path.isdir("stanford-corenlp"):
         print >> sys.stderr, "Please put the Stanford CoreNLP package into the stanford-corenlp directory."
         quit()
 
+    filename = filepath.split("/")[-1]
     if not os.path.isfile("stanford-corenlp/" + filename + ".xml"):
-        shutil.copyfile(filename, "stanford-corenlp/" + filename)
+        shutil.copyfile(filepath, "stanford-corenlp/" + filename)
         if os.name == "nt":
             os.system("cd stanford-corenlp && java -cp stanford-corenlp-3.2.0.jar;stanford-corenlp-3.2.0-models.jar;xom.jar;joda-time.jar;jollyday.jar -Xmx3g edu.stanford.nlp.pipeline.StanfordCoreNLP -file " + filename)
         else:
@@ -150,14 +151,18 @@ def summarise(filename, co_ref=True, page_rank=True, debug_output=True, num_word
         print "after overlap"
         for m in adjMax:
             print " ".join([str(i) for i in m])
-
-    G = np.array(adjMax)
-    rank = PageRank.zeroToOne(G, s=0.5)
-
     l = []
+    scores = []
+
+    if page_rank:
+        G = np.array(adjMax)
+        scores = PageRank.zeroToOne(G, s=0.5)
+    else:
+        scores = [sum(row) for row in adjMax]
+
     ind = 0
-    for r in rank:
-        l.append((r, ind))
+    for s in scores:
+        l.append((s, ind))
         ind += 1
 
     l.sort()

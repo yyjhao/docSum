@@ -7,7 +7,7 @@ if len(sys.argv) < 2:
 
 filename = sys.argv[1];
 
-sentences = summarisation.summarise(filename, debug_output=False, co_ref=False)
+sentences = summarisation.summarise(filename, debug_output=False, page_rank=False, co_ref=False)
 
 print summarisation.outputspl(sentences)
 # print sentences
