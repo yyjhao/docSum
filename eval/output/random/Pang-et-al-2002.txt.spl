@@ -1,0 +1,9 @@
+the movie-review domain .
+our data source was the internet movie database -LRB- imdb -RRB- archive of the rec .
+let ni -LRB- d -RRB- be the number of times fi occurs in document d .
+we used joachims -LRB- 1999 -RRB- svmlight package for training and testing , with all parameters set to their default values , after first length-normalizing the document vectors , as is standard -LRB- neglecting to normalize generally hurt performance slightly -RRB- .
+to prepare the documents , we automatically removed the rating indicators and extracted the textual information from the original html document format , treating punctuation as separate lexical items .
+as a whole , the machine learning algorithms clearly surpass the random-choice baseline of 50 % .
+line -LRB- 3 -RRB- of the results table shows that bigram information does not improve performance beyond that of unigram presence , although adding in the bigrams does not seriously impact the results , even for naive bayes .
+position an additional intuition we had was that the position of a word in the text might make a difference : movie reviews , in particular , might begin with an overall sentiment statement , proceed with a plot discussion , and conclude by summarizing
+in terms of relative performance , naive bayes tends to do the worst and svms tend to do the best , although the differences arent very large .

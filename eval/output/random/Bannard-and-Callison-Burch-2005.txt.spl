@@ -1,0 +1,12 @@
+past work -LRB- barzilay
+section 2.2 explains how we calculate the probability of a paraphrase .
+the probability that a foreign sentence is the translation of an english sentence is calculated by summing over the probabilities of all possible word-level alignments , a , between the sentences : thus brown et al. decompose the problem of determining whether a sentence is a good translation of another into the problem of determining whether there is a sensible mapping between the words in the sentences .
+the experiments in this paper employ one variety of contextual information .
+figure 4 shows the paraphrases for under control substituted into one of the sentences in which it occurred .
+indeed our judges thought the meaning of the paraphrases to be correct in 64.5 % of cases .
+using multiple corpora .
+since we used the whole of the german-english section of the europarl corpus , we could not try improving the alignments by simply adding more german-english training data .
+controlling for word sense .
+to do this , we used the fact that our test sentences were drawn from a parallel corpus .
+barzilay and mckeown -LRB- 2001 -RRB- extract both single - and multiple-word paraphrases from a monolingual parallel corpus .
+two disadvantages of this method are that it requires identical bounding substrings , and has bias towards single words .

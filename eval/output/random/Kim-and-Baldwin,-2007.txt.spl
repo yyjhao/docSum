@@ -1,0 +1,8 @@
+this mapping is achieved by determining which binary sr classification the test instance was sourced from , and returning a positive classification if the predicted sr coincides with the target sr , and a negative classification if not .
+first , we assume that all the positive training instances correspond uniquely to the sr in question , despite the task organisers making it plain that there is semantic overlap between the srs .
+we used two basic nc interpretation methods .
+we would then add these up to derive the overall similarity for a given nc and find that apple juice is a better match .
+at the same time , due to the inherent complexity of the sr interpretation task , we require large amounts of training data in order for our methods to perform well .
+that is , we batch evaluate all test instances on each iteration , and tag those test instances for which the best match with a training instance is above a preset threshold , which we decrease on each iteration .
+of our two basic methods the sense collocation method and co-training method are based on wordnet 2 .
+recall that we are generalising from the set of binary classification tasks in the original task , to a multiclass classification task .

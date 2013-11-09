@@ -1,0 +1,6 @@
+but even if nlp systems incorporated linguistic insights for the automatic processing of superlatives , it might not be of help : the formal semantics literature on superlatives focuses on linguistically challenging examples -LRB- many of them artificially constructed -RRB- which might however rarely occur in real data and would therefore have little impact on the performance of nlp systems .
+we illustrate this complexity in the following examples , taken from the wall street journal , where the comparison set is underlined : besides syntactic ambiguities , the determination of the comparison set can be further complicated by semantic ambiguities .
+now consider a similar test with superlatives , where the entailments
+in the cheapest car , the comparison set is formed by the set of cars , whereas in the cheapest blue car , the comparison set is the set of blue cars .
+the task is evaluated using precision -LRB- p -RRB- , recall -LRB- r -RRB- , and f-score -LRB- f -RRB- , calculated as follows : the second task is conditional on the first : once a superlative is found , its comparison set must also be identified -LRB- rarest flower in new zealand , new yorks tallest building , see section 2.2 -RRB- .
+this very first corpus of superlatives allows us to get a comprehensive picture of the behavior and distribution of superlatives in real occurring data .

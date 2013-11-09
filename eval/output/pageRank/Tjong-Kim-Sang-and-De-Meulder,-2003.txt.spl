@@ -1,7 +1,8 @@
-the shared task
+the shared task organizers were especially interested in approaches that made use of resources other than the supplied training data , for example gazetteers and unannotated data .
 in this section we discuss the sources of the data that were used in this shared task , the preprocessing steps we have performed on the data , the format of the data and the method that was used for evaluating the participating systems .
 the split between development data and test data was chosen to avoid systems being tuned to the test data .
 table 3 : main features used by the the sixteen systems that participated in the conll-2003 shared task sorted by performance on the english test data .
-aff : affix information -LRB- n-grams -RRB- ; bag : bag of words ; cas : global case information ; chu : chunk tags ; doc : global document information ; gaz : gazetteers ; lex : lexical features ; ort : orthographic information ; pat : orthographic patterns -LRB- like aa0 -RRB- ; pos : part-of-speech tags ; pre : previously predicted ne tags ; quo : flag signing that the word is between quotes ; tri : trigger words .
-a majority vote of five systems -LRB- chieu and ng , 2003 ; florian et al. , 2003 ; klein et al. , 2003 ; mccallum and li , 2003 ; whitelaw and patrick , 2003 -RRB- performed best on the english development data .
-another combination of five systems -LRB- carreras et al. , 2003b ; mayfield et al. , 2003 ; mccallum and li , 2003 ; munro et al. , 2003 ; zhang and johnson , 2003 -RRB- obtained the best result for the german development data .
+this information included gazetteers and unannotated data , and there was one participant who used the output of externally trained named entity recognition systems .
+generally the systems that only used gazetteers seem to gain more than systems that have used unannotated data for other purposes than obtaining capitalization information .
+we assume that performance a is
+we converted the output of the systems to the same iob tagging representation and searched for the set of systems from which the best tags for the development data could be obtained with majority voting .

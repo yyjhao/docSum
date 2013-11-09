@@ -1,0 +1,7 @@
+two senses are typically considered to be coordinate terms or taxonomic sisters if they share an immediate parent in the hypernym hierarchy .
+from the resulting dependency trees the evidence ehzj for each word pair -LRB- i , j -RRB- is constructed ; the evidence takes the form of a vector of counts of occurrences that each labeled syntactic dependency path was found as the shortest path connecting i and j in some dependency
+the model for predicting p -LRB- hzj i eh zj -RRB- is then trained using logistic regression , predicting the noun-pair hypernymy label from wordnet from the feature vector of lexico-syntactic patterns .
+we use a set of more than 1000 distinct clusters of english nouns collected by their algorithm over 70 million webpages6 , with each noun i having a score representing its cosine similarity to the centroid c of the cluster to which it belongs , cos -LRB- b -LRB- i , c -RRB- -RRB- .
+for each such noun pair feature , we construct a labeled training set of -LRB- m , n -RRB- - cousin relation labels from wordnet 2.1 .
+the 26 supersenses used in wordnet 2.1 are listed in table 1 ; we label a hyponym link as correct in the coarse-grained evaluation if the novel hyponym is placed under the appropriate supersense .
+comparison of inferred taxonomies and wordnet .

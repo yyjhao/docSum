@@ -1,8 +1,9 @@
 we compare wikipedia articles and links to the terms and semantic relations encoded in agrovoc .
 the next section discusses the challenges that manual thesaurus construction and maintenance present , followed by an introduction to wikipedia and an analysis of how it can be used to derive the semantic relations that are encoded in thesauri .
 hyperlinks between articles capture many of the same semantic relations as defined in the international standard for thesauri -LRB- iso 2788 -RRB- : the equivalence relation connects one or more terms to a single preferred term -LRB- or descriptor -RRB- , if they are synonymous .
-figure 5 is based on agrovocs use \/ use-for relations and shows that wikipedia covers synonymy particularly well : only 5 % of relations are absent .
-this reveals a striking trend ; both wikipedia and the document collection cover less of the thesaurus as terms become
-according to ruiz-casado et al. -LSB- 13 -RSB- , wikipedia articles can be easily and accurately matched to entries in these resources ; they advocate the use of wikipedia to extend them .
+we aim to investigate the suitability of wikipedia as a source of terms and relations from which thesauri can be constructed .
+agrovoc is a substantial thesaurus , with approximately 28,000 terms describing topics relevant to the fao and 54,000 relations between terms .
+figure 5 is based on agrovocs
+we conclude that , at least in terms of term coverage , wikipedia is substantially better suited to describing this document collection than agrovoc .
 wikipedia covers most agrovoc relations , and is a good source of semantic relations between terms .
 comparing terms an d semantic rel ations to those in a manually created domain-specific thesaurus demonstrates excellent coverage of domain terminology , and of synonymy relations between terms .

@@ -1,0 +1,7 @@
+these criteria are : document frequency -LRB- df -RRB- , information gain -LRB- ig -RRB- , mutual information -LRB- mi -RRB- , a xz statistic -LRB- chi -RRB- , and term strength -LRB- ts -RRB- .
+we computed the document frequency for each unique term in the training corpus and removed from the feature space those terms whose document frequency was less than some predetermined threshold .
+we computed for each category the x2 statistic between each unique term in a training corpus and that category , and then combined the category - specific scores of each term into two scores : the computation of chi scores has a quadratic complexity , similar to mi and ig .
+in
+this allows a straight-forward global evaluation of per document categorization performance , i.e. , measuring the goodness of category ranking given a document , rather than per category performance as is standard when applying binary classifiers to the problem .
+4.3 primary results figure 1 displays the performance curves for knn on reuters -LRB- 9,610 training documents , and 3,662 test documents -RRB- after term selection using ig , df , ts , mi and chi thresholding , respectively .
+this is an evaluation of feature selection methods in dimensionality reduction for text categorization at all the reduction levels of aggressiveness , from using the full vocabulary -LRB- except stop words -RRB- as the feature space , to removing 98 % of the unique terms .

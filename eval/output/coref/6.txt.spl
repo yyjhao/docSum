@@ -1,4 +1,5 @@
+most neural network generalization problems are studied only with respect to random sampling : the training examples are chosen at random , and the network is simply a passive learner .
 the generalization problem is posed as follows : for a given concept class c , an unknown target t , an arbitrary error rate e , and confidence 6 , how many examples do we have to draw and classify from an arbitrary distribution -LRB- p in order to find a concept c e c consistent with the examples such that e -LRB- c , t , -LRB- p -RRB- 5 .
-the backpropagation algorithm -LRB- rumelhart et
-for any consistent concept c , it must be the case that s g c g for some s e s and g e g. one may do active learning with a version space by examining instances that fall in the '' difference '' of s and g , that is , the region sag u -LCB- sag : s e s , g e gi -LRB- where a is the symmetric difference operator -RRB- .
+the
+having trained on training set 5 ' , we can say that the network configuration implements a concept c that is consistent with training set 5m we will use c to denote both the concept c and the network .6 that implements it .
 this creates a background bias over the domain that is weighted by the input distribution 19 : the networks that have the least error on these background patterns will be the ones that are the most specific according to v. in order to allow the network to converge on the actual training examples in spite of the background examples , we must balance the influence of background examples against that of the training data .

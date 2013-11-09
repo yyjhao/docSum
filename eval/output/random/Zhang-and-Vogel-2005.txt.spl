@@ -1,0 +1,13 @@
+in recent years , various phrase-to-phrase translation models -LRB- och 1999 ; marcu &amp; wong 2002 ; koehn 2003 ; zhang 2003 -RRB- have shown great advantages over the word-based systems -LRB- brown 1990 -RRB- .
+in this paper , we introduce a new strategy to cope with this problem .
+table 2 shows the n-gram coverage of the tides04 data given two training corpora .
+fbis data was used as the training set and the translation model is trained by the alignment via sentence partition -LRB- asp -RRB- algorithm described in the next section .
+it has been successfully applied in many natural language processing areas -LRB- yamamoto 2001 -RRB- and -LRB- ando and lee 2003 -RRB- .
+fast algorithm for searching substrings .
+each search uses o -LRB- logn -RRB- comparisons and each such comparison requires only one word comparison .
+the averaged time is m \/ 2 for each occurrences , where m is the averaged sentence length in cf .
+in the end , we apply the asp algorithm for each sentence pair found .
+instead of applying asp for all the
+by restraining the total occurrences to be used by asp , total locating time was reduced from 369 seconds to 1.3 seconds .
+we presented a successful statistical machine translation system using the mixture online \/ offline alignment model .
+by allowing translating arbitrarily long phrases , the translation quality is significantly better .

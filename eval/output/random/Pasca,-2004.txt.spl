@@ -1,0 +1,9 @@
+approach .
+one of the following situations may occur as illustrated in table 1 : 1 -RRB- no plural-form noun phrase exists near the end of the categorical fact ; the pair -LRB- x , n -RRB- is discarded ; 2 -RRB- a plural - form noun phrase exists near the end of the categorical fact , but it is immediately -LRB- e.g. , within 5 tokens -RRB- preceded by another plural-form noun phrase ; the pair -LRB- x , n -RRB- is discarded ; 3 -RRB- otherwise , the noun phrase is retained as the lexicalized category of the instance name n. note that one of the categories selected in table 1 is programming languages rather than other programming languages .
+on the
+the corresponding categories are classified one under the other , e.g. high-level programming languages and programming languages , or programming languages and languages .
+concurrently , it is often the case , that the user is already familiar with other similar names .
+for query refinement , the most representative categories for a name are those that are the most frequently found to contain that name .
+in the webdata collection , the ubiquitous internet is the instance name associated with the highest number of categories .
+comparatively , we use an initial set of domain-independent patterns which leads to arbitrary categories .
+the collected categories of names effectively fuse and summarize semantic relations detected within initially-isolated documents .

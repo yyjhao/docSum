@@ -1,0 +1,6 @@
+for lexical learning from unannotated corpora , our method uses context coherency in terms of polarity , an assumption that polar clauses with the same polarity appear successively unless the context is changed with adversative expressions .
+exploiting this tendency , we can collect candidate polar atoms with their tentative polarities as those adjacent to the polar clauses which have been identified by their domain-independent polar atoms in the initial lexicon .
+wilson et al. -LRB- 2005 -RRB- proposed supervised learning , dividing the resources into prior polarity and context polarity , which are similar
+according to the evaluation of the mt method -LRB- kanayama et al. , 2004 -RRB- , high - precision sentiment analysis had been achieved using the polar atoms and patterns , where the system never took positive sentiment for negative and vice versa , and judged positive or negative to neutral expressions in only about 10 % cases .
+using the polar clauses detected by the sa system with the initial lexicon , we observed the coherent precision of domain d with lexicon l , defined as : context shows the coherency of the two types of context that we considered .
+among the located candidate polar atoms , how can we distinguish true polar atoms , which should be added to the lexicon , from fake polar atoms , which should be discarded ?

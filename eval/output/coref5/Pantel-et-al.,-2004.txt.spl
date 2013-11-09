@@ -1,0 +1,7 @@
+since we treat each sentences independently from others , the algorithm runs in linear time o -LRB- n -RRB- over the corpus size , where n is number of sentences in the corpus .
+for our experiments , we extract from this corpus six data sets of different sizes : 1.5 mb , 15 mb , 150 mb , 1.5 gb , 6gb and 15gb .
+six sets were extracted for the pattern-based approach and five sets for the co - occurrence approach -LRB- the 15gb corpus was too large to process using the co-occurrence model ~ see dependency parsing time estimates in table 2 -RRB- .
+from each resulting set , we then randomly selected 50 words along with their top 3 highest ranking is-a relationships .
+each of the 11 random samples contained a maximum of 350 is-a relationships to manually evaluate -LRB- 50 random words with top 3 system , top 3 wordnet , and human generated relationship -RRB- .
+wordnet consistently generated higher precision relationships although both algorithms approach wordnet quality on 6gb -LRB- the pattern - based algorithm even
+with datasets larger than 150mb , the co - occurrence algorithm reduces its running time by filtering out grammatical relationships for words that occurred fewer than k = 40 times and hence recall is affected -LRB- in contrast , the pattern-based approach may generate a hyponym for a word that it only sees once -RRB- .

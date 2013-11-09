@@ -1,0 +1,12 @@
+the learner then asks for examples exclusively from that region .
+otherwise , t -LRB- x -RRB- = 0 , and -LRB- x , t -LRB- x -RRB- -RRB- is a negative example .
+because of this , we will need to ensure that on successive iterations we will choose
+the remainder of this article is concerned with demonstrating how an approximation of selective sampling may be implemented using a feedforward neural network trained with error backpropagation .
+the output of neuron j is computed as .
+although there are network-training algorithms that involve changing a network 's topology during training -LRB- e.g. , ash , 1989 -RRB- , we consider here only those with fixed topologies that train by weight adjustment .
+this observation is consistent with an increased efficiency of sampling as new information is incorporated earlier into the sampling process .
+practical limitations .
+related work .
+work done by hwang et al. -LRB- 1990 -RRB- implements querying for neural networks by means of inverting the activation of a trained network to determine where it is uncertain .
+an algorithm due to baum and lang -LRB- 1991 -RRB- uses queries to reduce the computational costs of training a single hidden-layer neural network .
+using bayesian analysis , one may , in effect , determine the '' number '' of configurations that disagree on a given point , and thus determine what parts of -LRB- 11 -LRB- r -RRB- are '' most '' uncertain .

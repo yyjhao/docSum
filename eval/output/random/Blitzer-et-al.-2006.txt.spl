@@ -1,0 +1,13 @@
+discriminative taggers and chunkers have been the state-of-the-art for more than a decade -LRB- ratnaparkhi , 1996 ; sha and pereira , 2003 -RRB- .
+here , ' structural learning is different from learning with structured outputs , a common paradigm for discriminative natural language processing models .
+section 3 describes the structural correspondence learning algorithm .
+the first step of scl is to define a set of pivot features on the unlabeled data from both domains .
+we follow ando and zhang -LRB- 2005a -RRB- and use the modified huber loss .
+this is step 3 of figure 3 .
+the partof-speech tag set for this data is a superset of the penn treebanks
+here we examine word features under these projections .
+figure 4 shows a row from the matrix 0 .
+the verticle line in the middle represents the value zero .
+in the future , we plan on directly incorporating scl features into a discriminative parser to improve its adaptation properties .
+by using just the unlabeled data from the target domain , however , we can view domain adaptation as a standard semisupervised learning problem .
+we are also focusing on other potential applications , including chunking -LRB- sha and pereira , 2003 -RRB- , named entity recognition -LRB- florian et al. , 2004 ; ando and zhang , 2005b ; daume iii and marcu , 2006 -RRB- , and speaker adaptation -LRB- kuhn et al. , 1998 -RRB- .

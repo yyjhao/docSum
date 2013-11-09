@@ -1,0 +1,8 @@
+several other succinct and self-indexes appeared almost simultaneously -LSB- mc -LRB- 9 , ~ t -RRB- akinen 2000 ; grossi and vitter 2000 ; sadakane 2000 -RSB- .
+we assume the standard word random access model -LRB- ram -RRB- ; the computer word size w is assumed to be such that logn = o -LRB- w -RRB- , where n is the maximum size of the problem instance .
+, sn -RCB- is easily built in time o -LRB- | s1 | + | s2 | + ... + | sn | -RRB- by successive insertions .
+we start by pointing out a simple but essential relation between tbwt , the burrows - wheeler transform of t , and hk -LRB- t -RRB- , the k-th order empirical entropy of t. note that , for each text context s of length k , all the suffixes starting with that context appear consecutively in a. therefore , the characters that precede each context -LRB- which form ts -RRB- appear consecutively in tbwt .
+recall that log -LRB- n -RRB- = nh0 -LRB- b -RRB- + o -LRB- log n -RRB- .
+they also use the fact that if is piecewise increasing in a different way , achieving 12n log ^ bits at each level instead of nh0 .
+in particular , one of those requires o -LRB- m + occ -RRB- time to locate the occ occurrences of p in t. this has not been achieved with other indexes .
+in our case , we must query the structure once per each partition 1 &lt; i &lt; m , so we

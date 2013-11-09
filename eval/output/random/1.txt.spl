@@ -1,0 +1,6 @@
+in this paper we introduce a method that is able to group the returned citations from a search engine such as google -LSB- 5 -RSB- or yahoo -LSB- 15 -RSB- for a person-name query , such that each group of citations refers to the same person .
+if two different web pages contain the same person name and the pages are similar , then we can be reasonably confident that they refer to the same person .
+we consider the number of adjacent cap-word pairs as
+for our attribute facet , we use the training set to estimate the probability that two citations refer to the same person , knowing that the web pages referenced by the citations have either the same phone , or email , or address zip code , or address city , or address state , or any combination of these attributes .
+suppose cf -LRB- e1 -RRB- is the certainty factor associated with evidence e1 for some observation b and cf -LRB- e2 -RRB- is the certainty factor associated with evidence e2 for the same observation b , then the new certainty factor cf of b , called the compound certainty factor of b , is calculated by cf -LRB- e1 -RRB- + cf -LRB- e2 -RRB- - -LRB- cf -LRB- e1 -RRB- ^ cf -LRB- e2 -RRB- -RRB- .
+note that we are not 100 % sure that the human expert was always correct .

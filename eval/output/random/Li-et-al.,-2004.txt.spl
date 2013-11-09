@@ -1,0 +1,11 @@
+in applications such as cross-lingual information retrieval -LRB- clir -RRB- and machine translation , there is an increasing need to translate out-of-vocabulary words from one language to another , especially from alphabet language to chinese , japanese or korean .
+for a given english name e as the observed channel output , one seeks a posteriori the most likely chinese transliteration c that maximizes p -LRB- ci e -RRB- .
+likewise , in c2e back - transliteration , we would find e that maximizes p -LRB- e , c -RRB- = p -LRB- c | e -RRB- \* p -LRB- e -RRB- -LRB- 2 -RRB- for a given chinese name .
+one may need to prepare multiple language-dependent grapheme-to-phoneme -LRB- g2p -RRB- conversion systems accordingly , and that is not easy to achieve -LRB- the onomastica consortium , 1995 -RRB- .
+unlike japanese katakana or korean alphabet , chinese characters are more ideographic than phonetic .
+here are some examples of resulting alignment pairs .
+in section 4 , one observes that contextual information in both
+the results are compared with those 3-gram tm in table 9 .
+three factors could have contributed : english transliteration unit size ranges from 1 letter to 7 letters .
+it is noted that in the 374 legitimate chinese characters for transliteration , character to pinyin mapping is unique while pinyin to character mapping could be one to many .
+it generates probabilistic orthographic transformation rules using a data driven approach .

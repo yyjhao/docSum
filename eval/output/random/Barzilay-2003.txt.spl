@@ -1,0 +1,9 @@
+a straightforward approach for approximating sentence fusion can be found in the use of sentence extraction for multidocument summarization -LRB- carbonell and goldstein 1998 ; radev
+attempting to solve this problem by including more sentences to restore the original context might lead to a verbose and repetitive summary .
+if language generation can be scaled to take fully formed text as input without semantic interpretation , selecting content and producing well-formed english sentences as output , then generation has a large potential payoff .
+the research challenges in developing such an algorithm lie in two areas : identification of the fragments conveying common information and combination of the fragments into a sentence .
+information that is common across sentences is shown in the table in boldface ; other portions of the sentence are specific to individual articles .
+to achieve this goal we need to identify phrases common to most theme sentences , then combine them into a new sentence .
+the upper part of figure 4 depicts the computation of nodecompare -LRB- t , t ' -RRB- , in which two top nodes are aligned with each other .
+sentence generation includes selection of a tree traversal order , lexical choice among available alternatives , and placement of auxiliaries , such as determiners .
+the third baseline consists of the basis sentence .

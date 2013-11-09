@@ -1,0 +1,11 @@
+although theoretically well motivated , the use of semantic techniques on open domain tasks is quite expensive both in terms of the involved linguistic resources and in terms of computational complexity , thus motivating a research on alternative solutions to the problem .
+first , the idea of a validation statement is still insufficient to catch
+in contrast with other measures widely used to find co - occurrence in large corpora -LRB- e.g. pointwise mutual information -LSB- 7 -RSB- -RRB- , corrected conditional probability -LRB- ccp -RRB- is not symmetric -LRB- e.g. generally -RRB- .
+the snippet lists for the first three hits are presented in table 2 .
+we set experimentally a constant weight of 2 for any question keyword .
+by substituting these values in the formula for co-occurrence weight , we obtain a weight of 8 for the first co - occurrence snippet .
+in this way we assign a weight to all the snippets in the top 100 hits .
+in case there are other candidate answers for the question an ars is calculated for each of them and the candidate with the higher value is selected .
+we wanted to check performance variation based on different types of trec-2001 questions .
+however by exploring google snippets it becomes evident that central appears in a great distance from hemisphere .
+conclusion and future work .

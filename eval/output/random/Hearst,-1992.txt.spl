@@ -1,0 +1,7 @@
+consider , for example , the predicate hyponytn -LRB- '' detonating explosive '' , '' blasting agent '' -RRB- this relation may not be a canonical isa relation but the fact that it was found in a text implies that the terms ' meanings are close .
+section 3 shows the results of searching texts for a restricted version of one of the patterns and compares the results against a hand-built thesaurus .
+since only a subset of the possible instances of the hyponymy relation will appear in a particular form , we need to make use of as many patterns as possible .
+if a more detailed interpretation is desired , the results can be passed on to a more intelligent or specialized language
+the patterns found for this relation do not tend to uniquely identify it , but can be used to express other relations as well .
+for example , the noun '' board '' appears in the synsets -LCB- board , plank -RCB- and -LCB- board , committee -RCB- , and this grouping serves for the most part as the word 's definition .
+figure 2 illustrates some of the results of a run of the acquisition algorithm on grolier 's american academic encyclopedia -LRB- grolier 1990 -RRB- , where a restricted version of pattern -LRB- la -RRB- is the target -LRB- space constraints do not allow a full listing of the results -RRB- .

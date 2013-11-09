@@ -1,0 +1,9 @@
+ultimately , our goal is to use this method in a larger system to automatically identify antonyms and distinguish near synonyms .
+a clustering algorithm separates the adjectives into two subsets of different orientation .
+it places as many words of same orientation as possible into the same subset .
+for the adjectives where a positive or negative label was assigned by both us and the independent evaluators , the average agreement on the label was 97.38 % .
+the analysis in the previous section suggests a baseline method for classifying links between adjectives : since 77.84 % of all links from conjunctions indicate
+finding groups of same-oriented adjectives .
+each pair of adjectives has an associated dissimilarity value between 0 and 1 ; adjectives connected by same orientation links have low dissimilarities , and conversely , different-orientation links result in high dissimilarities .
+we compute the average frequency of the words in each group , expecting the group with higher avsince graph connectivity affects performance , we devised a method of selecting test sets that makes this dependence explicit .
+because of the lack of actual measurements such as frequency on these abstract nodes , we also de - couple the partitioning and labeling components of our system and score the partition found under the best matching conditions for the actual labels .

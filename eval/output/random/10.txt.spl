@@ -1,0 +1,9 @@
+it may encapsulate a variety of types of information , and it may be difficult for a user to articulate fully their notion of the cluster .
+for example , a user may be involved in activities such as teaching a particular course , participating in a particular committee , hanging out with a particular group of friends , etc .
+parameter estimation in the extended speclustering model is nearly identical to that described in section 2.2 .
+datasets .
+when we examined the details of individual runs , we found that every one of the runs resulted in speclustering-bound outperforming naive bayes in terms of the nmi measure , and
+we don t put constraints on how the reviewer does the feedback , so the reviewer can make decisions freely based on how she perceives the clustering results , and gives feedback using her own interpretation of the results .
+however , cr + wx + hx performs better than cr + pp in 2 runs , which shows that meanings of clusters gives comparable information like document-cluster association .
+the baseline accuracy of news-different-3 is very high so most feedback is positive about the automatically generated summarization figure 8 shows experimental results from user feedback on one selected run from each newsgroup dataset .
+the accuracy of the selected news-related-3 run jumps from 63.23 % to 81.07 % .

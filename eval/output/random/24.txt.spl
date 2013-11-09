@@ -1,0 +1,14 @@
+documents categorization is one solution to this problem .
+a major characteristic , or difficulty , of text categorization problems is the high dimensionality of the feature space .
+section 4 presents the experiments and the results .
+let -LCB- ci -RCB- mi = 1 denote the set of categories in the target space .
+we use the more general form because text categorization problems usually have a m-ary category space -LRB- where m may be up to tens of thousands -RRB- , and we need to measure the goodness of a term globally with respect to all categories on average .
+mutual information is a criterion commonly used in statistical language modelling of word associations and related applications -LSB- 7 , 2 , 21 -RSB- .
+5 -RRB- the two classifiers differ statistically .
+sperformance measures .
+the effectiveness of a feature selection method is evaluated using the performance of knn and llsf on the preprocessed documents .
+a natural question therefore is whether these three corpus statistics are correlated .
+this bias becomes extreme when pr -LRB- t -RRB- is near zero .
+to be more precise , in theory , ig measures the number of bits of information obtained by knowing the presence or absence of a term in a document .
+our experiments quantitatively address this issue using a cross-method comparison and a cross-classifier validation .
+this suggests that

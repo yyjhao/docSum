@@ -1,0 +1,12 @@
+for parts-of-speech , we use 3 features , p _ 1
+hiero -LRB- chiang , 2005 -RRB- is a hierarchical phrase-based model for statistical machine translation , based on weighted synchronous context-free grammar -LRB- cfg -RRB- -LRB- lewis and stearns , 1968 -RRB- .
+to translate a source sentence , the goal is to find its most probable derivation using the extracted grammar rules .
+new features in hiero for wsd .
+our experiments were for chinese to english translation .
+future work can explore enlarging k .
+furthermore , we only attempt wsd classification for those chinese phrases with at least 10 training examples .
+since every month is a sub-sequence of the chunk and also contains the word e3 -LRB- every -RRB- , it is noted as a candidate translation .
+we then added the wsd features of section 3.1 into hiero and reran the experiment .
+ideally , the wsd system should be suggesting high - quality translations which are frequently part of the reference sentences .
+we have also demonstrated one way to integrate a wsd system into an mt system without introducing any rules that compete against existing rules , and where the feature-weight tuning and decoding place the wsd system on an equal footing with the other model components .
+also , different alternatives could be tried to match the translations provided by the wsd classifier against the chunks of rules .

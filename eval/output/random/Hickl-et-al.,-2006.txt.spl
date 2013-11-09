@@ -1,0 +1,8 @@
+section 2 describes the architecture of groundhog , while section 3 details the linguistic processing that we have applied to each hypothesis - text pair .
+once preprocessing is complete , text-hypothesis pairs are sent to a lexical alignment module which uses a maximum entropy-based classifier in order to determine the likelihood that either predicates or arguments selected from a text and a hypothesis lexically entail one another .
+since not all acquired paraphrases will be synonymous with either the text or hypothesis , a complete-link clustering algorithm -LRB- similar to -LRB- barzilay and lee , 2003 -RRB- -RRB- was used to cluster paraphrases into sets that are presumed that convey the same content .
+based on these features , the entailment classifier outputs both an entailment classification -LRB- either yes or no -RRB- and a confidence value , which is used to rank examples for the final rte submission .
+semantic
+creating new sources of training data .
+three classes of features were used in the alignment classifier : -LRB- 1 -RRB- a set of statistical features -LRB- including cosine similarity , and -LRB- glickman and dagan , 2005 -RRB- s lexical entailment probability -RRB- , -LRB- 2 -RRB- a set of lexico-semantic features -LRB- including wordnet similarity -LRB- pedersen et al. , 2004 -RRB- , named entity class equality , and part-of-speech equality -RRB- , and -LRB- 3 -RRB- a set of string-based features -LRB- such as levenshtein edit distance and morphological stem equality -RRB- .
+alignment features .

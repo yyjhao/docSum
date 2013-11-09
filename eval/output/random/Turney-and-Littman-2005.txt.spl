@@ -1,0 +1,12 @@
+we also discuss related work on web mining for natural language processing applications -LRB- section 2.4 -RRB- .
+one of the thirteen modules was the vsm module , exactly as presented here in section 3.2 .
+the vectors characterize the semantic relationship between a pair of words , rather than the meaning of a single word -LRB- lesk , 1969 -RRB- or the topic of a document -LRB- salton and mcgill , 1983 -RRB- .
+the memory base stored triples , consisting of a noun , its modifier , and -LRB- if available -RRB- a marker .
+however , most noun-modifier pairs are not logical metonymies , and the two tasks seem different , since it
+the semantic relation between a pair of words may have no direct , obvious connection to the individual words themselves .
+thus it is useful to have a way of adjusting the balance between precision and recall .
+figure 1 shows precision , recall , and f as the threshold on the margin varies from 0.11 to + 0.11 .
+although altavista is willing to support automated queries of the kind described here , as a courtesy , we inserted a five second delay between each query .
+section 4.2 presents the classes of noun - modifier relations that are used in our experiments -LRB- nastase and szpakowicz , 2003 -RRB- .
+for each noun-modifier pair that is to be classified , we find the two nearest neighbors .
+conclusion .

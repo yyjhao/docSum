@@ -1,0 +1,13 @@
+a probabilistic model .
+there are many factors , both syntactic and semantic , upon which a pronoun resolution system relies .
+obviously the greater the distance the lower the probability .
+this implements the observed preference for subject position antecedents .
+it is also useful to note the interaction between the head constituent of the pronoun p and the antecedent .
+in other words , the nearer the end of the story a pronoun occurs , the more probable it is that its referent has been mentioned several times .
+we measure position by the sentence number , j .
+the corpus is manually tagged with reference indices and referents ' repetition numbers .
+the method described here is based on simply counting co-occurrences of pronouns and noun phrases , and thus can employ any method of analysis of the text stream that results in referent \/ pronoun pairs -LRB- cf .
+obviously a much superior strategy would be to apply the anaphora-resolution strategy from previous sections to finding putative referents .
+thus our second method of finding the pronoun \/ noun co-occurrences is simply to parse the
+given a pronoun resolution method and a corpus , the result is a set of pronoun \/ referent pairs .
+figure 1 shows the 43 noun phrases with the highest salience figures -LRB- run using the hobbs algorithm -RRB- .

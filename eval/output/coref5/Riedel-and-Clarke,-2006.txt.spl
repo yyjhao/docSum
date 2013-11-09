@@ -1,0 +1,7 @@
+compatible coordination arguments -LRB- c4 -RRB- for each conjunction token i and each set of tokens a
+we not only present our accuracy but also provide an empirical evaluation of the runtime behavior of this approach and show how parsing can be accelerated using a simple approximation .
+to evaluate our systems we use the accuracy over labeled attachment decisions : table 1 shows our results using nine-fold cross - validation on the cross set .
+while we have presented significant improvements using additional constraints , one may wonder whether the improvements are large enough to justify further research in this direction ; especially since mcdonald and pereira -LRB- 2006 -RRB- present an approximate algorithm which also makes more global decisions .
+however , their model suffers from the same type of exponential blow-up we observe when we add all our cycle constraints in advance .
+while previous approaches which use ilp for decoding have solved each integer linear program in one run , we incrementally add constraints and solve the resulting program until no more constraints are violated .
+this allows us to efficiently use ilp for dependency parsing and add constraints which provide a significant improvement over the current state - of-the-art parser -LRB- mcdonald et al. , 2005b -RRB- on the dutch alpino corpus -LRB- see bl row in table 1 -RRB- .

@@ -1,0 +1,10 @@
+we introduce a novel approach for this problem : use paraphrases posed against an enormous text collection as a way to determine which predicates , represented as verbs , best characterize the relationship between the nouns .
+in the remainder of this paper we first describe related work , then give details of the algorithm , present preliminary results as compared to other work in the literature , and discuss potential applications .
+lin and pantel -LSB- 21 -RSB- extract paraphrases from dependency
+we can see that herb treatment is very different from the other compounds and shares no features with them : it uses and contains herb , but does not treat it .
+in this preliminary evaluation , we manually determined if verbs accurately reflected each papers set of semantic relations .
+we also omitted charitable donation and overdue fine , as the modifier in these cases is an adjective , and composer arranger , because no results were found .
+for example , they may help in the process of noun compound translation -LSB- 23 -RSB- .
+note the similarity between table 1 and table 2 .
+while the classic componential analysis has been criticized for being inherently subjective , a new dynamic componential analysis would extract the components automatically from a large corpus in a principled manner .
+conclusions and future work .

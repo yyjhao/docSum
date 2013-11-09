@@ -1,0 +1,10 @@
+in section 4 , we apply our modeling techniques to the difficult problem of learning the pronunciations of words in conversational speech .
+string distance .
+next , we explain how
+the ^ -LRB- z -RRB- variable accumulates the expected number of times that the edit operation z was used to generate the string pairs in c. convergence is achieved when the total probability of the training corpus does not change on consecutive iterations .
+in many applications , the edit cost function is simpler than the one that we have been considering here .
+a mixture transducer combines the predictions of its component transducers in a surprisingly effective way .
+hidden prototype model .
+our approach to string classification has the additional virtue ofbeing able to learn a new class from only a single example ofthat class , without any retraining .
+our seven models consist of levenshtein distance -LSB- 14 -RSB- as well as six variants resulting from our two interpretations of three models .4 our two interpretations are the stochastic edit distance -LRB- 4 -RRB- and the classic edit distance -LRB- 3 -RRB- , also called the viterbi edit distance .
+for each interpretation , we built a tied model with only four parameters , an untied model , and a mixture model consisting of a uniform mixture of the tied and untied models .

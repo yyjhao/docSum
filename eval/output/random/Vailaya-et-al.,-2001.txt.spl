@@ -1,0 +1,12 @@
+this indexing scheme was further applied in -LSB- 16 -RSB- to create a texture thesaurus for indexing a database of
+our goal was to identify a hierarchy of classes into which the vacation images can be organized .
+for , we obtained two clusters of 62 and 109 images , respectively .
+however , it is a reasonable approach to simplify the image retrieval problem .
+the performance of a bayes classifier depends critically on the ability of the features to discriminate among the various classes .
+therefore , we use spatial color information features to represent these qualitative attributes .
+non-city images tend to have randomly distributed edge directions .
+color features do much better than the edge direction features here , since color distributions remain more or less constant for natural images -LRB- blue sky , green grass , trees , plants , etc -RRB- .
+selecting the optimal features is a problem of exponential time complexity and various suboptimal heuristics have been proposed -LSB- 12 -RSB- , -LSB- 13 -RSB- .
+the best classification accuracy of 91.8 % on the entire database of 5081 images -LRB- 95.2 % on the training set and 88.3 % on an independent test set of 2540 images -RRB- was obtained with feature vectors of 75 components .
+conclusion and future work .
+these classifiers can be added to the present hierarchy to generate semantic indices into the database .

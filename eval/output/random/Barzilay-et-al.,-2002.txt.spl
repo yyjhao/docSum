@@ -1,0 +1,11 @@
+impact of ordering on the overall quality of a summary .
+if two pieces of information extracted by the content selection phase end up together but should not , in fact , be next one to another , surface devices will not repair the impaired flow of information in the summary .
+seven original summaries were considered incomprehensible by their judge , two were somewhat comprehensible , and only one original summary was fully comprehensible .
+the sentences were cleaned of explicit references -LRB- for instance , occurrences of the president were resolved to president clinton -RRB- and connectives , so that participants would not use them as clues for ordering .
+in other words , there are many acceptable orderings given one set of sentences .
+the several alternative orderings produced for a single summary exhibit commonalities .
+our goal is to remove disfluencies from
+this approach postulates a rhetorical structure which can be used to select information from an underlying knowledge base .
+multigen generates summaries of news on any topic .
+in summarization , content selection is driven by salience criteria .
+we suspect that our augmented algorithm may apply , for instance , to biographical summaries , since the information being summarized is a mixture of event-based information that can be chronologically ordered along with descriptive information about the person .

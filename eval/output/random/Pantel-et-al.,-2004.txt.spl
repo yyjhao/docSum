@@ -1,0 +1,15 @@
+in this paper , we make a
+our pattern-based algorithm is very similar to the one used by hearst .
+much of the research discussed above takes a similar approach of searching text for simple surface or lexico-syntactic patterns in a bottom-up approach .
+if the word wave occurred in this context , then the con - text is a feature of wave .
+following -LRB- pantel and lin 2002 -RRB- , a committee for each semantic class is constructed .
+a committee is a set of representative elements that unambiguously describe the members of a possible class .
+the highest scoring term is the name of the class .
+just to parse a 1 tb corpus , this approach requires approximately 10.2 years -LRB- see table 2 -RRB- .
+for example , consider the following 2 sentences : applying a pos tagger -LRB- brill 1995 -RRB- gives the following output : algorithm .
+time complexity .
+news 0.5 gb , ap newswire 2gb , new york times 2gb , reuters 0.8 gb , wall street journal 1.2 gb , and various online news website 1.5 gb .
+from each resulting set , we then randomly selected 50 words along with their top 3 highest ranking is-a relationships .
+recall .
+to approximate recall , we defined a relative recall measure and conducted a question answering -LRB- qa -RRB- task of answering definition questions .
+we compare the results of both our systems with wordnet .

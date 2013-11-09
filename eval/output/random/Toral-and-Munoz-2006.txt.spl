@@ -1,0 +1,10 @@
+these are internal and external evidence .
+e.g. portugal could be an instance in a location gazetteer .
+initially , and specially for the muc conferences , most of the ner systems developed did belong to the knowledge-based approach .
+gazetteers could
+another reason for this is that the class of common nouns -LRB- the ones being triggers -RRB- is much more stable than the class of proper names -LRB- the ones in entity gazetteers -RRB- .
+as an example , the first sentence of the entry portugal in the simple english wikipedia 3 is presented here : for every noun in a definition we obtain the synset of wordnet that contains its first sense4 .
+as it has been said in the abstract , the application of a pos tagger is optional .
+the procedure to determine if an entry from word - net is an instance or a word class is similar to the one used in -LRB- magnini et al. , 2002 -RRB- .
+we do not present results without the first heuristic as through our experimentation it proved to increase both recall and precision for every entity category .
+this is mainly due to the fact of the high interaction between this category and location combined with the practically absence of traditional entities of the organization type such as companies .

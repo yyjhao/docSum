@@ -1,0 +1,10 @@
+kanada -LRB- 1999 -RRB- employed a list of 96k entities and reported 96 % precision for geographic name disambiguation in japanese text .
+information extraction from wikipedia .
+in wikitext , the references to other wikipedia articles are within pairs of double square brackets .
+we obtained 377k entities with one surface form , 166k entities with two surface forms , and 79k entities with three surface forms .
+the tags are named after the title of the wikipedia list page .
+to extract contextual clues for an entity , we use the information present in that entity s page and in the other articles that explicitly refer to that entity .
+for example , tv series becomes
+the disambiguation process employs a vector space model , in which a vectorial representation of the processed document is compared with the vectorial representations of the wikipedia entities .
+we evaluated the system in two ways : on a set of wikipedia articles , by comparing the system output with the references created by human contributors , and on a set of news stories , by doing a post - hoc evaluation of the system output .
+we defined a disambiguation to be correct if it represented the best possible wikipedia article that would satisfy a user s need for information and incorrect otherwise .

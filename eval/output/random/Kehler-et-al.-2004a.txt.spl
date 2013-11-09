@@ -1,0 +1,11 @@
+the supervised model was trained using the improved iterative scaling algorithm for maximum entropy -LRB- maxent -RRB- models described by berger et al. -LRB- 1996 -RRB- with binary-valued features .
+-LRB- such a model can be seen as providing a probabilistic measure of antecedent salience . -RRB-
+no difficult syntactic attachments are attempted , and the results are errorful .
+the annotated pronouns in both sets include only those that are ace markables , i.e. , ones that refer to entities of the following types : persons , organizations , geopoliticalentities -LRB- politically defined geographical regions , their governments , or their people -RRB- , locations , and facilities .
+grammatical role : includes features pertaining to the syntactic position of the potential antecedent .
+linguistic form : includes features pertaining to the referential form of the potential antecedent , e.g. , whether it is a proper name , definite description , indefinite np , or a pronoun .
+we then performed a
+the results are given in table 1 , which show a gradual increase in performance as the number of pronouns grows .
+although the self-acquired training data is no doubt highly noisy , the resulting model is still accurate enough to perform well at selecting correct antecedents .
+the overall average performance figures are the same to the first decimal place whether or not the results from this segment are included .
+the underlying reasons for this success .

@@ -1,0 +1,10 @@
+first , we develop a log-linear model of translation which is globally trained on a significant number of parallel sentences .
+this problem of over-fitting is exacerbated in discriminative models with large , expressive , feature sets .
+section 4 reports our experimental setup and results , and finally we conclude in section 5 .
+with this undoubted advantage come four major challenges when compared to standard frequency count smt models : there is no one reference derivation .
+these systems all include regularisation , thereby addressing problem 2 .
+instead we model the translation distribution with a latent variable for the derivation , which we marginalise out in training and decoding .
+performance is evaluated using cased bleu4 score on the test set .
+in decoding we can search for the maximum probability derivation , which is the standard practice in smt , or for
+an informal comparison of the outputs on the development set , presented in table 4 , suggests that the translation optimising discriminative model more often produces quite fluent translations , yet not in ways that would lead to an increase in bleu score .9 this could be considered a side-effect of optimising likelihood rather than bleu .
+having demonstrated the efficacy of our model with very simple features , the logical next step is to investigate more expressive features .

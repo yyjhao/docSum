@@ -1,0 +1,6 @@
+we explore available lexical resources -LRB- wordnet and roget 's thesaurus -RRB- to provide the attributes , and machine learning -LRB- ml -RRB- tools to find the most salient combinations of attributes .
+they learn semantic relations between a noun and its modifier in a medical domain , to which the list of semantic relations and the lexical resource have been tailored .
+the aim is to find rules which justify the existence of certain type of interaction between the two elements of the base np , through the analysis of information extracted from publicly available resources for a general domain , more general semantic relations , and ml methods that present an insightful look into the nature of the data .
+what we look for is a set of rules to constitute the core of a semi-automatic learning system , which will use these rules to tag other examples with semantic
+the analysis we perform using this small set of data will reveal which relations are harder to characterize and need more data , and which of them have indicators that are easier to capture in rules .
+c5 .0 uses the training part of the data to build a decision tree or rule set model of the data , which is then applied to the test set .

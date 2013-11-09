@@ -1,0 +1,8 @@
+this means that there are several high-performance parsers available , trained on the ptb , which produce a pre-defined set of clause , phrase and word category -LRB- part-of-speech or pos -RRB- labels .
+therefore , we decided to subject these two parsers to a series of tests designed to determine where the strengths and weaknesses of each lay when assessed on tasks important to biological language processing applications .
+for example , if the gold standard contained a nominal _ subject dependency between two
+if a word is mistakenly treated as a discardable punctuation symbol , it will be omitted from the dependency graph .
+we measured the parsing time of the 1757-sentence corpus using the gnu time utility , calculating the total processor time for each parser as the sum of the user and system times for the process .
+the other parsers in the evaluation varied hugely , ranging from slightly under an hour -LRB- for the model 1 collins parser -RRB- to nearly 10 hours -LRB- for the lexicalised stanford parser -RRB- .
+however , since these subsets do not match , and the other parsers in the evaluation do not produce any function suffixes at all , we completely discarded them in order to maintain a level playing field .
+this suggests that omitted dependencies were usually replaced with a single erroneous arc .

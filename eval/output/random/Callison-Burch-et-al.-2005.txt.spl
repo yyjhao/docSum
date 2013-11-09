@@ -1,0 +1,8 @@
+the linguistics data consortium provides an excellent set of off the shelf arabic-english and chinese-english parallel corpora for the annual nist machine translation evaluation exercises .
+decoders such as pharaoh -LRB- koehn , 2004 -RRB- primarily use lookup tables for the storage of phrases and their translations .
+in this paper we : motivate the problem with storing enumerated phrases in a table by examining the memory requirements of the method for the nist data set detail the advantages of using long phrases in smt , and examine their potential coverage describe a suffix array-based data structure which allows for the retrieval of translations of arbitrarily
+there is little generalization in current smt implementations , and consequently longer phrases generally lead to better translation quality .
+assuming we use ints to represent words and indices , and shorts to represent word alignments , we get the following memory usage : calculating phrase translation probabilities .
+the length of the span in the suffix array l k + 1 indicates the number of occurrences of e in the corpus .
+look up the sentence number that includes w , and retrieve the corresponding sentences e and f , and their alignment a .
+the computational complexity is therefore bounded by o -LRB- 2 log -LRB- n -RRB- -RRB- where n is the length of the corpus .

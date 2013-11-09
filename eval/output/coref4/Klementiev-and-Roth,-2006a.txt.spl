@@ -1,0 +1,7 @@
+in this work , we make two independent observations about named entities encountered in such corpora , and use them to develop an algorithm that extracts pairs of nes across languages .
+in essence , the algorithm we present uses temporal alignment as a supervision signal to iteratively train a discriminative transliteration model , which can be viewed as a distance metric between and english ne and a potential transliteration .
+at this point , our algorithm takes a simplistic approach also for the english side of the corpus each unique word had its own equivalence class although , in principle , we can incorporate works such as -LRB- li et al. , 2004 -RRB- into the algorithm .
+positive examples used for iterative training are pairs
+unless mentioned otherwise , the transliteration model was initialized with a subset of 254 pairs of nes and their transliteration equivalence classes .
+in each iteration , we used the current transliteration model to find a list of 30 best transliteration equivalence classes for each ne .
+in keeping with our objective to provide as little language knowledge as possible , we introduced a simplistic approach to identifying transliteration equivalence classes , which sometimes produced erroneous groupings -LRB- e.g. an equivalence class for ne lincoln in russian included both lincoln and lincolnshire on figure 6 -RRB- .

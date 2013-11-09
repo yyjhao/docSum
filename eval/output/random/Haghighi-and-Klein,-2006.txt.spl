@@ -1,0 +1,10 @@
+learning , broadly taken , involves choosing a good model from a large space of possible models .
+for example , the word reported may be linked to said , which is in turn a prototype for the part-of-speech vbd .
+for our part-of-speech tagging experiments , we used data from the english and chinese penn treebanks -LRB- marcus et al. , 1994 ; ircs , 2002 -RRB- .
+for example , merialdo -LRB- 1991 -RRB- presents experiments learning hmms using em .
+to evaluate in this setting , model labels must be mapped to target labels .
+we automatically extracted the prototype list by taking our data and selecting for each annotated label the top three occurring word types which were not given another label more often .
+we then performed an svd on the matrix to obtain a reduced rank approximation .
+in order to compare with their results , we projected the tagset to the coarser set of 17 that they used in their experiments .
+when smith and eisner -LRB- 2005 -RRB- include tagging dictionary entries for all words in the first half of their 24k tokens , giving tagging knowledge for 3,362 word types , they do achieve a higher accuracy of 88.1 % .
+in this work , we learned this structure automatically though prototype similarity features without manually constraining the model -LRB- see figure 8 -RRB- , though we did change

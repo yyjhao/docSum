@@ -1,0 +1,13 @@
+given a pronunciation p , we may want to search for the word sequence w that maximizes p -LRB- w ip -RRB- .
+the first is dijkstra 's shortest-path graph algorithm -LRB- dijkstra 1959 -RRB- .
+our em training goes like this : english sounds -LRB- in capitals -RRB- with probabilistic mappings to japanese sound sequences -LRB- in lower case -RRB- , as learned by estimation-maximization .
+only mappings with conditional probabilities greater than 1 % are shown , so the figures may not sum to 1 .
+furthermore , in disallowing '' swallowing , '' we were able to automatically remove hundreds of potentially harmful pairs from our training set , e.g. , -LRB- -LRB- b aa r b er sh aa p -RRB- 4 - \* -LRB- b aab a a -RRB- -RRB- .
+only two pairs failed to align when we wished they had both involved turning english y uw into japanese u , as in -LRB- -LRB- y uw k ah l ey l 1y -RRB- + -4 -LRB- u k urere -RRB- -RRB- .
+note also that our model translates each english sound without regard to context .
+japanese sounds to katakana .
+for , 7 for 7 , and 7 for i. to generate pre-ocr text , we collected 19,500 characters worth
+a k-best list can also be used as input to a later context-based disambiguator , or as an aid to a human translator .
+of these , 222 were missing from an on-line 100,000-entry bilingual dictionary .
+discussion .
+i will now proceed to decode . ''

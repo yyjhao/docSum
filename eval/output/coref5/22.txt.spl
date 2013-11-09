@@ -1,0 +1,6 @@
+in the mid-1990s , kautz and selman developed a social network extraction system from the web , called referral web -LSB- 21 -RSB- .
+it estimates the strength of relevance of two persons x and y by putting a query x and y to a search engine : if x and y share a strong relation , we can find much evidence that might include their respective homepages , lists of co-authors in technical papers , citations of papers , and organizational charts .
+some particular social networks on the web have been investigated in detail : l. adamic has classified the social network at stanford and mit students , and has collected relations among students from web link structure and text information -LSB- 1 -RSB- .
+the number of queries to a search engine becomes a problem when we apply extraction of a social network to a large-scale community : a network with 1000 nodes requires 500,000 queries and grows with o -LRB- n2 -RRB- , where n is the number of persons .
+various types of retrieval are possible on the social network : researchers can be sought by name , affiliation , keyword , and research field ; related researchers to a retrieved researcher are listed ; and
+following that concept , we propose a new architecture to extract a social network from the web , called super social network mining .

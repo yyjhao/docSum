@@ -1,0 +1,11 @@
+instead of maintaining a single chart , each node in the grammar network maintains a chart containing partially built structures belonging to the grammatical category represented by the node .
+the lexical ambiguities are handled by the parser instead of a tagger .
+formally , given a tree t with root root consisting of d dependency relationships -LRB- headi , relationshipi , modifieri -RRB- , the probability of t is given by : minipar parses newspaper text at about 500 words per second on a pentium-iii 700mhz with 500mb memory .
+the triple database records the fillers of slotx and sloty separately .
+the database used in our experiments contains over 200,000 distinct paths .
+most of the paths can be considered as paraphrases of the original expression .
+using the methods discussed in section 3 , we extracted 7 million paths from the parse trees -LRB- 231,000 unique -RRB- and stored them in a triple database .
+for example , one of the paraphrases of q2 is the multi-sentence query '' when the norwegian
+when a word takes less than two modifiers , it will not be the root of any path .
+we can simply compute the similarity between its slotx and its sloty .
+better tools are necessary to tap into the vast amount of textual data that is growing at an astronomical pace .

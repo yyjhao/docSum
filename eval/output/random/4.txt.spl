@@ -1,0 +1,12 @@
+descriptions of the topics are also available at -LSB- 6 -RSB- .
+our scoring formula is cluster dependent because of the '' dynamic word-weight '' where idf0 -LRB- w -RRB- is the traditional okapi inverse document frequence , nw is the number of documents -LRB- so far -RRB- that contain word w , and ncl is the number of documents -LRB- so far -RRB- in cluster cl and nw , , l is the number of documents in the cluster which contain the word ; the a is an adjustable parameter .
+furthermore , the detection system makes a sharp decision -LRB- with respect to a threshold -RRB- and places the candidate
+thus documents whose score with respect to the on-topic cluster fall below the detection system 's clustering threshold can not be tracked .
+if the score exceeds the merging threshold 0 .
+these results were obtained in preparation for the tdt-2000 evaluation .
+= co , the cluster centroid is determined only by the training documents and is never updated . -RRB-
+-LRB- 9 -RRB- we show od-optimal performance of our tracking system as a function of the dynamic weight a , the cluster-dependent component of our document-document sim ilarity function .
+we also incorporated named-entity type features into our tracking system .
+the classifier was maximum-entropy model with features taken from a five word local context window .
+its performance , illustrated in the upper right curve of fig .
+conclusion .

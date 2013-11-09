@@ -1,7 +1,7 @@
 this work could predict words for a given image by computing words that had a high posterior probability given the image .
 evaluation method : each image in the test set is automatically annotated , by taking every region larger than the threshold , quantizing the region to a blob , and using the lexicon to determine the most likely word given that blob ; if the probability of the word given the blob is greater than the relevant threshold , then the image is annotated with that word .
 as figure 5 shows , we have some words with very high recall values , and we have some words with low recall .
-table 1 shows recall and precision values for some good
 table 1 and table 2 shows that , with the increasing null threshold values , the number of words decreases but we have more reliable words .
 for some good words -LRB- e.g : ocean -RRB- we have up to 70 % correct prediction as shown in figure 7 ; this means that , on this test set , when the word ocean is predicted , 70 % of the time it will be predicted on an ocean region .
 we can predict the words with high recall correctly , but we can not predict some words which have very low recall .
+some low probability words are assigned to null , but the

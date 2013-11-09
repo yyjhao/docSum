@@ -1,0 +1,10 @@
+note that the count c -LRB- 9 , ~ t -RRB- can be larger or smaller than c -LRB- g , ~ t -RRB- discussed above .
+this concept is usually referred to as overfit since the model fits aspects of the training data that do not lead to improved prediction .
+because the probabilities involved below will be so incredibly tiny , we
+since the contingency table with c -LRB- s , ~ t -RRB- = 1 having the greatest significance -LRB- lowest p-value -RRB- is the 1-1-1 table , using the threshold of a + e can be used to exclude all of the phrase pairs occurring exactly once -LRB- c -LRB- 9 , ~ t -RRB- = 1 -RRB- .
+different pruning thresholds were considered : no pruning , 14 , 16 , 18 , 20 , and 25 .
+this is identified as 14 ' in the results .
+table 2 presents the sizes of the various parallel corpora showing the number of parallel sentences , n , for each of the experiments , together with the a thresholds -LRB- a = log -LRB- n -RRB- -RRB- .
+a pruning threshold of 20 corresponds to discarding roughly 90 % of the phrase - table .
+these phrase pairs are amazingly frequent in the phrase - tables and are pruned in all of the experiments except when pruning threshold is equal to 14 .
+for large thresholds , there will not be 30 choices and so there will be no effect .

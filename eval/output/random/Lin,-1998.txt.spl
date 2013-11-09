@@ -1,0 +1,13 @@
+another problem with the previous similarity measures is that their underlying assumptions are often not explicitly stated .
+almost all of the comparisons and evaluations of previous similarity measures have been based on empirical results .
+our goal is to arrive at a definition of similarity that captures the above intuitions .
+in this section , we first make a set of additional assumptions about similarity that we believe to be reasonable .
+for example , the similarity between two documents can be calculated by comparing the sets of words in
+we assume that the overall similarity of the two documents is a weighted average of their similarities computed from different perspectives .
+string similarity .
+the average precision values are then averaged over all the words in wroot .
+it can be seen that much better results were achieved with sim than with the other similarity measures .
+parsing took about 72 hours on a pentium 200 with 80mb memory .
+instead , we are comparing a generic river and a generic ditch .
+our definition of similarity yielded slightly higher correlation with human judgments than the other two measures .
+maximum similarity values : with most similarity measures , the maximum similarity is 1 , except simresnik , which have no upper bound for similarity values .

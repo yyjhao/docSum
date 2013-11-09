@@ -1,0 +1,13 @@
+the list with which we work consists of 50 semantic relations , and was developed by unifying three separate lists of relations , for the syntactic levels of multi-clause sentences , clauses and noun phrases -LRB- nastase and szpakowicz , 2001a -RRB- .
+they store noun-modifier-indicator-relation tuples -LRB- the indicator is usually a preposition -RRB- , and match a new np with previously stored patterns .
+the best of several possible cuts in the tree is chosen according to the mdl principle .
+our approach is different .
+it handles nouns , adjectives and adverbs extracted from the base noun phrases in the data set with which we work .
+wordnet 's hierarchy is not regular , and vectors as those above can have varying lengths .
+in experiments with c5 .0 both the ratio and the misclassification costs were varied .
+ripper was used in experiments which had three parameters - lexical resource -LRB- possible values : wordnet1 roget 's -RRB- , misclassification costs -LRB- possible values : used \/ not used -RRB- , nominalization \/ adjectivalization information -LRB- possible values : used \/ not
+- according to the sense of the modifier .
+this is accomplished by computing distances between the test data and the recorded instances .
+the mbl process does not perform well on our examples because some attributes are more significant than others .
+conclusions .
+for this we have used different lexical resources and ml tools .

@@ -1,0 +1,7 @@
+it is worth noting that business intelligence is not the only scenario where customer satisfaction is of interest : individual customers often use resources on the web to find other people s reviews of products and companies to
+even reviews with positive scores contain useful negative opinions : after all a less-than-perfect score often indicates that the car may have a few shortcomings , despite a relatively high score .
+once the sentences for a make and model of car have been assigned to clusters and have received a sentiment score from the sentiment classifier , the visualization component -LRB- section 3.1 -RRB- displays the clusters and the keyword labels that were produced for the sentences associated with that car .
+another requirement is that it allow the user to easily access the specifics of a given topic .
+clusters containing an equal mixture of positive and negative sentiment or containing mostly sentences classified as belonging to the other category are colored white .
+for each sentence , we produced a sparse binary feature vector , with one feature for each word or punctuation mark .
+the data set shows a clear skew towards positive reviews : in the annotated data set , positive sentences comprise 62.33 % of the data , sentences of type other comprise 23.27 % , and negative sentences 14.4 % .

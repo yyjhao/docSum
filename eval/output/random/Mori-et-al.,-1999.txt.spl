@@ -1,0 +1,17 @@
+however , with the exception of a very small vocabulary , we can not find such learning data nor can we prepare them .
+the more the size of the data increases , the more difficult assigning keywords to images portion by portion becomes .
+so we have to develop an another method to avoid this fundamental problem .
+each image is divided equally into rectangular parts because it is the simplest and fastest way to divide images .
+in this paper , data incremental vector quantization is used .
+each cluster has one centroid and each data belongs to a cluster uniquely .
+determining correlated words from an unknown image .
+using estimated likelihood p -LRB- wi i
+second , the nearest centroids are found for all divided parts in the feature space .
+the encyclopedia contains about 60,000 items and about 10,000 images in total .
+two-fold cross validation is used in the experiment .
+results .
+year ' , ' japan ' -RRB- .
+in table 3 , the hit rate means the rate of originally attached words in output words .
+the difference between the hit rate in scale 4 and the hit rate in scale 0 shows that vector quantization is effective .
+in other words , this case corresponds to the random selection from the set of words which has a biased frequencies .
+conclusion .

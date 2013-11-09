@@ -1,5 +1,6 @@
 however , little has been done to develop methods for combining fine-grained opinion information to form a summary representation in which expressions of opinions from the same source \/ target1 are grouped together , multiple opinions from a source toward the same target are accumulated into an aggregated opinion , and cumulative statistics are computed for each source \/ target .
+presented with sources of opinions , we approach the problem of source coreference resolution as the closely related task of noun phrase coreference resolution .
 second , due mainly to the time-consuming nature of coreference annotation , np coreference information is incomplete in our data set : np mentions that are not sources of opinion are not annotated with coreference information -LRB- even when they are part of a chain that contains source nps -RRB- 4 .
 in the context of source coreference resolution we consider a noun phrase to correspond to -LRB- or match -RRB- a source if the source and the np cover the exact same span of text .
 we determine the match in the problematic cases using a set of heuristics : if a source matches any np exactly in span , match that source to the np ; do this even if multiple nps overlap the source we are dealing with nested np s .
-we prefer : the outermost np because longer nps contain more information ; the last np because it is likely to be the head np of a
+we prefer

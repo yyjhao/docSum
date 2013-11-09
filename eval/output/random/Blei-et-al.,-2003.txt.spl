@@ -1,0 +1,9 @@
+the plsi approach , which we describe in detail in section 4.3 , models each word in a document as a sample from a mixture model , where the mixture components are multinomial random variables that can be viewed as representations of topics .
+we aim to demonstrate in the current paper that , by taking the de finetti theorem seriously , we can capture significant intra-document statistical structure via the mixing distribution .
+the parameters for a k-topic plsi model are k multinomial distributions of size v and m mixtures over the k hidden topics .
+in practice , a tempering heuristic is used to smooth the parameters of the model for acceptable predictive performance .
+a good way of illustrating the differences between lda and the other latent topic models is by considering the geometry of the latent space , and seeing how a document is represented in that geometry under each model .
+unfortunately , in the mixture model setting , simple laplace smoothing is no longer justified as a maximum a posteriori method
+figure 8 -LRB- bottom -RRB- is a document from the trec ap corpus which was not used for parameter estimation .
+while demonstrating the power of lda , the posterior analysis also highlights some of its limitations .
+lda suffers from neither of these problems .

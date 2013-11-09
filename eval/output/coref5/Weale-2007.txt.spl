@@ -1,0 +1,9 @@
+in this paper , we propose to use wikipedia to extract the hidden information in entities for more accurate classification than would be able if we used surface features alone .
+additionally , they observe that since their algorithm is language independent , additional languages can be added by simply running their algorithm over the appropriate wikipedia language set .
+these entities are then
+to do this , we run an named entity recognizer over each document in the corpus and extract the named entities to be used for article matching .
+we ran the lingpipe named entity recognizer2 over our data set in order to get our named entities , an off-the-shelf named entity recognizer .
+we then reconfigured our training examples based on the results of the entity recognition process , resulting in a 28 positive \/ 12 negative training split .
+the resulting classification vectors are based on all categories found somewhere in our training set -LRB- rather than all possible categories -RRB- .
+in this paper , we have introduced a method for document categorization using wikipedia as a large - scale knowledge base for information about named entities .
+our toy corpus was used to demonstrate the initial concept , but we need to see how this might work in a more general classification context .

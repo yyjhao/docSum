@@ -1,0 +1,13 @@
+finally , we summarize our approach , pointing out conclusions and future directions of our work .
+algorithm performance and time efficiency are key issues in our task , considering that our final goal is to apply this classification in a question answering system .
+smo breaks the large quadratic programming -LRB- qp -RRB- optimization problem
+we used weka -LRB- witten and frank , 2005 -RRB- an implementation of the smo -LRB- platt , 1998 -RRB- .
+features .
+in addition , a feature , called numinter , indicating the number of words between nominals is considered .
+the feature related to the query provided for each sentence is only considered in the categories c and d according to the semeval restrictions .
+in addition to the word - net sense keys , provided for each nominal , we extracted its synset number and its lexical file number .
+each vector has a dimension of 13 coordinates .
+each coordinate represents one of the 13 nodes in the third level of depth in wordnet .
+the best settings for a particular dataset can be found only by experimentation .
+to improve results across the whole dataset , wider use of semantic information is necessary .
+also , information concerning the synsets of the list of the context words could be of great value for the classification task -LRB- wang et al. , 2006 -RRB- .

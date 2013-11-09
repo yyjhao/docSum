@@ -1,0 +1,11 @@
+the contributions of this paper are threefold .
+explicit semantic analysis .
+we opted to use wikipedia because it is currently the largest knowledge repository on the web .
+entries of this vector reflect the relevance of the corresponding concepts to text t. to compute semantic relatedness of a pair of text fragments we compare their vectors using
+empirical evaluation .
+esa also achieves much better results than the other wikipedia-based method recently introduced -LSB- strube and ponzetto , 2006 -RSB- .
+table 5 shows the results for computing relatedness of entire documents .
+the former technique is the simplest , but performs sub-optimally when the texts to be compared share few words , for instance , when the texts use synonyms to convey similar messages .
+lsa is essentially a dimensionality reduction technique that identifies a number of most prominent dimensions in the data , which are assumed to correspond to latent concepts .
+in their extensive survey of relatedness measures , budanitsky and hirst -LSB- 2006 -RSB- argued that the notion of relatedness is more general than that of similarity , as the former subsumes many different kind of specific relations , including meronymy , antonymy , functional association , and others .
+we proposed a novel approach to computing semantic relatedness of natural language texts with the aid of very large scale knowledge repositories .

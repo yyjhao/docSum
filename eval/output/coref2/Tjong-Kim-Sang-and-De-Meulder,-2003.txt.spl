@@ -1,0 +1,7 @@
+the shared task organizers were especially interested in approaches
+in this section we discuss the sources of the data that were used in this shared task , the preprocessing steps we have performed on the data , the format of the data and the method that was used for evaluating the participating systems .
+the split between development data and test data was chosen to avoid systems being tuned to the test data .
+hidden markov models were employed by four of the systems that took part in the shared task -LRB- florian et al. , 2003 ; klein et al. , 2003 ; mayfield et al. , 2003 ; whitelaw and patrick , 2003 -RRB- .
+four groups examined the usability of unannotated data , either for extracting training instances -LRB- bender et al. , 2003 ; hendrickx and van den bosch , 2003 -RRB- or obtaining extra named entities for gazetteers -LRB- de meulder and daelemans , 2003 ; mccallum and li , 2003 -RRB- .
+a majority vote of five systems -LRB- chieu and ng , 2003 ; florian et al. , 2003 ; klein et al. , 2003 ; mccallum and li , 2003 ; whitelaw and patrick , 2003 -RRB- performed best on the english development data .
+another combination of five systems -LRB- carreras et al. , 2003b ; mayfield et al. , 2003 ; mccallum and li , 2003 ; munro et al. , 2003 ; zhang and johnson , 2003 -RRB- obtained the best result for the german development data .

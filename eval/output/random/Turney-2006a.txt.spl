@@ -1,0 +1,12 @@
+therefore our experiments are based on two tasks that provide objective performance measures .
+we discuss the results in section 7 and conclude in section 8 .
+the relational similarity between two pairs of words , x1 : y1 and x2 : y2 , is the degree to which their semantic relations are analogous .
+the value of each element vi in v ~ is based on the
+make one list of phrases that begin with xi and end with yi and a second list for the opposite order .
+a given pattern might appear in zero , one , or two of the lists for xi : yi .
+each cell is replaced with its logarithm , multiplied by a weight based on the negative entropy of the corresponding column vector in the matrix .
+apply svd : after log and entropy transforms , apply the singular value decomposition -LRB- svd -RRB- to x -LRB- golub and van loan , 1996 -RRB- .
+the pattern x lion y is anomalous , but the other patterns seem reasonable .
+any differences in performance are due to the ranking method alone .
+the f measure is the harmonic mean of precision and recall .
+although the performance on the sat analogy questions -LRB- 54.6 % -RRB- is near the level of the average senior highschool student -LRB- 57 % -RRB- , there is room for improvement .

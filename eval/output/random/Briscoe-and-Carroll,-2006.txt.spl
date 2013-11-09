@@ -1,0 +1,10 @@
+however , much of this progress has been made with systems based on large lexicalized probabilistic context - free like -LRB- pcfg-like -RRB- models trained on the wall street journal -LRB- wsj -RRB- subset of the penn tree - bank -LRB- ptb -RRB- .
+f1-score percentages range from the mid - to high-70s , suggesting that the relational evaluation is harder than parseval .
+in 2 , we describe our development methodology and the resulting system in greater detail .
+3 describes the extended depbank that we have developed and motivates our additions .
+similarly , our baseline system consists of a pipeline of modules .
+the grammar is designed to enumerate possible valencies for predicates by including separate rules for each pattern of possible complementation in english .
+extending and validating depbank .
+the gr scheme includes one feature in depbank -LRB- passive -RRB- , several splits of relations in depbank , such as adjunct , adds some of depbanks featural information , such as subord form , as a subtype slot of a relation -LRB- ccomp -RRB- , merges depbanks oblique with iobj , and so forth .
+the macroaverage is calculated by taking the average of each measure for each individual relation and feature ; the microaverage measures are calculated from the counts for all relations and features .4 indentation of grs shows degree of specificity of the relation .
+however , it is impossible to

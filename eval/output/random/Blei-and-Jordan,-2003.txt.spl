@@ -1,0 +1,9 @@
+these papers
+in particular , the task of annotating an unannotated image can be viewed formally as a classification problemfor each word in the vocabulary we must make a yes \/ no decision .
+standard discriminative classification methods , however , generally make little attempt to uncover the probabilistic structure of either the input domain or the output domain .
+following previous work -LSB- 2 -RSB- , each image is segmented into regions by the n-cuts algorithm -LSB- 12 -RSB- .
+the joint distribution of the hidden factor z and the image \/ caption -LRB- r , w -RRB- is : given a fixed number of factors k and a corpus of images \/ captions , the parameters of a gm-mixture model can be estimated by the em algorithms .
+this yields k gaussian distributions over features and k multinomial distributions over words which together describe a clustering of the images \/ captions .
+the joint distribution can be obtained from the graph by taking the product of the conditional distribution of nodes given their parents -LRB- see eq .
+this distribution provides a description of each image in word-space which we use to find images that are similar to the words of the query .
+given good features , the corr-lda model can be applied to any kind of annotated data such as video \/ closed-captions , music \/ text , and gene \/ functions .

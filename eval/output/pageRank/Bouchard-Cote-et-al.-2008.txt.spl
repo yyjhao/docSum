@@ -1,6 +1,5 @@
 inspired by the prevalence of multi-scale rules in diachronic phonology and modern phonological theory , we develop a new scheme in which rules possess a set of features , and a distribution over rules is defined using a log - linear model .
 assume we have a fixed set of word types -LRB- cognate sets -RRB- in our vocabulary v and a set of languages l. each word type i has a word form wil in each language l e l , which is represented as a sequence of phonemes which might or might not be observed .
-the probabilistic model specifies a distribution over the
 recent work in computational linguistics on probabilistic forms of optimality theory has begun to use a similar approach , characterizing the distribution over word forms within a language using a log-linear model applied to features of the words -LSB- 17 , 9 -RSB- .
-for example , reconstructed ibero \/ trinta \/ to spanish \/ treinta \/ -LRB- thirty -RRB- is generated in an odd fashion using rules \/ e \/ to \/ i \/ and \/ n \/ to \/ in \/ .
+in this paper , we presented a novel probabilistic model of phonological change , in which the rules governing changes in the sound of words are parametrized using the features of the phonemes involved .
 using a log-linear model to define the probability of a rule being applied results in a straightforward inference procedure which can be used to both produce accurate reconstructions as measured by edit distance and identify linguistically plausible rules that account for phonological changes .

@@ -1,0 +1,11 @@
+we then define a generative model of this form , and describe a markov chain monte carlo algorithm for inference in this model .
+combining syntactic and semantic generative models .
+we will explore a simple composite model , in which the syntactic component is an hmm and the semantic component is a topic model .
+the em algorithm can be applied to the graphical model shown in figure 1 , treating the document distributions b , the topics and classes o , and the transition probabilities 7r as parameters .
+we assume that the document-specific distributions over topics , b , are drawn from a dirichlet -LRB- a -RRB- distribution , the topic distributions o -LRB- z -RRB- are drawn from a dirichlet -LRB- ^ -RRB- distribution , the rows of the transition matrix for the hmm are drawn from a dirichlet -LRB- y -RRB- distribution , the class distributions o -LRB- c -RRB- are drawn from a dirichlet -LRB- s -RRB- distribution , and all dirichlet distributions are symmetric .
+we dedicated one hmm class to sentence start \/ end markers -LCB- .
+, ?
+.
+the other set collapsed these tags into ten high-level designations : adjective , adverb , conjunction , determiner , foreign , noun , preposition , pronoun , punctuation , and verb .
+we computed classification accuracy using 10-fold cross validation for the 20th sample from a single chain .
+the slightly lower accuracy of the composite model may result from having fewer

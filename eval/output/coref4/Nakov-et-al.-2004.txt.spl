@@ -1,0 +1,6 @@
+citances provide us a way to build a model of many of the different ways to express a relationship type r between entities of type a and b. we can seed learning algorithms with several examples using concepts that are semantically similar to a and similar to b , for which relation r is known to hold .
+in addition to supporting advance queries over facts as just described , citation indexes can be improved by combining methods that use citances context -LRB- e.g. , mercer and di marco -LSB- 23 -RSB- -RRB- with methods that use citances content -LRB- e.g. -LSB- 7 -RSB- -RRB- .
+they use the identified citances to improve summarization performance by using them as a feature when classifying candidate sentences in the citing paper , giving lower weight to citances as compared to other sentences .
+in the next subsections we describe how these paraphrases are extracted from the citances and present a preliminary evaluation of the results for one set of citances .
+table 1 shows there is a significant drop in correctness when going from set 2 to set 3 -LRB- see the
+we have demonstrated some initial results in paraphrasing citances that discuss the same topic , but more work remains to be done to improve results , and to group similar citances together .

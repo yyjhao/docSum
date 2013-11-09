@@ -1,0 +1,12 @@
+another challenge is to find a way to empirically evaluate the performance of any such pattern ranking algorithm .
+the value of each element vi in v ~ is based on the frequency , for the pair x : y , of a corresponding pattern pi .
+for example , we allow an adjective such as inflated to match a noun such as inflation .
+replace the first word in each phrase with the generic marker x and replace the last word with y. the intervening words in each phrase may be either left as they are or replaced with the wildcard \* .
+this choice pair is called the solution and the other choices are distractors .
+the algorithms may skip questions when the word pairs do not co-occur in the corpus .
+for the tf-idf methods in table 4 , f is the
+the difference between these two methods is statistically significant with 95 % confidence .
+experiments with noun-modifiers .
+the testing example is classified according to the label of its nearest neighbor in the training set .
+table 5 shows the resulting precision , recall , and f , when ranking patterns by pertinence .
+for applications such as building a thesaurus , lexicon , or ontology , this level of performance suggests that our algorithm could assist , but not replace , a human expert .

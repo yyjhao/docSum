@@ -1,0 +1,8 @@
+we then attempt to map all instances of the modifier and head noun as the heads of nps in a transitive sentential context onto our set of constructions via lexical similarity over the verb , to arrive at an interpretation : e.g. we would hope to predict that possess is sufficiently similar to
+we also make use of corelex in dealing with the semantic relation time and the rasp parser -LRB- briscoe and carroll , 2002 -RRB- to determine the dependency structure of corpus data .
+here , we rely on an independent set of contextual evidence , as outlined in section 6.1 .
+we then mapped these verbs to seed verbs using wordnet : : similarity and moby s thesaurus -LRB- see section 5 for details -RRB- .
+to test our method , we extracted 2,166 nc types from the wall street journal -LRB- wsj -RRB- component of the penn treebank .
+we additionally extracted sentences containing the head noun and modifier in pre-defined constructional contexts from the amalgam of : -LRB- 1 -RRB- the brown corpus subset contained in the penn treebank , -LRB- 2 -RRB- the wsj portion of the penn treebank , and -LRB- 3 -RRB- the british national corpus -LRB- bnc -RRB- .
+discussion .
+having said this , the performance of the kim and baldwin -LRB- 2005 -RRB- method over product , topic , location and source is superior to that of our method .

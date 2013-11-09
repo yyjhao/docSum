@@ -1,0 +1,7 @@
+here , in contrast , we use em to estimate the map parameters in a hierarchical generative model similar to lda -LRB- note that our m step explicitly takes into account the dirichlet priors on ^ , ^ -RRB- .
+only the latent variables of the syntactic classes are treated as a sequence with local dependencies while latent assignments of topics are treated similar to the lda model , namely topics extraction is not benefited from the additional information conveyed in the structure of words .
+our model is similar to the lda model in tying together parameters of different documents via a hierarchical generative model , but unlike the lda model it does not assume documents are bags of words .
+unlike the lda and mixture of unigrams models , the htmm model -LRB- which allows infrequent topic transitions within a document -RRB- is no longer invariant to a reshuffling of the words .
+specifically , we compute -LRB- 1 -RRB- the expected number of topic transitions that ended in the topic z and -LRB- 2 -RRB- the expected number of co-occurrence of a word w with a topic z .
+we show that the
+rather it assumes that the topics of words in a document form a markov chain , and that subsequent words are more likely to have the same topic .

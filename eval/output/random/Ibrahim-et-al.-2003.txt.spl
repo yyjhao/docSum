@@ -1,0 +1,9 @@
+because there is disagreement regarding the exact definition of paraphrases -LRB- dras , 1999 -RRB- , we employ that operating definition that structural paraphrases are roughly interchangeable within the specific configuration of syntactic structures that they specify .
+the words at the ends of a path are considered to be features of that path .
+for each path , they recorded the different features -LRB- words -RRB- that were associated with the path and
+unique semantic class -LRB- e.g. , places and people -RRB- denotes correspondence .
+unique part of speech -LRB- i.e. , the only noun pair in the sentences -RRB- denotes correspondence .
+the search algorithm explicitly rejects paths that contain conjunctions and punctuation .
+the average precision of our approach stands at just over forty percent ; the average length of the paraphrases learned was 3.26 words long .
+although our data spareness problem can be alleviated simply by gathering a larger corpus , the type of parallel text our algorithm requires is rather hard to obtain , i.e. , there are only so many translations of so many foreign novels .
+similar to the work of barzilay and lee -LRB- 2003 -RRB- , who have applied paraphrase generation techniques to comparable corpora consisting of different newspaper articles about the same event , we are currently attempting to solve the data sparseness problem by extending our approach to non-parallel corpora .

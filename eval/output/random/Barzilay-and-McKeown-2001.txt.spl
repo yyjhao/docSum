@@ -1,0 +1,12 @@
+in addition to learning lexical paraphrases , the method also learns syntactic paraphrases , by generalizing syntactic patterns of the extracted paraphrases .
+extracted paraphrases are then applied to the corpus , and used to learn new context rules .
+our approach yields a set of paraphrasing patterns by extrapolating the syntactic and morphological structure of extracted paraphrases .
+traditionally , alternative verbalizations are derived from a manual corpus analysis , and are , therefore , application specific .
+this characteristic of our corpus is similar to problems with noisy and comparable corpora -LRB- veronis , 2000 -RRB- , and it prevents us from using methods developed in the mt community based on clean parallel corpora , such as -LRB- brown et al. , 1993 -RRB- .
+alignment is performed using dynamic programming -LRB- gale and church , 1991 -RRB- with a weight function based on the number of common words in a sentence pair .
+starting with identical words in aligned sentences as a seed , we can incrementally learn the good contexts , and in turn use them to learn new paraphrases .
+in fact , a similar representation was used by -LRB- jacquemin et al. , 1997
+the parameter of the contextual classifier is a context length .
+the results .
+each context was evaluated by two judges -LRB- other than the authors -RRB- .
+precision for our system was 71.6 % and for melameds was 52.7 % .

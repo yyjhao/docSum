@@ -1,0 +1,11 @@
+the other group g2 has walshaw , cross , everett and mcmanus .
+sethi from paper p6 and johnson from paper p5 belong to the same group since they are tied by the identical entity labels for the ahos and ullmans in the two papers .
+li et al. -LSB- 22 -RSB- propose a generative model for disambiguating entities in text documents that captures joint probabilities for co - occurrence .
+in the next section , we expand the model to handle ambiguous author references .
+now
+the result is that we are no longer sure of the mapping from the author reference to the author entity .
+we introduce a scalar parameter that allows us to have additional control on the rate of cluster merges .
+next , to gain further understanding of the conditions under which entity resolution benefits from collaborative group information , we evaluate our model on a broad range of synthetic datasets with varying relational structure .
+the average number of collaborators per author is 2.15 in citeseer and 4.5 in hep .
+various parameters allow us to control the number of documents generated , the average number of authors per document and the level of noise in the references .
+figure 3 -LRB- b -RRB- shows that lda-er naturally benefits from higher sample sizes for the author references .

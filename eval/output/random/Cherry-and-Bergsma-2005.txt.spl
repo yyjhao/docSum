@@ -1,0 +1,13 @@
+this allows us to train on and resolve all third-person pronouns in a large question answering corpus .
+we assume that in each case , one candidate from the candidate list is selected as the antecedent before p and k are generated .
+given models for the
+finally , we know of no approach that handles pronouns referring to verb phrases or implicit entities .
+we remove from c all times , dates , addresses , monetary amounts , units of measurement , and pronouns identified as pleonastic .
+we use the syntactic constraints from binding theory to eliminate candidates -LRB- haegeman , 1994 -RRB- .
+however , we found we could construct an even more precise pronoun model for common words by examining unambiguous cases in our training data .
+when using this initializer , we perform our initial e-step by weighting candidates according to pru -LRB- p1 l -RRB- , instead of weighting them uniformly .
+supervised extension .
+we handle unseen pairs with additive smoothing .
+maxent extension : the models produced by -LRB- 4 -RRB- are used as features in a log-linear model trained on the development key -LRB- section 3.6 -RRB- .
+therefore , we implemented em with several models that used only pronoun category , but none were able to surpass the initializer in accuracy on the test key .
+we have demonstrated that unsupervised learning is possible for pronoun resolution .

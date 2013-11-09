@@ -1,0 +1,8 @@
+semantic relation classification is an important but understudied language problem arising in many nlp applications , including question answering , information retrieval , machine translation , word sense disambiguation , information extraction , etc .
+each example consists of a sentence , two nominals to be judged on whether they are in the target semantic relation , manually annotated wordnet 3.0 sense keys for these nominals , and the web query used to obtain that example : related work .
+rosario et al. -LRB- 2002 -RRB- use a descent of hierarchy , which characterizes the relation based on the
+kim and baldwin -LRB- 2006 -RRB- propose to use a predefined set of seed verbs and multiple resources : wordnet , corelex , and moby s thesaurus .
+we then mine the web for sentences containing both noun1 and noun2 , from which we extract features , consisting of word -LRB- s -RRB- , part of speech -LRB- verb , preposition , verb + preposition , coordinating conjunction -RRB- , and whether noun1 precedes noun2 .
+once extracted , the features are used to calculate the similarity between two noun pairs .
+if there was a single highest-scoring training example , we predicted its class for that test example .
+table 3 and 4 show the results for our a and c runs for different amounts of training data : 45 -LRB- a1 , c1 -RRB- , 90 -LRB- a2 , c2 -RRB- , 105 -LRB- a3 , c3 -RRB- and 140 -LRB- a4 , c4 -RRB- .

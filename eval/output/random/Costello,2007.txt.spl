@@ -1,0 +1,7 @@
+finally , section 6 finishes the paper with some discussion and ideas for future work .
+using wordnet -LRB- miller , 1995 -RRB- , version 2.0 , a corpus of noun-noun compounds was constructed such that each compound was annotated with the correct wordnet noun senses for constituent words , the correct semantic relation between those words , and the correct wordnet verb sense for that relation , as described below .
+compound disambiguation algorithm .
+the approach to compound disambiguation taken here is similar to that taken by for example kim &amp; baldwin -LRB- 2005 -RRB- and girju , moldovan , tatu , &amp; antohe -LRB- 2005 -RRB- , and works by finding other compounds containing words from the same semantic categories as the words in the compound to be disambiguated : if a particular relation occurs frequently in those other compounds , that relation is probably also the correct relation for the compound in question .
+the relations and sense-pairs with the highest scores are those most likely to be correct for that compound and to be most important for its relational meaning .
+this paper has described a system for automatically seslecting relations between nominals which uses the pro algorithm and compound corpus to form features for pairs of nominals -LRB- consisting of candidate
+there is one very obvious area for improvement in the system described here .

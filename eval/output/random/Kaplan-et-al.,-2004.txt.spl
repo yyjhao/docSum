@@ -1,0 +1,10 @@
+the xle parser was used to produce packed representations , specifying all possible grammar analyses of the input .
+as a separate parameter , xle also lets the user limit the length of medial constituents , i.e. , constituents that do not appear at the beginning or the end of a sentence -LRB- ignoring punctuation -RRB- .
+dynamic programming for estimation and stochastic disambiguation .
+there are two operations involved in stochastic disambiguation , namely calculating feature-values from a parse forest and calculating node weights from
+average sentence length of sentences in depbank is 19.8 words , and the average number of dependencies per sentence is 65.4 .
+finally , the trivial rewritings were used to , for example , change stmt-type decl in the grammar to stmt-type declarative in the dependency bank .
+4 .
+the final evaluation was done on the remaining 560 examples .
+clearly , both versions of the xle system achieve a significant reduction in error rate over the collins parser -LRB- 12 % for the core xle system and 20 % for the complete system -RRB- at an increase in parsing time of a factor of only 1.49 for the core xle system .
+contrary to conventional wisdom , we found that the shallow system was not substantially faster than the deep parser operating on a core grammar , while the deep system was significantly more accurate .

@@ -1,7 +1,6 @@
-many natural language processing applications , such as question answering -LRB- qa -RRB- , information extraction -LRB- ie -RRB- , -LRB- multi-document -RRB- summarization , and machine
-more concretely , textual entailment is defined as a directional relationship between pairs of text expressions , denoted by t - the entailing '' text '' , and h - the entailed '' hypothesis '' .
+many natural language processing applications , such as question answering -LRB- qa -RRB- , information extraction -LRB- ie -RRB- , -LRB- multi-document -RRB- summarization , and machine translation -LRB- mt -RRB- evaluation , need a model for this variability phenomenon in order to recognize that a particular target meaning can be inferred from different text variants .
+it is similar in spirit to evaluation of applied tasks such as question answering and information extraction , in which humans need to judge whether the target answer
 within each application setting the annotators selected both positive entailment examples -LRB- true -RRB- , where t is judged to entail h , as well as negative examples -LRB- false -RRB- , where entailment does not hold -LRB- a 50 % -50 % split -RRB- .
-annotators selected a text t from some news story which includes a certain relation , for which a paraphrase acquisition system produced a set of paraphrases -LRB- see acknowledgements -RRB- .
 the remaining examples were considered as the gold standard for evaluation , split to 567 examples in the development set and 800 in the test set , and evenly split to true \/ false examples .
 this is slightly different from the common use of average precision measures in ir and qa , in which systems rank the results by confidence of positive classification and correspondingly only true positives are considered correct .
 a system which does well in recognizing when entailment does not hold would do just as well in terms of accuracy and cws as a system tailored to recognize true examples .

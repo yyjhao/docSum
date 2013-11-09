@@ -1,0 +1,11 @@
+our current project focuses on biomedical text , both because it poses interesting challenges , and because it should be possible to make inferences about propositions that hold between scientific concepts within biomedical
+we have found that we can use such algorithms to classify relationships between two-word noun compounds with a surprising degree of accuracy .
+section 6 concludes the paper and discusses future work .
+li and abe -LRB- 1998 -RRB- use a minimum description length-based algorithm to find an optimal tree cut over wordnet for each classification problem , finding improvements over both lexical association -LRB- hindle and rooth , 1993 -RRB- and conceptual association , and equaling the transformation-based results .
+downing -LRB- 1977 -RRB- argues that the semantics of ncs can not be exhausted by any finite listing of relationships .
+we used a feed-forward network trained with conjugate gradient descent .
+on the other hand , if we look at relations 14 and 15 , we find a wider range of words , and in some cases the words in the test set are not present in the training set .
+other test set words such as immunisation and carcinogen do not appear in the training set at all .
+in other words , it seems that the meshk-based categorization does better when generalization is required .
+conclusions .
+our approach handles mixed-class relations naturally .

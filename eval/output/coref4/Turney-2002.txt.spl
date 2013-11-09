@@ -1,0 +1,7 @@
+hatzivassiloglou and mckeown -LRB- 1997 -RRB- use a four-step supervised learning algorithm to infer the semantic orientation of adjectives from constraints on conjunctions : all conjunctions of adjectives are extracted from the given corpus .
+the third step is to calculate the average semantic orientation of the phrases in the given review and classify the review as recommended if the average is positive and otherwise not recommended .
+although they do not consider the task of classifying reviews , it seems their algorithm could be plugged into the classification algorithm presented in section 2 , where it would replace pmi-ir and equation -LRB- 3 -RRB- in the second step .
+a positive review could be summarized by picking out the sentence with the highest positive semantic orientation and a negative review could be summarized by extracting the sentence with the lowest negative semantic orientation .
+in addition to
+the algorithm has three steps : -LRB- 1 -RRB- extract phrases containing adjectives or adverbs , -LRB- 2 -RRB- estimate the semantic orientation of each phrase , and -LRB- 3 -RRB- classify the review based on the average semantic orientation of the phrases .
+previous work on determining the semantic orientation of adjectives has used a complex algorithm that does not readily extend beyond isolated adjectives to adverbs or longer phrases -LRB- hatzivassiloglou and mckeown , 1997 -RRB- .

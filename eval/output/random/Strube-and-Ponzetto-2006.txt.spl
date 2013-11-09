@@ -1,0 +1,11 @@
+in addition , since may 2004 it provides also a taxonomy by means of its categories : articles can be assigned one or more categories , which are further categorized to provide a category tree .
+as of January 2006 , 94 % of the articles have been categorized into 91,502 categories .
+we make use of the online encyclopedia and its folksonomy for computing the relatedness of words and evaluate the performance on standard datasets designed for that purpose .
+we then hook to the category tree by extracting the categories the pages belong to .
+page retrieval and disambiguation .
+the learner was trained and tested using all available google , wordnet and wikipedia scores .
+finkelstein et al. -LRB- 2002 -RRB- suggest that
+the score of r = 0.59 outperforms the combined wordnet word-vector measure of finkelstein et al. -LRB- 2002 -RRB- -LRB- r = 0.55 -RRB- , with the correlation score dropping minimally when leaving the google scores out -LRB- r = 0.58 -RRB- .
+to establish a competitive baseline system , we re - implemented the machine learning based coreference resolver of soon et al. -LRB- 2001 -RRB- .
+in order to test the effects of including semantic relatedness information within a coreference learner , the system is first run using the 12 features of the baseline model to be replicated , viz .
+the optimal system configurations always include features from both wordnet and wikipedia .

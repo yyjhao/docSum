@@ -1,0 +1,11 @@
+we are exploring empirical methods of determining semantic relationships between constituents in natural language .
+in these cases , we simply multi-labeled them : for example , cell growth is both activity and change , tumor regression is ending \/ reduction and change and bladder dysfunction is location and defect .
+this group includes migraine headache , guinea pig , and hbv carrier .
+we use the mesh hierarchy for generalization across classes of nouns ; we use it instead of the other resources in the umls primarily because of meshs hierarchical structure .
+.
+given the indicator variable representation of these features , this logistic regression essentially forms a table of log-odds for each lexical item .
+multi-class classification is a difficult problem -LRB- vapnik , 1998 -RRB- .
+on the other hand , if we look at relations 14 and 15 , we find a wider range of words , and in some cases the words
+the initial results are quite promising .
+these results can be compared with vanderwende note that for unseen words , the baseline lexical-based logistic regression approach , which essentially builds a tabular representation of the log-odds for each class , also reduces to random guessing .
+we have also shown that representing the nouns of the compound by a very general representation -LRB- model 2 -RRB- achieves a reasonable performance of aout 52 % accuracy on average .

@@ -1,0 +1,10 @@
+in our architecture , a question is first processed by the question analysis component .
+although the answering agents adopt fundamentally different strategies in their individual components , they have performed quite comparably in past trec qa tracks -LRB- voorhees , 2001 ; voorhees , 2002 -RRB- .
+we seek to improve the knowledge-based agent s performance in passage retrieval and answer selection through better answer type identification by consulting the statistical agent s expected answer type .
+performance evaluation .
+we ran each of the baseline and combined systems on the two test sets .
+this is because the trec 10 questions were taken into account for manual rule refinement in the knowledge-based agent , resulting in higher baselines on the trec 10 test set .
+as the downstream answer selection component takes redundancy into account in answer ranking , incorrect answers may reinforce one another and become top ranked answers .
+the italicized and underlined cells contain possible candidates , while the rest of the cells can not produce correct 1 st place answers using our current voting algorithm .
+these results represent success rates of 79.9 % and 79.4 % for our answer-level combination algorithm on the two test sets .
+best performance using the % correct metric was achieved by the three-level algorithm that combines after each stage , while highest average precision was obtained

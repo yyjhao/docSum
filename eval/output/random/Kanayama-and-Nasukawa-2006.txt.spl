@@ -1,0 +1,11 @@
+thus our learning method can be used not only by the developers of the system , but also by end - users .
+in contrast , our system detects factual polar clauses as well as sentiments .
+the third step is polarity assignment : the polarity of each proposition is examined by considering the polar atoms .
+our basic tactic for clause-level sa is the high - precision detection of polar clauses based on deep syntactic analysis .
+we used a total of 103 domain-independent modality patterns , most of which are derived from the mt method , and some patterns are manually added for this work to achieve higher recall .
+if there is an adversative conjunction such as - kedo -LRB- but -RRB- in the third sentence in -LRB- 14 -RRB- , a flag is attached to the relation , as denoted with 0 in figure 2 .
+the results in the center column of table 5 indicate the number is slightly different among corpora , but all of them are far from perfect coherency .
+the right
+this is extremely high precision for this task , because the correctness of both the extraction and polarity assignment was evaluated simultaneously .
+the relative recall 1.28 in the digital camera domain means the recall is increased from 43 % 10 to 55 % .
+size of the initial lexicon .

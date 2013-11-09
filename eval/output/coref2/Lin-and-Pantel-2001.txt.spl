@@ -1,0 +1,8 @@
+while richardson used paths as features to compute the similarity between words , we use words as features to compute the similarity of paths .
+we make an assumption that this is an extension to the distributional hypothesis : extended distributional hypothesis : if two paths tend to occur in similar contexts , the meanings of the paths tend to be similar .
+note that in information theory , mutual information refers to the mutual information between two random variables rather than between two events as used in this paper .
+given a path p , our algorithm for finding the most similar paths of p takes three steps : retrieve all the paths that share at least one feature with p and call them candidate paths .
+for each of the paths p in the second column of table 5 , we ran the dirt algorithm to compute its top-40 most similar paths using the triple database .
+we introduced the extended distributional hypothesis , which states that paths in dependency trees have similar meanings if they tend to connect similar sets of words .
+treating paths as binary relations , our algorithm is able to generate inference rules by searching for similar paths .
+our experimental results show that the extended distributional hypothesis can indeed be

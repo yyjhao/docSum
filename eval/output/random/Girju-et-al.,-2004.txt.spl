@@ -1,0 +1,12 @@
+in the last few years , many researchers -LRB- blaheta and charniak 2000 -RRB- , -LRB- gildea and jurafsky 2002 -RRB- , -LRB- gildea and palmer 2002 -RRB- , -LRB- pradhan et al. 2003 -RRB- have focused on the automatic prediction of semantic roles using statistical techniques .
+however , there are more complex situations when the underlying verb has more than one sense that refers to an action \/ event .
+for example , the pattern can not be encoded by s-genitives -LRB- e.g. , language teacher , teacher of language -RRB- .
+in most cases , the relation between the nominalized noun and the other noun argument can be captured from the subcategorization properties of the underlying verb .
+the semantic classification of nominalizations involves first the detection of a nominalization , the selection of the correct sense of the root verb , and finally the detection of the semantic relationship with the other noun .
+these adjectives are derived from nouns , so the construction is just a special case of nominalization between nouns .
+the data .
+-LRB- quirk et al. 1985 -RRB- -RRB- .
+table 3 also shows that there is a subset of semantic relations that can be fully encoded by all types of np constructions .
+using a state - of-the-art open-text wsd system , each word is mapped into its corresponding wordnet 2.0 sense .
+for this experiment we considered only examples that could be found
+9 .

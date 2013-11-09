@@ -1,6 +1,6 @@
-we explore
 they learn semantic relations between a noun and its modifier in a medical domain , to which the list of semantic relations and the lexical resource have been tailored .
 the aim is to find rules which justify the existence of certain type of interaction between the two elements of the base np , through the analysis of information extracted from publicly available resources for a general domain , more general semantic relations , and ml methods that present an insightful look into the nature of the data .
+what we
 the analysis we perform using this small set of data will reveal which relations are harder to characterize and need more data , and which of them have indicators that are easier to capture in rules .
 specifically , the paragraph corresponding to each possible sense in roget 's was intersected with the mutt-net -LRB- the ordered set of hypernyms , hyponyms , meronyms and holonyms -RRB- of the word sense in wordnet ; the paragraph with the best overlap was taken to provide the context for the correct sense of the word under analysis .
 ripper was used in experiments which had three parameters - lexical resource -LRB- possible values : wordnet1 roget 's -RRB- , misclassification costs -LRB- possible values : used \/ not used -RRB- , nominalization \/ adjectivalization information -LRB- possible values : used \/ not used -RRB- .

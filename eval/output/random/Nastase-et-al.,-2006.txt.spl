@@ -1,0 +1,10 @@
+one method is based on features extracted from wordnet , which was designed to capture , describe , and relate word senses .
+paraphrases express more overtly the semantic relation between a noun and its modifier .
+the model of the data
+a representation for the words in our dataset , based on information from wordnet , must meet the following constraints : it must be so general that the memory - and kernel-based methods , which do not perform feature selection , will be able to perform well on unseen data , and yet cover a wide enough range of levels to allow the decision tree method to build an accurate model .
+if this is possible , the representation of such a word will consist -LRB- mostly -RRB- of the representation of the noun synset to which it was linked .
+we will test this hypothesis in future work .
+the experiments that follow use a different methodology .
+we apply memory-based learning -LRB- timbl v. 5.1.0 -LRB- daelemans et al. 2004 -RRB- -RRB- , decision tree induction -LRB- c5 .0 v. 1.16 -LRB- quinlan -RRB- -RRB- and support vector machine -LRB- svmlight v. 6.01 -LRB- joachims -RRB- -RRB- to compare word representation methods , discussed above , for the task of learning noun-modifier semantic relations .
+not all features have the same effect on the learning of noun-modifier relations .
+figure 2 plots the f-scores for the word representation explored , when timbl was the learning method .

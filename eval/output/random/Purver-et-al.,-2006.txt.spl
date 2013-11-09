@@ -1,0 +1,8 @@
+user studies -LRB- lisowska et al. , 2004 ; banerjee et al. , 2005 -RRB- have shown that topic information is important here : people are likely to want to know which topics were discussed in a particular meeting , as well as have access to the discussion on particular topics in which they are interested .
+however , computing the denominator is intractable .
+we applied the algorithm to the icsi meeting corpus transcripts -LRB- janin et al. , 2003 -RRB- , consisting of manual transcriptions of 75 meetings .
+we then compared performance with -LRB- galley et al. , 2003 -RRB- s lcseg tool , and with a 10-state hmm model as described above .
+using stemming and a bigram representation , however , might
+performance on the icsi corpus of multi-party meetings is comparable with the previous unsupervised segmentation results , and the extracted topics are rated well by human judges .
+future work spoken discourse exhibits several features not derived from the words themselves but which seem intuitively useful for segmentation , e.g. speaker changes , speaker identities and roles , silences , overlaps , prosody and so on .
+as shown by -LRB- galley et al. , 2003 -RRB- , some of these features can be combined with lexical information to improve segmentation performance -LRB- although in a supervised manner -RRB- , and -LRB- maskey and hirschberg , 2003 -RRB- show some success in broadcast news segmentation using only these kinds of non-lexical features .

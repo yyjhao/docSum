@@ -1,6 +1,5 @@
 section 2 describes the methods by which nero addresses its goals - deriving a document specific ontology for nes -LRB- section 2.1 -RRB- ; identifying sequences of words that are normally capitalized in the document -LRB- section 2.2 -RRB- ; and then classifying normally capitalized words with respect to the derived typology -LRB- section 2.3 -RRB- .
 use of the internet , rather then the documents in which nes appear , as the source of potential hypernyms is justified because the documents used to test the nero system in the present study are rather small , and the four patterns shown in figure 1 are used very rarely within them .
-having obtained sets of potential hypernyms for
-the system is evaluated with respect to its ability to identify nes using text normalisation , to derive an appropriate typology of nes for a given document , and to classify nes in line with the derived typology .
+having obtained sets of potential hypernyms for all sequences of capitalized words in the input text , the system clusters the global set of hypernyms in an attempt to find the general types of ne that
 table 2 shows , for each file in the test corpus , the set of ne types that were manually annotated in each document -LRB- ne types -RRB- and the set of ne types derived by nero -LRB- derived typology -RRB- .
-it includes automatic components for derivation of a typology of nes -LRB- section 2.1 -RRB- , for normalisation of capitalized words -LRB- section 2.2 -RRB- , and for classification of nes in a given document -LRB- section 2.3 -RRB- .
+the system is evaluated with respect to its ability to identify nes using text normalisation , to derive an appropriate typology of nes for a given document , and to classify nes in line with the derived typology .

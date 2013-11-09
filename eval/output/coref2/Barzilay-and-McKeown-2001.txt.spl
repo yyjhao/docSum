@@ -1,0 +1,7 @@
+we base our method for paraphrasing extraction on the assumption that phrases in aligned sentences which appear in similar contexts are paraphrases .
+in contrast , in our corpus the same word is usually used in both translations , and only sometimes its paraphrases are used , which means that wordparaphrase pairs will have lower co-occurrence rates than word translation pairs in mt .
+to find good contexts , we
+identical words play two roles in this process : first , they are used to learn context rules ; second , identical words are used in application of these rules , because the rules contain information about the equality of words in context .
+to find negative examples , we match identical words in the alignment against all different words in the aligned sentence , assuming that identical words can match only each other , and not any other word in the aligned sentences .
+training of the paraphrasing classifier context rules extracted in the previous stage are then applied to the corpus to derive a new set of pairs of positive and negative paraphrasing examples .
+of the 500 pairs produced by our system , 354 -LRB- 70.8 % -RRB- were single word pairs and 146 -LRB- 29.2 % -RRB- were multi-word paraphrases , while the majority of pairs produced by melameds system were single word pairs -LRB- 90 % -RRB- .

@@ -1,0 +1,12 @@
+the semeval 2007 task on semantic relations between nominals is to identify the underlying semantic relation between two nouns in the
+the dataset provided consists of a definition file and 140 training and about 70 test sentences for each of the seven relations considered : cause-effect , instrument - agency , product - producer , origin-entity , theme-tool , part-whole , and content-container .
+spatio temporal features -LRB- f5 , f6 -RRB- were also introduced to recognize some near miss examples , such as temporal and location relations .
+the grammatical role features -LRB- f7 , f8 -RRB- determine if e1 or e2 is the subject , direct object , or neither .
+-LRB- charniak , 2000 -RRB- -RRB- .
+in particular , we focus on three semantic roles : time , location , manner .
+psychological feature was defined for the theme - tool relation and indicates if the target noun -LRB- f15 , f16 -RRB- belongs to a list of special concepts .
+the syntactic attachment feature -LRB- f18 -RRB- is a feature that indicates whether the argument identified as instrument in the relation attaches to a verb or to a noun in the syntactically parsed sentence .
+we used the rbf kernel .
+moreover , for theme-tool and content - container we used special lists of constraints5 .
+since the annotations used different word - net versions , senses were mapped to sense keys .
+base-f indicates the baseline f-measure -LRB- all true -RRB- , while base - acc shows the baseline accuracy score -LRB- majority -RRB- .

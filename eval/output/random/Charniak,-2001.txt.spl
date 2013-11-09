@@ -1,0 +1,9 @@
+for example , defense secretary george w. smith would be a name and we would analyze it into the components defense secretary -LRB- a descriptor -RRB- , george -LRB- a first name -RRB- , w. -LRB- a middle name , we do not distinguish between initials and true names -RRB- , and smith -LRB- a last name -RRB- .
+we consider two unsupervised models for learning this information .
+we now consider the probability models that underlie our learning mechanisms .
+if more than one such name exists , we choose the first one appearing in the article .
+the basic idea is that we view the labeling of new name -LRB- ~ l -RRB- as a transformation of the labeling of the old one -LRB- ~ l ~ -RRB- .
+if the named entity recognizer had mistakenly classified something as a personal name it was not used in our test data .
+for example , the name mikio suzuki appears only once in our corpus , as does the word mikio .
+our hypothesis is that we are seeing problems similar to those that have bedeviled applying em to tasks like part-of-speech tagging -LSB- 7 -RSB- .
+they are , however , indicative of the fact that in the wall street journal names are introduced without honorifics , but subsequent occurrences tend to have them -LRB- a fact we were not aware of at the start of this research -RRB- .

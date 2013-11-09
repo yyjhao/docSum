@@ -1,5 +1,6 @@
 in this case exceedingly large amounts of training data is needed and as well as a very large number of topics k. even in this case there is a danger that the model will be overflown by very fine-grain global topics or the resulting topics will be intersection of global topics and ratable aspects , like location for hotels in new york .
-each window v in document d has an associated distribution over local topics bd v and a distribution defining preference for local topics versus global topics ^ d , v. a word can be sampled using any window covering its sentence s , where the window is
+we propose a model called multi-grain lda -LRB- mg-lda -RRB- , which models two distinct types of topics : global topics and local topics .
 top words for the discovered local topics and for some of the global topics of mg-lda models are presented in table 2 - table 3 , one topic per line , along with selected topics from the lda models .7 we manually assigned labels to coherent topics to reflect our interpretation of their meaning .
 for the hotels reviews we present results of the mg-lda model with 15 local topics and 45 global topics and results of the lda model with 45 topics .
+the lda model produced clear topics that correspond to check-in , but noisy topics for location and rooms with location topics often specific to a single locale
 the mg-lda model infers only types of collections -LRB- global topics -RRB- and cross-collection topics -LRB- local topics -RRB- and does not try to infer collection specific topics .

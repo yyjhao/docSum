@@ -1,0 +1,13 @@
+in fact , we believe that a paper that is cited enough times can be summarized using only the citances pointing to it .
+the third research area identified by white is the classification of citer motivation , identifying the reason authors cite earlier work , and the reasons some works are cited more often than others .
+nanba et al. -LSB- 25 -RSB- use citances as features for classifying papers into topics .
+normalizing or paraphrasing citances .
+.
+unlike lin and pantel -LSB- 20 -RSB- and ibrahim et al. -LSB- 18 -RSB- , who manipulate the parsers output to account for some of these before proceeding to path extraction , we use the following 2-word heuristic .
+evaluation .
+some longer sentences produced more than one paraphrase , as either bim or ngf -LRB- or both -RRB- had been mentioned multiple times , but we kept only one paraphrase from each sentence2 , obtaining 55 , 65 and 102 paraphrases , accordingly .
+this is partially due to the better sentence extraction for the first two sets , where more conservative regular expressions were used
+for example , the minipar parser does not include the coordinating and in the parse and so and can not be placed into the path .
+pang et al. -LSB- 26 -RSB- use multiple human translations of chinese documents into english .
+relationship to previous paraphrase work .
+biomedical domain .

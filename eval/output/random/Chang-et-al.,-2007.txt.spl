@@ -1,0 +1,12 @@
+our algorithm pushes this intuition further , in that the use of constraints allows us to better exploit domain information as a way to label , along with the current learned model , unlabeled examples .
+the task is described in section 3 and the experimental study in section 6 .
+related work .
+we study two information extraction problems in each of which , given text , a set of pre-defined fields is to be identified .
+the list of the constraints for this domain is given in table 1 .
+we slightly modified the seedwords due to difference in preprocessing .
+notation and definitions .
+this decomposition applies both to discriminative linear models and to generative models such as hmms and crfs , in which case the linear sum corresponds to log likelihood assigned to the input \/ output pair by the model -LRB- for details see -LRB- roth , 1999 -RRB- for the classification case and -LRB- collins , 2002 -RRB- for the structured case -RRB- .
+however , in the presence of constraints , assigning the complete distributions in the estimation
+another way to look the algorithm is from the self-training perspective -LRB- mcclosky et al. , 2006 -RRB- .
+we compare these baselines to our proposed protocol , h &amp; w &amp; c , where we added the constraints to guide the h &amp; w protocol .
+figure 4 further strengthens this point .

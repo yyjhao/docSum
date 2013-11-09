@@ -1,0 +1,10 @@
+for confidence estimation , direct estimation of p -LRB- correctl q , a -RRB- is impossible because it would require virtually unlimited
+our results confirmed the positive findings reported in earlier studies -LRB- dumais et al , 2002 -RRB- .
+the next section describes the base qa system -LRB- i.e. without using the web -RRB- , including answer selection and confidence estimation .
+-LRB- in some rare cases a question was assigned to more than one type .
+for example , if the question is who killed x , a preferred candidate should be the subject of the verb killed and x should be the object of killed in the answer context .
+the third feature is t , the answer type of the question .
+the idea is simple : the enormous amount of data on the web makes it possible to use very strict , precision oriented search criteria that would be impractical to apply on the much smaller trec corpora .
+the probability of answer correctness also strongly depends on the boolean feature intrec .
+it is easy to verify that the expected value of the ranked average precision for the baseline is the same as the unranked average precision .
+the web - supplemented run is significantly better than the base system , confirming findings published in earlier studies -LRB- dumais et al , 2002 -RRB- .

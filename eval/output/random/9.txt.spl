@@ -1,0 +1,9 @@
+this is a more general disambiguation challenge known as entity resolution .
+it is a graphical approach , as it visualizes the dataset as the standard entity-relationship graph .
+-LSB- 8,13,14 , 17 , 26 , 29 -RSB- .
+the traditional approaches -LRB- and \/ or domain knowledge -RRB- often can be effectively employed to determine for each pair of entity representations whether they : -LRB- 1 -RRB- are highly likely to co-refer -LRB- very similar -RRB- and thus should be merged , -LRB- 2 -RRB- are highly unlikely to co-refer -LRB- too dissimilar -RRB- and thus should not be merged , -LRB- 3 -RRB- might co-refer -LRB- uncertain -RRB- .
+various disambiguation algorithms that employ merging differ significantly in how exactly the merging is carried
+so the web of knowledge can be potentially automatically employed to improve the disambiguation quality , or , it is also possible that the model will detect that all paths going through the web of knowledge are unimportant and thus it should not be used .
+the objective is to minimize their sum .
+if we use precision \/ recall as measures , algorithm 1 will be significantly better than algorithm 2 because it has consolidated more pairs correctly .
+from this figure , we can see that there is a trade-off between the resulting quality of clusters and entities , and there exists an optimum result for a certain threshold value in terms of fp measure .

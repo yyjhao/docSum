@@ -1,0 +1,6 @@
+our approach to the task was to : -LRB- 1 -RRB- naively treat all nominal pairs as ncs -LRB- e.g. the climate in the forest is treated as an instance of climate forest -RRB- ; and -LRB- 2 -RRB- translate the individual binary classification tasks into a single multiclass classification task , in the interests of benchmarking existing sr interpretation methods over a common dataset .
+for the sense collocation method , we experiment with a substitution method whereby we replace one constituent in a training nc instance by a similar word , and annotate the new instance with the same sr as the original nc .
+third , we apply the sense collocation co-training method and re-run the sense collocation method over the expanded training data from the first two steps .
+in our experiments , we use this co-training method with the sense collocation method to expand the size and variation of training data , using synonym , hypernym
+hence , our first system is category b while our second system is -LRB- arguably -RRB- category a. table 1 presents the three baselines for the task , and the results for our two systems -LRB- system i and system ii -RRB- .
+fourth , we apply the constituent similarity co - training method over the consolidated training data -LRB- from both sense collocation and constituent similarity co-training -RRB- with the threshold unchanged at 0.8 .

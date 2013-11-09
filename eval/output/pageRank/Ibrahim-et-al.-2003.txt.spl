@@ -1,6 +1,6 @@
-based on aligned monolingual corpora , our technique for extracting
+the structural paraphrases produced by our algorithm are similar to the s-rules advocated by katz and levin for question answering -LRB- 1988 -RRB- , except that our paraphrases are automatically generated .
+based on aligned monolingual corpora , our
 our approach addresses the limitations of both barzilay and mckeowns and lin and pantels work : using syntactic structures allows us to generate structural paraphrases , and using aligned corpora renders the process more computationally tractable .
 using the approach described in previous sections , we were able to extract nearly six thousand different paraphrases -LRB- see table 1 -RRB- from our corpus , which consisted of two translations of 20,000 leagues under the sea , two translations of the kreutzer sonata , and three translations of madame bouvary .
-in addition , sample sentences containing the structural paraphrases were presented as context to the judges ; structural paraphrases are difficult to comprehend without this information .
 6 paraphrases and question answering the ultimate goal of our work on paraphrases is to enable the development of high-precision question answering system -LRB- cf .
 the problems associated with keyword query expansion techniques stem from the fundamental deficiencies of bag-of-words approaches ; in short , they simply can not accurately model the semantic content of text , as illustrated by the following pairs of sentences and phrases that have the same word content , but dramatically different meaning : the above examples are nearly indistinguishable in terms of lexical content , yet their meanings are vastly different .

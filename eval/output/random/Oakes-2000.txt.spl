@@ -1,0 +1,9 @@
+it also has applications in cognate identification for automatic text alignment in machine translation -LRB- simard et al. , 1992 -RRB- , and in the process of glottochronology , which is the use of statistical techniques to measure the degree of relatedness among cognate dialects -LRB- lees , 1953 -RRB- .
+word lists of the swadesh meanings for each of the four daughter languages of pmj were obtained , being those given by nothofer -LRB- 1975 , p .
+the data which is stored by program jakarta in order to recognize sound changes of the types described by crowley are as follows : a record is kept of which
+the regular sound changes found for the javanese-malay comparison are shown in table 4 .
+a fifth principle regards conditioned -LRB- such as position dependent -RRB- sound changes , and this has been only partly implemented .
+if it is not possible to generate an identical sequence of protophonemes for even two languages , the program reports that the word in the protolanguage could not be reconstructed for that meaning .
+the example geteh , dara , darah , getih -LRB- blood -RRB- yields two possible reconstructions , one cognate with geteh and one with dara .
+this resulted in such differences in reconstruction as zauh and jhauh .
+however , using crowleys third principle , prague assigns a single consonant in such cases .

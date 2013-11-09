@@ -1,8 +1,7 @@
+the set of features used for the classification of semantic relations includes information from different levels : word tokens , pos tags , verb lemmas , semantic information from wordnet , etc .
 semantic features are only applied in categories b and d. on the lexical level , the set of word features include the two nominals , their heads in case one of the nominals in question or both are compound nominals -LRB- e.g. the relation between &lt; e1 &gt; tumor shrinkage &lt; \/ e1 &gt; and &lt; e2 &gt; radiation therapy &lt; \/ e2 &gt; is actually between the head of the first '' shrinkage '' and '' radiation therapy '' -RRB- .
-for all the relations in the category a4 , we obtained an average of f = 43.1 % -LSB- average score of all participating teams : f = 58.0 % and top average score : f = 64.8 % -RSB- .
-in training , we obtained an average f = 60 % using cross-validation , while in the final test data , we achieved an average score f = 57.7 % .
-best results in this category were achieved in the relations : instrument-agency -LRB- f = 73.7 % -RRB- , product-producer -LRB- f = 73.9 % -RRB- , part-whole -LRB- f = 76.4 % -RRB- .
-moreover , the score obtained is lower than the average score of all participants -LRB- f = 58.4 % -RRB- and the best score -LRB- f = 65.1 % -RRB- .
-for example , in training the instrument-agent relation , the system achieved an average f = 78 % using 10-fold cross-validation , while for the final score it only obtained f = 50.7 % .
-the average score for all participants is
-we made numerous experiments to find the best value for the parameter c -LRB- c = 1 , c = 10 , c = 100 , c = 1000 , c = 10000 -RRB- , but the results were not remarkably affected .
+for each relation and for each category -LRB- a , b , c , d -RRB- we selected the set of features that obtained the best results using the indicated cross validation .
+for the relation theme-tool , other set of features was employed : nominals , their heads , verb , preposition and the list of word between both nominals .
+it is obvious that introducing wordnet information has improved notably the results compared with the results obtained in the category a. in categories c and d , only three groups have participated .
+for example , in training the
+in our first approach to automatic classification of semantic relations between nominals and as expected from the training phase , our system achieved its best performance using wordnet information .

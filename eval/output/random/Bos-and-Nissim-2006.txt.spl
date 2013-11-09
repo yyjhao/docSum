@@ -1,0 +1,10 @@
+in this paper we describe our work on the analysis of superlative adjectives , which is empirically grounded and is implemented into an existing wide-coverage text understanding system .
+for etymological reasons we however include foremost and uttermost .
+the second level of agreement is relative to type identification -LRB- attributive , predicative , adverbial , idiomatic -RRB- , and is
+the third and last level of agreement deals with the span of the comparison set and only concerns attributive cases -LRB- 64 out of 79 -RRB- .
+the first case concerns modifiers following a superlative construction , that are attached to the np node rather than n. for both cases , we apply some simple post-processing rules to the output of the parser to obtain the required derivations .
+the automatic analysis of superlatives we present in the following experiments consists of two sequential tasks : superlative detection , and comparison set determination .
+superlative detection .
+dla system for evaluation , we extrapolated superlatives from the drss output by the system .
+moreover , this work provides a concrete way of evaluating the output of a stochastic wide - coverage parser trained on the ccgbank -LRB- hockenmaier and steedman , 2002 -RRB- .
+finally , we would like to investigate the extent to which existing nlp systems -LRB- such as open-domain qa systems -RRB- can benefit from a detailed analysis of superlatives .

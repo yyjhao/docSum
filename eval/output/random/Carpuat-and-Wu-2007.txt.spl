@@ -1,0 +1,8 @@
+to fully integrate wsd into phrase-based smt , it is necessary to perform lexical disambiguation on multi-word phrasal lexical units ; in contrast , the model reported in cabezas and resnik -LRB- 2005 -RRB- can only perform lexical disambiguation on single words .
+since our focus is not on a specific smt architecture , we use the off-the-shelf phrase-based decoder pharaoh -LRB- koehn , 2004 -RRB- trained on the iwslt training set .
+the phrase bilexicon is derived from the intersection of bidirectional ibm model 4 alignments , obtained with giza + + -LRB- och and ney , 2003 -RRB- , augmented to improve recall using the grow-diag-final heuristic .
+comparison of the 1-best decoder output with and without the wsd feature shows that the sentences differ by one or more token respectively for 25.49 % , 30.40 % and 29.25 % of iwslt test sets 1 , 2 and 3 , and 95.74 % of the nist test set .
+a more detailed analysis reveals wsd predictions give better rankings and are more discriminative than baseline translation
+the last sentence in the table shows an example where the wsd predictions do not help the baseline system .
+it is to be emphasized that this approach does not merely consist of adding a source sentence feature in the log linear model for translation .
+to our knowledge this constitues the first attempt at fully integrating state-of-the-art wsd with conventional phrase-based smt .

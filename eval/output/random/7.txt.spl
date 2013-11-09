@@ -1,0 +1,10 @@
+moreover , given the scale and noise in the web , some words might occur arbitrarily , i.e. by random chance
+then they count the occurrences of word p in the snippets for word q and the occurrences of word q in the snippets for word p. these values are combined nonlinearly to compute the similarity between p and q. this method depends heavily on the search engines ranking algorithm .
+4 , we must know n , the number of documents indexed by the search engine .
+given a set s of synonymous word-pairs , getsnippets function returns a list of text snippets for the query a and b for each word-pair a , b in s. for each snippet found , we replace the two words in the query by two wildcards .
+first , we query google for \ a and \ b and collect snippets .
+we select n-grams having exactly one x and one y as we did in the pattern extraction algorithm in figure 3 .
+with more than 200 patterns correlation drops below this maximum .
+7 , it returns zero under these conditions .
+unlike common english words , named entities are being created constantly .
+however , the experiment needs to be carried out on a much larger data set of ambiguous entities in order to obtain any statistical guarantees .

@@ -1,0 +1,12 @@
+we therefore also consider how coverage can be increased using a fixed amount of text .
+we wish to avoid this manual component by automatically identifying semantically related words .
+acquiring semantic patterns .
+more recently , pereira tq al. -LSB- 9 -RSB- have described it word clustering method musing '' soft clusters '' ; in which a , word can belong to several clusters , with different cluster membership probabilities .
+is the result of an incorrect parse -RRB- , we apply a filter in generating pc : for i j , we generate a non-zero pc -LRB- wilwi -RRB- only if the wi and wj appear in at least two common contexts , and there is some common context in which both words occur at least twice .
+the relative merits of the two similarity measures may need to be resolved empirically ; however , we believe that there is a virtue to our non-symmetric measure , because substitutibility in selectional contexts is not a symmetric relation .
+the training and lest corpora were taken from the wall street journal .
+in order to get higher-quality parses -LRB- -RRB- i ' these sentences , we disabled sonic of the recovery
+results .
+smoothing .
+in testing our procedure , we first generated the confusion matrix pc and examined some of the entries .
+we believe that these techniques can be further improved in several ways .

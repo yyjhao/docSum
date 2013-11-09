@@ -1,0 +1,9 @@
+currently , such models take days to construct using standard tools with publicly available training corpora ; our mapreduce implementation cuts this time to hours .
+as an benefit to the community , it is our intention to release this code under
+in section 3 we describe several general solutions to computing maximum likelihood estimates for finite , discrete probability distributions .
+we consider three possible solutions to this problem , shown in table 1 .
+the reducer groups all pairs together by the a value , processes the marginal first , and , like method 1 , must only keep this value in memory as it processes the remaining pair counts .
+next , we explore a class of models where the standard tools work primarily in memory , but where the computational complexity of the models is greater .
+the updated model is estimated using the maximum likelihood criterion , which just involves computing the appropriate marginal and dividing -LRB- as with the phrase-based models -RRB- , and the same techniques suggested in section 3 can be used with no modification for this purpose .
+furthermore , initial experiments indicate that reordering the training data can lead to better data locality which can further improve performance .
+hmms , for example , are widely used in asr , named entity detection , and biological sequence analysis .

@@ -1,0 +1,11 @@
+to the best of our knowledge , there is no reported study on this problem .
+it proposes two new methods to identify comparative sentences and to extract comparative relations from these sentences based on two new types of rules , class sequential rules and label sequential rules .
+mooney &amp; bunescu -LRB- 2005 -RRB- gave a good survey and comparison of existing methods .
+important pos tags to this work and their categories are : nn : noun , nnp : proper noun , prp : pronoun , vbz : verb , present tense , 3rd person singular , jjr : comparative adjective , jjs : superlative adjective , rbr : comparative adverb , rbs
+for more details about these types of rules and their mining algorithms , please see -LRB- liu 2006 -RRB- .
+let i = -LCB- i1 , i2 , ... , in -RCB- be a set of items .
+in rule generation , for rules involving different keywords , different minimum supports are used because some keywords are very frequent and some are very rare .
+we only keep sequences that have at least one label , and the label has no pos tag associated with it .
+the relation word in the relation is the keyword that identifies the sentence as a comparative sentence .
+we also tried various other techniques , e.g. , svm -LRB- joachims 1999 -RRB- , csr rules only , etc .
+experimental results show that these methods are quite promising .

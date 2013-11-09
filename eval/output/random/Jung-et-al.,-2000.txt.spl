@@ -1,0 +1,10 @@
+it is common that the newly imported foreign word is transliterated into several possible candidate words based on pronunciation , out of which only a few survive in competition over a period of time .
+section 4 provides experimental results , and finally , we state our conclusions .
+table 6-1 has been constructed by examining a significant amount of corpus so that we can cover as many cases as possible .
+table 6-2 shows complex cases where a combination of two or more english phonemes are mapped to multiple candidates of
+after the training stage , an input english word must be syllabificated automatically so that it can be transliterated by our tagger .
+a probabilistic tagger finds the most probable set of korean notation candidates from the possible syllabificated results of english pronunciation notation .
+in what follows , we explain how the contextual information is represented as conditional probabilities .
+recall measure is the average number of generated correct words divided by the total word count of prepared correct answer set given an input word -LRB- eq .
+the automata produces one result and attaches it at the end of n-best results of the statistical tagger .
+an alignment and syllabification method instead of a statistical method is proposed for accurate and fast operation .

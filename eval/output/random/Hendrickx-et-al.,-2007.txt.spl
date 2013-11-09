@@ -1,0 +1,10 @@
+the starting conditions of the task provide us with a very small amount of training data , which further stresses the need for robust , generalizable features , that generalize beyond surface words .
+we therefore hypothesize that generic information on the lexical semantics of the entities involved in the relation is crucial .
+we also entered a second system , which did not rely on wn but instead made use of automatically generated semantic clusters -LRB- decadt and daelemans , 2004 -RRB- to model the semantic classes of the entities .
+then a memory-based shallow parser predicts grammatical relations between verbs and np chunks such as subject , object or modifier -LRB- buchholz , 2002 -RRB- .
+the features extracted are of three types : semantic , lexical , and morpho-syntactic .
+in case an entity consisted of multiple words -LRB- e.g. storage room -RRB- we use the lemma of the head noun -LRB- i.e. room -RRB- .
+none of the classifiers use all the features .
+these results are generally higher than the official test set results , shown in tables 4 and 5 , possibly showing a certain amount of overfitting on the training
+table 5 presents the results of the wn-based system .
+rather , the focus of the task should be on detecting positive instances of the relations in vast amounts of text -LRB- i.e. vast amounts of implicit negative examples -RRB- .

@@ -1,0 +1,7 @@
+a content model is an hmm in which each state corresponds to a distinct topic and generates sentences relevant to that topic according to a state-specific language model note that standard - gram language models can therefore be considered to be degenerate -LRB- single-state -RRB- content models .
+we use to
+5typically , sentences in a single-document summary follow the order of appearance in the original document .
+sentences from the input article corresponding to these states are placed in the output summary .6 5 evaluation experiments 5.1 data for evaluation purposes , we created corpora from five domains : earthquakes , clashes between armies and rebel groups , drug-related criminal offenses , financial reports , and summaries of aviation accidents .7 specifically , the first four collections consist of ap articles from the north american news corpus gathered via a tdt-style document clustering system .
+however , one stumbling block to performing this kind of evaluation is that we do not have data on ordering quality : the set of sentences from an - sentence document can be sequenced in different ways , which even for a single text of moderate length is too many to ask humans to evaluate .
+content models outperform the alternatives almost universally , and often by a very wide margin .
+and -LRB- 2 -RRB- does the content-model representation provide additional advantages over more locally-focused methods ?

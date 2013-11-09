@@ -1,0 +1,13 @@
+corpus .
+we gathered basic patterns for each relation , and identified if each pattern had been obtained as a svm feature or not -LRB- 1 or 0 -RRB- .
+we considered the extracted word sequences to be basic patterns .
+because basic pattern features are generated only from snippets , precise co-occurrence statistics are not available .
+therefore , the
+we estimated entity size using the following queries : in these queries , &lt; entity &gt; indicates a slot for each entity , such as ' sbook 's , ' slibrary 's , etc .
+when results of size expressions were insufficient -LRB- numbers &lt; 10 -RRB- , we considered the entity to be nonphysical , i.e. , to have no size .
+experiments .
+however , contrary to our expectations , size features were disappointing for part - whole relations -LRB- rel6 -RRB- and content-container relations -LRB- rel7 -RRB- .
+the reason for this was mainly the difficulty in estimating size .
+table 4 lists the sizes of several entities , revealing some strange results , such as a library sized 12.1 x 8.4 cm , a house sized 53 x 38 cm , and a car sized 39 x 25 cm .
+we briefly presented a method for obtaining the size of an entity and proposed a method for classifying semantic relations using entity size .
+if we are able to estimate entity sizes more precisely in the future , the system will become much more accurate .

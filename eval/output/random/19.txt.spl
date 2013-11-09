@@ -1,0 +1,7 @@
+further detail regarding the basic javelin architecture can be found in -LRB- nyberg et al. 2003a ; 2003b ; hiyakumoto 2004 -RRB- .
+developing good metrics for computing confidence scores from combinations of facts is an entire open area of research ; our current answer generator performs only rudimentary filtering of duplicate facts and
+querying on chemical weapons using traditional , keyword-based ir will fail to retrieve documents that use one of the paraphrases listed above ; this is a known limitation of keyword-based ir .
+the ontology can also tell us that the phrase wmd refers to a superset , not an equivalent set , of objects that contains not only chemical weapons , but also biological and nuclear weapons .
+as a baseline for comparison with our method of search by extraction of predicate instances , we ran a boolean keyword search engine over the document collection using the following query , in which the last term matches any term from a document that begins with the prefix chem .
+the challenge in javelin will be to seamlessly merge the fast , shallow search capabilities of ir with slower , deeper search through the predicate argument structures and ontologies on the information extraction side .
+we have also integrated the identifinder and assert modules for named-entity annotation and verb-argument -LRB- semantic role -RRB- annotation .

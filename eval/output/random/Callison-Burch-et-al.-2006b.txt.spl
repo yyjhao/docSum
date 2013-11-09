@@ -1,0 +1,8 @@
+bannard and callison-burch -LRB- 2005 -RRB- use bilingual parallel corpora to generate paraphrases .
+secondly , it defines a paraphrase probability , p -LRB- e2 l e1 -RRB- , which can be incorporated into the probabilistic framework of smt .
+the baseline model had a total of eight feature functions , hm -LRB- e , f -RRB- : a language model probability , a phrase translation probability , a reverse phrase translation probability , lexical translation probability , a reverse lexical translation probability , a word penalty , a phrase penalty , and a distortion cost .
+for each of these phrases we generated a list of paraphrases using all of the parallel corpora from europarl aside from the spanish-english and french-english corpora .
+this allowed us to identify which elements in the machine translated output corresponded to the paraphrased foreign phrase .
+table 3 shows that incorporating the paraphrase probability into the model s feature functions plays a critical role .
+we performed a manual evaluation by judging the accuracy of phrases for 100 paraphrased translations from each of the sets using the manual word alignments .1 table 4 gives the percentage of time that each of the translations of paraphrases were judged to have the same meaning as the equivalent target phrase .
+in performing the manual evaluation we were additionally able to determine how often bleu was

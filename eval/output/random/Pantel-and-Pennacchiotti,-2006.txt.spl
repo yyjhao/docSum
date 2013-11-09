@@ -1,0 +1,11 @@
+in this paper , we present espresso , a general - purpose , broad , and accurate corpus harvesting algorithm requiring minimal supervision .
+insofar , difficulties in using these patterns have been a major impediment for minimally supervised algorithms resulting in either very low precision or recall .
+the approach gives good results on specific relations such as birthdates , however it has low precision on generic ones like is-a and part - of .
+the advantage of clustering approaches is that they permit algorithms to identify is-a relations that do not explicitly appear in text , however they generally fail to produce coherent clusters from fewer than 100 million words ; hence they are unreliable for small corpora .
+in small corpora , the number of extracted instances can be too low to guarantee sufficient statistical evidence for the pattern discovery phase of the next iteration .
+exploiting generic patterns .
+espressos recall can be significantly increased by automatically separating correct instances extracted by generic patterns from incorrect ones .
+below we describe the systems used in our empirical evaluation of espresso .
+table 1 lists a sample of the seeds as well as sample outputs from espresso .
+this indicates that the scoring
+we expect here that negative instances will play a key role in determining the selectional restrictions .

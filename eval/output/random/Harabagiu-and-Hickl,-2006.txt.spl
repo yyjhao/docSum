@@ -1,0 +1,7 @@
+section 2 introduces our notion of contextual entailment and provides a framework for recognizing instances of ce between scenarios and both questions and answers .
+second , as in case 2 , ce could be established directly between a scenario and the question asked by the user .
+the architecture of this proposed system is illustrated in figure 6 .
+in this section , we present preliminary results
+if the answer could be considered to provide either a complete or partial answer to the original question , it was marked as correct ; if the answer contained information that could not be construed as an answer to the original question , it was marked as incorrect .
+these results suggest that te can be used effectively in order to boost the percentage of relevant answers found in the top answers returned by a system : by focusing only on answers that are entailed by a users question , we feel that systems can better identify passages that might contain information relevant to a users information need .
+if the passage could not be associated with the extension of any subtopic they believed to be entailed by the scenario , annotators were instructed to mark the passage as not being contextually entailed by the scenario .

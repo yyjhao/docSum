@@ -1,0 +1,14 @@
+wikipedia has now more than 1,700,000 articles on the english version -LRB- march 2007 -RRB- and the number is still increasing .
+the studies most relevant to ours are bunescu and pasca -LRB- 2006 -RRB- and toral and munoz -LRB- 2006 -RRB- .
+finally , they did not demonstrate the usefulness of the extracted gazetteers in actual ner systems .
+we describe two important structures , redirections and disabiguation pages , in the following sections .
+using category labels as features .
+experiments .
+these are similar to those used in other studies on ner .
+table 2 summarizes the statistics of category label finding for the training set .
+effect of training size .
+we compared the output of -LRB- b -RRB- and -LRB- e -RRB- for the development set .
+we can see that gazzetta dello sport in the sentence was correctly labeled as an entity of org category by model -LRB- e -RRB- , because the wikipedia feature identified it as a newspaper entity.an issue , which we should treat , is the disambiguation of ambiguous entities .
+-LRB- 1 -RRB- if a retrieved page is a disambiguation page , we can not extract a category label and critical noise is not introduced .
+-LRB- 2 -RRB- if a retrieved page is not a disambiguation page , it will be the page describ - ing the major meaning determined by the agreement of many authors .
+conclusion .

@@ -1,0 +1,10 @@
+to illustrate , the pattern x and other y shown in figure 1 was originally expressed as np -LCB- , np -RCB- \* -LCB- , -RCB- and other np in -LRB- hearst 92 -RRB- .
+coverage could be improved under a document specific approach by identifying additional patterns .
+having obtained sets of potential hypernyms for all sequences of capitalized words in the input text , the system clusters the global set of hypernyms in an attempt to find the general types of ne that appear in that document .
+this measure is used to weight the classification of named entities , as described in section 2.3 .
+when no such common hypernym exists , the cluster is simply labeled miscn where n is a unique reference number for that cluster .
+when no potential hypernyms are available for any substrings , then the instance remains unclassified .
+papers such as -LRB- zhou &amp; su 02 -RRB- , and the shared task at the conll workshop at acl 2003 address the classification of nes on the basis of the typology originally used in muc-7 .
+conclusion .
+soft clustering algorithms , in which elements may belong to more than one cluster , are another potential solution to the problem of word sense ambiguity .
+in future work it may be useful to apply the system to the muc-7 data in order to

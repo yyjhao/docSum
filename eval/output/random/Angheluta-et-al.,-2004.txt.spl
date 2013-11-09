@@ -1,0 +1,12 @@
+the first kind of reference resolution that appears significant in this framework is noun phrase coreference resolution .
+we also implemented the hard clustering algorithm presented in -LSB- 3 -RSB- and a fuzzy clustering algorithm as described in -LSB- 2 -RSB- .
+in the discussion the four algorithms are critically evaluated .
+the highly greedy character of this algorithm -LRB- as it considers the first match and not the best match -RRB- introduces errors which are further propagated as the algorithm advances .
+the fuzzy set of each cluster is used for merging two clusters .
+the algorithm is summarized in figure 2 .
+in our fuzzy algorithm we use the complete fuzzy set of the clusters in the computation of the similarity -LRB- eq .
+the duc documents were selected from the category biographies and they are small texts -LRB- on average 3kb each -RRB- which contain many entities to be resolved -LRB- pronominal and non pronominal entities -RRB- .
+the muc-6 proposed a training set of 30 documents -LRB- the so-called dryrun set -RRB- and a test set of 30 documents -LRB- the formaltest set -RRB- .
+wrong assignment of the semantic class .
+the recall increases in all cases .
+for the pronoun resolution , our fuzzy algorithm obtains competitive or better f-measure results compared with the two algorithms from the literature and outperforms both of them

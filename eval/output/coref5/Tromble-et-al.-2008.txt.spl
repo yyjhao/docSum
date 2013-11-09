@@ -1,0 +1,6 @@
+the results show that when restricted to the 1000 - best list , lattice mbr performs slightly better than n-best mbr -LRB- with sentence bleu -RRB- on aren \/ enzh while n-best mbr is better on zhen .
+we first compare lattice mbr to n-best mbr decoding and map decoding -LRB- table 2 -RRB- .
+given such a loss function l -LRB- e , e ' -RRB- between an automatic translation e ' and the reference e , and an underlying probability model p -LRB- eif -RRB- , the mbr decoder has the following form -LRB- goel and byrne , 2000 ; kumar and byrne , 2004 -RRB- : we are interested in performing mbr decoding under a sentence-level bleu score -LRB- papineni et al. , 2001 -RRB- which behaves like a gain function : it varies between 0 and 1 , and a larger value reflects a higher similarity .
+in our setting , this weight will imply the
+for each language pair , we use two development sets : one for minimum error rate training -LRB- och , 2003 ; macherey et al. , 2008 -RRB- , and the other for tuning the scale factor for mbr decoding .
+these gains are obtained on top of a baseline system that has competitive performance relative to the results reported in the nist 2008 evaluation .7 this demonstrates the effectiveness of lattice mbr decoding as a realization of mbr decoding which yields substantial gains over the n-best implementation .

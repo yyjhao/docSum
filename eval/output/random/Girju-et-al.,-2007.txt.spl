@@ -1,0 +1,14 @@
+task description and related work .
+rosario et al. -LRB- 2002 -RRB- classify noun compounds using the mesh
+stephens et al. -LRB- 2001 -RRB- propose 17 classes targeted to relations between genes .
+-LRB- moldovan et al. , 2004 ; girju et al. , 2005 -RRB- gave the annotators an example of each phrase in a sentence along with wordnet senses and position of arguments .
+we built the patterns manually , following hearst -LRB- 1992 -RRB- and nakov and hearst -LRB- 2006 -RRB- .
+the use of heuristic patterns to search for both positive and negative examples should naturally result in negative examples that are near misses .
+the average inter-annotator agreement on relations -LRB- true \/ false -RRB- after the independent annotation step was 70.3 % , and the average agreement on wordnet sense labels was 71.9 % .
+we expect that these revised definitions would lead to much higher levels of agreement than the original definitions did .
+the participants .
+the category of the best-scoring system in almost every case is b4 -LRB- only the ilk b4 system scored second on the origin-entity relation -RRB- .
+the best f-measure ranges from 83.7 for productproducer to 68.6 for originentity .
+the difference between the best accuracy and the baseline accuracy ranges from 31.0 for content - container to 10.7 for product-producer .
+evaluating text categorization .
+by making this collection freely accessible , we encourage further research into this domain and integration of semantic relation algorithms in high-end applications .

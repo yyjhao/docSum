@@ -1,0 +1,10 @@
+as described by brennan , friedman , and pollard -LRB- 1987 -RRB- -LRB- henceforth , bfp -RRB- and walker , iida , and cote -LRB- 1994 -RRB- , entities called centers link an utterance with other utterances in the discourse segment .
+in addition , the subject np of each s subconstituent is marked .
+this information included agreement properties , syntactic type , parent nodes , depth in tree , position in utterance , presence or absence of a determiner , gender , coreference tag , utterance number , whether it was quoted , commanding verb , whether it was part of a title , whether it was reflexive , whether it was part of a possessive np , whether it was in a prepended phrase , and whether it was part of a conjoined sentence .
+so p would corefer incorrectly with ek .
+if
+bfp with carter 's modification may seem quite similar to lrc except for two points .
+the most recent entity that matches in gender , number , and binding constraints is selected as the antecedent for the pronoun .
+second , both search their respective data structures in a salience-first manner .
+they observed that entities in surface-initial nonsubject positions in the previous sentence had about the same repeated-name penalty as an entity that had been the noninitial subject of the previous sentence .
+hobbs -LRB- 1978 -RRB- also assumes gordon et al. ' s interpretation in his pronoun algorithm .

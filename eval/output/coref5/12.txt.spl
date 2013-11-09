@@ -1,0 +1,8 @@
+we have taken several approaches to analyze different sources of information provided with the input data , and also compared strategies to combine these individual features together .
+the configuration that achieved the best performance -LRB- which were submitted for our run -RRB- used a single named entity feature as input to clustering .
+in the remainder of this paper , we first describe our system in terms of the clustering approach used and alternative features investigated .
+identical to the task baseline by -LRB- artiles et al. , 2005 -RRB- , we stemmed the words in the web pages using the porter stemmer -LRB- porter , 1980 -RRB- , to conflate semantically similar english words with the stem .
+we extract the named entities from the web pages using the stanford named entity recognizer -LRB- finkel et al. , 2005 -RRB- .
+we used the meurlin system -LRB- kan and nguyen thi , 2005 -RRB- to segment the url of each web page into tokens as well as to generate additional features .
+these features include -LRB- a -RRB- segmentation of tokens such as www.allposters.com to www , all , posters and com ; -LRB- b -RRB- the parts in the url where the tokens occur , e.g. , protocol , domain name , and directory paths ; -LRB- c -RRB- length of the tokens ; -LRB- d -RRB- orthographic features ; -LRB- e -RRB- sequential n-grams ; and -LRB- f -RRB- sequential bigrams .
+two different evaluation measures are reported as

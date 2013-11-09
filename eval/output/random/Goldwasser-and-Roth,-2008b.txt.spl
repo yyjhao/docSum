@@ -1,0 +1,9 @@
+named entity -LRB- ne -RRB- transliteration is the process of transcribing a ne from a source language to a target language based on phonetic similarity between the entities .
+unlike other approaches , our approach is based on minimizing the distance between the feature distribution of a comprehensive
+training a transliteration model .
+first , a training set consisting of ne transliteration pairs -LRB- ws , wt -RRB- is automatically generated using an active sample selection scheme .
+the sample selection process is guided by the sufficient spanning features criterion -LRB- ssf -RRB- introduced in section 2.2 , to identify informative samples in the source language.an oracle capable of pairing a ne in the source language with its counterpart in the target language is then used .
+the frequency distribution was generated over all character level bi-grams appearing in the text , as bi-grams best correlate with the way features are extracted .
+the transliteration oracle is essentially a mapping between the named entities , i.e. given an ne in the source language it provides the matching ne in the target language .
+conclusions and future work .
+in this paper we presented a new approach for constructing a transliteration model automatically and efficiently by selectively extracting transliteration samples covering relevant parts of the feature space and focusing the learning process on these features .

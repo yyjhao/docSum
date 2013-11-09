@@ -1,0 +1,8 @@
+it is possible to also induce the topology or cognate set assignments , but in this paper we assume that the topology is fixed and cognates have already been identified .
+there are three types of rules : -LRB- 1 -RRB- deletion of the phoneme , -LRB- 2 -RRB- substitution with some phoneme -LRB- possibly the same one -RRB- , or -LRB- 3 -RRB- insertion of another phoneme , either before or after the existing one .
+let f -LRB- c , ^ -RRB- be a feature vector that depends on the context-dependent rule -LRB- c , ^ -RRB- , and ^ k-l be the log-linear weights for branch -LRB- k &gt; l -RRB- .
+an exact e-step would require summing over all possible edits involving all languages in the phylogeny -LRB- all unobserved -LCB- e -RCB- , -LCB- w -RCB- variables in figure 1 -LRB- c -RRB- -RRB- , which does not permit a tractable dynamic program .
+while there are an exponential number of possible words \/ edits , we can exploit the markov structure in the edit model to consider all such words \/ edits using dynamic programming , in a way broadly similar to the forward-backward algorithm for hmms .
+in the
+let us fix a single branch and drop the subscript .
+while quantitative evaluation such as measuring edit distance is helpful for comparing results , it is also illuminating to consider the plausibility of the learned parameters in a historical light , which we do here briefly .

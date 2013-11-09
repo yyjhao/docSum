@@ -1,0 +1,10 @@
+-LRB- semmelmeyer and bolander 1992 -RRB- -RRB- in which the modifier noun is expressed by a prepositional phrase which functions as an adjective -LRB- eg toy in the box - a location relation -RRB- .
+we dont consider metaphorical names -LRB- eg , ladyfinger -RRB- , metonymies -LRB- eg , vietnam veteran -RRB- , proper names -LRB- eg , john doe -RRB- , and nps with coordinate structures in which neither noun is the head -LRB- eg , player-coach -RRB- .
+corpus analysis at np level .
+our intention is to answer questions like : -LRB- 1 -RRB- what are the semantic relations encoded by the np-level constructions ?
+we used xwn 2.0 since all its glosses are syntactically parsed and their words semantically disambiguated which saved us considerable amount of time .
+table 4 also shows that there is a subset of semantic relations that can be fully encoded by all types of np constructions .
+so far we have experimented with three models : -LRB- 1 -RRB- semantic scattering , -LRB- 2 -RRB- decision trees , and -LRB- 3 -RRB- naive bayes .
+one way of approximating the feature vector is to perform a semantic generalization , by replacing the synsets with their most general hypernyms , followed by a series of specializations for the purpose of eliminating ambiguities in the training data .
+we have analyzed the sources of errors in each case and found out that most
+q. where have nuclear incidents occurred ?

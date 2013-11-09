@@ -1,0 +1,11 @@
+for a more detailed description we refer the reader to -LRB- bos and markert , 2005 -RRB- .
+third-person personal pronouns are resolved to named entities , and proper names and definite descriptions are treated as anaphoric too .
+to check whether an entailment holds or not , we used two kinds of automated reasoning tools : first-order theorem proving , and finite model building .
+a hyponymy relation between two synsets a and b is converted into vx -LRB- a -LRB- x -RRB- \* b -LRB- x -RRB- -RRB- .
+model building .
+an attractive property of a model builder -LRB- such as mace or paradox -RRB- is that it outputs a model for its input formula -LRB- only of course if the input is satisfiable -RRB- .
+a model is here the logical notion of a model , describing a possible situation in which
+model builders like paradox and mace generate finite models by iteration .
+if they fail , they increase the domain size and try again , until either they find a model or their resources run out .
+we used the confidence value as the primary ranking criterion for our decisions .
+the overall combined ranking over the whole test set used the confidence values of all three subsets as primary sorting constraint with differences in domain size as secondary and word overlap as tertiary sorting criterium .

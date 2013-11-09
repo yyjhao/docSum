@@ -1,6 +1,6 @@
 however , in many situations we may have a source domain with plentiful labeled training data , but we need to process material from a target domain with a different distribution from the source domain and no labeled data .
-3.1 pivot features pivot features should occur frequently in the unlabeled data of both domains , since we must estimate their covariance with non-pivot features accurately , but they must also be diverse enough to adequately characterize the nuances of the supervised task .
+we show how to use scl to transfer a pos tagger from the wall street
 if we have designed the pivots well , then 0 should encode correspondences among features from different domains which are important for the supervised task , and the classifier we train using these new features on the source domain will perform well on the target domain .
 in this case , we make use of the out-of-domain data by using features of the source domain taggers predictions in training and testing the target domain tagger -LRB- florian et al. , 2004 -RRB- .
 with 1000 source domain sentences and 50 target domain sentences , using scl tagger features gives a 20.4 % relative reduction in error over using supervised tagger features and a 39.9 % relative reduction in error over using no source features .
-with 1000 source domain sentences and 500 target domain sentences , using supervised tagger features gives
+3.1 pivot features pivot features should occur frequently in the unlabeled data of both domains , since we must estimate their covariance with non-pivot features accurately , but they must also be diverse enough to adequately characterize the nuances of the supervised task .

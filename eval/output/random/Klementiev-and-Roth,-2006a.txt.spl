@@ -1,0 +1,10 @@
+moreover , it is often difficult to
+the first observation is that nes in one language in such corpora tend to co-occur with their counterparts in the other .
+that is , we attempt to choose a candidate which is both a good transliteration -LRB- according to the current model -RRB- and is well aligned with the ne .
+in order to effectively rely on the quality of time sequence scoring , we used a simple , knowledge poor approach to group ne variants for russian .
+there has been other work to automatically discover ne with minimal supervision .
+however , they focus on the classification stage of already segmented entities , and make use of contextual and morphological clues that require knowledge of the language beyond the level we want to assume with respect to the target language .
+most are generative and consider the task of producing an appropriate transliteration for a given word , and thus require considerable knowledge of the languages .
+couplings of the substrings from both sets produce features we use for training .
+time sequence scoring function chooses it to be one of the training examples for the next round of training of the model .
+the algorithm can be naturally extended to comparable corpora of more than two languages .

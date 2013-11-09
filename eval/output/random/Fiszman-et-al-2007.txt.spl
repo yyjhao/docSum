@@ -1,0 +1,12 @@
+semrep -LSB- rindflesch and fiszman , 2003 ; rindflesch et al. , 2005 -RSB- recovers underspecified semantic propositions in biomedical text based on a partial syntactic analysis and structured domain knowledge from the umls .
+several systems that extract entities and relations are under development in both the clinical and molecular biology domains .
+metamap -LSB- aronson , 2001 -RSB- then matches noun phrases to concepts in the metathesaurus and determines the semantic type for each concept .
+semantic groups -LSB- mccray et al. , 2001 -RSB- from the semantic network are also available .
+for example , this identification allows both lorazepam and dimenhydrinate to function as arguments of treats in -LRB- 15 -RRB- .
+interpreting comp2 patterns .
+for adjectives superior and inferior -LRB- patterns s4 and s5 in -LRB- 12 -RRB- -RRB- the scale name is goodness .
+we then computed recall and precision in several ways : overall for all comparative structures , for comp1 structures only , and for comp2 structures only .
+recall measures the proportion
+the most recent version of metamap , which will soon be called by comparative processing , exploits word sense disambiguation -LSB- humphrey et al. , 2006 -RSB- and will likely resolve some of these errors .
+the semantic predications returned by semrep to represent comparative expressions can be considered a type of executable knowledge that supports reasoning .
+this ability could be very useful in supporting question-answering applications .

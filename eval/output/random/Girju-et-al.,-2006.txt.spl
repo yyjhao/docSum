@@ -1,0 +1,7 @@
+the axioms considered were : existence -LRB- if a is a part of b then both a and b exist -RRB- , asymmetry -LRB- if a is a part of b then b is not a part of a -RRB- , supplementarity -LRB- if a is a part of b then b has a part c disjoint of a -RRB- , and transitivity -LRB- if 6 for example , in wordnet 1.7 the only part listed for the concept sandwich is bread .
+their hypothesis is based on the idea that , semantically , the verb to have has a sense of its own derived from the semantic interpretation of the close context or the sentence in which it occurs .
+in this section we propose a method for the automatic discovery of rules that discriminate whether
+for instance , for the pair door # 4-car # 1 we searched altavista for documents containing both words car and door .
+at this point , the generalized training corpus contains three types of examples : for the unambiguous examples in the generalized training corpus -LRB- those that are either positive or negative -RRB- , rules are determined using c4 .5 .
+the rationale of this approach is that the rules closer to the bottom are more specific , and thus more accurate .
+the iss system-s results were compared to four baseline measures .

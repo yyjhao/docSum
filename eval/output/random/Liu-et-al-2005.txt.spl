@@ -1,0 +1,9 @@
+a system like ours can be installed at a merchant site that has reviews so that potential buyers can compare not only prices and product specifications -LRB- which can already be done at some sites -RRB- , but also opinions from existing customers .
+our work is related but quite different from sentiment classification -LSB- e.g. , 8 , 9 , 15 , 29 , 30 , 32 , 33 , 35 -RSB- .
+below , we mainly discuss prior work related to analysis of customer reviews or opinions .
+our current system
+however , in the case of a digital camera review , it is not suitable to regard picture and movie in one synset , as picture is more related to photo while movie refers to video .
+that is , word a and word b will be regarded as synonyms only if there is a synset containing a and b that appear in the top two senses of both words .
+automatic review processing : this component automatic performs review processing to produce the results as described in section 3.3 and -LSB- 17 -RSB- .
+analyst : this is the company analyst who takes the automatically processed reviews and corrects any errors interactively using the user interface -LRB- figures 4 -RRB- .
+he \/ she can read the reviews and use the user interface in figure 4 to perform the task .

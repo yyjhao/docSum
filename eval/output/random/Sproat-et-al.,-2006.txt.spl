@@ -1,0 +1,8 @@
+in previous work on chinese named-entity transliteration e.g. -LRB- meng et al. , 2001 ; gao et al. , 2004 -RRB- , the problem has been cast as the problem of producing , for a given chinese name , an english equivalent such as one might need in a machine translation system .
+this phonetic correspondence model can then be used to score putative transliteration pairs .
+in principle , all these 600 x 627 pairs are potential transliterations .
+we then apply the phonetic and time correlation methods to score and rank all the candidate chinese-english correspondences .
+for example , if the correct answer is ranked as the first , the reciprocal rank would be 1.0 , whereas if it is ranked the second , it would be 0.5 , and so forth .
+we further notice that some answers -LRB- about 20 % -RRB- are not in our chinese candidate set .
+we see that both combination strategies are effective and the mrrs of the combined results are all better than those of the two individual methods .
+the relative performance of different methods on this augmented candidate list is roughly the same as on the original candidate list , except that the freq + phoneticfilter is slightly worse than that of the phonetic method alone , though it is still much better than the performance of the frequency correlation alone .

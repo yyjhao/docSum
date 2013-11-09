@@ -1,0 +1,11 @@
+to learn from a handful of training examples , one must either use a sufficiently limited model class or some additional regularization penalty to effectively constrain the models learnable with a small amount of data .
+in applications with large numbers of training examples , the likelihood dominates the prior .
+bayesian logistic regression .
+map estimation is neither necessarily superior or inferior to other bayesian approaches -LSB- 28 -RSB- .
+the laplace parameters are the mean j , and the scale parameter aj , corresponding to a variance of 2 \/ a2 j .
+we split the bio articles documents into three 8-month segments .
+training sets of various sizes were drawn from the training population of 3,742 articles -LRB- period : 2002-01-01 to 2002-08-31 -RRB- , and classifiers were evaluated on the test set of 4,175 articles -LRB- period : 2003-05 - 01 to 2003-12-31 -RRB- .
+we used as our domain knowledge text for a category all words from the mesh heading , scope notes , entry terms , see also , and previous indexings fields .
+this experiment trained classifiers on each collection s large training set .
+since 5 positive examples is more than occurs in random samples of 500 examples for some classes , effectiveness is sometimes better and sometimes worse than in table 4 .
+on three data sets , with three diverse sources of domain knowledge , we found large improvements

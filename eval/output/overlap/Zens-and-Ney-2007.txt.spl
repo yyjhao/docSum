@@ -1,4 +1,4 @@
-in the case of phrase-based mt , the keys are source phrases , i.e. sequences of source words and the associated values are the possible translations
+if the source text , which is to be translated , is known in advance , a common trick is to filter the phrase-table and keep
 in this section , we will introduce the notation and state the problem of matching source phrases of an input graph g and the phrase-table , represented as prefix tree t. the input graph g has nodes 1 , ... , j , ... , j. the outgoing edges of a graph node j are numbered with 1 , ... , n , ... , n9 , i.e. an edge in the input graph is identified by a pair -LRB- j , n -RRB- .
 the naive approach would be to enumerate all paths in the input graph from node j ' to node j , then lookup the corresponding source phrase in the phrase-table and add the translations , if there are any , to the set of translation options e -LRB- j ' , j -RRB- .
 we show the number of distinct source phrases , the number of distinct source-target phrase pairs and the average number of target phrases -LRB- or translation candidates -RRB- per source phrase .

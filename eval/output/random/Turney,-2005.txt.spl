@@ -1,0 +1,10 @@
+the best guess is the label for the training pair with the highest cosine ; that is , the training pair that is most analogous to the testing pair , according to vsm .
+select the top num _ filter most frequent alternates and discard the remainder -LRB- we use num _ filter = 3 , so 17 alternates are dropped -RRB- .
+find patterns : for each phrase found in the previous step , build patterns from the intervening words .
+the value for the cell in row i and column j is the frequency of the j-th pattern -LRB- see step 6 -RRB- in phrases that contain the i-th word pair -LRB- see step 5 -RRB- .
+this sorting is convenient for lra , since it makes it possible to focus on words with higher attributional similarity and ignore the
+therefore we score the performance by giving one point for each correct answer and 0.2 points for each skipped question .
+the f measure is the harmonic mean of precision and recall .
+however , with progress in computer hardware , speed will gradually become less of a concern .
+it may also be possible to precompute much of the information for lra , although this would require substantial changes to the algorithm .
+another issue with noun-modifier classification is the choice of classification scheme for the semantic relations .

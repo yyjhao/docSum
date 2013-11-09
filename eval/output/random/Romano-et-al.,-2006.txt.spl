@@ -1,0 +1,10 @@
+table 2 provides several example annotations .
+however , the annotation and analysis methodologies are general and are suggested as highly effective tools for further research .
+this section describes our initial implementation of the approach in section 3 .
+in this paper we use tease for entailment relation acquisition since it processes an input template in a completely unsupervised manner and due to its broad domain coverage obtained from the web .
+the reported percentage of correct output templates for tease is 44 % .
+a transformation rule maps the left hand side of the rule , which strictly matches a sub-graph of the given template , to the right hand side of the rule , which strictly matches a sub-graph of the sentence graph .
+experiments .
+our results are not directly comparable with theirs because they adopted 10-fold cross - validation , while we had to divide the dataset into a development and a test set , but a rough comparison is possible .
+for the same 30 % recall , the rule - based method achieved precision of 62 % and the best supervised learning algorithm achieved precision of 73 % .
+our approach differs from previous unsupervised ie methods in that we identify instances of a specific relation while prior methods identified template relevance only at the general scenario level .

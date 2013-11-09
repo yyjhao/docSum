@@ -1,6 +1,7 @@
 in addition to supporting advance queries over facts as just described , citation indexes can be improved by combining methods that use citances context -LRB- e.g. , mercer and di marco -LSB- 23 -RSB- -RRB- with methods that use citances content -LRB- e.g. -LSB- 7 -RSB- -RRB- .
-in addition to citation analysis , citations are used in citation indexing systems , which were first proposed in 1955 by garfield -LSB- 13 -RSB- , and are now
-applications of anchor text include identification of home pages of people and companies -LSB- 11 -RSB- , classification of web pages -LSB- 10 , 12 -RSB- , web crawlers -LSB- 27 -RSB- , and improved ranking of search results -LSB- 28 -RSB- .
-thus it is important to be able to normalize or paraphrase the citances for many applications , including indexing in a database or an ir system , document summarization -LSB- 4 , 3 -RSB- , learning synonyms -LSB- 16 , 17 -RSB- , building a model of the different expressions of the same relationship for ie -LSB- 30 , 29 -RSB- , extracting patterns for question answering -LSB- 20 -RSB- , machine translation -LSB- 26 -RSB- .
-this led to errors in which two noun phrases are run together , as in : hrk \/ dp5 bim -LSB- have -RSB- -LSB- been -RSB- found -LSB- to -RSB- be upregulated after ngf withdrawal .
-in this work we focused on the extraction of grammatical template-level paraphrases similar to those described by lin and pantel -LSB- 20 -RSB- , and further refined by -LSB- 18 -RSB- , -LSB- 29 -RSB- and -LSB- 30 -RSB- .
+they use the identified citances to improve summarization performance by using them as a feature when classifying candidate sentences in the citing paper , giving lower weight to citances as compared to other sentences .
+in the next subsections we describe how these paraphrases are extracted from the citances and present a preliminary evaluation of the results for one set of citances .
+table 1 shows that 81.82 % are labeled good or acceptable when using citances known to have paraphrases , and 69.23 % are labeled good or acceptable from the set 2 citances .
+to cluster the 203 citances -LRB- we cluster all of them , not just those from set 1 , set 2 or set 3 -RRB- we use an
+the cluster dataset is obtained by selecting the citances in clusters for which more than 80 % of the citances include both ngf and bim .
+we have demonstrated some initial results in paraphrasing citances that discuss the same topic , but more work remains to be done to improve results , and to group similar citances together .

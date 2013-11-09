@@ -1,0 +1,8 @@
+in this paper we describe a simple system based on lexical similarity , with two different word similarity measures .
+for example
+it is not clear whether this is due to the test corpus being more difficult , or our system overfits the development corpus in ways other than threshold selection .
+moreover , whereas the difference between the two similarity measures seems substantial on the development corpus , they perform very similarly on the test corpus .
+we also compared the performance of our entailment checking system on different subtasks , corresponding to different sources of the entailment pairs .
+manual examination of the entailment candidate pairs from the cd subtask shows that the pairs usually have many words in common : in the second example the similarity is substantially lower since numbers -LRB- which occur relatively rarely in our newspaper collection , and thus get higher weight -RRB- are different .
+although , in principle , we can tune the precision \/ recall balance by varying the thresholds , the experimental results on which we report in this note show that the thresholds are very corpus-specific and thus can hardly be used for this tuning .
+we described our participation in the pascal-2005 recognizing textual entailment challenge , with a simple sentence similarity-based system that uses two different word similarity measures .

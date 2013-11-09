@@ -1,0 +1,11 @@
+however , it is unclear whether these high scores accurately reflect the performance of parsers in applications .
+table 1 lists the grs used in the evaluation .
+in the process of performing the transformation we encountered a methodological problem : without looking at examples it was difficult to create the mapping and impossible to know whether the two representations were converging .
+for example , in sen. mitchell , who had proposed the streamlining , the subject of proposed is mitchell in ccgbank but who in depbank .
+for both depbank and the transformed ccgbank there are two conj grs arising from the coordination : -LRB- conj and president -RRB- and -LRB- conj and officer -RRB- .
+this rule applies to only a small subset of the ta cases but has high enough precision to be worthy of inclusion .
+there are some dependencies in ccgbank which do not appear in depbank .
+the final columns of table 4 show the
+hence we challenge other parser developers to map their own parse output into the version of depbank used here .
+the ccg parser took only 22.6 seconds to parse the 560 sentences in depbank , with the accuracy given earlier .
+using a cluster of 18 machines we have also parsed the entire gigaword corpus in less than five days .

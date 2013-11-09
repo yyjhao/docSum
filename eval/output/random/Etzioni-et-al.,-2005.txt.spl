@@ -1,0 +1,10 @@
+to instantiate the rules , the pluralized class label is automatically substituted for &lt; class1 &gt; , producing patterns like cities such as nplist .
+np must be a simple noun phrase ; nplist must be a list of simple nps ; and what is denoted by &lt; class1 &gt; is a simple noun phrase with the class name as its head .
+this is not a problem for prominent instances that have several million hits on the web .
+each of these candidate seeds must have a minimum number of hit counts for the instance itself ; otherwise the pmi scores from this seed will be unreliable .
+to better understand how knowitall operates , we present a detailed example
+experiments 4 and 5 show precision and recall at the end of running knowitall for four days .
+we quantify the efficacy of this approach via experiments on multiple classes , and describe design decisions that enhance the performance of pattern learning over the web .
+since we do not know how google sets is implemented and can not get unlimited results from their interface , we are unable to compare the two systems .
+knowitalls task is to automatically extract the knowledge that semtag takes as input .
+the paper reports on several experiments that shaped knowitalls design .

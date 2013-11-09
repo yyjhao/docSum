@@ -1,0 +1,7 @@
+the split between development data and test data was chosen to avoid systems being tuned to the test data .
+apart from the training data , this system also employed gazetteers and the output of two externally trained named
+we assume that performance a is significantly different from performance b if a is not within the center 90 % of the distribution of b. the performances of the sixteen systems on the two test data sets can be found in table 5 .
+this information included gazetteers and unannotated data , and there was one participant who used the output of externally trained named entity recognition systems .
+the shared task organizers were especially interested in approaches that made use of resources other than the supplied training data , for example gazetteers and unannotated data .
+a majority vote of five systems -LRB- chieu and ng , 2003 ; florian et al. , 2003 ; klein et al. , 2003 ; mccallum and li , 2003 ; whitelaw and patrick , 2003 -RRB- performed best on the english development data .
+in this section we discuss the sources of the data that were used in this shared task , the preprocessing steps we have performed on the data , the format of the data and the method that was used for evaluating the participating systems .

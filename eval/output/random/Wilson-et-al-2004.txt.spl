@@ -1,0 +1,8 @@
+a system that could automatically identify and extract opinions and emotions from text would be an enormous help to someone sifting through the vast amounts of news and web data , trying to answer these kinds of questions .
+this ability would also be important for multi-perspective question answering , which aims to present multiple answers to the user based on opinions derived from different sources , and for multi-document summarization systems , which need to summarize differing opinions and perspectives .
+because the variety of words and phrases that people use to express opinions is staggering , a system limited to a fixed vocabulary will be unable to identify opinionated language over a broad range of discourse .
+inter-annotator agreement for strength ratings is challenging .
+first , we parse the training sentences in the mpqa corpus with a broad-coverage lexicalized english parser -LRB- collins , 1997 -RRB- .
+the parent word is known as the head , and
+a clue is considered to be potentially useful if more than x % of its occurrences in the mpqa training data are in phrases marked as subjective , where x is a parameter tuned on development data -LRB- in our experiments , we chose x = 70 % -RRB- .
+others perform automatic analyses of product reputations -LRB- morinaga et al. , 2002 ; nasukawa and yi , 2003 ; yi et al. , 2003 -RRB- .

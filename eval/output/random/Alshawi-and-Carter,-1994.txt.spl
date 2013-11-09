@@ -1,0 +1,8 @@
+in particular , the best collocation function performs significantly better than a related function that defines collocation strength in terms of mutual information , reducing the error rate in a disambiguation task from approximately 30 % to approximately 10 % .
+however , as suggested earlier , there are a number of disadvantages to manual tuning of scaling factors .
+probably a more serious problem is that the contributions of different preference functions to selecting the most plausible analyses seem to vary from one sublanguage to another .
+these linear simultaneous equations , one for each of c1 ... cm , can be solved by gaussian elimination .
+the third function is an original variant of the second ; the fourth is original ; and the fifth is prompted by the arguments of dunning -LRB- 1993 -RRB- .
+for significance tests , which require binary data , we took a function as performing
+when one collocation function is selected to act together with the nineteen noncollocation-based functions from the default set -LRB- the set defined in section 2 and used in the experiments on scaling factor calculation -RRB- the picture changes slightly .
+in this context , when scaling factors are calculated in the usual way , by least-squares followed by hill-climbing , the results for the best three of the above functions are as shown in table 5 .

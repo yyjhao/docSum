@@ -1,0 +1,16 @@
+a new document is judged to be a member of a class based on how similar it is to the training documents .
+thus , the article is typically mis-classified when
+named entities carry a lot of informational content about the concepts in a document .
+wikipedia has just begun to be used as a supplemental text resource , similar to wordnet or framenet .
+in the end , the resulting relatedness measures are comparable to wordnet .
+evaluation .
+the evaluation was done with the wikipedia data dump from November 11 , 20061 .
+after decompression , the resulting xml file was 6.6 gb in size .
+any additional categories found in the testing set are discarded .
+in our experiment , we compared the output of three things : an un-optimized bag-of-words model , a bagof-named-entities model and bag-of-categories .
+our negative example set was simply too small for it to pick out the appropriate features for classification .
+c4 .5 was able to distinguish the appropriate category with ease and generated a one-level decision tree .
+while mediawiki was able to successfully populate our mysql database , the provided database structure is not optimal for our needs .
+disambiguation needs to be handled .
+in our current system , we discard entities that need disambiguation .
+article consistency needs to be checked to ensure that appropriate inter-article links are maintained .

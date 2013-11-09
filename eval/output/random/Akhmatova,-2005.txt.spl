@@ -1,0 +1,10 @@
+we represent meaning of a sentence as a set of atomic propositions contained in it and compare the propositions in order to compare the sentences .
+we mean by an atomic proposition a minimal declarative statement -LRB- or a small idea -RRB- that is either true -LRB- t -RRB- or false -LRB- f -RRB- and
+-LRB- coffee boosts energy and provides health benefits .
+a logical meaning representation of a sentence and an automatic deduction system to work with it are often used in qa applications -LRB- moldovan et al. , 2002 ; moldovan et al. , 2003 -RRB- .
+from our point of view , these forms are rigid and hard to produce .
+its not clear how to compare two such logical representations .
+there are three types of objects - subj -LRB- x -RRB- , obj -LRB- x -RRB- , pred -LRB- x -RRB- and a meaning attaching element iq -LRB- x , &lt; meaning of x &gt; -RRB- .
+a way to logic form is shown in section 2 .
+after the algorithm is the following -LRB- figure 2 : otter and its input data ; and figure 4 -RRB- : if for every proposition in the hypothesis sentence there is one in the text sentence from that it could be entailed then the sentence entailment holds , otherwise the entailment does not hold .
+despite not very high results we believe the proposed system has a strong potential .

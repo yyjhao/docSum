@@ -1,0 +1,14 @@
+in particular we describe the design of a bilingual tree loss function that can explicitly use syntactic structure for measuring translation quality .
+translation loss functions .
+another example of a loss function in this class is the mteval metric introduced in melamed et al. -LRB- 2003 -RRB- .
+the per score -LRB- och , 2002 -RRB- is then computed as a ratio of this distance to the number of words in the reference word string .
+four evaluation metrics were used .
+decoder performance .
+the performance of the mbr decoders on the nist 2001 + 2002 test set is reported in table 3 .
+the gains from mbr decoding under matched conditions are statistically significant in most cases .
+given
+using an example , we have shown that this loss function can measure qualities of translation that string -LRB- and ngram -RRB- based metrics can not capture .
+however , we emphasize that the mbr techniques do not preclude the construction of complex models of syntactic structure .
+that machine translation evaluation continues to be an active area of research is evident from recent workshops -LRB- amta , 2003 -RRB- .
+we are developing efficient lattice search procedures for mbr decoders .
+these criteria could come from evaluation metrics or from other desiderata -LRB- such as syntactic well-formedness -RRB- that we wish to see in automatic translations .

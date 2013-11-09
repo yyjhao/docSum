@@ -1,0 +1,12 @@
+queries based on image concepts like color or texture have been proposed for retrieving images by content but most users find it difficult to query using such visual attributes .
+this is difficult if not impossible with many of the current image retrieval systems and hence has not led to widespread adoption of these systems .
+this model assumes that a dirichlet distribution can be used to generate a mixture of latent factors .
+the model proposed in this paper is called continuous-space relevance model -LRB- crm -RRB- .
+however , the topological structure of crm is quite different from the one employed by -LSB- 3 -RSB- .
+to contrast that , crm makes no assumptions about the topological structure , and leads to a doubly non-parametric approach , where expectations are computed over every individual point in the training set .
+a model of annotated images .
+each object is represented by its own region : for the sun , for the grass , and for the tiger .
+according to
+automatic image annotation .
+the figures clearly show that the model presented here -LRB- crm -RRB- substabtially outperforms the other models and is the only one of the four capable of producing reasonable mean recall and mean precision numbers when every word in the test set is used .
+conclusions and future work .

@@ -1,0 +1,12 @@
+query definition , display , and interaction are the topic of section 6 .
+in this section , we discuss patterns in applications , the repertoire of images , the influence of the scene and the role of domain knowledge , and the semantic gap between image features and the user .
+although each face is unique and has large variability in the visual details , there are obvious geometrical , physical , and color-related constraints governing the domain .
+this reduces
+8 and illustrated in fig .
+salient features .
+they can also be applied to compare the equality of two histograms and all variations thereof .
+when based on a metric , dissimilarity measures will render an ordered range of deviations suited for a predictable interpretation .
+in the first place , the color , texture , or local shape characteristics may be used to identify the salient points of the data as identical to the salient points of the query .
+this saves the effort of labeling the entire data set , unfeasible and unreliable as it grows big .
+the segmentation result is improved if the user may annotate the template with salient details like color corners and specific textures .
+strong segmentation of the scene and complete feature descriptions may not be necessary at all to achieve the similarity ranking .

@@ -1,0 +1,9 @@
+so if the portions of each sentence in the articles share several comparable nes , they are likely to be expressing the same meaning ; in other words , they are paraphrases .
+we apply these obtained patterns to the articles itself , and then find paraphrases only among those which matches to any of patterns .
+first we obtain pairs of articles of a certain domain from two newspapers , as a source of both ie patterns and paraphrases .
+if each ie pattern attached to the sentences shares the same number of comparable nes , link the two patterns as paraphrases .
+first we obtained the most relevant 300 articles from mainichi newspaper -LRB- total of 111373 articles -RRB- for two domains , arrest events and personnel affairs -LRB- hiring and firing of executives -RRB- .
+then we ran the paraphrase acquisition system for each pair or articles , and finally got total 136 pairs of paraphrases -LRB- a link between two ie patterns -RRB- .
+the number of article pairs , obtained ie patterns and obtained paraphrases pairs are shown in table 4 .
+we take only patterns which form a cluster and drop single-element patterns
+since our method only considers the nes contained in these patterns , a wrong pair of patterns can be regarded as paraphrases in this domain .

@@ -1,0 +1,6 @@
+to assess this choice , we develop a set of conversion rules for transforming the link grammar -LRB- lg -RRB- dependency scheme the stanford scheme and then create a version of the bioinfer corpus in the stanford scheme by applying the conversion rules and manually correcting the errors .
+for creating the bioinfer corpus syntactic annotation in the stanford scheme , the starting point of the annotation process was the existing manual annotation of the corpus in the lg scheme to which we applied the lg-sf conversion described in section 4.1 .
+compared to the 48 dependency types of the stanford scheme , the lg english grammar defines over 100
+in the development of the lg-sf conversion and sf bioinfer , we make the following minor modifications to the stanford scheme .
+the bioinfer syntactic annotation follows the lg dependency scheme , addressing the recent interest in lg in the biomedical nlp community -LRB- ding et al. , 2003 ; alphonse et al. , 2004 ; aubin et al. , 2005 -RRB- .
+to facilitate the comparison of results with those of clegg and shepherd , we use their modified subset of genia treebank .4 as 600 of the 1100 bioinfer sentences have previously been used in the development of the biolg parser , we only use the remaining 500 blind sentences of bioinfer in the evaluation .

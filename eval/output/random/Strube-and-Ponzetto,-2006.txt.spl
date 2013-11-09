@@ -1,0 +1,12 @@
+in addition , the category relations in wikipedia can not only be interpreted as corresponding to is-a links in a taxonomy since they denote meronymic relations as well .
+in this paper we explore the idea of using wikipedia for computing semantic relatedness .
+those researchers , however , focused on developing appropriate measures while keeping wordnet as the de facto primary knowledge source .
+semantic relatedness measures .
+an example of such measure is the extended gloss overlap -LRB- lesk -RRB- measure of banerjee &amp; pedersen -LRB- 2003 -RRB- .
+computing semantic relatedness with wikipedia .
+experiments .
+as a baseline , we compute for each word pair i and j the google correlation coefficient by taking the jaccard similarity coefficient on page hits .
+instances are created following soon et al. -LRB- 2001 -RRB- .
+in order to test the effects of including semantic relatedness information within a coreference learner , the system is first run using the 12 features of the
+we discard therefore those responses not present in the key , as we are interested here in establishing the upper limit of the improvements given by our semantic features .
+instead of letting a few ontology experts decide upon the structure of the world , its thorough description can be continuously approximated by a large number of people who collaborate on wikipedia .

@@ -1,0 +1,10 @@
+in the second section , we describe how the mutual bootstrapping process is itself bootstrapped to produce more accurate dictionaries at each iteration .
+however , most ie tasks require the extraction of a potentially open-ended set of phrases .
+head phrase matching means that x matches y if x is the rightmost substring of y. for example , '' new zealand '' will match any phrase that ends with '' new zealand '' , such as '' eastern new zealand '' or '' the modern day new zealand '' .
+ten seed words were used : bolivia , city , colombia , district , guatemala , honduras , neighborhood , nicaragua , region , town .
+the f and n values for each pattern are shown in parentheses .
+the extraction patterns are indicative of locations and have identified several new location phrases -LRB- e.g. , jauja , san miguel , soyapango , and this northern area -RRB- .
+to determine which nps are most '' reliable '' , we score each np based on the number of different category patterns -LRB- members of cat eplist -RRB- that extracted it .
+the referents were also very useful during bootstrapping because a pattern that extracts '' the company '' will probably also extract specific company names .
+table 1 shows that our algorithm found about 100-200 new phrases for all of the
+in summary , we have shown that multi-level bootstrapping can produce high-quality dictionaries for a variety of categories .

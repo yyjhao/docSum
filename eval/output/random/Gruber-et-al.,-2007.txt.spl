@@ -1,0 +1,13 @@
+in -LSB- 7 -RSB- a model that integrates topics and syntax is introduced .
+during the last couple of years , a few models were introduced in which consecutive words are modeled by markovian relations .
+from figure 1b it is evident that conditioned on ^ and ^ , the hidden topics are independent .
+documents for which successive words have the same topics are more likely
+this obviously increases the storage requirement for each document , model proposed in this paper .
+the order of words and their proximity plays an important role in the model .
+in this paper , we take advantage of the fact that conditioned on ^ and ^ the htmm model is a special type of hmm .
+we should note that in our experiments we found the final solution calculated by em to be stable with respect to multiple initializations .
+again , this may be due to our use of a hierarchical generative model which reduces somewhat the degrees of freedom available to em .
+stop words do not appear in the vocabulary , hence they were discarded from the input .
+!
+the only exception is that we omitted appearances of e.g. and i.e. in our preprocessing sentences are drawn from ^ independently .
+in all the experiments the same values of ^ , ^ were provided to all algorithms .

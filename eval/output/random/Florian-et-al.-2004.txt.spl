@@ -1,0 +1,9 @@
+the framework presented in this paper is language - universal the classification method does not make any assumption about the type of input .
+good performance in many natural language processing tasks , such as part-of-speech tagging , shallow parsing and named entity recognition , has been shown to depend heavily on integrating many sources of information -LRB- zhang et al. , 2002 ; jing et al. , 2003 ; ittycheriah et al. , 2003 -RRB- .
+the rrm algorithm -LRB- zhang et al. , 2002 -RRB- constructs linear classifiers -LRB- one for each predicted class -RRB- , each predicting whether the current example belongs to the class or not .
+every such classifier has an associated feature weight vector , , which is learned during the training phase so as to minimize the classification error rate3 .
+given these weights , the model computes the probability distribution of a particular example as follows : after computing the class probability distribution , the assigned class is the most probable one a posteriori .
+the segmentation model is similar to the one presented by lee et al. -LRB- 2003 -RRB- , and obtains an accuracy of about 98 % .
+the english mention detection model is similar to the system described in -LRB- ittycheriah et al. , 2003 -RRB- 7 .
+the arabic and chinese models were built using the rrm model .
+the system performance is very close to human performance on this task

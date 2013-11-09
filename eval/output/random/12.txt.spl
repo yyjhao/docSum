@@ -1,0 +1,10 @@
+clustering is the key part for such a task .
+agglomerative hierarchical clustering generates a series of nested clusters by merging simple clusters into larger ones , while partitive methods try to find a pre-specified number of clusters that best capture the data .
+we now review the inventory of features studied in our work .
+each stemmed word is considered to be a feature and weighted by its term frequency x inverse document frequency -LRB- tf x idf -RRB- .
+we extract the named entities from the web pages using the stanford named entity recognizer -LRB- finkel et al. , 2005 -RRB- .
+the remaining tokens are then used as features , and weighted by their tf x idf .
+table 1 shows the results of our experiments on the training data sets -LRB- ecdl , wikipedia and census -RRB- .
+two different evaluation measures are reported as described by the task : fa = 0.5 is a harmonic mean of purity and inverse purity of the clustering result , and fa = 0.2 is a version of f that gives more importance to inverse purity -LRB- artiles et al. , 2007 -RRB- .
+although ne targeted aims for highly precise disambiguation , it seems that it throws away too much information so that inverse purity
+this explains the superiority of ne over ne targeted for all three data sets .

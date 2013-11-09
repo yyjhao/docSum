@@ -1,0 +1,11 @@
+prescher et al. -LSB- 2000 -RSB- concentrate on verbs and their objects .
+the two models are trained on the bnc and evaluated against two corpora differing in the degree of translation ambiguity displayed by the object noun .
+these compounds are presumably well-established and fairly frequent , which makes it easy to obtain
+figures 1 and 2 show how model performance varies along different parameter values .
+we used the same 263,838 adjective pairs that -LSB- malouf 2000 -RSB- extracted from the bnc .
+the decision trees are trained on a database of 400,000 np instances derived from the wall street journal , using a variety of lexical -LRB- e.g. , words before or after the article -RRB- , syntactic -LRB- e.g. , parts-of-speech -RRB- , and semantic -LRB- e.g. , tense -RRB- features .
+the second analysis task we consider is the semantic interpretation of compound nouns .
+the backoff and interpolation models achieve performances comparable to the best altavista model .
+we also explored the performance of two models that combine web counts and corpus counts .
+the backoff model uses corpus counts , unless they fall below a threshold , in which case the model backs off to web counts .
+most of them are supervised models that have access not only to simple bigram or trigram frequencies , but also to corpus external linguistic information such as part-of-speech tags , semantic restrictions , or context .

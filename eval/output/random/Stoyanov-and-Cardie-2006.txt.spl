@@ -1,0 +1,11 @@
+several efforts have attempted to automatically extract opinions , emotions , and sentiment from text .
+finally , liu et al. -LRB- 2005 -RRB- summarize automatically generated opinions about products and develop interface that allows the summaries to be vizualized .
+more precisely , we rely on the mpqa corpus -LRB- wilson and wiebe , 2003 -RRB- 3 , which contains 535 manually annotated documents .
+additionally , the annotations contain information that allows coreference among source mentions to be recovered .
+in this section we define the problem of source coreference resolution , describe its challenges , and provide an overview of our general approach .
+source coreference resolution differs from traditional supervised np coreference resolution
+this section describes our method for heuristically mapping sources to nps .
+we compute a vector of 57 features for every pair of source noun phrases from the preprocessed corpus .
+the purpose of our evaluation is to create a strong baseline utilizing the best settings for the np coreference approach .
+however , not all svm runs completed in the time limit that we set 200 min , so we selected half of the training set -LRB- 200 documents -RRB- at random and trained all classifiers on that set .
+the absolute b3 and muc scores for source coreference resolution are comparable to reported state-of-the-art results for np coreference resolutions .

@@ -1,0 +1,9 @@
+consequently it becomes difficult to compare , under a generic evaluation framework , practical inference methods that were developed within different applications .
+consequently , we hypothesize that textual entailment recognition is a suitable generic task for evaluating and comparing applied semantic inference models .
+in some cases the examples were collected using external sources , such as available datasets or systems -LRB- see acknowledgements -RRB- , while in other cases examples were collected from the web , focusing on the general news domain .
+since many t-h pairs tend to be quite difficult to recognize , the annotators were biased to limit the proportion of difficult cases , but on the other hand to try avoiding high correlation between entailment and simple word overlap .
+information retrieval -LRB- ir -RRB- : annotators generated hypotheses -LRB- h -RRB- that may correspond to meaningful ir queries that express some
+machine translation -LRB- mt -RRB- : two translations of the same text , an automatic translation and a gold standard human translation -LRB- see acknowledgements -RRB- , were compared and modified in order to obtain t-h pairs .
+then they created one or several corresponding hypotheses by applying the candidate paraphrases to the original text .
+unlike other system submissions , vanderwende et al. report an interesting manual analysis of the test examples .
+our evaluation measures do not favor specifically recognition of positive entailment .

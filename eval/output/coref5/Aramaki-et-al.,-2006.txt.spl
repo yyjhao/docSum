@@ -1,0 +1,8 @@
+we applied support vector machine -LRB- svm -RRB- - based learning -LRB- vapnik , 1999 -RRB- using three types of features : -LRB- 1 -RRB- basic pattern features -LRB- section 3.1 -RRB- , -LRB- 2 -RRB- selected pattern features -LRB- section 3.2 -RRB- , and -LRB- 3 -RRB- physical size features -LRB- section 3.3 -RRB- .
+we thus selected the most informative n patterns -LRB- step 1 -RRB- and conducted specific searches -LRB- # of samples x n basic patterns -RRB- -LRB- step2 -RRB- as follows : step1 : to select the most informative patterns , we applied a decision tree -LRB- c4 .5 -RRB- -LRB- quinlan , 1987 -RRB- and selected the basic patterns located in the top n branches 3 .
+as noted in section 1 , we theorized that an entity ` ss size could be a strong clue for some semantic relations .
+we estimated entity size using the following queries : in these queries , &lt; entity &gt; indicates a slot for each entity , such as ' sbook 's , ' slibrary 's , etc .
+then , the system examines the search results for the numerous expressions located in ' s \* ' s and considers the average value to be the size .
+when results of size expressions were insufficient -LRB- numbers &lt; 10 -RRB- , we considered the entity to be nonphysical , i.e. , to have no size .
+these sizes are unusually small for the following
+we briefly presented a method for obtaining the size of an entity and proposed a method for classifying semantic relations using entity size .

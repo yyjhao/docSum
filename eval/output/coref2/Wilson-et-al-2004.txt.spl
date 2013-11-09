@@ -1,0 +1,6 @@
+also , where other research has focused on distinguishing between subjective and objective or positive and negative language , we address the task of classifying the strength of the opinions and emotions being expressed in individual clauses , considering clauses down to four levels deep .
+although the above sets of subjectivity clues were selected because of their correlation with subjective language , they are
+to adapt the clues to strength classification , we use the annotations in the training data to filter the clues and organize them into new sets based on strength .
+to study the feasibility of automatically classifying clauses by their subjective strength , we conducted a suite of experiments in which a strength classifier is trained based on the features previously described .
+the gold standard strength ratings of sentences and clauses are based on the individual expression annotations : the strength of a sentence or clause is defined to be the highest strength rating of any expression in that sentence or clause .
+for all learning algorithms and all clause levels , removing the syntax clues results in a significant difference in mse -LRB- compare rows 6 and 7 in table 1 , rows 1 and 2 in table 2 , and rows 3 and 4 in table 2 -RRB- .

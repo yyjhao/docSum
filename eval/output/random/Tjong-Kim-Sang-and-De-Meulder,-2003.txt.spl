@@ -1,0 +1,14 @@
+there has been a lot of work on named entity recognition , especially for english -LRB- see borthwick -LRB- 1999 -RRB- for an overview -RRB- .
+the shared task of conll-2003 concerns language-independent named entity recognition .
+the participants of the 2003 shared task have been offered training and test data for two other european languages : english
+table 1 contains an overview of the sizes of the data files .
+table 3 : main features used by the the sixteen systems that participated in the conll-2003 shared task sorted by performance on the english test data .
+the most frequently applied technique in the conll-2003 shared task is the maximum entropy model .
+however , they were always used in combination with other learning techniques .
+wu et al. -LRB- 2003 -RRB- applied both stacking and voting to three learners .
+a reasonable number of groups have also employed unannotated data for obtaining capitalization features for words .
+for all the f0 = 1 rates we have estimated significance boundaries by using bootstrap resampling -LRB- noreen , 1989 -RRB- .
+florian et al. -LRB- 2003 -RRB- have also obtained the highest f0 = 1 rate for the german data .
+concluding remarks .
+the resources used by these systems , gazetteers and externally trained named entity systems , still require a lot of manual work .
+systems that employed unannotated data , obtained performance gains around 5 % .

@@ -1,0 +1,9 @@
+it was thus appropriate to generate human models by asking people to produce summary extracts by selecting representative sentences .
+summary content units .
+this kind of score can be used when the goal is to compare systems and will work in the following way .
+annotator training , or a protocol for doublechecking the annotations , possibly by another annotator , are likely to further reduce the observed differences .
+very good results were achieved for single document summarization and for very short summaries of 10 words where the correlation between the automatic and manual metrics was 0.99 and 0.98 respectively .
+many researchers have identified problems that arise as a consequence -LSB- rath et al. 1961 ; minel et al. 1997 ; jing et al. 1998 ; goldstein et al. 1999 ; donaway et al. 2000 -RSB- .
+the information nuggets are also tailored to the contents of peer answers and are , at least in theory , meant to be atomic with respect to peers .
+but when we look at actual question answering evaluations , the identification
+then , for each pair of system rankings , regardless of the difference in scores , they compute the spearman correlation coefficient and then take the average of the correlation coefficients for a given n. they deem a scoring reliable when the average correlation for a given n exceeds 0.95 .

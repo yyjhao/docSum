@@ -1,8 +1,8 @@
-going back to the copper example , if the article mentions bhp billiton and european minerals -LRB- both mining companies -RRB- several times , then we should have greater evidence that this is an article about mining , rather than about a particular company due to the overlap in concepts among the entities mentioned .
+going back to the copper example , if the article mentions bhp billiton and european minerals -LRB- both mining companies -RRB- several times , then we should have greater evidence that this is an article about mining , rather than about a particular
 in this paper , we propose to use wikipedia to extract the hidden information in entities for more accurate classification than would be able if we used surface features alone .
 these entities are then matched -LRB- if possible -RRB- to a wikipedia article , where the category information is used to generate the document features .
 to do this , we run an named entity recognizer over each document in the corpus and extract the named entities to be used for article matching .
-we then extract category information from the article about the named entity .
 we ran the lingpipe named entity recognizer2 over our data set in order to get our named entities , an off-the-shelf named entity recognizer .
+after running our named entity recognizer over the dataset , we noticed that some of the training documents failed to capture the desired entities .
 in this paper , we have introduced a method for document categorization using wikipedia as a large - scale knowledge base for information about named entities .
 article links , wikipedia categories and other pertinent information should be pre-computed and available within our sql queries .

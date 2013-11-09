@@ -1,0 +1,12 @@
+the classification algorithm is evaluated on 410 reviews from epinions2 , randomly sampled from four different domains : reviews of automobiles , banks , movies , and travel destinations .
+of these reviews , 170 are not recommended and the remaining 240 are recommended -LRB- these classifications are given by the authors -RRB- .
+the algorithm achieves an average accuracy of 74 % , ranging from 84 % for automobile reviews to 66 % for movie reviews .
+past work has demonstrated that adjectives are good indicators of subjective , evaluative sentences -LRB- hatzivassiloglou &amp; wiebe , 2000 ; wiebe , 2000 ; wiebe et al. , 2001 -RRB- .
+if the words are statistically independent , then the probability that they co-occur is given by the product p -LRB- word1 -RRB- p -LRB- word2 -RRB- .
+messages are classified by looking for specific phrases that indicate the sentiment of the author towards the movie -LRB- e.g. , '' great acting '' , '' wonderful visuals '' , '' terrible score '' , '' uneven editing '' -RRB- .
+the company mindfuleye7 offers a technology called lexanttm that appears similar to tong '' s -LRB- 2001 -RRB- system .
+experiments .
+it is not clear how to address this issue .
+one possibility is to apply a statistical significance test
+there is a large statistical literature on the log-odds ratio , which might lead to improved results on this task .
+this paper introduces a simple unsupervised learning algorithm for rating a review as thumbs up or down .

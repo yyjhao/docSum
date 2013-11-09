@@ -1,7 +1,8 @@
+most current applications use manually collected paraphrases tailored to a specific application , or utilize existing lexical resources such as word - net -LRB- miller et al. , 1990 -RRB- to identify paraphrases .
 we base our method for paraphrasing extraction on the assumption that phrases in aligned sentences which appear in similar contexts are paraphrases .
 in contrast , in our corpus the same word is usually used in both translations , and only sometimes its paraphrases are used , which means that wordparaphrase pairs will have lower co-occurrence rates than word translation pairs in mt .
-to find good contexts , we can analyze all contexts surrounding identical words in the pairs of aligned sentences , and use these contexts to
+to find good contexts , we can analyze all contexts surrounding identical words in the pairs of aligned sentences , and use these contexts to learn new paraphrases .
 identical words play two roles in this process : first , they are used to learn context rules ; second , identical words are used in application of these rules , because the rules contain information about the equality of words in context .
 the algorithm can identify paraphrasing relations only between words which occurred in our corpus , which of course does not cover all english tokens .
 we hand-evaluated the coverage , by asking a human judges to extract paraphrases from 50 sentences , and then counted how many of these paraphrases where predicted by our algorithm .
-of the 500 pairs produced by our system , 354 -LRB- 70.8 % -RRB- were single word pairs and 146 -LRB- 29.2 % -RRB- were multi-word paraphrases , while the majority of pairs produced by melameds system were single word pairs -LRB- 90 % -RRB- .
+of

@@ -1,0 +1,9 @@
+as an added benefit , users would have easier access to a wider variety of results , whenever the top 10 or so results returned by the largest search engines happen to refer to only one particular -LRB- arguably the most popular -RRB- sense of the query -LRB- e.g. , the programming language in the case of python -RRB- , thus submerging or hiding documents that refer to other senses of the
+we organize all named entities from wikipedia into a dictionary structure d , where each string entry d ~ d is mapped to the set of entities d .
+otherwise , go to step 3 .
+consequently , a named entity e is included in d.e if and only if d = e.title , d e e.r , or d e e.d. named entity disambiguation .
+for illustration , consider the two queries for the name john williams from figure 1 .
+these out-of-wikipedia entities are accommodated in the ranking approach to disambiguation as follows .
+the taxonomy kernel was trained using the svmlight package -LRB- joachims , 1999 -RRB- .
+also , the threshold t for detecting out-of-wikipedia entities when ranking with cosine similarity is set to the value that gives highest accuracy on training data .
+the high number of support vectors half the number of query-answer pairs in training data suggests that all scenarios can benefit from more training data .

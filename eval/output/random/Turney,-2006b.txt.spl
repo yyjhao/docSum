@@ -1,0 +1,12 @@
+however , experiments do not support this intuition .
+several algorithms have been evaluated using 80 multiple-choice synonym questions taken from the test of english as a foreign language -LRB- toefl -RRB- .
+using attributional similarity to solve analogies .
+argus could only solve the limited set of analogy questions that its programmer had anticipated .
+vanderwende -LRB- 1994 -RRB- used hand-built rules , together with a lexical knowledge base , to classify noun-modifier pairs .
+a semantic frame for an event such as judgement contains semantic roles such as judge , evaluee , and reason , whereas an event such as statement contains roles such as speaker , addressee , and message -LRB- gildea and jurafsky , 2002 -RRB- .
+for a given query , the search engine sorts the matching documents in order of decreasing cosine .
+lets suppose that we wish to calculate the relational similarity between the pair quart : volume and the pair mile : distance , taken from the sat question in table 6 .
+table 12 shows the
+the opposite strategy , always guessing the choice pair with the lowest co-occurrence frequency , is also worse than random guessing -LRB- but not significantly -RRB- .
+on the 30 class problem , lra with the single nearest neighbor algorithm achieves an accuracy of 39.8 % -LRB- 239 \/ 600 -RRB- and a macroaveraged of 36.6 % .
+in future work , we plan to investigate some potential applications for lra .

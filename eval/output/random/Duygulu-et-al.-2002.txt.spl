@@ -1,0 +1,11 @@
+this paper describes a model of recognition that offers some purchase on each of the questions above , and demonstrates systems built with this model .
+for example , the corel annotations describe specific image content , but not all of it ; museum collections are often annotated with some specific material the artist , date of acquisition , etc. but often contain some rather abstract material as well .
+applying and refining the lexicon .
+in order to cluster the words , we obtain a similarity matrix giving similarity scores for words .
+this implies that two words will be similar if they generate similar image blobs at similar frequencies .
+table 1 shows recall and precision values for some good words for which recall is higher than 0.4 and precision is higher than 0.15 .
+the effect of the null probability : we compare the recall and precision values for test and training data on some chosen words .
+we also experiment with the effect of null threshold by changing it between 0 and 0.4 .
+therefore , both recall and precision values become 0 after some threshold .
+table 3 shows that we have some very nice clusters which have strong semantic or
+the confusion between grass and foals in the second figure is an example of correspondence problem .

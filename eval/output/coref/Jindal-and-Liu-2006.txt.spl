@@ -1,6 +1,6 @@
 it proposes two new methods to identify comparative sentences and to extract comparative relations from these sentences based on two new types of rules , class sequential rules and label sequential rules .
 definition -LRB- comparative relation -RRB- : a comparative relation captures the essence of a comparative sentence and is represented with the following : -LRB- relationword , features , entitys1 , entitys2 , type -RRB- where relation word : the keyword used to express a comparative relation in a sentence .
-below , we first explain some notations , and then define the two new types of rules , class sequential rules -LRB- csr -RRB- used in classification of sentences , and label sequential rules -LRB- lsr -RRB- used in relation item extraction .
 sequence data generation : we create a sequence database for mining as follows : since we are interested in predicting and extracting items representing entitys -RSB- -LRB- denoted by $ es -RSB- -RRB- , entitys2 -LRB- denoted by $ es2 -RRB- , and features -LRB- denoted by $ ft -RRB- , non-entity-feature -LRB- denoded by $ nef -RRB- , which are called labels , we first manually label such words in each sentence in the training data .
 identifying gradable comparatives : nb using csrs and crf for extracting relation entries manual rules as the attribute set gave a precision of 82 % and a recall of 81 % -LRB- f-score = 81 % -RRB- for identification of gradable comparative sentences .
-two techniques were proposed to perform the
+it has two tasks : given a set of evaluative texts , identify comparative sentences from them , and classify the identified comparative sentences into different types -LRB- or classes -RRB- .
+important pos tags to this work and their categories are : nn : noun , nnp : proper noun

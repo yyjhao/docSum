@@ -1,0 +1,8 @@
+the strength can be measured based on either the amount of text which a topic can explain -LSB- 16 -RSB- or the relative strength of topics in a time period -LSB- 15 , 17 -RSB- .
+first , it is not immediately clear how to model topics and sentiments simultaneously with a mixture model .
+we first sort the documents with their time stamps , and convert the whole collection into a long sequence of words .
+the system can learn -LRB- from our collection -RRB- the transition probabilities with the baum-welch algorithm -LSB- 24 -RSB- and decode the collection sequence with the viterbi algorithm -LSB- 24 -RSB- .
+this is quite desirable in summarizing search results , where the system could extract topics in an interactive way with the user .
+this is reasonable , since people need to experience the product for a while before discovering its defects .
+this also suggests that it is not reasonable to use the overall blog mentions -LRB- not distinguishing subtopics or sentiments -RRB- , or the general sentiment dynamics -LRB- not distinguishing subtopics -RRB- , to predict the user behavior -LRB- e.g. , buying
+with this model , we could effectively -LRB- 1 -RRB- learn general sentiment models ; -LRB- 2 -RRB- extract topic models orthogonal to sentiments , which can represent the neutral content of a subtopic ; and -LRB- 3 -RRB- extract topic life cycles and the associated sentiment dynamics .

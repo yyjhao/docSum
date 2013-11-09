@@ -1,0 +1,11 @@
+multi-morphic ambiguity is also common because the same person usually goes by different names in different contexts such as susan dumais and susan t. dumais .
+instead of the clustering algorithm , they use a re-ranking algorithm to disambiguate people .
+this problem is not discussed thoroughly in previous works , but we think that it is very critical for any pragmatic person search system that is based on re-organizing search results of general search engines .
+in webhawk , a component called filter has been developed for this purpose , where junk page filtering is formulated as a binary classification problem .
+table 1 shows the results , where
+however , it is challenging to extend traditional ner techniques to our case for two reasons .
+to adjust the scores of candidate names and choose the one with the highest score .
+we manually author a set of extraction patterns for email address and phone number due to their simplicity .
+we assign the weight of a uni-gram as its frequency and the weight of a bi-gram as the double of its frequency .
+in order to assess how easily and effectively to use webhawk for person search on the web , we perform a pilot user study .
+prior to the user study , a list of 12 tasks was developed .

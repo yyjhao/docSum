@@ -1,0 +1,12 @@
+the closer a machine translation is to a professional human translation , the better it is .
+next , one clips the total count of each candidate word by its maximum reference count , 2adds these clipped counts up , and divides by the total -LRB- unclipped -RRB- number of candidate words .
+ranking systems using only modified n-gram precision .
+the strong signal differentiating human -LRB- high precision -RRB- from machine -LRB- low precision -RRB- is striking .
+to this end , we obtained a human translation by someone lacking native proficiency in both the source -LRB- chinese -RRB- and the target language -LRB- english -RRB- .
+while there seems to be ample signal in any single n-gram precision , it is more robust to combine all these signals into a single number metric .
+bleu uses the average logarithm with uniform weights , which is equivalent to using the geometric mean of the modified n-gram precisions .5,6 experimentally , we obtain the best correlation with monolingual human judgments using a maximum n-gram order of 4 , although 3-grams and 5-grams give comparable results .
+the mt systems s2 and s3 are very close in this metric .
+the human evaluation .
+none
+we prepared a web page with these translation pairs randomly ordered to disperse the five translations of each source sentence .
+as must be expected , some judges were more liberal than others .

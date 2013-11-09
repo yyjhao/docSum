@@ -1,6 +1,6 @@
 thus , our mt evaluation system requires two ingredients : a numerical translation closeness metric , a corpus of good quality human reference translations .
-to compute precision , one simply counts up the number
+to compute precision , one simply counts up the number of candidate translation words -LRB- unigrams -RRB- which occur in any reference translation and then divides by the total number of words in the candidate translation .
 to verify that modified n-gram precision distinguishes between very good translations and bad translations , we computed the modified precision numbers on the output of a -LRB- good -RRB- human translator and a standard -LRB- poor -RRB- machine translation system using 4 reference translations for each of 127 source sentences .
 however , as can be seen in figure 2 , the modified n-gram precision decays roughly exponentially with n : the modified unigram precision is much larger than the modified bigram precision which in turn is much bigger than the modified trigram precision .
-particularly interesting is how well bleu distinguishes between s2 and s3 which we now take the worst system as a reference point and compare the bleu scores with the human judgment scores of the remaining systems relative to the worst system .
+particularly interesting is how well bleu distinguishes between s2 and s3 which we now take the worst
 the figure also highlights the relatively large gap between mt systems and human translators .8 in addition , we surmise that the bilingual group was very forgiving in judging h1 relative to h2 because the monolingual group found a rather large difference in the fluency of their translations .

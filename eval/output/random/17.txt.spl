@@ -1,0 +1,11 @@
+in this paper we introduce one such novel idea , the use of automated reasoning in qa , and show that it is feasible , effective , and scalable .
+by doing this , the connectivity between synsets is dramatically increased .
+a candidate answer for a question may use an apposition to describe the subject \/ object of the answer .
+the question may refer to the subject \/ object by this apposition .
+in date seeking questions in and of have interchangeable meanings as do at and in .
+the axioms that are placed in the sos are the candidate answers , the question negated -LRB- to invoke the proof by contradiction -RRB- , and axioms related to linking named entities to answer types .
+for example in question , how far is yaroslavl from moscow ?
+in particular , a program called mosaic , developed by the national center for supercomputing applications -LRB- ncsa -RRB- at the university of illinois at urbana - champaign , is gaining popularity as an easy to use point and click interface for searching portions of the internet .
+thus , some questions are answered by the qa system without the prover , some only by the prover and some by both
+table 1 summarizes these results .
+the added value of automated reasoning to the qa system is 30.9 % -LRB- 98 \/ 317 -RRB- .

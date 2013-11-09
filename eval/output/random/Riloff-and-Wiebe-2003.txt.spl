@@ -1,0 +1,9 @@
+this process allows us to generate a large set of labeled sentences automatically .
+the pattern &lt; x &gt; was hijacked would extract the hijacked vehicle when it finds the verb hijacked in the passive voice , and the pattern &lt; x &gt; hijacked would extract the hijacker when it finds the verb hijacked in the active voice .
+a variety of algorithms have been developed to automatically learn extraction patterns .
+for training , autoslogts uses a text corpus consisting of two distinct sets of texts : relevant texts -LRB- in our case , subjective sentences -RRB- and irrelevant texts -LRB- in our case , objective sentences -RRB- .
+figure 3 also shows that expressions using talk as a noun -LRB- e.g. , fred is the talk of the town -RRB- are highly correlated with subjective sentences , while talk as a verb -LRB- e.g. , the mayor will talk about ... -RRB- are found in a mix of subjective and objective sentences .
+we only mention aspects of the annotation scheme relevant to this paper .
+an open question was whether the
+then we repeated the same analysis that we depict in figure 4 .
+for this experiment , we selected the learned extraction patterns that had 01 &gt; 10 and 02 &gt; 1.0 on the training set , since these seemed likely to be the most reliable -LRB- high precision -RRB- indicators of subjectivity .

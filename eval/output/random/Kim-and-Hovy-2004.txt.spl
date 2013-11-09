@@ -1,0 +1,12 @@
+what is an opinion ?
+for example , the following opinions contain claims but no
+we assume synonyms of positive words are mostly positive and antonyms mostly negative , e.g. , the positive word good has synonyms virtuous , honorable , righteous and antonyms evil , disreputable , unrighteous .
+antonyms of negative words are added to the positive list , and synonyms to the negative one .
+to start the seed lists we selected verbs -LRB- 23 positive and 21 negative -RRB- and adjectives -LRB- 15 positive and 19 negative -RRB- , adding nouns later .
+since adjectives and verbs are structured differently in wordnet , we obtained from it synonyms and antonyms for adjectives but only synonyms for verbs .
+sentiment region .
+correctness of an opinion is determined when the system finds both a correct holder and the appropriate sentiment within the sentence .
+the systems best model performed at 81 % accuracy with the manually provided holder and at 67 % accuracy with automatic holder detection .
+employing a parser to delimit opinion regions and more accurately associate them with potential holders should help .
+we plan to explore other learning techniques , such as decision lists or svms .
+nonetheless , as the experiments show , encouraging results can be obtained even with relatively simple models and only a small amount of manual seeding effort .

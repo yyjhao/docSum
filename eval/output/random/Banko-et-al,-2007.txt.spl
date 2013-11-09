@@ -1,0 +1,6 @@
+automation the first step in automating ie was moving from knowledge-based ie systems to trainable systems that took as input hand-tagged instances -LSB- riloff , 1996 -RSB- or document segments -LSB- craven et al. , 1999 -RSB- and automatically learned domain-specific extraction patterns .
+at the other extreme , a strict approach that simply looks for verbs in relation to
+at best , a final hand - built classifier , which is a natural baseline for the learned one , achieved a mere one third of the accuracy of that obtained by the learner .
+specifically , the tuples we evaluated met the following criteria : 1 -RRB- textrunner assigned a probability of at least 0.8 to the tuple ; 2 -RRB- the tuple s relation is supported by at least 10 distinct sentences in the corpus ; 3 -RRB- the tuple s relation is not found to be in the top 0.1 % of relations by number of supporting sentences .
+concrete facts are potentially useful for information extraction or question answering , while abstract assertions are useful for figure 1 : overview of the tuples extracted from 9 million web page corpus .
+as pointed out earlier , this is an overestimate of the number of unique facts because we have not been able to factor in the impact of multiple entity names , which is a topic for future work .

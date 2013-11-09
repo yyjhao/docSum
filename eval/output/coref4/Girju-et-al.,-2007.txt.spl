@@ -1,0 +1,6 @@
+the theme of task 4 is the classification of semantic relations between simple nominals -LRB- nouns or base noun phrases -RRB- other than named entities honey bee , for example , shows an instance of the product-producer relation .
+nastase and szpakowicz -LRB- 2003 -RRB- present a two-level hierarchy for classifying noun-modifier relations in base noun phrases from general text , with 5 classes at the top and 30 classes at the bottom ; other researchers -LRB- turney and littman , 2005 ; turney , 2005 ; nastase et al. , 2006 -RRB- have used their class scheme and data set .
+our annotations include all these , to support a variety of methods -LRB- since we work with
+following the model of the senseval-3 english lexical sample task , we set out to collect 140 training and at least 70 test examples per relation , so we had a number of different patterns to ensure variety .
+we distinguish four categories of systems based on the type of information used wordnet senses and \/ or google queries : wordnet = yes or wordnet = no tells us only whether a system uses the wordnet sense labels in the data sets .
+the data included different types of information lexical semantic information , context , query used meant to facilitate the analysis of useful sources of information for determining the semantic relation between nominals .

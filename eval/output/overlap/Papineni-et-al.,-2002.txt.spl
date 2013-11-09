@@ -1,5 +1,5 @@
-but first observe that candidate 1 shares '' it is a guide to action '' with reference 1 , '' which '' with reference 2 , '' ensures that
-it is clear that a program can rank candidate 1 higher than candidate 2 simply by comparing n - gram matches between each candidate translation and the reference translations .
+but first observe that candidate 1 shares '' it is a guide to action '' with reference 1 , '' which '' with reference 2 , '' ensures that the military '' with reference 1 , '' always '' with references 2 and 3 , '' commands '' with reference 1 , and finally '' of the party '' with reference 2 -LRB- all ignoring capitalization -RRB- .
+it is
 to compute precision , one simply counts up the number of candidate translation words -LRB- unigrams -RRB- which occur in any reference translation and then divides by the total number of words in the candidate translation .
 next , we add the clipped n-gram counts for all the candidate sentences and divide by the number of candidate n-grams in the test corpus to compute a modified precision score , pn , for the entire test corpus .
 to verify that modified n-gram precision distinguishes between very good translations and bad translations , we computed the modified precision numbers on the output of a -LRB- good -RRB- human translator and a standard -LRB- poor -RRB- machine translation system using 4 reference translations for each of 127 source sentences .

@@ -1,0 +1,8 @@
+nevertheless , we show that the clusterings produced by the best of the strategies approach perfect precision , sufficient for seeding the semi-supervised relation extraction systems .
+the hac algorithm starts with all datapoints in separate clusters , and proceeds to iteratively merge the most similar clusters , until all pairwise distances between the clusters become greater than a prespecified threshold .
+at each iteration until convergence , the algorithm calculates the centroid of each one of the k clusters , and reassigns every datapoint to the cluster that has the closest
+usually , the problem of seeds dependence is solved by running the algorithm several times with different random choice of seeds , and then selecting the best clustering among the results , according to some internal consistency measure .
+one of them is the corpus that was used for evaluating the semi - supervised sres -LSB- 4 -RSB- and knowitall -LSB- 3 -RSB- systems .
+the hac single \* denotes the hac with the single linkage and with the average \/ max similarity &lt; 1 \/ 2 '' stopping criterion .
+first , we can see that the extent and the generality of features are very important .
+we also demonstrated the importance of using complex features , and relying on features that are based both on individual entities and on combination of entities within pairs .

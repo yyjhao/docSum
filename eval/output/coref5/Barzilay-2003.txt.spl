@@ -1,0 +1,7 @@
+in this article , we present the concept of sentence fusion , a novel text-to-text generation technique which , given a set of similar sentences , produces a new sentence containing the information common to most sentences in the set .
+instead , we select a combination already present in the input sentences as a basis and transform it into a fusion sentence by removing extraneous information and augmenting the fusion sentence with information from other sentences .
+while the output of existing compression algorithms is always a substring of the original sentence , sentence fusion may generate a new sentence which is not a substring of any of the input sentences .
+in looking at
+in this section we first describe an algorithm which , given a pair of sentences , determines which sentence constituents convey information appearing in both sentences .
+content selection occurs primarily in the first phase , in which our algorithm uses local alignment across pairs of parsed sentences , from which we select fragments to be included in the fusion sentence .
+using the alignment-based similarity score described in section 3.1.2 , we identify the centroid by computing for each sentence the average similarity score between the sentence and the rest of the input sentences , then selecting the sentence with the highest score .

@@ -1,7 +1,7 @@
-hence , if there are x strings in the
 six sets were extracted for the pattern-based approach and five sets for the co - occurrence approach -LRB- the 15gb corpus was too large to process using the co-occurrence model ~ see dependency parsing time estimates in table 2 -RRB- .
 each of the 11 random samples contained a maximum of 350 is-a relationships to manually evaluate -LRB- 50 random words with top 3 system , top 3 wordnet , and human generated relationship -RRB- .
 wordnet consistently generated higher precision relationships although both algorithms approach wordnet quality on 6gb -LRB- the pattern - based algorithm even surpasses wordnet precision on 15gb -RRB- .
-on the 6 gb corpus , the co-occurrence approach took approximately 47 single pentium-4 2.5 ghz processor days to complete , whereas it took the pattern-based approach only four days to complete on 6 gb and 10 days on 15 gb .
+on the 6 gb corpus , the co-occurrence approach took approximately 47 single pentium-4 2.5 ghz processor days to
+although it is impossible to know the number of is-a relationships in any non-trivial corpus , it is possible to compute the recall of a system relative to another system 's recall .
 because of sparse data , the pattern-based approach has much higher precision and recall -LRB- six times -RRB- than the co-occurrence approach on the small 15mb dataset .
 with datasets larger than 150mb , the co - occurrence algorithm reduces its running time by filtering out grammatical relationships for words that occurred fewer than k = 40 times and hence recall is affected -LRB- in contrast , the pattern-based approach may generate a hyponym for a word that it only sees once -RRB- .

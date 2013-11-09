@@ -1,0 +1,11 @@
+corpus creation and annotation .
+both source and target sentences are in english , and express the same content using different surface forms .
+of these , 300 pairs -LRB- 100 per corpus -RRB- were first annotated by two coders to assess inter-annotator agreement .
+treating annotator b as the gold standard , | as | = 4 , | bs | i = 5 , 1 | as ^ bp | = 4 , and | ap ^ bs | i = 4 .
+the given definitions are all word-based ; however , our annotators , and several paraphrasing models , create correspondences not only between words but also between phrases .
+here , each coder must decide which -LRB- possibly empty -RRB- subset from k categories best describes each subject .
+whereas precision and recall are normalized by the number of predictions from annotators a and b , respectively , c is normalized by the minimum number of predictions between the two .
+this means that under c , choosing different granularities of phrases will be penalized , but would not have been under the f1 measure .
+nevertheless , we would expect the humans to agree more with each other than with giza + + , given that the latter produces many erroneous word alignments and is not specifically tuned to the paraphrasing task .
+15 we obtained similar results for the other annotator and with the word-based measures .
+for instance , we could envisage a paraphrase

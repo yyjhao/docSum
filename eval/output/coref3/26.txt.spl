@@ -1,6 +1,7 @@
 the goal of confidence estimation is to compute p -LRB- correct | q , a -RRB- , the probability of answer correctness given a question q and an answer a. a qa system can use the confidence score to decide whether or not to show the user the answer .
 for answer selection , we used a hmm-based ir system -LRB- miller et al , 1999 -RRB- to first select documents that are likely to contain answers to a question and then rank candidate answers based on the answer contexts using the same ir system .
-such constraints include whether a numerical answer quantifies the correct noun , whether the answer
+the goal of answer selection is to choose from a pool of answer candidates the most likely answer for a question .
 the features we used are the answer type of the question , the number of matched question words in the answer context and whether the answer satisfies the verb arguments of the question .
+the
 since for the trec2002 qa track each question can only have one answer , we chose the one with the higher confidence score if the web answer and the answer from base system are different for a question .
-our confidence estimation techniques used a few simple features such as answer type , verb argument satisfaction , the number of question words matched by the answer context and answer frequency in the retrieved web pages .
+using the training questions , we obtained p -LRB- correct | vs is true -RRB- = 0.49 and p -LRB- correct | vs is false -RRB- = 0.23 , which clearly indicate vs is predictive of answer correctness .

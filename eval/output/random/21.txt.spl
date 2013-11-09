@@ -1,0 +1,9 @@
+our first model is a discriminative approach that models the problem as that of deciding whether any two names mentioned in a collection of documents represent the same entity .
+robust reading is , in principle , similar to tuple matching in databases the problem of deciding whether multiple relational tuples from heterogenous sources refer to the same real-world entity -LSB- hs95a , tkm02 , amt04 , dllh03 -RSB- .
+clustering is used subsequently to group entities in different documents into global co-reference chains .
+the lmr classifier outperforms the softtfidf classifier and the marlin classifier when trained and tested on the same data sets .
+the details of this model are described in -LSB- lmr04b -RSB- .
+here we briefly describe one instantiation of the model -LRB- model ii there -RRB- , focusing on discussing the key assumptions and their advantages , and on its experimental study and a comparison to the discriminative model .
+attribute transformations are relational , in the sense that the distribution is over transformation types and independent of the specific names .
+for all the models , we use the same algorithm .
+in the learning process , assuming documents have already been annotated d = -LCB- -LRB- e , r , m -RRB- -RCB- n 1 from previous i - or e-step , several underlying probability distributions of the relaxed models are estimated by maximum likelihood estimation in each m-step .

@@ -1,0 +1,11 @@
+entity and relation recognition .
+the rest of the
+assignment cost : the cost of deviating from the assignment of the variables v given by the classifiers .
+another possible reason is that given the cost function we have , the optimal solution is always integer .
+that we annotated for named entities and relations .
+among those sentences , there are 5336 entities , and 19048 pairs of entities -LRB- binary relations -RRB- .
+in addition , some other features are extracted from the target phrase , including : for the relation classifier , there are three sets of features : -LRB- 1 -RRB- features similar to those used in the entity classification are extracted from the two argument entities of sthe relation ; -LRB- 2 -RRB- conjunctions of the features from the two arguments ; -LRB- 3 -RRB- some patterns extracted from the sentence or between the two arguments .
+specifically , suppose the number of classes is n , and the raw activation values of class i is acti .
+the final approach , omniscience , tests the conceptual upper bound of this entity \/ relation classification problem .
+as a result , the quality of omniscient is almost as good as lp .
+we force the system to determine which of the possible relations in a sentence -LRB- i.e. , which pair of entities -RRB- has this relation by adding a new linear equality .

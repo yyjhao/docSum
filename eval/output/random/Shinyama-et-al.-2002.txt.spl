@@ -1,0 +1,15 @@
+many natural language applications , such as information retrieval , machine translation , question answering , text summarization , or information extraction , are required to handle these expressions correctly .
+in this paper , we describe an approach to automatic paraphrase acquisition from corpora .
+we expect this will reduce the cost of creating ie knowledge by hand .
+ne is a proper expression such as names of organizations , persons , locations , dates , or numerical expressions -LSB- 2 -RSB- .
+they targeted literary works and used word alignment techniques developed for mt .
+in this stage we use a tf \/ idf based method developed for topic detection and tracking -LRB- tdt -RRB- .
+drop a sentence that doesnt match any of patterns .
+suppose sentence a and b contain paraphrases .
+since we use japanese newspaper for this experiment , we regard two nes as comparable if one begins with the half of the beginning string of the other .
+so
+however the latter captures the old post someone is promoted from .
+the coverage in the personnel affairs domain was 47 % .
+currently , the precision in arrest events is not high .
+another source of difficulty is the calculation of the sentence similarity .
+a more serious problem is that current ie patterns are limited to a single path in a dependency tree -LSB- 5 -RSB- .

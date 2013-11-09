@@ -1,0 +1,11 @@
+for n-best mbr , this space is the n-best list produced by a baseline decoder .
+we successively intersect each of these automata with an automaton that begins as an unweighted copy
+we measure statistical significance using 95 % confidence intervals computed with paired bootstrap resampling -LRB- koehn , 2004 -RRB- .
+in all tables , systems in a column show statistically significant differences unless marked with an asterisk .
+on aren and enzh , there are some gains beyond a lattice density of 30 .
+in experiments not reported in this paper , we have found that the optimal scaling factor on a moderately sized development set carries over to unseen test sets .
+we have presented a procedure for performing minimum bayes-risk decoding on translation lattices .
+our experiments show that the main improvement comes from the larger evidence space : a larger set of translations in the lattice provides a better estimate of the expected bleu score .
+more generally , we have found a component in machine translation where the posterior distribution over hypotheses plays a crucial role .
+our lattice mbr implementation is made possible due to the linear approximation of the bleu score .
+this linearization technique has been applied elsewhere when working with bleu : smith and eisner -LRB- 2006 -RRB- approximate the expectation of log bleu score .

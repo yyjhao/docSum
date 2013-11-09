@@ -1,0 +1,9 @@
+models of coherent discourse are central to several tasks in natural language processing : such models have been used in text generation -LRB- kibble and power , 2004 -RRB- and evaluation of human-produced text in educational
+models of this type are good at finding sentences that belong near one another in the document .
+this is equivalent to predicting rz , j .
+however , in this case we do not have a proper probability distribution : i.e. the probabilities do not sum to 1 .
+the model we describe above is a purely local one , and moreover it relies on a particular set of local features which capture the way adjacent sentences tend to share lexical choices .
+before doing tests , we set them to higher values -LRB- determined to optimize ordering performance on held-out data -RRB- so that our emission distributions are properly smoothed .
+using both sets of features , our topic-based model achieves state of the art performance -LRB- ^ = .5 -RRB- on the ordering task , comparable with the mixture model of -LRB- soricut and marcu , 2006 -RRB- .
+in contrast , we generate only entities conditioned on words from previous sentences ; other words are conditionally independent given the topic variable .
+in documents with clear thematic divisions between their different sections , a good ordering metric should treat transposed paragraphs differently than transposed sentences .

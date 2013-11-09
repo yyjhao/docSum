@@ -1,0 +1,13 @@
+the organizers of the entailment challenge provided participants with development and test corpora , with 567 and 800 sentence pairs , respectively , manually annotated for logical entailment .
+in this paper we describe a simple system based on lexical similarity , with two different word similarity measures .
+to check for entailment , we compare the score against a threshold .
+essentially , for every word in the hypothesis we find the most similar word in the text according to the measure wordsim -LRB- w1 , w2 -RRB- .
+for our experiments we used normalized inverse collection frequency of words , calculated on a big collection of newspaper texts .
+word similarity measures .
+results .
+discussion .
+we give evaluation results for both our methods and also for a simple baseline that only considers lexical overlap , without wordnet and frequency information .
+from the table it is clear that the overall accuracy of the system is relatively high only due to the resonable performance on the cd subtask .
+we have not checked whether a simple word overlap baseline would give a reasonable performance for
+note that we give precision -LRB- p -RRB- and recall -LRB- r -RRB- scores as well as accuracy .
+although both our runs show significant improvement over random guessing , the improvement is based only on one subtask -LRB- cd -RRB- .

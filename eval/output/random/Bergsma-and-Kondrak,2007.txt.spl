@@ -1,0 +1,9 @@
+for example , mann and yarowsky -LRB- 2001 -RRB- define a word pair -LRB- e , f -RRB- to be cognate if they
+note that this cutoff is somewhat conservative : the english \/ german cognates light \/ licht -LRB- lcsr = 0.8 -RRB- are included , but not the cognates eight \/ acht -LRB- lcsr = 0.4 -RRB- .
+if two words must have lcsr &gt; 0.58 to be cognate , then for a given word f e f , we need only consider as possible cognates the subset of words in e having an lcsr with f larger than 0.58 , a set we call ef .
+the portion of e f with the same meaning as f , ef + , are cognates , while the part with different meanings , ef _ , are not cognates .
+consider the romaji japanese \/ english cognates : -LRB- sutoresu , stress -RRB- .
+for the discriminative methods , we use a popular support vector machine -LRB- svm -RRB- learning package called svmlight -LRB- joachims , 1999 -RRB- .
+the baseline approaches and our definition of cognation require comparison in a common alphabet .
+the trendline suggests a bimodal distribution , with two distinct distributions of translation pairs making up the dictionary : incidental letter agreement gives low lcsr for the larger , non-cognate portion and high lcsr characterizes the likely cognates .
+we have also made available our cognate identification data sets , which will be of interest to general string similarity researchers .

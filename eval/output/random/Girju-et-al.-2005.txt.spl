@@ -1,0 +1,9 @@
+choosing the most probable binary bracketing for a given noun sequence represents a difficult task as attachments are not syntactically , but semantically governed .
+there are also situations such as -LRB- 3 -RRB- in which both left-and right-branching solutions are possible .
+the meaning is a matter of convention -LRB- e.g. , soap opera -RRB- , but only for statistical purposes .
+we present empirical observations on the distribution of a core set of semantic relations in noun compounds and provide a mapping between two sets of semantic classification categories .
+finally , some conclusions are offered in section 5 .
+na means not available -LRB- due to time constraints , we were unable to annotate the set of three noun compounds with prepositional paraphrases -RRB- .
+since we wanted to measure the impact of syntactic and semantic ambiguities of noun compounds on the interpretation performance , we further tested the probabilistic web-based model on four distinct test sets selected from the wall street journal text collection , each containing 200 nounnoun pairs encoding different types of ambiguity : in set # 1 the noun constituents had only one part of speech and one wordnet sense ; in set # 2 the nouns
+in eqs .
+however , not many of these attempts make use of lexico-semantic hierarchies for generalization , due to the unavailability of word sense disambiguation tools .

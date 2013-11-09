@@ -1,0 +1,9 @@
+for instance , latent semantic analysis -LRB- lsa -RRB- can measure the degree of similarity between two words , but not between two relations -LSB- landauer and
+lra and vsm are experimentally evaluated by their performance on word analogy questions in section 5 and on classifying semantic relations in noun - modifier expressions in section 6 .
+turney and littman -LSB- 2005 -RSB- evaluated the vsm approach by its performance on 374 college-level multiple-choice sat analogy questions , achieving a score of 47 % .
+in the following experiments , we use a local copy of the waterloo multitext system -LRB- wmts -RRB- as the search engine , with a corpus of about 5 1010 english words .
+as a source of synonyms , we use lins -LSB- 1998 -RSB- automatically generated thesaurus .
+the parser was used to extract pairs of words and their grammatical relations .
+turney and littman -LSB- 2005 -RSB- gave an estimate of 1 1011 english words , but we believe this estimate was slightly conservative .
+the accuracy and f measure of lra are significantly higher than the accuracies and f measures of vsm-av and vsm-wmts , but the differences between the two vsm accuracies and f measures are not significant .
+also , the software has not been optimized for speed ; there are several places where the efficiency could be increased and many operations are parallelizable .

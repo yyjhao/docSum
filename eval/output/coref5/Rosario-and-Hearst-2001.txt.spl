@@ -1,0 +1,6 @@
+note that because we are concerned with the semantic relations that hold between the concepts , as opposed to the more standard , syntax-driven computational goal of determining left versus right association , this has the fortuitous effect of changing the problem into one of classification , amenable to standard machine learning classification techniques .
+for the automatic classification task , we used only the 18 relations -LRB- indicated in bold in table 1 -RRB- for which an adequate number of examples were found in the current collection .
+we use the metathesaurus component to map lexical items into unique concept ids -LRB- cuis -RRB- .3 the umls also has a mapping from these cuis into the mesh lexical hierarchy -LRB- lowe and barnett , 1994 -RRB- ; we mapped the cuis into mesh terms .
+for these experiments , we considered only those noun compounds for which both nouns can be mapped into mesh terms , resulting in a total of 2245 ncs .
+on the other hand , if we look at relations 14 and 15 , we find a wider range of words , and
+it is interesting to note that the accuracy for case 1 -LRB- first noun not present in the training set -RRB- is much higher than the accuracy for case 2 -LRB- second noun not present in the training set -RRB- .

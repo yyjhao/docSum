@@ -1,0 +1,8 @@
+each non-terminal node in the complete data is labeled with a complete symbol of the form , where is the non-terminal symbol of the corresponding node in the observed tree and is a latent annotation symbol , which is an element of a fixed set .
+however , the calculation at node still has a cost that exponentially grows with the number of s daughters because we must sum up the probabilities of combinations of latent annotation symbols for a node with daughters .
+we assume that non-terminal nodes in a parse tree are indexed by integers , starting from the root
+the probability of a complete parse tree is defined as where is the label of the root node of and denotes the multiset of annotated cfg rules used in the generation of .
+we have the probability of an observable tree by marginalizing out the latent annotation symbols in : forward-backward probability .
+table 1 lists training \/ heldout data log - likelihood per sentence -LRB- ll -RRB- for the four instances and their parsing performances on the test set -LRB- section 22 -RRB- .
+the parses remaining in the chart were the candidate parses for the second and the third methods .
+in contrast , our method induces all parameters automatically , except that manually written head-rules are used in binarization .

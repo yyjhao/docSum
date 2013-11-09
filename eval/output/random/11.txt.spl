@@ -1,0 +1,12 @@
+system description .
+the answer extraction streams can be divided into three groups based on the text corpus that they employ : the clef-qa corpus , dutch wikipedia , or the web .
+we changed the question classification process , the data storage method , and the answer processing module .
+storing these annotations as xml seems natural and enables us to access them through the powerful xquery language .
+other tools , such as the pos tagger and named-entity tagger , require separated sentences as input and thus use the output annotations of the sentence splitter by selecting sent elements .
+since utf-8 is a variable length encoding , this means that there is no direct relation between character offsets and byte offsets .
+in general , the output from a tool is attached to the element that produced the corresponding input .
+these extraction rules were rewritten as xquery expressions and used to extract the tables from the collection text .
+previous versions of xquesta had to generate separate xpath queries to retrieve annotations from several markup
+we used an existing implementation of a spectral clustering algorithm -LSB- 5 -RSB- to compute clusters within the similarity graph .
+all top five answers are short .
+at this moment , we simply do not know if our work has resulted in a better system .

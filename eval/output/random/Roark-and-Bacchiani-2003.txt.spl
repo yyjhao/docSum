@@ -1,0 +1,9 @@
+one of the methods that has received much attention in the asr literature is maximum a posteriori -LRB- map -RRB- estimation -LRB- gauvain and lee , 1994 -RRB- .
+this is followed by a brief presentation of the pcfg model that is being learned , and the parser that is used
+this beam search is parameterized with a base beam parameter y , which controls how many or how few parses constitute enough .
+the pcfg is a markov grammar -LRB- collins , 1997 ; charniak , 2000 -RRB- , i.e. the production probabilities are estimated by decomposing the joint probability of the categories on the right-hand side into a product of conditionals via the chain rule , and making a markov assumption .
+table 1 gives the conditioning features that were used for all empirical trials in this paper .
+there are different conditioning features for parts-of-speech -LRB- pos -RRB- and non-pos non-terminals .
+recall that a ~ c -LRB- a -RRB- times the out-of-domain model yields count merging , with a the ratio of out-of-domain to in-domain counts ; and ac -LRB- a -RRB- times the out-of-domain model yields model interpolation , with a the ratio of out-ofdomain to in-domain probabilities .
+from this point forward , we only present results for count merging , since model interpolation consistently performed 0.2-0 .5 points below the count merging approach .
+in fact , map coupled with active learning may reduce the required amount of annotation further .

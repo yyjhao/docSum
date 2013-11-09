@@ -1,0 +1,12 @@
+many natural language processing -LRB- nlp -RRB- applications require accurate noun phrase coreference resolution : they require a means for determining which noun phrases in a text or dialogue refer to the same real-world entity .
+although evaluated in an information extraction context , the approach is domain - independent .
+as noted above , the clustering approach provides a flexible mechanism for coordinating context-independent and context-dependent coreference constraints and preferences for partitioning noun phrases into coreference equivalence classes .
+it contains two base noun phrases : chief financial officer and prime corp. each noun phrase in the input text is then represented as a set of 11 features as shown in table 1 .
+article .
+here we use wordnet -LRB- fellbaum , 1998 -RRB- to obtain coarse semantic information for the head noun .
+the
+the clustering algorithm is given in figure 2 .
+next , we calculate the distance from npi to np3 .
+another source of error is inaccurate and inadequate np feature vectors .
+first , for each np3 , instead of considering every previous noun phrase , the algorithm could stop on finding the first compatible antecedent .
+the main advantage of our approach is that all constraints and preferences are represented neatly in the distance metric -LRB- and radius r -RRB- , allowing for simple modification of this measure to incorporate new knowledge sources .

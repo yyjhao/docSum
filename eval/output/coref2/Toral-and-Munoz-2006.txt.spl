@@ -1,0 +1,7 @@
+on the other hand there are entity gazetteers which contain entities themselves , which usually are proper nouns .
+our aim is to find a method which
+our motivation is that proper nouns that form entities can be obtained from the entries in an encyclopedia and that some features of their definitions in the encyclopedia can help to classify them into their correct entity category .
+finally , we apply a weighting algorithm which takes into account the amount of nouns in the definition identified as belonging to the different entity types considered and decides to which entity type the entry belongs .
+once we have this basic approach we apply different heuristics which we think may improve the results obtained and which effect will be analyzed in the section about results .
+another important fact is that the method has a high degree of language independence ; in order to apply this approach to a new language , we need a version of wikipedia and wordnet for that language , but the algorithm and the process does not change .
+therefore , we think that our method can be useful for the creation of gazetteers for languages in which ner gazetteers are not available but have wikipedia and wordnet resources .

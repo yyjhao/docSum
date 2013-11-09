@@ -1,0 +1,11 @@
+the treebank contains parse trees annotated according to the treebank annotation guidelines -LRB- bies et al. , 1995 -RRB- .
+we will elaborate on the division of the brown corpus treebank after discussing the metric .
+maximal projections of heads .
+while there are some theoretical differences that are not normalized by looking only at mph brackets -LRB- e.g. , whether small clauses exist or not -RRB- , we proceed under the assumption that if only mph brackets are evaluated , the remaining systematic differences are few enough to be dealt with on a case-by-case basis .
+to compute mph trees from the treebank , we use a three-step process .
+there will inevitably be discrepancies between the
+as a point of comparison with nlpwin and to provide a connection with past treebank evaluations , we use eugene charniaks state of the art statistical treebankstyle parser -LRB- charniak , 2000 -RRB- .
+the primary changes are in the structure of the pp in narrowing the trade gap and in the head for the final s constituent ... have already been made .
+br1 -RRB- .
+the data that had been used in development of nlpwin was provided to charniak , and he retrained his parser incorporating the used data .
+the randomized , restricted , brown corpus -LRB- rrbc -RRB- treebank is the data set we are truly interested in for our evaluation .

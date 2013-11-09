@@ -1,0 +1,14 @@
+though these are all valid topics , they do not represent ratable aspects , but rather define clusterings of the reviewed items into specific types .
+figure 1b presents the corresponding graphical model .
+hierarchical topic models instead model semantic interactions between topics that are all typically at the document level .
+such model can be trained by using the em algorithm or the tem algorithm and viewed as a generalization of the plsa aspect model .
+in this way our comparison was as fair to lda as possible .
+also , as with the mp3
+to accomplish this we will look at the problem of multi-aspect opinion rating -LSB- 30 -RSB- .
+the reviews were automatically sentence split and tokenized .
+the input vector x is typically a set of binary features representing textual cues in a review .
+to add topic model features to the input representation we first estimated the topic distributions for each sentence using both lda and mg-lda .
+this approach allows for more direct comparison of both models .
+for example , zhuang et al. -LSB- 36 -RSB- work on sentiment summarization for movie reviews .
+in such a model it would be possible to infer topics for a multi-aspect classification task .
+however , we are also interested in examining joint models such as the tsm model -LSB- 21 -RSB- .

@@ -1,0 +1,9 @@
+to assess this choice , we develop a set of conversion rules for transforming the link grammar -LRB- lg -RRB- dependency scheme the stanford scheme and then create a version of the bioinfer corpus in the stanford scheme by
+first , the semantic head of each constituent is identified using head rules similar to those of collins -LRB- 1999 -RRB- and untyped dependencies are then extracted and labeled with the most specific grammatical relations possible using tregex rules -LRB- levy and andrew , 2006 -RRB- .
+compared to the 48 dependency types of the stanford scheme , the lg english grammar defines over 100 main link types which are further divided into 400 subtypes .
+the pattern matches two tokens connected with an lg link of type pv and generates the corresponding directed auxpass dependency .
+in the manual correction phase , each sentence was double-annotated , that is , two annotators corrected the converted output independently .
+in figure 4 , we show the cumulative precision and recall of the rules when added in the descending order of their recall .
+additionally , while precision is consistently high , the highest-recall rules also have the highest precision .
+this may be related to the fact that the most common sf dependency types have a straightforward correspondence in lg types .
+evaluated parsers and corpora .

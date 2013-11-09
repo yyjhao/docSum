@@ -1,0 +1,10 @@
+in particular
+a finite mixture model .
+it now undergoes a more complex and structured process .
+in order to capture this in our model , we enrich it as shown in figure 4 .
+every time an entity is mentioned , we increment its activity score by 1 , and every time we move to generate the next mention , all activity scores decay by a constant factor of 0.5 .
+we call this list a salience list .
+although it is possible to integrate out q0 as we did the individual qi , we instead choose for efficiency and simplicity to sample the global mixture distribution q0 from the posterior distribution p -LRB- q0iz -RRB- .8 the mention generation terms in the model and sampler are unchanged .
+we then added the ace english-nwire training data , which is from a different corpora than the muc-6 test set and from a different time period .
+due to licensing restrictions , we did not have access to the ace 2004 formal development and test sets , and so the results presented are on the training sets .
+examples such as these illustrate the regular -LRB- at least in newswire -RRB- phenomenon that nominal mentions are used with informative intent , even when the entity is salient and a pronoun could have been used unambiguously .

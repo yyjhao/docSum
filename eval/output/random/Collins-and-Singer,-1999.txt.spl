@@ -1,0 +1,11 @@
+even if an example like this is not labeled , it can be interpreted as a '' hint '' that mr and president imply the same category .
+y , is the label of the ith example -LRB- given that there are k possible labels , y , is a member of y = -LCB- 1 ... 0 -RRB- .
+-LRB- n is the maximum number of rules of each type induced at each iteration . -RRB-
+return to step 2 .
+assume that the two classifiers are '' rote learners '' : that is , 1.1 and 12 are defined through look-up tables that list a label for each member of x1 or x2 .
+the problem
+the algorithm , called coboost , has the advantage of being more general than the decision-list learning algorithm , and , in fact , can be combined with almost any supervised machine learning algorithm .
+note that zt is a normalization constant that ensures the distribution dt + i sums to 1 ; it is a function of the weak hypothesis ht and the weight for that hypothesis at chosen at the tth round .
+note , however , that there might be situations in which zco in fact increases .
+2 for the accuracy of the different methods .
+the problem of '' noise '' items that do not fall into any of the three categories also needs to be addressed .

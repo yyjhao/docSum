@@ -1,0 +1,9 @@
+one objective was to require as small a user - provided initial seed as possible .
+the larger and more reliable sets of patterns thus generated resulted in larger and more precise sets of hyponyms and vice versa .
+thus , the approach was extended to finding lexical patterns that could produce synonyms and other standard lexical relations .
+generalizing the seed .
+the same can be done for the other three pattern structures .
+-LRB- for our purposes , a context is a window with exactly five words or punctuation marks before or after the concept word ; we choose 10,000 of these , if available . -RRB-
+x is a word that appears with frequency below f1 in the s-corpus and that has sufficiently high pointwise mutual information with s. we use these two criteria to ensure that x is a content word and that it is related to s. the lower the threshold f1 , the less noise we allow in , though possibly at the expense of recall .
+we performed up to 300 different queries for individual concepts in the first stage of our algorithm .
+using the seed words france and angola , we obtained 202 country names -LRB- comprising 167 distinct countries -RRB- as well as 32 other names -LRB- consisting mostly of names of other geopolitical entities -RRB- .

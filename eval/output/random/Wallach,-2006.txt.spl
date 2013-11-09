@@ -1,0 +1,10 @@
+to develop a bigram language model , marginal and conditional word counts are determined from a corpus
+this procedure works well in practice , despite its somewhat ad hoc nature .
+in many language modeling applications , such as text compression , speech recognition , and predictive text entry , word order is extremely important .
+however , the additional conditioning context j in the distribution that defines word generation affords greater flexibility in choosing a hierarchical prior for 4 -RRB- than in either latent dirichlet allocation or the hierarchical dirichlet language model .
+learning about the distribution over words for a single context j , k yields information about the distributions over words for other contexts j ' , k that share this topic , but not about distributions with other topic contexts .
+for the new model with prior 2 , the time taken is also proportional to t. experiments .
+again , 100 documents were used for inference , while 50 were retained for evaluating predictive accuracy .
+the first 200 iterations were discarded and 5 samples were taken from the remaining iterations .
+on both corpora , latent dirichlet allocation and the hierarchical dirichlet language model achieve similar performance .
+the new model uses a larger number of topics and exhibits a greater information rate reduction as more topics are added .

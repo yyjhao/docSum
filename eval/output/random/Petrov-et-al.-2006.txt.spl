@@ -1,0 +1,12 @@
+all of section 23 was reserved for the final test .
+in our case , the variance is higher for models with few
+on the other hand , we would expect to find an advantage in distinguishing between various verbal categories and np types .
+.
+parsing .
+the first is settling for the most probable derivation rather than most probable parse , i.e. returning the single most likely -LRB- viterbi -RRB- annotated tree -LRB- derivation -RRB- .
+thus , assuming one is interested in a per-position score like f1 -LRB- which is its own debate -RRB- , this method of parsing is actually more appropriate than finding the most likely parse , not simply a cheap approximation of it , and it need not be derived by a variational argument .
+since this method is not a contribution of this paper , we refer the reader to the fuller presentations in goodman -LRB- 1996 -RRB- and matsuzaki et al. -LRB- 2005 -RRB- .
+in most cases , the categories are recognizable as either classic subcategories or an interpretable division of some other kind .
+these kinds of syntactico-semantic categories are typical , and , given distributional clustering results like those of schuetze -LRB- 1998 -RRB- , unsurprising .
+phrasal splits .
+as one can see in table 4 , the resulting parser ranks among the best lexicalized parsers , beating those of collins -LRB- 1999 -RRB- and charniak and johnson -LRB- 2005 -RRB- .

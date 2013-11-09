@@ -1,0 +1,12 @@
+automatically constructed thesauri offer a potential solution .
+and because of the intellectual investment they represent , they are rarely made publicly available .
+although useful for many information processing and retrieval tasks , they can not yet compete with manually constructed thesauri .
+today it outstrips all other encyclopedias in size and coverage , and is one of the most visited sites on the web .
+from wikipedias structure , links corresponding to each relation can be identified as described below .
+c onversely , 94 % of relations in wikipe present in agrovoc .
+figure 5 is based on agrovocs use \/ use-for relations and shows that wikipedia covers synonymy particularly well : only 5 % of relations are absent .
+for example , a hyperlink between two articles does not say which is broader and which is narrower .
+another paper by voss describes its organization , citing some of the similarities with traditional thesauri that we have capitalized on in this paper -LSB- 17 -RSB- .
+as a verified source of topics and semantic relations , wikipedi a has three main areas of application : improving ac cess to documents
+domain-specific thesauri describe domains that are relatively static , such as science and medicine .
+term occurrence and co - occurrence frequencies can be extracted from wikipedia articles just as they can from conventional corpora .

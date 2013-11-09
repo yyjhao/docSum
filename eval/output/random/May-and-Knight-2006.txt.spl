@@ -1,0 +1,11 @@
+in this paper we extend that work to deal with grammars that produce trees .
+we will present an algorithm for determinizing weighted finite tree recognizers , and use a variant of the procedure found in -LRB- huang and chiang , 2005 -RRB- to obtain - best lists of trees that are weighted correctly and contain no repetition .
+in tree automata , however , a hyperpath through a recognizer consists of a sequence of hyperedges that can be
+figure 4 shows the determinization of a portion of the example transducer .
+for each newly created state , newly available vectors can be formed by using that state with the other states of the output transducer .
+we now turn to some empirical studies .
+figure 7 shows the improvement in quality of the top 10 trees from our example translation after the application of the determinization algorithm .
+we can compare our method with the more commonly used methods of crunching - best lists , where .
+the results are tabulated in figure 6 .
+note that in 26.7 % of cases determinization did not terminate in a reasonable amount of time .
+as summarized in figure 9 , the number of repeated trees prior to determinization was typically very large , and thus determinization is critical to recovering true tree weight .
