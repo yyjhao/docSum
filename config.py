@@ -118,7 +118,23 @@ _ignored = [
     "seven",
     "eight",
     "nine",
-    "ten"
+    "ten",
+    "about",
+    "within",
+    "into",
+    "particular",
+    "reasonably",
+    "how",
+    "before",
+    "non",
+    "shows",
+    "showed",
+    "need",
+    "looked",
+    "both",
+    "thus",
+    "without",
+    "with"
 ]
 
 ignored = set(_ignored + [i.capitalize() for i in _ignored])
