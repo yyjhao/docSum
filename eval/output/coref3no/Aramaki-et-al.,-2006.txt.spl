@@ -1,0 +1,9 @@
+we applied support vector machine -LRB- svm -RRB- - based learning -LRB- vapnik , 1999 -RRB- using three types of features : -LRB- 1 -RRB- basic pattern features -LRB- section 3.1 -RRB- , -LRB- 2 -RRB- selected pattern features -LRB- section 3.2 -RRB- , and -LRB- 3 -RRB- physical size features -LRB- section 3.3 -RRB- .
+then , the system extracts the word -LRB- or word sequences -RRB- between two entities from the snippets in the top 1,000 search results .
+for example , given ' s ... library contains the book ... ' s , the basic pattern is ' s -LRB- e1 -RRB- contains the -LRB- e2 -RRB- ' s 2 .
+we thus selected the most informative n patterns -LRB- step 1 -RRB- and conducted specific searches -LRB- # of samples x n basic patterns -RRB- -LRB- step2 -RRB- as follows : step1 : to select the most informative patterns , we applied a decision tree -LRB- c4 .5 -RRB- -LRB- quinlan , 1987 -RRB- and selected the basic patterns located in the top n branches 3 .
+as noted in section 1 , we theorized that an entity ` ss size could be a strong clue for some semantic relations .
+we estimated entity size using the following queries : in these queries , &lt; entity &gt; indicates a slot for each entity , such as ' sbook 's , ' slibrary 's , etc .
+then
+to evaluate the performance of our system , we used a semeval-task no # 4 training set .
+if we are able to estimate entity sizes more precisely in the future , the system will become much more accurate .

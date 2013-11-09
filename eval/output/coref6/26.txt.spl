@@ -1,0 +1,6 @@
+since for the trec2002 qa track each question can only have one answer , we chose the one with the higher confidence score if the web answer and the answer from base system are different for a question .
+for answer selection , we used a hmm-based ir system -LRB- miller et al , 1999 -RRB- to first select documents that are likely to contain answers to a question and then rank candidate answers based on the answer contexts using the same ir system .
+since a lot of the data on the web is of dubious quality , we also checked if the same answer was also produced by the base system from the trec corpus .
+the features we used are the answer type of the question , the number of matched question words in the answer context and whether the answer satisfies the verb arguments of the question .
+although the ranked average precision does not directly reflect how well the system computes confidence scores , it correlates strongly with the quality of confidence estimation because it rewards systems that place correct question-answer pairs ahead
+using the training questions , we obtained p -LRB- correct | vs is true -RRB- = 0.49 and p -LRB- correct | vs is false -RRB- = 0.23 , which clearly indicate vs is predictive of answer correctness .

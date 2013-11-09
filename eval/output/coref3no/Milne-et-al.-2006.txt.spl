@@ -1,0 +1,8 @@
+we present a case study that uses agrovoc , a manually-created professional thesaurus in the domain of agriculture , as the gold standard .
+we also analyze its coverage of terms that occur in a sample document collection in the domain , and compare this with agrovocs coverage .
+sections 4 and 5 describe our experiments and the results we obtained : section 4 compares the two thesaurus structures and section 5 evaluates their coverage of a domain-specific document corpus .
+examples indicate that wikipedia separates such pairs into distinct articles rather than treating them as synonyms , e.g. aluminum foil 4 shrink film and spanish west africa 4 rio de oro .
+their core argument is the lack of formal expert review procedures which give rise to two key issues ; accuracy within articles and bias of coverage across them .
+accuracy within articles was investigated by giles , who compared randomly selected scientific wikipedia articles with their equivalent entries in encyclopedia britannica -LSB- 6 -RSB- .
+hierarchical and associative relatio ns are covered to a lesser extent and in a less organized fashion ; the two types are intermingled w th the category structure and hyperlinks between articles .
+as a verified source of topics and semantic relations , wikipedi a has three main areas of application : improving ac

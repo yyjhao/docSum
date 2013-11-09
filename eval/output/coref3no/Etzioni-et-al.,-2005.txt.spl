@@ -1,0 +1,6 @@
+sections 3 to
+discriminators for binary predicates have two slots , here represented as x and y , for arguments 1 and 2 of the predicate , and so forth .
+for example , if the pattern in figure 4 was instantiated for the class city , it would lead knowitall to 1 -RRB- issue the search-engine query cities such as , 2 -RRB- download in parallel all pages named in the engines results , and 3 -RRB- apply the extractor to sentences on each downloaded page .
+now that it has a set of trained discriminators , knowitall does two more bootstrapping cycles : first , it uses the discriminators to re-rank the candidate seeds by probability ; next , it selects a new set of seeds and re-trains the discriminators .
+experiment 1 compares performance for country trained on three different sets of seeds : correct seeds , seeds with 10 % noise -LRB- 2 errors out of 20 seeds -RRB- , and seeds with 30 % noise .
+experiments 10 , 11 , and 12 compare the number of extractions at two precision levels : at precision 0.90 for the baseline knowitall system -LRB- b -RRB- , the baseline combined with each method -LRB- pl , se , le -RRB- and all for the union of instances extracted by b , pl , se , and le ; and at precision .80 for the bars marked b2 , pl2 , se2 , le2 , and all2 .

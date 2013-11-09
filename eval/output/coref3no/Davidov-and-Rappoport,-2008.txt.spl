@@ -1,0 +1,7 @@
+we present a fully unsupervised algorithm to compute pattern clusters , not requiring any , even implicit , pre - specification of relationship types or word \/ pattern seeds .
+several recent papers discovered relations on the web using seed patterns -LRB- pantel et al. , 2004 -RRB- , rules -LRB- etzioni et al. , 2004 -RRB- , and word pairs -LRB- pasca et al. , 2006 ; alfonseca et al. , 2006 -RRB- .
+our algorithm first discovers and clusters patterns in which a single -LRB- hook -RRB- word participates , and then merges the resulting clusters to form the final structure .
+the five multiple choice items include : -LRB- 1 -RRB- another label of the cluster -LRB- the correct answer -RRB- ; -LRB- 2 -RRB- three labels of other clusters among the 15 ; and -LRB- 3 -RRB- a pair constructed by randomly selecting words from those making up the various cluster labels .
+in this paper , we do not utilize any language-specific preprocessing or any other
+first , our clusters are internally coherent in the sense of expressing a certain relationship , because people identified that the pairs in the question header and in the correct answer exhibit the same relationship .
+these lists included patterns expressing hypernymy -LRB- hearst , 1992 ; pantel et al. , 2004 -RRB- , meronymy -LRB- berland and charniak , 1999 ; girju et al. , 2006 -RRB- , synonymy -LRB- widdows and dorow , 2002 ; davidov and rappoport , 2006 -RRB- , and verb strength + verb happens - before -LRB- chklovski and pantel , 2004 -RRB- .

@@ -1,0 +1,7 @@
+our approach to the task was to : -LRB- 1 -RRB- naively treat all nominal pairs as ncs -LRB- e.g. the climate in the forest is treated as an instance of climate forest -RRB- ; and -LRB- 2 -RRB- translate the individual binary classification tasks into a single multiclass classification task , in the interests of benchmarking existing sr interpretation methods over a common dataset .
+for each test instance , we make a prediction according to one of the seven relations in the task , which we then map onto a binary classification for final evaluation purposes .
+in order
+in our experiments , we use this co-training method with the sense collocation method to expand the size and variation of training data , using synonym , hypernym and sister word relations .
+in section 4.1 and section 4.2 , we describe the architecture of our two systems .
+hence , our first system is category b while our second system is -LRB- arguably -RRB- category a. table 1 presents the three baselines for the task , and the results for our two systems -LRB- system i and system ii -RRB- .
+tables 2 and 3 show the performance of the teams which performed in the task , in categories a and b. team 220 in table 2 is our second system , and team 220 in table 3 is our first system .

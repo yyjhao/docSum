@@ -1,0 +1,6 @@
+we will present a phrase matching algorithm that effectively solves this combinatorial problem exploiting the prefix tree data structure of the phrase-table .
+we have investigated this and our results are in line with -LRB- koehn et al. , 2003 -RRB- showing that the translation quality does not improve if we utilize phrases beyond a certain length .
+furthermore , the suffix array data structure of -LRB- callison-burch et al. , 2005 -RRB- requires a fair amount of memory , about 2 gb in their example , whereas our implementation will use only a tiny amount of memory , e.g. less than 20 mb for the large chinese-english nist task .
+in this section , we will introduce the notation and state the problem of matching source phrases of an input graph g and the phrase-table , represented as prefix tree t. the input graph g has nodes 1 , ... , j , ... , j. the outgoing edges of a graph node j are numbered with 1 , ... , n , ... , n9 , i.e. an edge in the input graph is identified by a pair -LRB- j , n -RRB- .
+3 , we can access the successor nodes of the root node of the prefix tree in o -LRB- 1 -RRB- , i.e. in constant time .
+storing all phrase pairs for this test set in memory requires about 1.7 gb of memory , i.e. using the described data structures , we not only avoid the

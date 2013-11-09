@@ -1,0 +1,6 @@
+the system that we use to analyze superlatives is based on two linguistic formalisms : combinatory categorial grammar -LRB- ccg -RRB- , for a theory of syntax ; and discourse representation theory -LRB- drt -RRB- for a theory of semantics .
+in the cheapest car , the comparison set is formed by the set of cars , whereas in the cheapest blue car , the comparison set is the set of blue cars .
+dla system for evaluation , we extrapolated
+the task is evaluated using precision -LRB- p -RRB- , recall -LRB- r -RRB- , and f-score -LRB- f -RRB- , calculated as follows : the second task is conditional on the first : once a superlative is found , its comparison set must also be identified -LRB- rarest flower in new zealand , new yorks tallest building , see section 2.2 -RRB- .
+our corpus consists of a collection of newswire articles from the wall street journal -LRB- sections 00 , 01 , 02 , 03 , 04 , 10 , and 15 -RRB- and the glasgow herald -LRB- gh950110 from the clef evaluation forum -RRB- , and a large set of questions from the trec qa evaluation exercise -LRB- years 2002 and 2003 -RRB- and natural language queries submitted to the excite search engine -LRB- jansen and spink , 2000 -RRB- .
+this very first corpus of superlatives allows us to get a comprehensive picture of the behavior and distribution of superlatives in real occurring data .

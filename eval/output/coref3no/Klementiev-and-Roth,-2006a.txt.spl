@@ -1,0 +1,8 @@
+in this work , we make two independent observations about named entities encountered in such corpora , and use them to develop an algorithm that extracts pairs of nes across languages .
+approaches that attempt to use these two characteristics separately to identify nes across languages would have significant shortcomings .
+for instance , we would like to count the aggregate number of occurrences of herzegovina , hercegovina on the english side in order to map it accurately to the equivalence class of that ne s variants we may see on the russian side of our corpus -LRB- e.g. -RRB- .
+we use a method called the f-index -LRB- hetland , 2004 -RRB- to implement the similarity function on line 8 of the algorithm .
+at this point , our algorithm takes a simplistic approach also for the english side of the corpus each unique word had its own equivalence class although , in principle , we can incorporate works such as -LRB- li et al. , 2004 -RRB- into the algorithm .
+in our experiments , we paired substrings if their positions in their respective words differed by -1 , 0 , or 1 .
+figure
+we have demonstrated that using two independent sources of information -LRB- transliteration and temporal similarity -RRB- together to guide ne extraction gives better performance than using either of them alone -LRB- see figure 3 -RRB- .

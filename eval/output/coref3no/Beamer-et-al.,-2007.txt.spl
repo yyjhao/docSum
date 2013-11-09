@@ -1,0 +1,7 @@
+the semeval 2007 task on semantic relations between nominals is to identify the underlying semantic relation between two nouns in the context of a sentence .
+we selected a list of 18 lexico-syntactic and semantic features split here into three sets : feature set # 1 -LRB- core features -RRB- , feature set # 2 -LRB- context features -RRB- , and the feature set # 3 -LRB- special features -RRB- .
+while features f 1 f4 were selected from our previous experiments , all the other features are entirely the contribution of this research .
+the feature is set to 1 if the target noun is part of a semantic role phrase and to 0 otherwise .
+the instrument semantic role is used for the instrument - agency relation as a boolean feature -LRB- f17 -RRB- indicating whether the argument identified as instrument in the relation -LRB- e.g. , e1 if instrumentagency -LRB- e1 , e2 -RRB- -RRB- belongs to an instrument phrase as identified by a semantic role tool , such as assert .
+besides the selectional restrictions imposed on the nouns by special features such as f15 and f16 -LRB- psychological feature -RRB- , we created lists of containers from various thesauri6 and identified selectional restrictions that differentiate between containers and locations relying on taxonomies of spatial entities discussed in detail in -LRB- herskovits , 1987 -RRB- and -LRB- tyler and evans , 2003 -RRB- .
+table 2

@@ -1,0 +1,6 @@
+this paper is organized as follows : in section 2 , we present the transliteration problems .
+the process can be seen conceptually as two levels of decoding : segmentation of the source string into transliteration units ; and relating the source language transliteration units with units in
+in eqn -LRB- 1 -RRB- and -LRB- 2 -RRB- , p -LRB- c -RRB- and p -LRB- e -RRB- are usually estimated using n-gram language models -LRB- jelinek , 1991 -RRB- .
+in this way , we convert the names in the source language , say e , into an intermediate phonemic representation p , and then convert the phonemic representation into the target language , say chinese c. in e2c transliteration , the phoneme-based approach can be formulated as p -LRB- cie -RRB- = p -LRB- cip -RRB- p -LRB- pie -RRB- and conversely we have p -LRB- ei c -RRB- = p -LRB- eip -RRB- p -LRB- pi c -RRB- for c2e back-transliteration .
+the aligning process is just to find the alignment segmentation ^ between the two strings that maximizes the joint probability : a set of transliteration pairs that is derived from the aligning process forms a transliteration table , which is in turn used in the transliteration decoding .
+in the case of e2c transliteration , we form a learning vector of 6 attributes by combining 2 left and 2 right letters around the letter of focus ek and 1 previous chinese unit ck ^ 1 .

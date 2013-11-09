@@ -1,0 +1,8 @@
+our model computes a joint probability of image features over different regions in an image using a training set and uses this joint probability to annotate and retrieve images .
+given a training set of images with annotations , we show that probabilistic models allow us to predict the probability of generating a word given the features computed over different regions in an image .
+to ensure a fair comparison , we use exactly the same data set and same feature representations as were used in -LSB- 3 , 4 , 5 , 9 -RSB- .
+in section 3.1 we discuss our choice of representation for images and their annotations .
+we compare the annotation performance of the four models : the co-occurrence model -LSB- 9 -RSB- , the translation model -LSB- 4 -RSB- , cmrm -LSB- 5 -RSB- and the model proposed in this paper -LRB- crm -RRB- .
+we report the results on two sets of words : the subset of 49 best words which
+following -LSB- 5 -RSB- , we use four sets of queries , constructed from all 1 - , 2 - , 3 - and 4-word combinations of words that occur at least twice in the testing set .
+we are also very encouraged by the precision our model shows at 5 retrieved images : precision values around 0.2 suggest that an average query always has a relevant image in the top 5 .

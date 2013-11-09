@@ -1,0 +1,7 @@
+following -LSB- 3 -RSB- , we use this information to estimate a contextualized model of phonological change expressed as a
+in this paper , we use this general approach to evaluate the performance of two different schemes for defining probability distributions over rules .
+-LSB- 12 -RSB- presents a model for learning sound laws , general phonological changes governing two completely observed aligned cognate lists .
+there are three types of rules : -LRB- 1 -RRB- deletion of the phoneme , -LRB- 2 -RRB- substitution with some phoneme -LRB- possibly the same one -RRB- , or -LRB- 3 -RRB- insertion of another phoneme , either before or after the existing one .
+the rule probabilities are then deterministically related to the weights via the softmax function : for each rule x &gt; ^ \/ cl ct , we defined features based on whether x = ^ -LRB- i.e. self-substitution -RRB- , and whether | ^ | = n for each n = 0 , 1 , 2 -LRB- corresponding to deletion , substitution , and insertion -RRB- .
+the e-step computes the expected sufficient statistics required for the m-step , which in our case is the expected number of times each edit -LRB- such as o &gt; a -RRB- was used in each context .
+suppose that the words in languages a , c and d are fixed , and we wish to sample the word at language b along with the three corresponding sets of edits -LRB- remember that the edits fully determine the words -RRB- .

@@ -1,0 +1,8 @@
+we agree with -LRB- magnini et al. , 2002 -RRB- that in order to automatically create and maintain trigger gazetteers , using a hierarchy of common nouns is a good approach .
+finally , in section four we outline our conclusions and future work .
+our motivation is that proper nouns that form entities can be obtained from the entries in an encyclopedia and that some features of their definitions in the encyclopedia can help to classify them into their correct entity category .
+our aim is to find a method which allow us to automatically create and maintain entity gazetteers by extracting the necessary information from linguistic resources .
+for each experiment we considered two values
+from this noun hierarchy we consider the nodes -LRB- called synsets in wordnet -RRB- which in our opinion represent more accurately the different kind of entities we are working with -LRB- location , organization and person -RRB- .
+on the other hand there are entity gazetteers which contain entities themselves , which usually are proper nouns .
+another important fact is that the method has a high degree of language independence ; in order to apply this approach to a new language , we need a version of wikipedia and wordnet for that language , but the algorithm and the process does not change .

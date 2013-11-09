@@ -1,0 +1,6 @@
+the processing of comparative expressions such as -LRB- 1 -RRB- and -LRB- 2 -RRB- was incorporated into an existing system , semrep -LSB- rindflesch and fiszman , 2003 ; rindflesch et al. , 2005 -RSB- , which constructs semantic predications by mapping assertions in biomedical text to the unified medical language system -LRB- umls -RRB- -LSB- humphreys et al. , 1998 -RSB- .
+an adjective or noun is used to denote the scale , and words such as than , as , with , and to serve as cues to identify the compared terms , the scale , and the relative position of the terms on the scale .
+in this sample , the most frequent patterns for comp1 -LRB- only announces that two terms are compared -RRB- and comp2 -LRB- includes a
+when this processing is applied to -LRB- 13 -RRB- , the semantic predication -LRB- 14 -RRB- is produced , in which the predicate is compared _ with ; the first argument is the primary compared term and the other is the secondary .
+in addition to identifying two compared terms when processing comp2 patterns , a scale must be named and the relative position of the terms on that scale indicated .
+although , in this paper , we tested the method on structures in which the compared terms belong to the semantic group chemicals &amp; drugs , we can straightforwardly generalize the method by adding other semantic groups to the algorithm .

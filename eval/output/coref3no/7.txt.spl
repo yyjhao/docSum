@@ -1,0 +1,8 @@
+from the previous example , we form the pattern x is the largest y , where we replace the two words jaguar and cat by two wildcards x and y. our contributions in this paper are two fold : we propose an automatically extracted lexico-syntactic patterns-based approach to compute semantic similarity using text snippets obtained from a web search engine .
+sahami et al. , -LSB- 36 -RSB- measured semantic similarity between two queries using snippets returned for those queries by a search engine .
+page counts for the query p
+let us assume these wildcards to be x and y. for each snippet d in the set of snippets d returned by getsnippets , function getngrams extract word n-grams for n = 2 , 3 , 4 and 5 .
+function getngrams extracts n-grams for n = 2 , 3 , 4 and 5 from the snippets .
+this function returns a vector of patterns where each element is the normalized frequency of the corresponding pattern in the snippets for the query a b. we append similarity scores calculated using page counts in section 3.2 to create the final feature vector f for the word - pair -LRB- a , b -RRB- .
+we conduct two sets of experiments to evaluate the proposed semantic similarity measure .
+secondly , we apply the proposed measure in two real-world applications : community mining and entity disambiguation .

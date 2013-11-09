@@ -1,0 +1,6 @@
+we explore available lexical resources -LRB- wordnet and roget 's thesaurus -RRB- to provide the attributes , and machine learning -LRB- ml -RRB- tools to find the most salient combinations of attributes .
+the distance between the two heads or two modifiers in a pair of base nps can be zero , yet there may be no similarity between them , with respect to semantic relations .
+they learn semantic relations between a noun and its modifier in a medical domain , to which the list of semantic relations and the lexical resource have been tailored .
+the aim is to find rules which justify the existence of certain type of interaction between the two elements of the base np , through the analysis of information extracted from publicly available resources for a general domain , more general semantic relations , and ml methods that present an insightful look into the nature of the data .
+the analysis we perform using this small set of data will reveal which relations are harder to characterize and need more data , and which of them have indicators that are
+because of the words that do not have a corresponding sense in roget 's , our data set is reduced to 555 base noun phrases , with the distribution presented in table 2 .

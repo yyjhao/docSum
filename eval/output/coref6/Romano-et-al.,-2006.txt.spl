@@ -1,0 +1,7 @@
+next , we implemented a prototype that utilizes a state-of-the-art method for learning entailment relations from the web -LRB- szpektor et al. , 2004 -RRB- , the minipar dependency parser -LRB- lin , 1998 -RRB- and a syntactic matching module .
+we have presented a paraphrase-based approach for relation extraction -LRB- re -RRB- , and an implemented system , that rely solely on unsupervised paraphrase acquisition and generic syntactic template matching .
+to further
+most importantly , we believe that our analysis and evaluation methodologies for an re dataset provide an excellent benchmark for unsupervised learning of paraphrases and entailment rules .
+first , we manually analyzed the protein - interaction dataset and identified all cases in which protein interaction is expressed by an entailing template .
+to handle transparent head nouns , which is the only phenomenon that demonstrates domain dependence , we extracted a set of the 5 most frequent transparent head patterns in the development set , e.g. fragment of x. in order to compare -LRB- roughly -RRB- our performance with supervised methods applied to this dataset , as summarized in -LRB- bunescu et al. , 2005 -RRB- , we adopted their recall and precision measurement .
+the general configuration assumed in this paper for re is based on two main elements : a list of lexical-syntactic templates which entail the relation of interest and a syntactic matcher which identifies the template occurrences in sentences .

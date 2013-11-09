@@ -1,0 +1,6 @@
+in particular , the workshop correctly stated that '' visual information management systems should not be considered as an application of the existing state of the art -LRB- in computer vision and databases -RRB- to manage and process images '' and that '' computer vision researchers should identify features required for interactive image understanding , rather than their discipline 's current emphasis on automatic techniques '' -LRB- emphasis added -RRB- .
+in this section , we discuss patterns in applications , the repertoire of images , the influence of the scene and the role of domain knowledge , and the semantic gap between image features and the user .
+to solve the problem , systems in -LSB- 21 -RSB- , -LSB- 142 -RSB- use a program that explores the internet , collecting images and inserting them in a predefined taxonomy on the basis of the text surrounding them .
+at the same time , the sensory gap between the properties in an image and the properties of the object plays a limiting role in retrieving the content of the image .
+an alternative , also explored in the paper , is to describe the histogram by the first three statistical moments , where 3 is an empirical finding .
+the precision of the answer is the fraction of the returned images that is indeed relevant for the query : while precision and

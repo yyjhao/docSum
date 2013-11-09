@@ -1,0 +1,8 @@
+our model computes a joint probability of image features over different regions in an image using a training set and uses this joint probability to annotate and retrieve images .
+in section 4 we will show that crm performs significantly better than all previosly proposed models on the tasks of image annotation and retrieval .
+we divided the dataset into 3 parts - with 4,000 training set images , 500 evaluation set images and 500 images in the test set .
+however , contrary to prior work -LSB- 4 , 3 -RSB- we do not assume an underlying
+we compare the annotation performance of the four models : the co-occurrence model -LSB- 9 -RSB- , the translation model -LSB- 4 -RSB- , cmrm -LSB- 5 -RSB- and the model proposed in this paper -LRB- crm -RRB- .
+in our model of images , a central part will be played by a special function which maps image regions to real-valued vectors .
+image pixels are produced by first picking a set of i.i.d. feature vectors , then generating image regions from the feature vectors , and finally stacking the regions on top of each other .
+we report the results on two sets of words : the subset of 49 best words which was used by -LSB- 4 , 5 -RSB- , and the complete set of all 260 words that occur in the testing set .

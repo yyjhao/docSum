@@ -1,0 +1,9 @@
+the participants were given access to the corpus after some linguistic preprocessing had been done : for all data , a tokenizer , part-of-speech tagger , and a chunker were applied to the raw data .
+eleven
+apart from the training data , this system also employed gazetteers and the output of two externally trained named entity recognizers .
+hidden markov models were employed by four of the systems that took part in the shared task -LRB- florian et al. , 2003 ; klein et al. , 2003 ; mayfield et al. , 2003 ; whitelaw and patrick , 2003 -RRB- .
+two more systems used them in combination with other techniques -LRB- florian et al. , 2003 ; klein et al. , 2003 -RRB- .
+three systems used maximum entropy models in isolation -LRB- bender et al. , 2003 ; chieu and ng , 2003 ; curran and clark , 2003 -RRB- .
+most of the systems employed part-of-speech tags and two of them have recomputed the english tags with better taggers -LRB- hendrickx and van den bosch , 2003 ; wu et al. , 2003 -RRB- .
+in this section we discuss the sources of the data that were used in this shared task , the preprocessing steps we have performed on the data , the format of the data and the method that was used for evaluating the participating systems .
+florian et al. -LRB- 2003 -RRB- have also obtained the highest f0 = 1 rate for the german data .

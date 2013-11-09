@@ -1,0 +1,8 @@
+in this paper we describe our work on the analysis of superlative adjectives , which is empirically grounded and is implemented into an existing wide-coverage text understanding system .
+it is well known that superlatives can be analyzed in terms of comparative constructions -LRB- szabolcsi , 1986 ; alshawi , 1992 ; gawron , 1995 ; heim , 1999 ; farkas and kiss , 2000 -RRB- .
+now consider a similar test with superlatives , where the entailments fail in both directions : a semantic represention capturing the meaning of a superlative requires a more sophisticated analysis .
+our corpus consists of a collection of newswire articles from the wall street journal -LRB- sections 00 , 01 , 02 , 03 , 04 , 10 , and 15 -RRB- and
+the system that we use to analyze superlatives is based on two linguistic formalisms : combinatory categorial grammar -LRB- ccg -RRB- , for a theory of syntax ; and discourse representation theory -LRB- drt -RRB- for a theory of semantics .
+dla system for evaluation , we extrapolated superlatives from the drss output by the system .
+for developing and testing our system , we have created a collection of over 3,000 instances of superlatives , both in newswire text and in natural language questions .
+this very first corpus of superlatives allows us to get a comprehensive picture of the behavior and distribution of superlatives in real occurring data .

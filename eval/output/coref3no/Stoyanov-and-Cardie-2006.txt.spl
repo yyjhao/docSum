@@ -1,0 +1,7 @@
+in the context of source coreference resolution we consider a noun phrase to correspond to -LRB- or match -RRB- a source if the source and the np cover the exact same span of text .
+recent work has shown that systems can be trained to recognize opinions , their polarity , and their strength at a reasonable degree of accuracy -LRB- e.g. dave et al. -LRB- 2003 -RRB- , riloff and wiebe -LRB- 2003 -RRB- , bethard et al. -LRB- 2004 -RRB- , pang and lee -LRB- 2004 -RRB- , wilson et al. -LRB- 2004 -RRB- , yu and hatzivassiloglou -LRB- 2003 -RRB- , wiebe and riloff -LRB- 2005 -RRB- -RRB- .
+in this paper we address the former problem via a heuristic method for mapping sources to nps and give statistics for the accuracy of the mapping process .
+once we isolate the source nps , we apply coreference resolution using the standard combination of classification and single-link clustering -LRB- e.g. soon et al. -LRB- 2001 -RRB- and ng and cardie -LRB- 2002 -RRB- -RRB- .
+we determine the match in the problematic cases using a set of heuristics : if a source matches any np exactly in span , match that source to the np ; do this even if multiple nps overlap the source we are dealing with nested np s .
+our general approach
+following ng and cardie -LRB- 2002 -RRB- , we perform instance selection with n = 1 -LRB- soon1 in the results -RRB- and n = 2 -LRB- soon2 -RRB- .

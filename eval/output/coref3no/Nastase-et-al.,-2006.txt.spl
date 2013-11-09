@@ -1,0 +1,7 @@
+semantic relations describe interactions between a noun and its modifiers -LRB- noun-modifier relations -RRB- , a verb and its arguments -LRB- case relations \/ semantic roles -RRB- , and two clauses .
+in the past few years we have seen the nlp community 's renewed interest in analyzing semantic relations especially between verbs and their arguments -LRB- baker , fillmore , &amp; lowe 1998 -RRB- , -LRB- kipper , dang , &amp; palmer 2000 -RRB- , nouns and their modifiers -LRB- rosario &amp; hearst 2001 -RRB- .
+in this paper we consider a specific supervised learning task : assign semantic relations to noun-modifier pairs in base noun phrases -LRB- base nps -RRB- , composed only of a noun and its modifier .
+we compare the learning results
+the data we use consist of 600 noun-modifier pairs , tagged with 30 semantic relations , grouped into 5 classes of relations by general similarity -LRB- barker 1998 -RRB- , -LRB- nastase &amp; szpakowicz 2003 -RRB- , -LRB- turney &amp; littman 2003 -RRB- : the words in the pairs from the dataset are also annotated with part of speech and wordnet 1.6 word senses .
+if a corpus captures a large sample of language use , it allows us to describe the senses of a word through collocated words .
+as we write in the related work section , turney &amp; littman -LRB- 2003 -RRB- and turney -LRB- 2005 -RRB- applied the nearest neighbor method to the task of learning semantic relations on the same dataset that we use .

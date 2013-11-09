@@ -1,0 +1,6 @@
+in such cases , we must take steps to adapt a model trained on the source domain for use in the target domain -LRB- roark and bacchiani , 2003 ; florian et al. , 2004 ; chelba and acero , 2004 ; ando , 2004 ; lease and charniak , 2005 ; daume iii and marcu , 2006 -RRB- .
+if we learned a good mapping 0 , then the classifier we learn on the source domain will also be effective on the target domain .
+if we have designed the pivots well , then 0 should encode correspondences among features from different domains which are important for the supervised task , and the classifier we train using these new features on the source domain will perform well on the target domain .
+in all our experiments , we rescale our projection features to have average l1 norm on the training set five times that of the binary-valued features .
+though other methods for incorporating small amounts of training data in the target domain were available , such as those proposed by chelba and acero -LRB- 2004 -RRB- and by daume iii
+we are also focusing on other potential applications , including chunking -LRB- sha and pereira , 2003 -RRB- , named entity recognition -LRB- florian et al. , 2004 ; ando and zhang , 2005b ; daume iii and marcu , 2006 -RRB- , and speaker adaptation -LRB- kuhn et al. , 1998 -RRB- .

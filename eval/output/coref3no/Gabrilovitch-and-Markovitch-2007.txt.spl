@@ -1,0 +1,8 @@
+words trigger reasoning at a much deeper level that manipulates concepts the basic units of meaning that serve humans to organize and share their knowledge .
+however , prior work on semantic relatedness was based on purely statistical techniques that did not make use of background knowledge -LSB- baeza-yates and ribeiro-neto , 1999 ; deerwester et al. , 1990 -RSB- , or on lexical resources that incorporate very limited knowledge about the world -LSB- budanitsky and hirst , 2006 ; jarmasz , 2003 -RSB- .
+first , we present explicit semantic analysis , a new approach to representing semantics of natural language texts using natural concepts .
+we represent texts as a weighted mixture of a
+in this work , we use two such datasets , which are to the best of our knowledge the largest publicly available collections of their kind .
+the ability to quantify semantic relatedness of texts underlies many fundamental tasks in computational linguistics , including word sense disambiguation , information retrieval , word and text clustering , and error correction -LSB- budanitsky and hirst , 2006 -RSB- .
+finally , even for individual words , esa provides much more sophisticated mapping of words to concepts , through the analysis of the large bodies of texts associated with concepts .
+in our approach , concepts reflect different aspects of the input -LRB- see tables 1 3 -RRB- , thus yielding weighted multi-faceted representation of the text .

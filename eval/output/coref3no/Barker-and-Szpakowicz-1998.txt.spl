@@ -1,0 +1,8 @@
+to assign an nmr to a triple -LRB- m , h , mk
+if the minimum distance was 3 or 6 , there may be two candidate lists : lm contains the nmrs previously assigned to triples with matching m , lhwith matching h. the analyzer attempts to choose a set r of candidates to suggest to the user as the best nmrs for the current triple .
+alternatively , the system could prefer nmrs with the highest relative frequency in their lists .
+to compensate for the lack of previous analyses , the system relies on the help of a user , who supplies the correct nmr when the system can not determine it automatically .
+furthermore , if the appropriate nmr is not among those suggested by the system , the user can request the complete list of paraphrases with the current modifier and head .
+we present the results of evaluating the nmr analyzer in the context of a large knowledge acquisition experiment -LRB- see barker et al. , 1998 -RRB- .
+since the system starts with no previous noun phrase analyses , the user is responsible for supplying nmrs at the beginning of a session .
+the nmr analyzer currently allows its stored triples -LRB- and associated nmrs -RRB- to be saved in a file at the end of a session .

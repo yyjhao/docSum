@@ -1,0 +1,7 @@
+the grammars recover patterns like those discussed in klein and manning -LRB- 2003 -RRB- , heavily articulating complex and frequent categories like np and vp while barely splitting rare or simple ones -LRB- see section 3 for an empirical analysis -RRB- .
+we ran our experiments on the wall street journal -LRB- wsj -RRB- portion of the penn treebank using the standard setup : we trained on sections 2 to 21 , and we used section 1 as a validation set for tuning model hyperparameters .
+rather than experiment with head-outward binarization as in klein and manning -LRB- 2003 -RRB- , we simply used a left branching binarization ; matsuzaki et al. -LRB- 2005 -RRB- contains a comparison showing that the differences between binarizations are small .
+to obtain a grammar from the training trees , we want to learn a set of rule probabilities o on latent annotations that maximize the likelihood of the training trees , despite the fact that the original trees lack the latent annotations .
+therefore , it would be to our advantage to split the latent annotations only where needed , rather than splitting them all as in matsuzaki et al. -LRB- 2005 -RRB- .
+therefore the inside
+since this method is not a contribution of this paper , we refer the reader to the fuller presentations in goodman -LRB- 1996 -RRB- and matsuzaki et al. -LRB- 2005 -RRB- .

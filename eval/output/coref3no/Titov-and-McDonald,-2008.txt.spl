@@ -1,0 +1,6 @@
+in this study we focus on online user reviews that have been provided for products or services , e.g. , electronics , hotels and restaurants .
+in this section we will consider applicability of the most standard methods for unsupervised modeling of documents , probabilistic latent semantic analysis , plsa -LSB- 17 -RSB- and latent dirichlet allocation , lda -LSB- 3 -RSB- to the considered problem .
+the model is defined by parameters ^ , ^ and ^ , where ^ z is the distribution p -LRB- w | z -RRB- of words in latent topic z , ^ d is the distribution p -LRB- z | d -RRB- of topics in document d and ^ d is the probability of choosing document d , i.e. p -LRB- d -RRB- .
+we propose a model called multi-grain lda -LRB- mg-lda -RRB- , which models two distinct types of topics : global topics and local topics .
+in order to perform gibbs sampling with mg-lda we need to compute conditional probability p -LRB- vd , i = v , rd , i = r , zd , i = zlv , r , z , w -RRB- , where v , r and z are vectors of assignments of sliding windows , context -LRB- global or local -RRB- and topics for all the words in the collection except for the considered word at position i in document d .
+in this work we presented multi-grain topic models and showed that they are superior to standard topic models when extracting ratable aspects from

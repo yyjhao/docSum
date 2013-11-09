@@ -1,0 +1,8 @@
+we begin by reviewing the use of logistic regression in text classification , and the bayesian approach in particular -LRB- section 2 -RRB- , then discuss previous approaches to integrating domain knowledge in text classification -LRB- section 3 -RRB- .
+we find on three test categorization test collections , using three diverse sources of domain knowledge , that domain-specific priors can yield large effectiveness improvements .
+our four methods for using domain knowledge to specify class-specific hyperparameters begin by giving ows a prior with i = 0 and a common variance v2 chosen by cross-validation .
+for methods var and var \/ tfidf , the cdkrw values tried were 2 , 5 , 10 , 20 , 50 , 100 , and 10000 .
+for methods mode and mode \/ tfidf , the cdkrw values were 0.5 , 1 , 2 , 3 , 4 , 5 , 10 , 20 , 50 , 100 , and 10000 .
+we note that our macroaveraged f1 for svms on modapte top
+the resulting training sets had 2 to 139 positive examples for categories in the bio articles collection , 9 to 184 positive examples for categories in the modapte top 10 collection , and 0 to 22 positive examples for categories in the rcv1 a-b regions collection .
+on three data sets , with three diverse sources of domain knowledge , we found large improvements in effectiveness , particularly when only small training sets are available .

@@ -1,0 +1,6 @@
+we have implemented a logic prover , called cogex -LRB- from the permutation of the first two syllables of the verb excogitate -RRB- which uniformly codifies the question and answer text , as well as world knowledge resources , in order to use its inference engine to verify and extract any lexical relationships between the question and its candidate answers .
+in addition to the logic representations of questions and candidate answers , the qa logic prover needs world knowledge axioms to link question concepts to answer concepts .
+the axiom builder converts the logic forms for the question , the glosses , and its candidate answers into axioms .
+the purpose of this module is twofold : -LRB- 1 -RRB- to compensate for errors in the text parsing and logic form transformation phase , such as prepositional attachments and subject \/ object detection in verbs , -LRB- 2 -RRB- to detect correct answers when the nlp and xwn -LRB- extended wordnet -RRB- axioms fail to provide all the necessary inferences .
+lexical chains improve the performance of question answering systems in two ways : -LRB- 1 -RRB- increase the document retrieval recall and -LRB- 2 -RRB- improve the answer extraction by providing the much needed world knowledge axioms that link question keywords with answers concepts .
+wordnet supplies us with that chain such that develop make and

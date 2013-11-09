@@ -1,0 +1,6 @@
+the approach has been shown to give improvements over the map classifier in
+kumar and byrne -LRB- 2004 -RRB- show that mbr decoding gives optimal performance when the loss function is matched to the evaluation criterion ; in particular , mbr under the sentence-level bleu loss function -LRB- papineni et al. , 2001 -RRB- gives gains on bleu .
+in this paper we explore a different strategy to perform mbr decoding over translation lattices -LRB- ueffing et al. , 2002 -RRB- that compactly encode a huge number of translation alternatives relative to an n-best list .
+given such a loss function l -LRB- e , e ' -RRB- between an automatic translation e ' and the reference e , and an underlying probability model p -LRB- eif -RRB- , the mbr decoder has the following form -LRB- goel and byrne , 2000 ; kumar and byrne , 2004 -RRB- : we are interested in performing mbr decoding under a sentence-level bleu score -LRB- papineni et al. , 2001 -RRB- which behaves like a gain function : it varies between 0 and 1 , and a larger value reflects a higher similarity .
+the factors depend on a set of n-gram matches and counts -LRB- cn ; n e 10 , 1 , 2 , 3 , 4 -RCB- -RRB- .
+for comparison , we also include results from lattice mbr when both hypothesis and evidence spaces are identical : either the full lattice or the 1000-best list -LRB- from tables 2 and 3 -RRB- .

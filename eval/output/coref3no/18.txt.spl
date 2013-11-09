@@ -1,0 +1,7 @@
+the features we use for documents are words , bi-grams -LRB- adjacent pairs of words -RRB- and tri-grams -LRB- adjacent triples of words -RRB- , since these have consistently been found to work well for topic classification .
+in our proposed system the teacher is asked two types of questions : -LRB- 1 -RRB- membership queries and -LRB- 2 -RRB- questions about the relevance of features .
+when system 3 is used with a user instead of the oracle it is equivalent to a scenario where prior knowledge is used to initialize the classifier -LRB- schapire et al. , 2002 ; wu and srihari , 2004 ; godbole et al. , 2004 ; jones , 2005 -RRB- .
+following the algorithm for system 3 -LRB- see section 2.2 , figure 3 -RRB- , let f = n -LRB- the total number of features -RRB- and let us assume that the oracle selects the k most important features -LRB- by information gain -RRB- in step 1 .
+we evaluate these experiments at many
+consider a linear svm , n = 2 and two data points x1 = -LRB- 1 , 2 -RRB- and x2 = -LRB- 2 , 1 -RRB- with labels + 1 and 1 respectively .
+this is because in addition to mistakes made by the user , we lose out on those features that the user might have considered relevant , had she been presented that feature when we were collecting relevance judgments for a relatively small subset of features .

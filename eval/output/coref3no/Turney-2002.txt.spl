@@ -1,0 +1,7 @@
+other potential applications include recognizing '' flames '' -LRB- abusive newsgroup messages -RRB- -LRB- spertus , 1997 -RRB- and developing new kinds of search tools -LRB- hearst , 1992 -RRB- .
+the jj tags indicate adjectives , the nn tags are nouns , the rb tags are adverbs , and the vb tags are verbs .4 the second pattern , for example , means that two consecutive words are extracted if the first word is an adverb and the second word is an adjective , but the third word -LRB- which is not extracted -RRB- can not be a noun .
+both are in the collection of 410 reviews from epinions that are used in the experiments in section 4 .
+as an example , they present the following three sentences -LRB- hatzivassiloglou &amp; mckeown , 1997 -RRB- : the tax proposal was simple and well - received by the public .
+as far as i know , the only prior published work on the task of classifying reviews as thumbs up or down is tong '' s -LRB- 2001 -RRB- system for generating sentiment timelines .
+wiebe et al. -LRB- 2001 -RRB- list a variety of potential applications for automated subjectivity tagging , such
+the algorithm has three steps : -LRB- 1 -RRB- extract phrases containing adjectives or adverbs , -LRB- 2 -RRB- estimate the semantic orientation of each phrase , and -LRB- 3 -RRB- classify the review based on the average semantic orientation of the phrases .

@@ -1,0 +1,7 @@
+this rapid progress has been greatly facilitated by the development of automatic translation evaluation metrics such as bleu score -LRB- papineni et al. , 2001 -RRB- , nist score -LRB- doddington , 2002 -RRB- and position independent word error rate -LRB- per -RRB- -LRB- och , 2002 -RRB- .
+in our experiments , a baseline translation model -LRB- jhu , 2003 -RRB- , trained on a chinese-english parallel corpus -LRB- nist , 2003 -RRB- -LRB- english words and chinese words -RRB- , was used to generate 1000-best translation hypotheses for each chinese sentence in the test set .
+we have shown the construction of a bitree loss function to compare parse - trees of any two translations using alignments with respect to a parse-tree for the source sentence .
+given an mt evaluation metric of interest such
+we first present a hierarchy of loss functions for translation based on different levels of lexical and syntactic information from source and target language sentences .
+while string based metrics such as bleu , wer and per are insensitive to the syntactic structure of the translations , bitree loss is able to measure this aspect of translation quality , and assigns different scores to the two translations .
+while we have focused on developing mbr procedures for loss functions that measure various aspects of translation quality , this framework can also be used with loss functions which measure application-specific error criteria .

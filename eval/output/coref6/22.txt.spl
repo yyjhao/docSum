@@ -1,0 +1,7 @@
+however , to use a search engine for social network mining , a good keyphrase to identify a person is useful because it can be added to a query .
+it estimates the strength of relevance of two persons x and y by putting a query x and y to a search engine : if x and y share a strong relation , we can find much evidence that might include their respective homepages , lists of co-authors in technical papers , citations of papers , and organizational charts .
+therefore , the difference of hits by two names shows the bias of co-occurrence of the two names : yutaka matsuo is likely to appear in web pages with peter mika than lada adamic .
+information sharing on snss is a promising application of snss -LSB- 15 , 35 -RSB- because large amounts
+the number of queries to a search engine becomes a problem when we apply extraction of a social network to a large-scale community : a network with 1000 nodes requires 500,000 queries and grows with o -LRB- n2 -RRB- , where n is the number of persons .
+following that concept , we propose a new architecture to extract a social network from the web , called super social network mining .
+section 3 addresses basic algorithms to obtain social networks from the web .

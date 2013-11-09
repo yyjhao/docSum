@@ -1,0 +1,6 @@
+our approach is a synthesis of techniques developed by barzilay and mckeown -LRB- 2001 -RRB- and lin and pantel -LRB- 2001 -RRB- , designed to overcome the limitations of both .
+sentence alignment was performed using the gale and church algorithm -LRB- 1991 -RRB- with the following cost function : to test the accuracy of our alignment , we manually aligned 454 sentences from two different versions of chapter 21 from twenty thousand leagues under the sea and compared the results of our automatic alignment algorithm against the manually generated gold standard .
+the initial default score of any paraphrase is one -LRB- assuming perfect anchor matches -RRB- , but for each additional occurrence the score is incremented by 2 n , where n is the number of times the current set of anchors has been seen .
+the average precision of our
+although paraphrase rules can easily be formulated at the string-level , e.g. , using regular expression matching and substitution techniques -LRB- soubbotin and soubbotin , 2001 ; hermjakob et al. , 2002 -RRB- , such a treatment fails to capture important linguistic generalizations .
+for example , our approach would be capable of automatically learning a paraphrase like x eat y y is a prey ofx ; a large collection of such paraphrases would go a long way in overcoming the brittleness associated with a relations-based indexing scheme .

@@ -1,0 +1,7 @@
+we agree with -LRB- magnini et al. , 2002 -RRB- that in order to automatically create and maintain trigger gazetteers , using a hierarchy of common nouns is a good approach .
+our aim is to find a method which allow us to automatically create and maintain entity gazetteers by extracting
+finally , in section four we outline our conclusions and future work .
+our motivation is that proper nouns that form entities can be obtained from the entries in an encyclopedia and that some features of their definitions in the encyclopedia can help to classify them into their correct entity category .
+we have presented a method to automatically create and maintain entity gazetteers using as resources an encyclopedia , a noun hierarchy and , optionally , a pos tagger .
+on the positive side , we can conclude that our method is helpful as it takes less time to automatically create gazetteers with our method and after that to supervise them than to create that dictionaries from scratch .
+another important fact is that the method has a high degree of language independence ; in order to apply this approach to a new language , we need a version of wikipedia and wordnet for that language , but the algorithm and the process does not change .

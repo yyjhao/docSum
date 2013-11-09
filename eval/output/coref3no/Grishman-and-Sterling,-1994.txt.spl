@@ -1,0 +1,7 @@
+if classes are created specifically to capture selectional constraints , there may be a substantial manual burden in moving to a new domain , since at least some of the semantic word classes will be domain-specific .
+co-occurrence smoothing is a method which has been recently proposed for smoothing n-gram models -LSB- 3 -RSB- .3 the core of this method involves the computation of a
+suppose we are interested in determining the acceptability of the pattern convict-object-owner , even though this triple does not appear in our training corpus .
+is the result of an incorrect parse -RRB- , we apply a filter in generating pc : for i j , we generate a non-zero pc -LRB- wilwi -RRB- only if the wi and wj appear in at least two common contexts , and there is some common context in which both words occur at least twice .
+of the 57,366 sentences in our training corpus , we obtained complete parses for 31,414 and parses of initial substrings for an additional 12,441 sentences .
+to see how pattern coverage improves with corpus size , we divided our training corpus into 8 segments and computed sets of triples based on the first segment , the first two segments , etc .
+in order to increase our coverage -LRB- recall -RRB- , we then applied the smoothing procedure to the triples from our training corpus .

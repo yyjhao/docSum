@@ -1,0 +1,8 @@
+in the remainder of this paper , we first describe our system in terms of the clustering approach used and alternative features investigated .
+we use
+as input to the clustering , we consider several different representations of the input documents .
+identical to the task baseline by -LRB- artiles et al. , 2005 -RRB- , we stemmed the words in the web pages using the porter stemmer -LRB- porter , 1980 -RRB- , to conflate semantically similar english words with the stem .
+we observe that some host \/ domain names serve as more discriminative evidence than others -LRB- e.g. , a link to a university homepage is more telling than a link to the list of publications page of google scholar when disambiguating computer science scholars -RRB- .
+we also considered a variant where we include the url of the input web page itself as a link .
+these features include -LRB- a -RRB- segmentation of tokens such as www.allposters.com to www , all , posters and com ; -LRB- b -RRB- the parts in the url where the tokens occur , e.g. , protocol , domain name , and directory paths ; -LRB- c -RRB- length of the tokens ; -LRB- d -RRB- orthographic features ; -LRB- e -RRB- sequential n-grams ; and -LRB- f -RRB- sequential bigrams .
+for the -LRB- avg -LRB- t , h-s -RRB- -RRB- and -LRB- avg -LRB- t , d , ne , ne-t , u -RRB- -RRB- runs , we compute the average similarity over the two and five sets of individual features , respectively .

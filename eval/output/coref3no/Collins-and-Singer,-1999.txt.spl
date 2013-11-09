@@ -1,0 +1,6 @@
+recent results -LRB- e.g. , -LRB- yarowsky 95 ; brill 95 ; blum and mitchell 98 -RRB- -RRB- have suggested that unlabeled data can be used quite profitably in reducing the need for supervision .
+the first method builds on results from -LRB- yarowsky 95 -RRB- and -LRB- blum and mitchell 98 -RRB- .
+the label for a test example with features x is then defined as in this paper we define h -LRB- x , y -RRB- as the following function of counts seen in training data
+-LRB- blum and mitchell 98 -RRB- describe learning in the following situation : each example is represented by a feature vector , x drawn from a set of possible values -LRB- an instance space -RRB- x. the task is to learn a classification function f : x &gt; y where y is a set of possible labels , the features can be separated into two types : by this assumption , each element x e x can also be represented as -LRB- xi , x2 -RRB- e x1 x x2 .
+inspection of the data shows that at n = 2500 , the two classifiers both give labels on 44,281 -LRB- 49.2 % -RRB- of the unlabeled examples , and give the same label on 99.25 % of these cases .
+adaboost was first introduced in -LRB- freund and schapire 97 -RRB- ; -LRB- schapire and singer 98 -RRB- gave a generalization of adaboost which we will use in this paper .

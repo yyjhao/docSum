@@ -1,0 +1,7 @@
+moreover , we successfully use out-of-domain data -LRB- web data -RRB- to improve our model , while they report that this data did not improve their unsupervised model .
+the set of constraints we used in our experiments appears in table 1 .
+in section 4 we will develop a
+first , we claim that defining d -LRB- y , 1c -LRB- , , , -RRB- -RRB- to be the hamming distance is superior to using a binary value , d -LRB- y , 1c -LRB- , , , -RRB- -RRB- = 0 if y e 1c -LRB- , , , -RRB- and 1 otherwise .
+we note that in the presence of constraints , the inference procedure -LRB- for finding the output y that maximizes the cost function -RRB- is usually done with search techniques -LRB- rather than viterbi decoding , see -LRB- toutanova et al. , 2005 ; roth and yih , 2005 -RRB- for a discussion -RRB- , we chose beamsearch decoding .
+our algorithm pushes this intuition further , in that the use of constraints allows us to better exploit domain information as a way to label , along with the current learned model , unlabeled examples .
+figure 3 compares two protocols on the advertisements domain : h &amp; w + i , where we first run the h &amp; w protocol and then apply the constraints during testing stage , and h &amp; w &amp; c + i , which uses constraints to guide the model during learning and uses it also in testing .

@@ -1,0 +1,6 @@
+we are interested in models that can perform three tasks : modeling the joint distribution of an image and its caption , modeling the conditional distribution of words given an image , and modeling the conditional distribution of words given a particular region of an image .
+given a corpus of image \/ caption data , d = -LCB- -LRB- rd , wd -RRB- -RCB- dd = 1 , we find maximum likelihood estimates of the model parameters with a variational em procedure that maximizes the lower bound on the log likelihood of the data induced by the variational approximation described above .
+the independence assumptions of the corr-lda model are a compromise between the extreme correspondence enforced by the gm-mixture model , where the entire image and caption are conditional on the same factor , and the lack of correspondence in the gm-lda model , where the image regions and caption words can conceivably be conditional on two disparate sets of factors .
+in effect , our model captures the notion that the image is generated first and the caption annotates the image .
+to evaluate how well a model fits the data , we
+for each unannotated image , we obtain an image-specific distribution over words by computing the conditional distribution p -LRB- w i r -RRB- which is available for the models described in section 3 .

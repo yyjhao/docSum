@@ -1,0 +1,7 @@
+but first observe that candidate 1 shares '' it is a guide to action '' with reference 1 , '' which '' with reference 2 , '' ensures that the military '' with reference 1 , '' always '' with references 2 and 3 , '' commands '' with reference 1 , and finally '' of the party '' with reference 2 -LRB- all ignoring capitalization -RRB- .
+it is clear that a program can rank candidate 1 higher than candidate 2 simply by comparing n - gram matches between each candidate translation and the reference translations .
+these five systems two humans and
+table 1 shows the bleu scores of the 5 systems against two references on this test corpus .
+note that the numbers in table 1 are the bleu metric on an aggregate of 500 sentences , but the means in table 2 are averages of the bleu metric on aggregates of 25 sentences .
+to account for the intrinsic difference between judges and the sentences , we compared each judges rating for a sentence across systems .
+the figure also highlights the relatively large gap between mt systems and human translators .8 in addition , we surmise that the bilingual group was very forgiving in judging h1 relative to h2 because the monolingual group found a rather large difference in the fluency of their translations .

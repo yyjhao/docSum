@@ -1,0 +1,7 @@
+however , prior work on semantic relatedness was based on purely statistical techniques that did not make use of background knowledge -LSB- baeza-yates and ribeiro-neto , 1999 ; deerwester et al. , 1990 -RSB- , or on lexical resources that incorporate very limited knowledge about the world -LSB- budanitsky and hirst , 2006 ; jarmasz , 2003 -RSB- .
+we use machine learning techniques to build a semantic interpreter that maps fragments of natural language text into a weighted sequence of wikipedia concepts ordered by their relevance to the input .
+on the other hand , computing semantic relatedness of a pair of texts is essentially a one-off task , therefore , we replace the
+we processed the text of these articles by removing stop words and rare words , and stemming the remaining words ; this yielded 389,202 distinct terms , which served for representing wikipedia concepts as attribute vectors .
+on the other hand , our approach represents each word as a weighted vector of wikipedia concepts , and semantic relatedness is then computed by comparing the two concept vectors .
+first , we present explicit semantic analysis , a new approach to representing semantics of natural language texts using natural concepts .
+finally , even for individual words , esa provides much more sophisticated mapping of words to concepts , through the analysis of the large bodies of texts associated with concepts .

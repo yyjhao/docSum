@@ -1,0 +1,12 @@
+in table 1 , bush , new york and $ 20 billion are regarded as nes .
+first we find articles of a certain domain from two newspapers .
+if the number of comparable nes which both portions contain exceeds a certain threshold , we adopt them as paraphrases .
+for example , two expressions bush has expressed his confidence in koizumis reforms and
+we apply these obtained patterns to the articles itself , and then find paraphrases only among those which matches to any of patterns .
+in this experiment , we use ie patterns which appears more then once in the corpus and contain at lease one ne .
+df -LRB- wi -RRB- is the number of sentences in the article , which contain nes that is comparable to wi .
+so we can conclude these two patterns are paraphrases .
+first we obtained the most relevant 300 articles from mainichi newspaper -LRB- total of 111373 articles -RRB- for two domains , arrest events and personnel affairs -LRB- hiring and firing of executives -RRB- .
+then we ran the paraphrase acquisition system for each pair or articles , and finally got total 136 pairs of paraphrases -LRB- a link between two ie patterns -RRB- .
+we evaluated our results in two respects : precision and coverage .
+in this experiment , we linked two ie patterns as paraphrases .

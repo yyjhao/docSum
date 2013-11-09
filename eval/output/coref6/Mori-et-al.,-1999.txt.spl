@@ -1,0 +1,8 @@
+therefore , the data for the experiment consists of about 10,000 pairs of images and corresponding documents -LRB- in japanese -RRB- .
+in this paper , a method of image-to-word transformation is proposed based on statistical learning from images to which words are attached .
+for instance , a method enabling use of an image is needed as a possible query to retrieve images -LSB- 1 -RSB- and texts .
+table 3 shows the numerical results of the experiment for various scales in
+next , a set of words is extracted from the documents using the following procedure : divide documents in all items into words 4 and determine each word 's part-of-speech -LRB- noun , verb , adjective , etc . -RRB-
+to find the detailed correlation between text and image -LRB- not simply discriminating an image into a few categories -RRB- , each portion of the image should be correlated to words instead of the whole image to words .
+in table 1 and 2 , hit words appear more than in the case of random selection -LRB- if it is a random selection from a set of words with uniform frequencies , the probability is about 3 \/ 1585 -RRB- .
+in this paper , we have proposed a new method for correlating images with key words based on two kinds of processes , that is , dividing images and vector quantization .

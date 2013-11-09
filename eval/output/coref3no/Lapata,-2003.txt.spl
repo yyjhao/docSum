@@ -1,0 +1,6 @@
+although in single document summarization the position of a sentence in a document can provide cues with respect to its ordering in the summary , this is not the case in multidocument summarization where sentences are selected from different documents and must be somehow ordered so as to produce a coherent summary -LRB- barzilay et al. , 2002 -RRB- .
+sentences are represented by a set of informative features -LRB- e.g. , a verb and its subject , a noun and its modifier -RRB- that can be automatically extracted from the corpus without recourse to manual annotation .
+although we don t have an explicit model of rhetorical relations and their effects on sentence ordering , we capture the lexical inter-dependencies between sentences by focusing on verbs and their precedence relationships in the corpus .
+barzilay et al. -LRB- 2002 -RRB- collected ten sets of articles each consisting of two to three articles reporting the same event and simulated multigen by manually selecting the sentences to be included in the final summary .
+our results indicate that the model can successfully generate orders for texts taken from the corpus on which it is trained .
+the model is particularly relevant for multidocument summarization since it could provide an alternative to chronological ordering especially for documents where publication date information is

@@ -1,0 +1,6 @@
+our results indicate that the model can successfully generate orders for texts taken from the corpus on which it is trained .
+first we calculate which of the three sentences s1 , s2 , and s3 is most
+sentences are represented by a set of informative features -LRB- e.g. , a verb and its subject , a noun and its modifier -RRB- that can be automatically extracted from the corpus without recourse to manual annotation .
+although in single document summarization the position of a sentence in a document can provide cues with respect to its ordering in the summary , this is not the case in multidocument summarization where sentences are selected from different documents and must be somehow ordered so as to produce a coherent summary -LRB- barzilay et al. , 2002 -RRB- .
+although we don t have an explicit model of rhetorical relations and their effects on sentence ordering , we capture the lexical inter-dependencies between sentences by focusing on verbs and their precedence relationships in the corpus .
+we will simplify -LRB- 1 -RRB- by assuming that the probability of any given sentence is determined only by its previous sentence : this is a somewhat simplistic attempt at capturing marcu s -LRB- 1997 -RRB- local coherence constraints as well as barzilay et al. s -LRB- 2002 -RRB- observations about topical relatedness .

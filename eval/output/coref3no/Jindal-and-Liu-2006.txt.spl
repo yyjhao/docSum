@@ -1,0 +1,7 @@
+in recent years , there was a growing interest in analyzing evaluative texts on the web -LRB- e.g. , pang , lee &amp; vaithyanathan , 2002 ; turney , 2002 ; wilson , yu &amp; hatzivassiloglou 2003 ; wiebe &amp; hwa 2004 ; hu &amp; liu , 2004 ; popescu &amp; etzioni 2005 ; carenini , ng &amp; zwart 2005 ; riloff &amp; wiebe 2005 -RRB- .
+it has two tasks : given a set of evaluative texts , identify comparative sentences from them , and classify the identified comparative sentences into different types -LRB- or classes -RRB- .
+our results show that lsrs outperform conditional random fields -LRB- crf -RRB- -LRB- lafferty , mccallum &amp; pereira 2001 -RRB- , which is perhaps the most
+it proposes two new methods to identify comparative sentences and to extract comparative relations from these sentences based on two new types of rules , class sequential rules and label sequential rules .
+our objective : given a collection of evaluative texts , -LRB- 1 -RRB- identify the three types of comparative sentences , and -LRB- 2 -RRB- extract comparative relations from the sentences .
+below , we first explain some notations , and then define the two new types of rules , class sequential rules -LRB- csr -RRB- used in classification of sentences , and label sequential rules -LRB- lsr -RRB- used in relation item extraction .
+two techniques were proposed to perform the tasks , based on class sequential rules and label sequential rules , which give us syntactic clues of comparative relations .

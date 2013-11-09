@@ -1,0 +1,7 @@
+the model posits that words are either generated from topics that are randomly drawn from the topic mixture of the document or from the syntactic classes that are drawn from the previous syntactic class .
+only the latent variables of the syntactic classes are treated as a sequence with local dependencies while latent assignments of topics are treated similar to the lda model , namely topics extraction is not benefited from the additional
+following these lines we propose in this paper a novel and consistent probabilistic model we call the hidden topic markov model -LRB- htmm -RRB- .
+our model is similar to the lda model in tying together parameters of different documents via a hierarchical generative model , but unlike the lda model it does not assume documents are bags of words .
+it also ties parameters between topics by drawing the vector ^ , of all topics from a common dirichlet prior parameterized by ^ .
+specifically , we compute -LRB- 1 -RRB- the expected number of topic transitions that ended in the topic z and -LRB- 2 -RRB- the expected number of co-occurrence of a word w with a topic z .
+we should note that in our experiments we found the final solution calculated by em to be stable with respect to multiple initializations .

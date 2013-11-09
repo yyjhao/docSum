@@ -1,0 +1,6 @@
+thus it is important to be able to normalize or paraphrase the citances for many applications , including indexing in a database or an ir system , document summarization -LSB- 4 , 3 -RSB- , learning synonyms -LSB- 16 , 17 -RSB- , building a model of the different expressions of the same relationship for ie -LSB- 30 , 29 -RSB- , extracting patterns for question answering -LSB- 20 -RSB- , machine translation -LSB- 26 -RSB- .
+in the next subsections we describe how these paraphrases are extracted from the citances and present a preliminary evaluation of the results for one set of citances .
+citances provide us a way to build a model of many of the different ways to express a relationship type r between entities of type a and b. we can seed learning
+we have motivated and discussed the potentially enormous role that the use of sentences surrounding citations , or citances , can have for automated analysis of bioscience literature .
+the systems performance on set 2 vs. set 3 allows us to test our hypothesis that citances will produce more accurate paraphrases than general sentences .
+in addition to supporting advance queries over facts as just described , citation indexes can be improved by combining methods that use citances context -LRB- e.g. , mercer and di marco -LSB- 23 -RSB- -RRB- with methods that use citances content -LRB- e.g. -LSB- 7 -RSB- -RRB- .

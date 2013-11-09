@@ -1,0 +1,6 @@
+our intention is to answer questions like : -LRB- 1 -RRB- given a set of semantic classification relations and a corpus of examples , what is the core subset frequently encoded by noun compounds ?
+we present here three supervised models : semantic scattering -LRB- ss
+although noun compounds are very productive allowing for a fairly large number of possible interpretations , table 3 shows that a relatively small subset of the 35 semantic relations covers most of the semantic distribution of these constructions on a large open-domain corpus .
+since we wanted to compare our approach with two state-of-the-art unsupervised probabilistic models , we selected as test sets those randomly obtained by lauer from grolier encyclopedia for each type of noun compounds : 282 nounnoun pairs for two noun compounds , and 244 three noun instances for three noun compounds .
+section 2 presents the general approach for the interpretation of noun compounds and lists the semantic categories used along with observations regarding the distribution of these semantic categories in the corpus .
+we use two different lists of semantic target categories : the list of 35 semantic relations and the list of 8 prepositional paraphrases and compare our results with those obtained on the same test set by lauer -LRB- 1995 -RRB- and lapata and keller -LRB- 2004 -RRB- .

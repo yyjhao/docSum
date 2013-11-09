@@ -1,0 +1,8 @@
+the corpus was first preprocessed by a lemmatizer and the memory-based shallow parser , and the found verbobject relations were used to cluster nouns in groups .
+we interpret the task of determining semantic relations between nominals as a classification problem that can be solved , per relation , by machine learning algorithms .
+the main verb of the sentence in which the entities involved in the relation appear , as predicted by the shallow parser .
+we also entered a second system , which did not rely on wn but instead made use of automatically generated semantic clusters -LRB- decadt and daelemans , 2004 -RRB- to model the semantic classes of the entities .
+for both systems we trained seven
+the classifiers of the cluster-based system -LRB- a -RRB- all use the two cluster class features .
+while the features were selected independently for all relations , the seven classifiers in the wnbased system all make use of the wn semantic class features ; in the system that did not use wn , the seven classifiers make use of the cluster class features instead .
+for the partwhole relation we also experimented with binary features expressing whether the two entities in the relation have some type of meronym and holonym relation , but these features did not prove to be predictive .

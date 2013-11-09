@@ -1,0 +1,6 @@
+figure 12 shows how the augmented algorithm improves the sentence order compared with the order in the summary produced by the co algorithm in figure 9 ; sentences quoting us officials are now grouped together , and so are the descriptions of the mourning .
+our evaluation of plausible strategies measured the usefulness of a chronological ordering algorithm used in previous summarization systems -LRB- mckeown et al. , 1999 ; lin &amp; hovy , 2001 -RRB- as well as an alternative , original strategy , majority ordering .
+we evaluated this system through the document understanding conference 2001 -LRB- duc -RRB- 2 evaluation , where summaries produced by several systems were graded by human judges according to different criteria , among them how well the information contained in the summary is ordered .
+themes are sets of sentences from different documents that contain repeated information and do not necessarily contain sentences from all the documents -LRB- see two examples of themes in figure 2 -RRB- .
+in this summary , the three sentences related to the fact that the subject had a sex-change operation are
+for our future work , we plan to build on the approach we used for the duc 2001 evaluation , where we developed a summarizer that would use different algorithms for summary generation depending on the type of input text .

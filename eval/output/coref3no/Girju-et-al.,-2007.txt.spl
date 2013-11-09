@@ -1,0 +1,6 @@
+the theme of task 4 is the classification of semantic relations between simple nominals -LRB- nouns or base noun phrases -RRB- other than named entities honey bee , for example , shows an instance of the product-producer relation .
+moldovan et al. -LRB- 2004 -RRB- propose a 35 - class scheme to classify relations in various phrases ; the same scheme has been applied to noun compounds and other noun phrases -LRB- girju et
+-LRB- moldovan et al. , 2004 ; girju et al. , 2005 -RRB- gave the annotators an example of each phrase in a sentence along with wordnet senses and position of arguments .
+our annotations include all these , to support a variety of methods -LRB- since we work with relations between nominals , the part of speech is always noun -RRB- .
+that the initial agreement between annotators is not a good indicator of the accuracy that can be achieved is also supported by the low correlation similarity measures in wordnet ; we performed various analyses of the results , which we summarize here in four questions .
+we write xi to refer to four possible system categories -LRB- ai , bi , ci , and di -RRB- with four possible amounts of training data -LRB- x1 for training examples 1 to 35 , x2 for 1 to 70 , x3 for 1 to 105 , and x4 for 1 to 140 -RRB- .

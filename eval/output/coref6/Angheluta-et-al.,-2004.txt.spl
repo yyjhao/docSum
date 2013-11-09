@@ -1,0 +1,6 @@
+for each of the other entities -LRB- e s2 , pronouns -RRB- , a fuzzy membership value is calculated using the distance between the entity and the cluster .
+beside the fuzzy representation , there are two main differences with -LSB- 3 -RSB- : 1 -RRB- the chaining effect is larger because two clusters can be merged even without checking any pairwise incompatibilities of cluster objects ; 2 -RRB- in contrast with -LSB- 3 -RSB- , the algorithm is independent of the order in which the clusters are merged .
+we assign the entities of semantic class 2 -LRB- i.e. the pronouns -RRB- to their closest cluster at the completion of the merging process and not at its start , because we hope to be able to assign them more correctly in case of missing features -LRB- e.g. , gender -RRB- of some of the entities .
+we believe that accuracy is a more fair measure for pronoun
+the algorithm favors big clusters , which is confirmed by the results of our second baseline , which clusters all entities in one cluster -LRB- see below -RRB- -LRB- vilain f-measure is 86 % for the dryrun set , 87 % for the formaltest set and 60 % for the duc subcorpus -RRB- .
+in this paper we compared four clustering methods for coreference resolution : one progressive fuzzy , its hard variant and another two algorithms , taken from the literature .

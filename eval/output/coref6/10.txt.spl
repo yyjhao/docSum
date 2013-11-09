@@ -1,0 +1,6 @@
+all 5 runs with cr or pp feedback , 4 runs with wx feedback and 3 runs with hx feedback outperform both naive bayes baseline and speclustering-bound without feedback .
+the types of user feedback allowed
+the simple method inherits previous clustering results which the user gives her feedback upon and for removed clusters , we reset the initial value of p -LRB- si1di ; bt -RRB- by distributing the probability mass uniformly among all clusters and halving the probability for the cluster s. the joint method uses feedback jointly to initialize the model .
+in particular , we chose 5 clustering results using the multinomial naive bayes model with the best log-likelihood among 50 runs on emailyh and presented each of these to the user .
+the chief contribution of this paper is to introduce a new probabilistic model for clustering that outperforms standard unsupervised clustering in our experiments , and that also can accomodate a variety of types of user feedback to iteratively refine the clusters .
+it turns out the feedback contains the removal of two out of three clusters and the reason that one is kept is because some keywords weakly indicates the meaning of one newsgroup , but the documents in the remaining cluster contain huge chunks from each newsgroup .

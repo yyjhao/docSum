@@ -1,0 +1,6 @@
+what is especially novel about this approach is paraphrasing noun compound semantics in terms of concrete verbs , rather than a fixed number of abstract predicates -LRB- e.g. , have , make , use -RRB- , relations -LRB- e.g. , location , instrument , agent -RRB- , or prepositions -LRB- e.g. , of , for , in -RRB- , as is traditional in the literature .
+in later work , -LSB- 9 -RSB- provide a semi-supervised approach for characterizing the relation between two nouns in a bioscience noun-noun compound based on the semantic category each of the constituent nouns belongs to .
+we believe verbs have more expressive power and are better tailored for the
+we allow for adjectives and participles to fall between the verb and the preposition , but not nouns ; we ignore the modals , and the auxiliaries , but retain the passive be , and we make sure there is exactly one verb phrase -LRB- thus disallowing complex paraphrases like gas that makes the eyes fill with tears '' -RRB- .
+table 1 shows a subset of the verbs found using our extraction method for cancer treatment , migraine treatment , wrinkle treatment and herb treatment .
+there is currently no consensus as to which set of relations should hold between nouns in a noun compound , but most existing approaches make use of a set of a small number of abstract relations , typically less than 50 .

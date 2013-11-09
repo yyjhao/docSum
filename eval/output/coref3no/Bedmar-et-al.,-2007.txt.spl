@@ -1,0 +1,9 @@
+more features include : the two words before the first nominal , the two words after the second nominal , and the word list in-between -LRB- wang et al. , 2006 -RRB- .
+however , in the experiments we observed that certain features have strong influence on the results , and its inclusion or elimination from the vector , influenced remarkably the outcomes .
+this shows that our system has over-fitted the training set .
+for constructing this vector , we selected the synsets of the third level of depth in wordnet and we detected if each is ancestor or not of the nominal .
+semantic features are only applied in categories b and d. on the lexical level , the set of word features
+for each relation and for each category -LRB- a , b , c , d -RRB- we selected the set of features that obtained the best results using the indicated cross validation .
+for the relation theme-tool , other set of features was employed : nominals , their heads , verb , preposition and the list of word between both nominals .
+we submitted 16 sets of results as we participated in the four categories -LRB- a , b , c , d -RRB- .
+in our first approach to automatic classification of semantic relations between nominals and as expected from the training phase , our system achieved its best performance using wordnet information .

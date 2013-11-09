@@ -1,0 +1,7 @@
+string similarity is often used as a means of quantifying the likelihood that two pairs of strings have the same underlying meaning , based purely on the character composition of the two words .
+in section 6 , we show significant improvements over traditional approaches , as well as significant gains over more recent techniques by ristad and yianilos -LRB- 1998 -RRB- , tiedemann -LRB- 1999 -RRB- , kondrak -LRB- 2005 -RRB- , and klementiev and roth -LRB- 2006 -RRB- .
+if two words must have lcsr &gt; 0.58 to be cognate , then for a given word f e f , we need only consider as possible cognates the subset of words in e having an lcsr with f larger than 0.58 , a set we call ef .
+klementiev and roth -LRB- 2006
+mismatches are phrases that span the entire sequence of unaligned characters between two pairs of aligned end characters -LRB- similar to the rules extracted by mulloni and pekar -LRB- 2006 -RRB- -RRB- .
+we also score the test sets using traditional orthographic similarity measures prefix , dice , lcsr , and ned , an average of these four , and kondrak -LRB- 2005 -RRB- s lcsf .
+we also use the log of the edit probability from the stochastic decoder of ristad and yianilos -LRB- 1998 -RRB- -LRB- normalized by the length of the longer word -RRB- and tiedemann -LRB- 1999 -RRB- s highest performing system -LRB- approach # 3 -RRB- .

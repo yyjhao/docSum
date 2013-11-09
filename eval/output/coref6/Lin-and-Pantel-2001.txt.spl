@@ -1,0 +1,9 @@
+we name a path by concatenating dependency relationships and words along the path , excluding the words at the two ends .
+note that in information theory , mutual information refers to the mutual information between two random variables rather than between two events as used in this paper .
+our algorithm is a generalization of previous algorithms for finding similar words -LRB- hindle , 1990 ; pereira , 1993 ; lin , 1998 -RRB- .
+therefore , we performed an evaluation of our algorithm
+we make an assumption that this is an extension to the distributional hypothesis : extended distributional hypothesis : if two paths tend to occur in similar contexts , the meanings of the paths tend to be similar .
+we introduced the extended distributional hypothesis , which states that paths in dependency trees have similar meanings if they tend to connect similar sets of words .
+while richardson used paths as features to compute the similarity between words , we use words as features to compute the similarity of paths .
+for each of the paths p in the second column of table 5 , we ran the dirt algorithm to compute its top-40 most similar paths using the triple database .
+treating paths as binary relations , our algorithm is able to generate inference rules by searching for similar paths .

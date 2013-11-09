@@ -1,0 +1,8 @@
+since we treat each sentences independently from others , the algorithm runs in linear time o -LRB- n -RRB- over the corpus size , where n is number of sentences in the corpus .
+from each resulting set , we then randomly selected 50 words along with their top 3 highest ranking is-a relationships .
+following are two of them : note that we store different pos variations of the anchors x and y. as shown in example 1 , the pos variations of the anchor x are -LRB- jj nn , jj nn nn , nn -RRB- .
+for our experiments , we extract from this corpus six data sets of different sizes : 1.5 mb , 15 mb , 150 mb , 1.5 gb , 6gb and 15gb .
+we
+we present an algorithm for extracting is-a relations , designed for the terascale , and compare it to a state of the art method that employs deep analysis of text -LRB- pantel and ravichandran 2004 -RRB- .
+for the pattern-based approach , we use brill 's pos tagger -LRB- 1995 -RRB- to tag each data set .
+with datasets larger than 150mb , the co - occurrence algorithm reduces its running time by filtering out grammatical relationships for words that occurred fewer than k = 40 times and hence recall is affected -LRB- in contrast , the pattern-based approach may generate a hyponym for a word that it only sees once -RRB- .

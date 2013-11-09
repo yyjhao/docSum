@@ -1,0 +1,6 @@
+our work is concerned with fine-grained expressions of opinions and assumes that a system can rely on the results of effective opinion and source extractors such as those described in riloff and wiebe -LRB- 2003 -RRB- , bethard et al. -LRB- 2004 -RRB- , wiebe and riloff -LRB- 2005 -RRB- and choi et al. -LRB- 2005 -RRB- .
+we evaluated using the two widely used performance measures for coreference resolution muc score -LRB- vilain et al. , 1995 -RRB- and b3 -LRB- bagga and baldwin , 1998 -RRB- .
+second , due mainly to the time-consuming nature of coreference annotation , np coreference information is incomplete in our data set : np mentions that are not sources of opinion are not annotated with coreference information -LRB- even when they are part of a chain that contains source nps -RRB- 4 .
+nevertheless , as a first attempt at source coreference resolution , we employ a state-of-the - art machine learning approach to np coreference resolution developed by ng and cardie -LRB- 2002 -RRB- .
+we determine the match in the problematic cases using a set of heuristics : if a source matches any np exactly in span , match that source to the np ; do this even if multiple nps overlap the source we are dealing with nested np s .
+in this paper we address the former problem via a heuristic method for mapping sources to nps and

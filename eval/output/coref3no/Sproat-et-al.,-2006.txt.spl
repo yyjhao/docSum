@@ -1,0 +1,7 @@
+for training data we have a small list of 721 names in roman script and their chinese equivalent .3 pronunciations for english words are obtained using the festival text-tospeech system -LRB- taylor et al. , 1998 -RRB- ; for chinese , we use the standard pinyin transliteration of the characters .
+we adopt the method proposed in -LRB- tao and zhai , 2005 -RRB- , which 3the ldc provides a much larger list of transliterated chinese-english names , but we did not use this here for two reasons .
+in order to compute the similarity between two distribution vectors , the pearson correlation coefficient was used in -LRB- tao and zhai , 2005 -RRB- ; here we also considered two other commonly used measures cosine -LRB- salton and mcgill , 1983 -RRB- , and jensen-shannon divergence -LRB- lin , 1991 -RRB- , though our results show that pearson correlation coefficient performs better than these two other methods .
+this could be due to two reasons : -LRB- 1 -RRB- the answer does not occur in the
+below we first discuss the results of each of the two methods .
+we proposed three similarity measures for the frequency correlation method , i.e. , the cosine , pearson coefficient , and jensen-shannon divergence .
+to demonstrate that score propagation can further help transliteration , we use the combination scores in table 3 as the initial scores , and apply our propagation algorithm to iteratively update them .

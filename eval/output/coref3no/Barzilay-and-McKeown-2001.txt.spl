@@ -1,0 +1,8 @@
+in contrast , in our corpus the same word is usually used in both translations , and only sometimes its paraphrases are used , which means that wordparaphrase pairs will have lower co-occurrence rates than word translation pairs in mt .
+on the other hand , the big advantage of our corpus comes from the fact that parallel translations share many words , which helps the matching process .
+identical words play two roles in this process : first , they are used to learn context rules ; second , identical words are used in application of these rules , because the rules contain information about the equality of words in context .
+our model is based on the dlcotrain algorithm proposed by -LRB- collins and singer , 1999 -RRB- , which applies a co-training procedure to decision list classifiers for two independent sets of features .
+we believe that this feature can be useful for two reasons : first , we expect that some syntactic categories can not be paraphrased in another syntactic category .
+we hand-evaluated the coverage , by asking a human judges to extract paraphrases from 50 sentences , and then counted how many of these paraphrases where predicted by our algorithm .
+we selected
+we showed that a co-training algorithm based on contextual and lexico-syntactic features of paraphrases achieves high performance on our data .

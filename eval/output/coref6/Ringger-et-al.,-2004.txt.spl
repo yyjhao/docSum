@@ -1,0 +1,6 @@
+in fact , when changing head choices , we are simply focusing on a set of brackets that allows for a more direct comparison between a treebank-style parser and a non-treebank parser .
+we are using part of the brown corpus section of the treebank -LRB- hereafter the
+the randomized , restricted , brown corpus -LRB- rrbc -RRB- treebank is the data set we are truly interested in for our evaluation .
+in recent years , the literature includes compelling evaluation results for several natural language parsers that train and test on the u. penn treebank -LRB- marcus et al. , 1993 -RRB- , including the work of magerman -LRB- 1995 -RRB- , collins -LRB- 1999 -RRB- , collins &amp; duffy -LRB- 2002 -RRB- , charniak -LRB- 2000 -RRB- , and klein &amp; manning -LRB- 2003 -RRB- .
+a challenge posed by focusing on maximal projections of heads is the absence of annotations of heads and head inheritance in the treebank itself .1 to rectify this , we will employ a set of head-labeling rules and compute maximal projections of heads for the reference or gold treebank trees .
+the number of nlpwin hyp brackets and the number of charniak hyp brackets are quite close to one another and to the number of ref brackets , which is one source of our confidence that we are indeed evaluating the two different systems in a comparable way against comparable reference brackets .

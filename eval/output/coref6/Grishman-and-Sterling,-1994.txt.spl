@@ -1,0 +1,6 @@
+co-occurrence smoothing is a method which has been recently proposed for smoothing n-gram models -LSB- 3 -RSB- .3 the core of this method involves the computation of a co-occurrence matrix -LRB- a matrix of confusion probabilities -RRB- pc -LRB- wilivi -RRB- , which indicates the probability of word wi occurring in contexts in which word wi occurs , averaged over these contexts .
+is the result of an incorrect parse -RRB- , we apply a filter in generating pc : for i j , we generate a non-zero pc -LRB- wilwi -RRB- only if the wi and wj appear in at least two common contexts , and there is some common context in which both words occur at least twice .
+in order to increase our coverage -LRB- recall -RRB- , we then applied the smoothing procedure to the triples from our training corpus .
+for this evaluation , we select a small test corpus separate from the training corpus .
+we have also demonstrated that for a given corpus size coverage can be significantly improved by using the corpus to identify selectionally related terms , and using these similarities to generalize the patterns observed in the
+to see how pattern coverage improves with corpus size , we divided our training corpus into 8 segments and computed sets of triples based on the first segment , the first two segments , etc .

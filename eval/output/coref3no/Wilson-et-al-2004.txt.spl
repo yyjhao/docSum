@@ -1,0 +1,7 @@
+we present experiments in strength classification using boosting , rule learning , and support vector regression .
+clues learned from annotated data include distributionally similar adjectives and verbs -LRB- wiebe , 2000 -RRB- and n-grams -LRB- dave et al. , 2003 ; wiebe et al. , 2001 -RRB- .
+clues that occur in the subjective set at least y times more than in the objective set
+to test our hypotheses , we performed the experiments under different settings , varying three factors : the learning algorithm used to train the classifiers , the depth of the clauses to be classified , and the types of features used .
+the best experiments -LRB- table 1 row 6 and table 2 rows 1 and 3 -RRB- use all the features , supporting our hypothesis that using a wide variety of features is effective .
+for all learning algorithms and all clause levels , removing the syntax clues results in a significant difference in mse -LRB- compare rows 6 and 7 in table 1 , rows 1 and 2 in table 2 , and rows 3 and 4 in table 2 -RRB- .
+researchers who have identified opinions below the sentence level have restricted their attention to particular words and phrases -LRB- turney and littman , 2003 ; pang et al. , 2002 ; dave et al. , 2003 ; nasukawa and yi , 2003 ; morinaga et al. , 2002 ; gordon et al. , 2003 ; liu et al. , 2003 -RRB- .

@@ -1,0 +1,6 @@
+in the following four sections , we describe the changes we have made to our system for this year : question classification -LRB- section 3 -RRB- , storing data with multi-dimensional markup -LRB- section 4 -RRB- , and probabilistic answer processing -LRB- sections 5 and 6 -RRB- .
+we therefore decided on using three different types of question classes : a table type that linked the question to an available table column -LRB- 17 classes -RRB- , a coarse-grained type that linked the question to the types recognized by our named-entity recognizer -LRB- 7 classes -RRB- , and a fine-grained type that linked the question to wordnet synsets -LRB- 166 classes -RRB- .
+we chose ten different features : in order to determine the top hypernym of the main noun of the question we use eurowordnet -LSB- 8 -RSB- .
+unfortunately , text processing tools may actually modify the input text in the course of adding annotations , which makes it non-trivial to associate the new annotations with regions in the original blob .
+based on this analysis , we have created the following list of future work : as the answers to the first two questions show , our system still prefers infrequent long answers over frequent short ones .
+although part of our work has been focused on matching types of answers with question types , it seems that our current system still has problems in

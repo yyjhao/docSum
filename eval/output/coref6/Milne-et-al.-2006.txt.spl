@@ -1,0 +1,8 @@
+we present a case study that uses agrovoc , a manually-created professional thesaurus in the domain of agriculture , as the gold standard .
+we compare wikipedia articles and links to the terms and semantic relations encoded in agrovoc .
+the next section discusses the challenges that manual thesaurus construction and maintenance present , followed by an introduction to wikipedia and an analysis of how it can be used to derive the semantic relations that are encoded in thesauri .
+sections 4 and 5 describe our experiments and the results we obtained : section 4 compares the two thesaurus structures and section 5 evaluates their coverage of a domain-specific document corpus .
+hyperlinks between articles capture many of the same semantic relations as defined in the international standard for thesauri -LRB- iso 2788 -RRB- : the equivalence relation connects one or more terms to a single preferred term -LRB- or descriptor -RRB- , if they are synonymous .
+wikipedia covers 69 % of them , but only 25 % appeared in the category structure : the remaining 44 % were found in redirects and hyperlinks
+accuracy within articles was investigated by giles , who compared randomly selected scientific wikipedia articles with their equivalent entries in encyclopedia britannica -LSB- 6 -RSB- .
+wikipedia covers most agrovoc relations , and is a good source of semantic relations between terms .

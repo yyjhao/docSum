@@ -1,0 +1,7 @@
+it estimates the strength of relevance of two persons x and y by putting a query x and y to a search engine : if x and y share a strong relation , we can find much evidence that might include their respective homepages , lists of co-authors in technical papers , citations of papers , and organizational charts .
+interestingly , a path from a person to a person -LRB- e.g. , from henry kautz to marvin minsky -RRB- is obtained automatically
+we add an edge between the two corresponding nodes if the strength of relations is greater than a certain threshold .
+our concept is that by measuring the similarity between two-word co-occurrence vectors -LRB- i.e. , two rows of the matrix -RRB- , we can calculate the similarity of the two peoples contexts .
+in the researchers cases , we can measure how mutually relevant the two researchers research topics are : if two persons are researchers of very similar topics , the distribution of word co-occurrences will be similar .
+we should note that as the web grows , googletop returns fewer and fewer web pages relative to all retrieved documents , thereby rendering it less effective .
+two possibilities to modify identification of an entity -LRB- or a person -RRB- exist : to decompose one entity into two or more , and to merge multiple entities into one .

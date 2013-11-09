@@ -1,0 +1,6 @@
+the performance of wmsvm with the prior knowledge
+let the first m training examples be the labeled examples , and the rest be the pseudo examples , the objective function of primal problem is given : here the functionality of the parameter c is the same as the standard svm to control the balance between the model complexity and training error .
+we define the effective weighted functional margin of weighted sample -LRB- xi , yi , vi -RRB- with respect to a hyperplane -LRB- w , b -RRB- and a margin normalization function f to be f -LRB- vi -RRB- yi -LRB- -LRB- w xi -RRB- + b -RRB- , where f is a monotonically decreasing function .
+given the true training dataset and pseudo training dataset , we now have two possibly conflicting goals in minimizing the empirical risk when constructing a predictor : -LRB- 1 -RRB- fit the true training dataset , and -LRB- 2 -RRB- fit the pseudo training dataset and thus fit the prior knowledge .
+making ^ an inverse function of m is based on two common understanding : first , svm performs very well when there are enough labeled data ; second , svm is sensitive to label noise -LSB- 19 -RSB- .
+second , the proposed approach has an integrated training and testing phase , thus classification is based on the evidence from both the training data and prior knowledge .

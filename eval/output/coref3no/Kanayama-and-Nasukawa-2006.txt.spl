@@ -1,0 +1,7 @@
+sentiment
+from the example japanese sentence -LRB- 1 -RRB- in the digital camera domain , the sa system extracts a sentiment representation as -LRB- 2 -RRB- , which consists of a predicate and an argument with positive -LRB- + -RRB- polarity .
+for example , to detect polar clauses in the sentences -LRB- 3 -RRB- and -LRB- 4 -RRB- i , the following polar atoms -LRB- 5 -RRB- and -LRB- 6 -RRB- should appear in the lexicon : this atom can be generally used for this verb regardless of its arguments .
+for lexical learning from unannotated corpora , our method uses context coherency in terms of polarity , an assumption that polar clauses with the same polarity appear successively unless the context is changed with adversative expressions .
+wilson et al. -LRB- 2005 -RRB- proposed supervised learning , dividing the resources into prior polarity and context polarity , which are similar to polar atoms and syntactic patterns in this paper , respectively .
+using the polar clauses detected by the sa system with the initial lexicon , we observed the coherent precision of domain d with lexicon l , defined as : context shows the coherency of the two types of context that we considered .
+we also tested the performance while varying the size of the initial lexicon l. we prepared three subsets of the initial lexicon , l0 .8 , l0 .5 , and l0 .2 , removing polar atoms randomly .

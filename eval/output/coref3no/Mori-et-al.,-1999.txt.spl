@@ -1,0 +1,8 @@
+to find the detailed correlation between text and image -LRB- not simply discriminating an image into a few categories -RRB- , each portion of
+the main point of this method is to reduce noise -LRB- i.e. unsuitable correlating -RRB- by accumulating similar partial patterns from many images with key words .
+therefore , the data for the experiment consists of about 10,000 pairs of images and corresponding documents -LRB- in japanese -RRB- .
+one group is used for learning -LRB- i.e. estimating the likelihood for words -RRB- , and the other group is used for recognition -LRB- i.e. for the output of words -RRB- , and the same process is performed once again after swapping the two groups .
+tables 1 and 2 show the examples of output words -LRB- the top 3 words -RRB- for images in the recognition group -LRB- i.e. ' unknown ' images -RRB- .
+in tables 1 and 2 , bold words indicate ' hit ' words -LRB- i.e. originally attached words for the image -RRB- .
+in table 1 and 2 , hit words appear more than in the case of random selection -LRB- if it is a random selection from a set of words with uniform frequencies , the probability is about 3 \/ 1585 -RRB- .
+in this paper , we have proposed a new method for correlating images with key words based on two kinds of processes , that is , dividing images and vector quantization .

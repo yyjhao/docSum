@@ -1,0 +1,6 @@
+hwa -LRB- 1999 -RRB- and gildea -LRB- 2001 -RRB- looked at adapting parsing models trained on large amounts of annotated data from outside of the domain of interest -LRB- out-of-domain -RRB- , through the use of a relatively small amount of in-domain annotated data .
+in their language modeling approach , in-domain counts are mixed with the out-of-domain model , so that , if the number of observations within the domain is small , the outof-domain model is relied upon , whereas if the number of observations in the domain is high , the model will move toward a maximum likelihood -LRB- ml -RRB- estimate on the in - domain data alone .
+this may be because of the same issue as with the brown corpus , namely that the optimal ratio of in-domain to out-of-domain is not 1 and the smoothing parameters need to be tuned to the new domain ; or it may be because the new domain has a million words of training data , and hence has less use for out-of-domain data .
+from table
+in our case , we use the parsing model trained on out-of-domain data , and output a set of candidate parse trees for the strings in the in-domain corpus , with their normalized scores .
+what we have demonstrated in this paper is that maximum a posteriori -LRB- map -RRB- estimation can make out-of-domain training data beneficial for statistical parsing .

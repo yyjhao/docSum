@@ -1,0 +1,6 @@
+because the data is sparse , empirical methods that train on word occurrences alone -LRB- hindle and rooth , 1993 -RRB- have been supplanted by algorithms that generalize one or both of the nouns according to class - membership measures -LRB- resnik , 1993 ; resnik and hearst , 1993 ; brill and resnik , 1994 ; li and abe , 1998 -RRB- , but the statistics are computed for the particular preposition and verb .
+for the automatic classification task , we used only the 18 relations -LRB- indicated in bold in table 1 -RRB- for which an adequate number of examples were found in the current collection .
+we extracted ncs with up to 6 constituents , but for this paper we consider only ncs with 2 constituents .
+we use the metathesaurus component to map lexical items into unique concept ids -LRB- cuis -RRB- .3 the umls also has a mapping from these cuis into the mesh lexical hierarchy -LRB- lowe and barnett , 1994 -RRB- ; we mapped the cuis into mesh terms .
+we also used a representation in which the words themselves were used as categorical input variables
+it is interesting to note that the accuracy for case 1 -LRB- first noun not present in the training set -RRB- is much higher than the accuracy for case 2 -LRB- second noun not present in the training set -RRB- .

@@ -1,0 +1,8 @@
+for the -LRB- avg -LRB- t , h-s -RRB- -RRB- and -LRB- avg -LRB- t , d , ne , ne-t , u -RRB- -RRB- runs , we compute the average similarity over the two and five sets of individual features , respectively .
+in the remainder of this paper , we first describe our system in terms of the clustering approach used and alternative features investigated .
+we have taken several approaches to analyze different sources of information provided with the input data , and also compared strategies to combine these individual features together .
+identical to the task baseline by -LRB- artiles et al. , 2005 -RRB- , we stemmed the words in the web pages using the porter stemmer -LRB- porter , 1980 -RRB- , to conflate semantically similar english words with the stem .
+the configuration that achieved the best performance -LRB- which were submitted for our run -RRB- used a single named entity feature as input to clustering .
+we also considered a variant where we include the url of the input web page itself as a link .
+these features include -LRB- a -RRB- segmentation of tokens such as www.allposters.com to www , all , posters and com ; -LRB- b -RRB- the parts in the url where the tokens occur , e.g. , protocol , domain name , and directory paths ; -LRB- c -RRB- length of the tokens ; -LRB- d -RRB- orthographic features ; -LRB- e -RRB- sequential n-grams ; and -LRB- f -RRB- sequential bigrams .
+however , we find such exact matches of

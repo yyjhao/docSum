@@ -1,0 +1,6 @@
+the lack of labeled data has been
+given a set of vectors -LRB- x1 , ... , xn -RRB- , along with their corresponding labels -LRB- y1 , ... , yn -RRB- where yi g -LCB- + 1 , 11 , the svm classifier defines a hyperplane -LRB- w , b -RRB- in kernel mapped feature space that separates the training data by a maximal margin .
+we define the effective weighted functional margin of weighted sample -LRB- xi , yi , vi -RRB- with respect to a hyperplane -LRB- w , b -RRB- and a margin normalization function f to be f -LRB- vi -RRB- yi -LRB- -LRB- w xi -RRB- + b -RRB- , where f is a monotonically decreasing function .
+in particular , the primal optimization problem is given : let m ^ 1 , m + 1 denote the number of negative and positive examples , and assume m ^ 1 &gt; m + 1 , one typically wants to have c + 1 &gt; c ^ 1 .
+given the true training dataset and pseudo training dataset , we now have two possibly conflicting goals in minimizing the empirical risk when constructing a predictor : -LRB- 1 -RRB- fit the true training dataset , and -LRB- 2 -RRB- fit the pseudo training dataset and thus fit the prior knowledge .
+making ^ an inverse function of m is based on two common understanding : first , svm performs very well when there are enough labeled data ; second , svm is sensitive to label noise -LSB- 19 -RSB- .

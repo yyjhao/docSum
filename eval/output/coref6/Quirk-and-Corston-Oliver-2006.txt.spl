@@ -1,0 +1,7 @@
+in the introduction we mentioned the concern that others have raised when we have presented our research : syntax might contain valuable information but current parsers might not be of sufficient quality .
+with the less accurate parsers that result from training on extremely small numbers of sentences , performance is comparable to state-of-the-art phrasal smt
+first , is a treelet smt system sensitive to parse quality ?
+one significant finding is that as few as 250 sentences suffice to train a dependency parser for use in the treelet smt framework .
+one concern in applying the treelet smt framework to translation from languages other than english has been the expense of data annotation : would we require 40,000 sentences annotated for syntactic dependencies , i.e. , an amount comparable to the penn treebank , in order to train a parser that was sufficiently accurate to achieve the machine translation quality that we have seen when translating from english ?
+despite the degradation in parse accuracy caused by the dramatic differences between the wall street journal text and the technical articles , the treelet smt system was able to extract useful patterns .
+we challenge others who are conducting research on syntactically-informed smt to verify whether or to what extent their systems are sensitive to parse quality .

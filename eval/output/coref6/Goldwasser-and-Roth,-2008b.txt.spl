@@ -1,0 +1,6 @@
+the remainder of this section provides details about these stages ; the basic formulation of the transliteration model and the feature extraction scheme is described in section 2.1 , in section 2.2 the selective sampling process is described and finally section 2.3 explains how learning is focused by using feature weights .
+our transliteration model takes a discriminative approach ; the classifier is presented with a word pair -LRB- ws , wt -RRB- , where ws is a named entity and it is asked to determine whether wt is a transliteration of the ne in the target language .
+another aspect investigated is using our selective sampling for adapting the learning process for data originating from different sources using the a reference set representative of the testing data , training samples , originating from a different source , can be biased towards the testing data .
+we evaluated our approach in two settings ; first , we compared our system to a baseline system described in -LRB- klementiev and roth , 2006 -RRB- .
+in this paper we presented a new approach for constructing a transliteration model automatically and efficiently by selectively extracting transliteration samples covering relevant parts of the feature space and focusing the learning process on these features .
+once the training data has been collected , the data is analyzed to

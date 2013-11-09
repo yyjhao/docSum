@@ -1,0 +1,7 @@
+to find good contexts , we can analyze all contexts surrounding identical words in the pairs of aligned sentences , and use these contexts to learn new paraphrases .
+in contrast , in our corpus the same word is usually used in both translations , and only sometimes its paraphrases are used , which means that wordparaphrase pairs will have lower co-occurrence rates than word translation pairs in mt .
+identical words play two roles in this process : first , they are used to learn context rules ; second , identical words are used in application of these rules , because the rules contain information about the equality of words in context .
+we selected 112 paraphrasing pairs which occurred at least 20 times in our corpus and such that the words comprising each pair appear in wordnet .
+we hand-evaluated the coverage , by asking a human judges to extract paraphrases from 50 sentences , and then counted how many of these paraphrases where predicted by our algorithm .
+we base our method for paraphrasing extraction on the assumption that phrases in aligned sentences which appear in similar contexts are
+most current applications use manually collected paraphrases tailored to a specific application , or utilize existing lexical resources such as word - net -LRB- miller et al. , 1990 -RRB- to identify paraphrases .

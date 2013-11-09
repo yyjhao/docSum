@@ -1,0 +1,6 @@
+we show how to use scl to transfer a pos tagger from the wall street journal -LRB- financial news -RRB- to medline -LRB- biomedical abstracts -RRB- , which use very different vocabularies , and we demonstrate not only improved pos accuracy but also improved end-to-end parsing accuracy while using the improved tagger .
+in such cases , we must take steps to adapt a model trained on the source domain for use in the target domain -LRB- roark and bacchiani , 2003 ; florian et al. , 2004 ; chelba and acero , 2004 ; ando , 2004 ; lease and charniak , 2005 ; daume iii and marcu , 2006 -RRB- .
+with 1000 source domain sentences and 50 target domain sentences , using scl tagger features gives a 20.4 % relative reduction in error over using supervised tagger features and a 39.9 % relative reduction in error over using no source features .
+if we have designed the pivots well , then 0 should encode correspondences among features from different domains which are important for the supervised task , and the classifier we train using these new features on the source domain will perform well on the target domain .
+in all our experiments , we rescale our projection features to have average l1 norm on the training set five times that of the binary-valued features .
+for the results in this section , we

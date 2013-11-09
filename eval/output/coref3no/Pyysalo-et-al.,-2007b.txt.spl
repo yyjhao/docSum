@@ -1,0 +1,7 @@
+to address this complexity , many biomedical ie systems -LRB- alphonse et al. , 2004 ; rinaldi et al. , 2004 ; fundel et al. , 2007 -RRB- and annotated corpora -LRB- kim et al. , 2003 ; aubin , 2005 ; pyysalo et al. , 2007 -RRB- incorporate full syntactic analysis .
+to assess this choice , we develop a set of conversion rules for transforming the link grammar -LRB- lg -RRB- dependency scheme the stanford scheme and then create a version of the bioinfer corpus in the stanford scheme by applying the conversion rules and manually correcting the errors .
+finally
+in the development of the lg-sf conversion and sf bioinfer , we make the following minor modifications to the stanford scheme .
+here , we evaluate a recently introduced adaptation of lg to the biomedical domain , biolg -LRB- pyysalo et al. , 2006 -RRB- , incorporating the genia pos tagger -LRB- tsuruoka et al. , 2005 -RRB- as well as a number of modifications to lexical processing and the grammar .
+we estimate that this total 5 percentage unit divergence represents an upper limit to the evaluation bias introduced by the two sets of conversion rules .
+to determine whether the differences between the two parsers on the two corpora were statistically significant , we used the wilcoxon signed-ranks test for f-score performance using the bonferroni correction for multiple comparisons -LRB- n = 2 -RRB- , following the recent recommendation of dem ^ sar -LRB- 2006 -RRB- .

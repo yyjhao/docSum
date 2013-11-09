@@ -1,0 +1,6 @@
+as in other evaluation tasks our definition of textual entailment is operational , and corresponds to the judgment criteria given to the annotators who decide whether this relationship holds between a given pair of texts or not .
+judgments of the test examples were sorted
+for this task the annotators used an available dataset annotated for the ie relations '' kill '' and '' birth place '' produced by uiuc -LRB- see acknowledgments -RRB- , as well as general news stories in which they identified manually '' typical '' ie relations .
+the remaining examples were considered as the gold standard for evaluation , split to 567 examples in the development set and 800 in the test set , and evenly split to true \/ false examples .
+it is interesting to note that few participants have independently judged portions of the dataset and reached high agreement levels with the gold standard judgments , of 95 % on all the test set -LRB- bos and markert -RRB- , 96 % on a subset of roughly a third of the test set -LRB- vanderwende et al. -RRB- and 91 % on a sample of roughly 1 \/ 8 of the development set -LRB- bayer et al. -RRB- .
+for a given question , the annotators chose first a relevant text snippet -LRB- t -RRB- that was suggested by the system as including the correct answer .

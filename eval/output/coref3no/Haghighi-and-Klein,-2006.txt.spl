@@ -1,0 +1,8 @@
+so far we have ignored the issue of how we learn model parameters 0 which maximize l -LRB- 0 ; d -RRB- .
+for our english part-of-speech tagging experiments , we used the wsj portion of the english penn treebank -LRB- marcus et al. , 1994 -RRB- .
+we took our data to be either the first 48k tokens -LRB- 2000 sentences -RRB- or 193k tokens -LRB- 8000 sentences -RRB- starting from section 2 .
+we automatically extracted the prototype list by taking our
+in this case , the model is no longer symmetric , and we no longer require random initialization or post-hoc mapping of labels .
+we believe the performance for chinese pos tagging is not as high as english for two reasons : the general difficulty of chinese pos tagging -LRB- tseng et al. , 2005 -RRB- and the lack of a larger segmented corpus from which to build distributional models .
+we tested our framework on the classifieds data described in grenager et al. -LRB- 2005 -RRB- under conditions similar to pos tagging .
+adding distributional similarity fea tures to our model -LRB- proto + sim -RRB- improves accuracy substantially , yielding 71.5 % , a 38.4 % error reduction over base .6 another feature of this domain that grenager et al. -LRB- 2005 -RRB- take advantage of is that end of sentence punctuation tends to indicate the end of a field and the beginning of a new one .

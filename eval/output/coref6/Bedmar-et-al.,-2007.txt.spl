@@ -1,0 +1,7 @@
+semantic features are only applied in categories b and d. on the lexical level , the set of word features include the two nominals , their heads in case one of the nominals in question or both are compound nominals -LRB- e.g. the relation between &lt; e1 &gt; tumor shrinkage &lt; \/ e1 &gt; and &lt; e2 &gt; radiation therapy &lt; \/ e2 &gt; is actually between the head of the first '' shrinkage '' and '' radiation therapy '' -RRB- .
+for constructing this vector , we selected the synsets of the third level of depth in wordnet and we detected if each is ancestor or not of the nominal .
+in this way , we worked with two vectors , one for each nominal .
+we also used all the possible sizes of the training dataset -LRB- 1 : 1 to 35 , 2 : 1 to 70 , 3 : 1 to 106
+for each relation and for each category -LRB- a , b , c , d -RRB- we selected the set of features that obtained the best results using the indicated cross validation .
+in training , we obtained an average f = 60 % using cross-validation , while in the final test data , we achieved an average score f = 57.7 % .
+in our first approach to automatic classification of semantic relations between nominals and as expected from the training phase , our system achieved its best performance using wordnet information .

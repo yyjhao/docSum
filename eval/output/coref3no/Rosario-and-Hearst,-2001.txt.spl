@@ -1,0 +1,7 @@
+because the data is sparse , empirical methods that train on word occurrences alone -LRB- hindle and rooth , 1993 -RRB- have been supplanted by algorithms that generalize one or both of the nouns according to class - membership measures -LRB- resnik , 1993 ; resnik and hearst , 1993 ; brill and resnik , 1994 ; li and abe , 1998 -RRB- , but the statistics are computed for the particular preposition and verb .
+we extracted ncs with up to 6 constituents , but for this paper we consider only ncs with 2 constituents .
+flu vaccination for model 4 would be represented by a vector consisting of the
+we also used a representation in which the words themselves were used as categorical input variables -LRB- we call this representation lexical -RRB- .
+in table 4 and in figure 1 we report the results from these experiments .
+on the other hand , if we look at relations 14 and 15 , we find a wider range of words , and in some cases the words in the test set are not present in the training set .
+it is interesting to note that the accuracy for case 1 -LRB- first noun not present in the training set -RRB- is much higher than the accuracy for case 2 -LRB- second noun not present in the training set -RRB- .

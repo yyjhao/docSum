@@ -1,0 +1,6 @@
+with regard to the similarity edges , the goal of entity resolution can be rephrased as determining for each two nodes , connected via a similarity edge , whether they co-refer .
+for the adaptive algorithm relaa , we will randomly divide the dataset to two parts : 50 % of the dataset is used for training the model to get proper path weights and the rest 50 % of the dataset is used for testing .
+most of
+more specifically , the approach relies on the notion of the connection strength c -LRB- u , v -RRB- between two nodes u and v in the graph g. the connection strength between u and v reflects how strongly u and v are connected to each other via paths that exist between them .
+there are two situations that are possible with respect to splitting vcss into clusters of entity representations : -LRB- 1 -RRB- the number of entities in each vcs is known to the algorithm beforehand ; and -LRB- 2 -RRB- the general case where that number is unknown .
+this is because in realmov , there are more types of relationships , and when the paths length is long -LRB- i.e. , parameter l is large -RRB- , using a fixed model -LRB- e.g. , wm model in our experiments -RRB- to compute connection strengths sometimes may confuse the basic resolution algorithm .

@@ -1,0 +1,9 @@
+we wish to study opinion in general ; our work most closely resembles that of -LRB- yu and hatzivassiloglou 2003 -RRB- .
+for our purposes , we describe an opinion as a quadruple -LSB- topic , holder , claim , sentiment -RSB- in which the holder believes a claim about the topic , and in many cases associates a sentiment , such as good or bad , with the belief .
+for example , the following opinions contain claims but no sentiments : like yu and hatzivassiloglou -LRB- 2003 -RRB- , we want to automatically identify sentiments , which in this work we define as an explicit or implicit expression in text of the holders positive , negative , or neutral regard toward the claim about the topic .
+we describe our models and algorithm in section 2 , system experiments and discussion in section 3 , and conclude in section 4 .
+for word sentiment classification we developed two models .
+to start the seed lists we selected verbs -LRB- 23 positive and 21 negative -RRB- and adjectives -LRB- 15 positive and 19 negative -RRB- , adding nouns later .
+the first experiment examines the two word sentiment classifier models and the second the three sentence sentiment classifier models .
+after collecting the annotated data , we added half of
+two humans annotated the 100 sentences with three categories -LRB- positive , negative , and n \/ a -RRB- .

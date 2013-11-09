@@ -1,0 +1,7 @@
+thus
+the third phase of our method assigns the adjectives into groups , placing adjectives of the same -LRB- but unknown -RRB- orientation in the same group .
+each pair of adjectives has an associated dissimilarity value between 0 and 1 ; adjectives connected by same orientation links have low dissimilarities , and conversely , different-orientation links result in high dissimilarities .
+this process is highly accurate , but unfortunately does not apply to many of the possible pairs : in our set of 1,336 labeled adjectives -LRB- 891,780 possible pairs -RRB- , 102 pairs are morphologically related ; among them , 99 are of different orientation , yielding 97.06 % accuracy for the morphology method .
+for the log-linear model , we repeatedly partitioned our data into equally sized training and testing sets , estimated the weights on the training set , and scored the model 's performance on the testing set , averaging the resulting scores .5 table 2 shows the results of these analyses .
+we next validate our hypothesis that conjunctions constrain the orientation of conjoined adjectives and then describe the remaining three steps of the algorithm .
+as we noted earlier , the corpus data is eventually represented in our system as a graph , with the nodes corresponding to adjectives and the links to predictions about whether the two connected adjectives have the same or different orientation .

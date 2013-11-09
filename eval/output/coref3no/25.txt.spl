@@ -1,0 +1,7 @@
+in sections 4 to 7 , we describe each of the four components -LRB- i.e. , filter , cluster , extractor and namer -RRB- in detail , presenting a separate evaluation of each component where appropriate .
+we can observe from that both the lexical features -LRB- 1-3 -RRB- and the linguistic features -LRB- 4 -RRB- have a substantial positive impact on the performance while the query-relevant features -LRB- 5 and 6 -RRB- bring only marginal improvements .
+we can simply extract the full names from web pages given person queries with three words , but the difficult case lies in the person queries composed of only one or two words -LRB- e.g. david and david lee -RRB- .
+the numbers of patterns for title , organization , email address and phone number are 13 , 11 , 5
+for name extraction , w \/ o step 3 means that we only apply the first two steps to assign saliency scores to candidate names , and w \/ step3 means that mutual reinforcement learning is employed to adjust those scores .
+our evaluation involves two steps : first , we evaluate the performance for each query .
+this user study showed that webhawk was efficient and effective and could improve users search experience for person search , which could be attributed to its good performance for person resolution and its ability to provide an informative interface .

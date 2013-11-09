@@ -1,0 +1,5 @@
+section 3 details the set of nc semantic relations that is used in our research , section 4 presents an extended discussion of our approach , section 5 briefly explains the tools we use , section 6.1 describes how we gather and process the data , section 6.2 explains how we map the verbs to seed verbs , and section 7 and section 8 present the results and analysis of our approach .
+we chose two sets of seed verbs of size 57 and 84 , to examine how the coverage of actual verbs by seed verbs affects the performance of our method .
+for the experiment where we combine our method with that of kim and baldwin -LRB- 2005 -RRB- , as presented in table 3 , we find a similar pattern of results to the proposed method .
+to get a better understanding of how our method compares with that of kim and baldwin -LRB- 2005 -RRB- , we evaluated the method of kim and baldwin -LRB- 2005 -RRB- over the same data set as used in this research , the results of which are presented in table 4 .
+for a given modifier and head noun , our method extracted corpus instances of the two nouns in a range of constructional contexts , and then mapped the original verbs onto seed

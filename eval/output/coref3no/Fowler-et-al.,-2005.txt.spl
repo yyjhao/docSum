@@ -1,0 +1,8 @@
+our approach attempts to recognize textual entailment by determining if the hypothesis sentence can be logically derived from the text passage using a logic prover .
+the hypothesis is negated , and if it then contradicts anything in the text or anything inferred from the text , the prover concludes that the original hypothetical statement is derivable from the text -LRB- thus , entailment exists -RRB- .
+in the first stage of our system , the input text and hypothesis are
+axioms in our system are utilized to provide external world knowledge , knowledge of syntactic equivalence between logic form predicates , and lexical knowledge in the form of lexical chains .
+the system generates the following axiom for this relation : these axioms help the logic prover infer target concepts from starting concepts when lexical chains are found between the two .
+as evidenced by these results , our system performs significantly better on t-h pairs in the comparable documents task .
+before evaluating the t-h pairs in the test set with our system , we manually determined how difficult it is to prove entailment in each of the true entailment t-h pairs .
+difficult proofs are those that can not be handled by our theorem prover without adding substantial new functionality -LRB- coreference resolution , predicate variables in rules , etc . -RRB-

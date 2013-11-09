@@ -1,0 +1,8 @@
+we first show the attractiveness of the left-right centering algorithm -LRB- henceforth lrc -RRB- -LRB- tetreault 1999 -RRB- given its incremental processing of utterances , psycholinguistic plausibility , and good performance in finding the antecedents of pronouns .
+the algorithm is tested against three other leading pronoun resolution algorithms : hobbs 's naive algorithm -LRB- 1978 -RRB- , s-list -LRB- strube 1998 -RRB- , and bfp -LRB- brennan , friedman , and pollard 1987 -RRB- .
+next we use the conclusions from two psycholinguistic experiments on ranking the cf-list , the salience of discourse entities in prepended phrases -LRB- gordon , grosz , and gilliom 1993 -RRB- and the ordering of possessor and possessed in complex nps -LRB- gordon et al. 1999 -RRB- , to try to improve the performance of lrc .
+finally , we show that the results from two psycholinguistic experiments , thought to provide a better ordering of the cf-list , do not improve lrc 's performance when they are incorporated -LRB- section 5 -RRB- .
+this method , the s-list -LRB- salience list -RRB- , was motivated by the bfp algorithm 's problems with incrementality and computational overhead -LRB- it was also difficult to coordinate the algorithm with intrasentential resolution -RRB- .
+first , the s-list can contain elements from both the current and previous utterance while the cf-list contains elements from the previous utterance alone .
+it
+the evaluation -LRB- byron and tetreault 1999 -RRB- consisted of two steps : -LRB- 1 -RRB- parsing penn treebank utterances and -LRB- 2 -RRB- running the four algorithms .

@@ -1,0 +1,6 @@
+-LRB- mohri , 1997 -RRB- encountered this problem in speech recognition , and presented a solution to the problem of repetition in - best lists of strings that are derived from finite-state automata .
+we will present an algorithm for determinizing weighted finite tree recognizers , and use a variant of the procedure found in -LRB- huang and chiang , 2005 -RRB- to obtain - best lists of trees that are weighted correctly and contain no repetition .
+-LRB- borchardt and vogler , 2003 -RRB- present determinization of weighted finite-state tree automata with a different method than the one we present here .
+we arrange the labels
+since we wish to associate a weight with every acceptable tree in a language , we will consider transducers that produce weights as their output .
+since the algorithm builds new states progressively , we will need to represent a vector of states from the output transducer , typically depicted as v. we may construct the vector pair q w from v , where q is a vector of states of the input transducer and w is a vector of residual weights , by choosing a -LRB- state , weight -RRB- pair from each output state in v. v is the set of vector pairs q w constructed from v where each q is an input vector in a transition with label .

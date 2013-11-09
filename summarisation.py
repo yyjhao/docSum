@@ -113,7 +113,7 @@ def de_nlp(article):
     article = re.sub(r" ''", "\"", article)
     return article
 
-def summarise(filepath, co_ref=1, page_rank=True, debug_output=True, num_words=200):
+def summarise(filepath, co_ref=1, page_rank=True, debug_output=True, num_words=200, overlap=True):
     if not os.path.isdir("stanford-corenlp"):
         print >> sys.stderr, "Please put the Stanford CoreNLP package into the stanford-corenlp directory."
         quit()
@@ -154,6 +154,8 @@ def summarise(filepath, co_ref=1, page_rank=True, debug_output=True, num_words=2
                             adjMax[s][ss] += dic[ss] * dic[s]
                         elif co_ref == 5:
                             adjMax[s][ss] += (dic[ss] + dic[s]) * 2
+                        elif co_ref == 6:
+                            adjMax[s][ss] += (dic[ss] + dic[s]) * 5
 
     words_used = set()
 
@@ -162,10 +164,11 @@ def summarise(filepath, co_ref=1, page_rank=True, debug_output=True, num_words=2
         for m in adjMax:
             print " ".join([str(i) for i in m])
 
-    for s in range(len(sentences)):
-        for ss in range(len(sentences)):
-            if s != ss:
-                adjMax[s][ss] += findOverlap(sentences[s], sentences[ss], words_used)
+    if overlap:
+        for s in range(len(sentences)):
+            for ss in range(len(sentences)):
+                if s != ss:
+                    adjMax[s][ss] += findOverlap(sentences[s], sentences[ss], words_used)
 
     if debug_output:
         print "after overlap"

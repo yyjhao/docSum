@@ -1,0 +1,8 @@
+this suggests the hypothesis that a good movie will often contain unpleasant scenes -LRB- e.g. , violence , death , mayhem -RRB- , and a recommended movie review may thus have its average semantic orientation reduced if it contains descriptions of these unpleasant scenes .
+past work has demonstrated that adjectives are good indicators of subjective , evaluative sentences -LRB- hatzivassiloglou &amp; wiebe , 2000 ; wiebe , 2000 ; wiebe et al. , 2001 -RRB- .
+previous work on determining the semantic orientation of adjectives has used a complex algorithm that does not readily extend beyond isolated adjectives to adverbs or longer phrases -LRB- hatzivassiloglou and mckeown , 1997 -RRB- .
+the results show a strong positive correlation between the average semantic
+as far as i know , the only prior published work on the task of classifying reviews as thumbs up or down is tong '' s -LRB- 2001 -RRB- system for generating sentiment timelines .
+both are in the collection of 410 reviews from epinions that are used in the experiments in section 4 .
+the algorithm has three steps : -LRB- 1 -RRB- extract phrases containing adjectives or adverbs , -LRB- 2 -RRB- estimate the semantic orientation of each phrase , and -LRB- 3 -RRB- classify the review based on the average semantic orientation of the phrases .
+the core of the algorithm is the second step , which uses pmi-ir to calculate semantic orientation -LRB- turney , 2001 -RRB- .

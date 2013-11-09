@@ -1,0 +1,7 @@
+our first assumption is : assumption 1 : the commonality between a and b is measured by i -LRB- common -LRB- a , b -RRB- -RRB- .
+since knowing both the commonalities and the differences between a and b means knowing what a and b are , we assume : assumption 2 : the differences between a and b is measured by i -LRB- description -LRB- a , b -RRB- -RRB- | i -LRB- common -LRB- a , b -RRB- -RRB- , where description -LRB- a , b -RRB- is a proposition that describes what a and b are .
+intuition 1 and 2 state that the similarity between two objects are related to their commonalities and differences .
+that is , sim -LRB- a , b -RRB- = f -LRB- i -LRB- common -LRB- a , b -RRB- -RRB- , i -LRB- description -LRB- a , b -RRB- -RRB- -RRB- the domain of f is -LCB- -LRB- x , y -RRB- ix &gt; 0 , y &gt; 0 , y &gt; x -RCB- .
+since similarity is the ratio between the amount of information in the commonality and the amount of information in the description of the two objects , if we know the commonality of the two objects , their similarity tells us how much more information is needed to determine what these two objects are .
+to do so , assuming
+there have been many proposals to use the distance between two concepts in a taxonomy as the basis for their similarity -LSB- lee et al. , 1989 ; rada et al. , 1989 -RSB- .

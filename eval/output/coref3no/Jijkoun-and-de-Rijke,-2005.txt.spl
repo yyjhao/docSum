@@ -1,0 +1,8 @@
+in this paper we describe a simple system based on lexical similarity , with two different
+we experimented with two similarity measures : dekang lins dependency-based word similarity -LRB- lin , 1998 -RRB- and the measure based on lexical chains in wordnet -LRB- hirst and st-onge , 1998 -RRB- .
+it is not clear whether this is due to the test corpus being more difficult , or our system overfits the development corpus in ways other than threshold selection .
+moreover , whereas the difference between the two similarity measures seems substantial on the development corpus , they perform very similarly on the test corpus .
+for these reasons , we find it impossible to tell which of the measures is better for the task , and how to select thresholds in a robust way .
+we believe that p and r help us to better understand the behavior of our algorithms in ways that accuracy does not .
+although , in principle , we can tune the precision \/ recall balance by varying the thresholds , the experimental results on which we report in this note show that the thresholds are very corpus-specific and thus can hardly be used for this tuning .
+we described our participation in the pascal-2005 recognizing textual entailment challenge , with a simple sentence similarity-based system that uses two different word similarity measures .

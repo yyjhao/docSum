@@ -1,0 +1,8 @@
+similarly , while we clearly lag behind other systems participating in the task , we believe we have demonstrated that nc interpretation methods can be successfully deployed over the more general task of nominal pair classification .
+our experiments with the constituent
+however , since the generated training instances are more likely to contain errors , we decrement the similarity values for generated training instances by 0.2 , to prefer predictions based on the original training instances .
+finally , we apply the constituent similarity method over the combined training data , without any threshold -LRB- to guarantee a sr prediction for every test instance -RRB- .
+we present our methods in section 2 and depict the system architectures in section 4 .
+fourth , we apply the constituent similarity co - training method over the consolidated training data -LRB- from both sense collocation and constituent similarity co-training -RRB- with the threshold unchanged at 0.8 .
+hence , our first system is category b while our second system is -LRB- arguably -RRB- category a. table 1 presents the three baselines for the task , and the results for our two systems -LRB- system i and system ii -RRB- .
+for each test instance , we make a prediction according to one of the seven relations in the task , which we then map onto a binary classification for final evaluation purposes .

@@ -1,0 +1,6 @@
+in addition to exhibiting better predictive performance than either mackay and petos language model or latent dirichlet allocation , the topics inferred using the new model are typically less dominated by function words than are topics inferred from the same corpora using latent dirichlet allocation .
+word generation is defined by a conditional distribution p -LRB- wt = ilzt = k -RRB- , described by t -LRB- w 1 -RRB- free parameters , where t is the number of topics and w is the size of the vocabulary .
+similarly , topic generation is characterized by a conditional distribution p
+since word generation is conditioned upon both j and k in the new model presented in this paper , there is more than one way in which hyperparameters for the prior over 4 -RRB- might be shared in this model .
+in my implementation , each fixed-point iteration takes time that is proportional to s and -LRB- at worst -RRB- n. for latent dirichlet allocation and the new model with prior 1 , the time taken to perform the m-step is therefore at worst proportional to s , n and the number of iterations taken to reach convergence .
+table 1 shows the words most frequently assigned to a selection of topics extracted from the 20 newsgroups training data by each of the models .

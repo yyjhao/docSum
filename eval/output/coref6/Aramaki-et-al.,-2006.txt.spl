@@ -1,0 +1,10 @@
+we applied support vector machine -LRB- svm -RRB- - based learning -LRB- vapnik , 1999 -RRB- using three types of features : -LRB- 1 -RRB- basic pattern features -LRB- section 3.1 -RRB- , -LRB- 2 -RRB- selected pattern features -LRB- section 3.2 -RRB- , and -LRB- 3 -RRB- physical size features -LRB- section 3.3 -RRB- .
+proposed was the most accurate , demonstrating the basic feasibility of our approach .
+these sizes are unusually small for the following reasons : some entities -LRB- e.g. ' scar 's -RRB- rarely appear with their size , in contrast , entities such as ' stoy car 's or ' smini car 's frequently appear with a size .
+we briefly presented a method for obtaining the size of an entity and proposed a method for classifying semantic relations using entity size .
+when results of size expressions were insufficient -LRB- numbers &lt; 10 -RRB- , we considered the entity to be nonphysical , i.e. , to have no size .
+for example , given ' s ... library contains the book ... ' s , the basic pattern is ' s -LRB- e1 -RRB- contains the -LRB- e2 -RRB- ' s 2 .
+to evaluate the performance of our system , we used a semeval-task no # 4 training set .
+then , the system examines the search results for the numerous expressions located in ' s \* ' s and considers the average value to be the size .
+experimental results revealed that
+then , the system extracts the word -LRB- or word sequences -RRB- between two entities from the snippets in the top 1,000 search results .

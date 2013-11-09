@@ -1,0 +1,6 @@
+to facilitate the comparison of results with those of clegg and shepherd , we use their modified subset of genia treebank .4 as 600 of the 1100 bioinfer sentences have previously been used in the development of the biolg parser , we only use the remaining 500 blind sentences of bioinfer in the evaluation .
+to assess this choice , we develop a set of conversion rules for transforming the link grammar -LRB- lg -RRB- dependency scheme the stanford scheme and then create a version of the bioinfer corpus in the stanford scheme by applying the conversion rules and manually correcting the errors .
+to address this complexity , many biomedical ie systems -LRB- alphonse et al. , 2004 ; rinaldi et al. , 2004 ; fundel et al. , 2007 -RRB- and annotated corpora -LRB- kim et al. , 2003 ; aubin , 2005 ; pyysalo et al. , 2007 -RRB- incorporate full syntactic analysis .
+a common source of errors in the lg-sf conversion are the link grammar idiomatic expressions , which are analyzed as a chain of id links -LRB- 0.7 % of all links in the bioinfer corpus -RRB- and connected to the linkage always through their last word .
+we estimate that this total 5 percentage unit divergence represents an upper limit to the evaluation bias introduced by the two sets of conversion rules .
+however , we found that there is a

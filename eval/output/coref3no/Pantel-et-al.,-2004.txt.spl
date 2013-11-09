@@ -1,0 +1,7 @@
+we present an algorithm for extracting is-a relations , designed for the terascale , and compare it to a state of the art method that employs deep analysis of text -LRB- pantel and ravichandran 2004 -RRB- .
+let a1 -LRB- 1 , n -RRB- and a2 -LRB- 1 , n -RRB- be the level 1 -LRB- lexical level -RRB- and level 2 -LRB- pos level -RRB- representations for the string a -LRB- 1 , n -RRB- .
+following are two of them : note that we store different pos variations of the anchors x and y. as shown in example 1 , the pos variations of the anchor x are -LRB- jj nn , jj nn nn , nn -RRB- .
+since we treat each sentences independently from others , the algorithm runs in linear time o -LRB- n -RRB- over the corpus size , where n is number
+for our experiments , we extract from this corpus six data sets of different sizes : 1.5 mb , 15 mb , 150 mb , 1.5 gb , 6gb and 15gb .
+six sets were extracted for the pattern-based approach and five sets for the co - occurrence approach -LRB- the 15gb corpus was too large to process using the co-occurrence model ~ see dependency parsing time estimates in table 2 -RRB- .
+we extract its respective instance -LRB- e.g. , '' neils bohr '' and '' feng shui '' -RRB- , look up their corresponding hyponyms from our is-a table , and present the corresponding hyponym as the answer .

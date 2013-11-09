@@ -1,0 +1,8 @@
+the nmr analyzer currently allows its stored triples -LRB- and associated nmrs -RRB- to be saved in a file at the end of a session .
+the nmr analyzer depends on a parser to find noun phrases in a text .
+if the minimum distance was 3 or 6 , there may be two candidate lists : lm contains the nmrs previously assigned to triples with matching m , lhwith matching h. the analyzer attempts to choose a set r of candidates to suggest to the user as the best nmrs for the current triple .
+the nmr analyzer first brackets the flat list of premodifiers into modifier-head pairs .
+to compensate for the lack of previous analyses , the system relies on the help of a user , who supplies the correct nmr when the system can not determine it automatically .
+we present the results of evaluating the nmr analyzer in the context of a large knowledge acquisition experiment -LRB- see barker et al. , 1998 -RRB- .
+most of the research on relationships between nouns and modifiers deals with noun compounds , but these relationships also hold between nouns and adjective premodifiers or postmodifying prepositional phrases .
+if there is one list l of candidate nmrs , r contains the nmr -LRB- or nmrs -RRB- that occur most frequently in l. for

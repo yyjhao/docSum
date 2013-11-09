@@ -1,0 +1,6 @@
+such data would be amenable to conventional statistical machine translation -LRB- smt -RRB- techniques -LRB- e.g. , those discussed in och &amp; ney 2003 -RRB- .2 in what follows we compare two strategies for unsupervised construction of such a corpus , one employing string similarity and the other associating sentences that may overlap very little at the string level .
+a corpus was produced by extracting the first two sentences of each article , then pairing these across
+we held out a set of news clusters from our training data and randomly extracted two sets of sentence pairs for blind evaluation .
+the f2 data also retains pairs like the following that involve both high-level semantic alternations and long distance dependencies : two men who robbed a jeweller 's shop to raise funds for the bali bombings were each jailed for % % number % % years by indonesian courts today .
+the f2 training data is probably too sparse and , with 40 % unrelated sentence pairs , too noisy to achieve equally good results ; nevertheless the gap between the results for the two training data types is dramatically narrower on the f2 test data .
+following och &amp; ney s methodology , two annotators each created an initial annotation for each dataset , subcategorizing alignments as either sure -LRB- necessary -RRB- or possible -LRB- allowed , but not required -RRB- .

@@ -1,0 +1,10 @@
+in this paper , we present an unsupervised algorithm , dirt , for discovering inference rules from text .
+our algorithm is a generalization of previous algorithms for finding similar words -LRB- hindle , 1990 ; pereira , 1993 ; lin , 1998 -RRB- .
+essentially , if two paths tend to link the same sets of words , we hypothesize that their meanings are similar .
+in section 3 , we define paths in dependency trees and describe their extraction from a parsed corpus .
+in contrast , our algorithm for finding inference rules treats
+we make an assumption that this is an extension to the distributional hypothesis : extended distributional hypothesis : if two paths tend to occur in similar contexts , the meanings of the paths tend to be similar .
+by the extended distributional hypothesis , we can then claim that the two paths have similar meanings .
+for each of the paths p in the second column of table 5 , we ran the dirt algorithm to compute its top-40 most similar paths using the triple database .
+since the similarity of paths depends totally on the similarity of their slots , slots with the same kind of fillers are not distinguished in our algorithm .
+treating paths as binary relations , our algorithm is able to generate inference rules by searching for similar paths .

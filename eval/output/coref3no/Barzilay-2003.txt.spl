@@ -1,0 +1,6 @@
+in this article , we present the concept of sentence fusion , a novel text-to-text generation technique which , given a set of similar sentences , produces a new sentence containing the information common to most sentences in the set .
+for example , the fifth sentence in table 4 palestinians fired antitank missile at a bulldozer to build a new embankment in the areais
+two examples of themes , reference sentences , and system outputs are shown in table 5 .
+sentence fusion may not be a worthy direction to pursue if low grammaticality is intrinsic to the algorithm and its correction requires 14 we can not apply kappa statistics -LRB- siegel and castellan 1988 -RRB- for measuring agreement in the content selection task since the event space is not well-defined .
+in addition to sentence fusion , compression algorithms -LRB- chandrasekar , doran , and bangalore 1996 ; grefenstette 1998 ; mani , gates , and bloedorn 1999 ; knight and marcu 2002 ; jing and mckeown 2000 ; reizler et al. 2003 -RRB- and methods for expansion of a multiparallel corpus -LRB- pang , knight , and marcu 2003 -RRB- are other instances of such methods .
+content selection occurs primarily in the first phase , in which our algorithm uses local alignment across pairs of parsed sentences , from which we select fragments to be included in the fusion sentence .

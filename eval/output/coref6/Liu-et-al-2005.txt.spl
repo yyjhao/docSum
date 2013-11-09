@@ -1,0 +1,6 @@
+because we use nouns or noun phrases if a segment does not match any pattern , the small number of patterns for cons result in a large number of segments using nouns or noun phrases as product features .
+our work is related but quite different from sentiment classification -LSB- e.g. , 8 , 9 , 15 , 29 , 30 , 32 , 33 , 35 -RSB- .
+for reviews of format -LRB- 3 -RRB- or -LRB- 1 -RRB- , if the analyst finds that sentence i contains product features on which the reviewer has expressed an opinion , he \/ she selects the sentence by clicking on the sentence .
+we now evaluate the proposed automatic technique to see how effective it is in identifying product features from pros and cons in reviews of format -LRB- 2 -RRB- .
+our task : in order to visually compare consumer opinions on a set of products , we need to analyze the reviews in ri of each product pi -LRB- 1 -RRB- to find all the explicit and implicit product features on which reviewers have expressed their -LRB- positive or negative -RRB- opinions , and -LRB- 2 -RRB- to produce the positive opinion set and the negative opinion set for each feature .
+we experimented in two settings using the same interface : manual tagging -LRB- i.e. , without using the results of automatic techniques -RRB- : the analyst reads , manually

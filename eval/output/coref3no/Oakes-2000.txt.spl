@@ -1,0 +1,6 @@
+the six operations they used were 1 : 0 , 0 : 1 , 1 : 1 , 2 : 1 , 1 : 2 and 2 : 2 .
+the first task of program prague
+there is only one entry in table 5 where the first three columns are m = m = m , and that has the corresponding protophoneme m. a = a = a for the first three columns unambiguously yields the protophoneme a , while 0 = 0 = 0 yields 0 -LRB- the null character , which may be ignored -RRB- and t = t = t must yield t .
+dissimilation : the two adjacent characters in word 2 have more than a threshold -LRB- 0 -RRB- number of phonetic features in common , but the two corresponding adjacent characters in word 1 have more than a higher threshold -LRB- 1 -RRB- of features in common .
+vowel breaking2 : the reverse of vowel breaking , i.e. two adjacent vowels in word 1 become just one in word 2 the vowel in word 2 must be the same as one of the vowels in word 1 .
+the lists of sound correspondences which hold true across all four languages are then used to derive the corresponding sounds in the protolanguage using four principles given by crowley -LRB- 1992 , chapter 5 -RRB- , as follows : proposed reconstructions must involve sound changes that are plausible .

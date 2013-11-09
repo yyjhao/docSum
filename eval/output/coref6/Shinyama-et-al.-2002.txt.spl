@@ -1,0 +1,11 @@
+next we run the ie pattern acquisition system for the pairs of articles -LSB- 5 -RSB- .
+first we find articles of a certain domain from two newspapers .
+if the number of comparable nes which both portions contain exceeds a certain threshold , we adopt them as paraphrases .
+so if the portions of each sentence in the articles share several comparable nes , they are likely to be expressing the same meaning ; in other words , they are paraphrases .
+or , attaching contextual information like co-occurring words to ie patterns may improve the precision in actual use of paraphrases .
+however , there were only 41 patterns out of 725 patterns in arrest events containing two or more nes .
+first we obtain relevant articles for a domain from one newspaper , and then we find articles which report the same event from the other newspaper .
+even if two expressions can be regarded as
+in this experiment , we linked two ie patterns as paraphrases .
+then we ran the paraphrase acquisition system for each pair or articles , and finally got total 136 pairs of paraphrases -LRB- a link between two ie patterns -RRB- .
+we apply these obtained patterns to the articles itself , and then find paraphrases only among those which matches to any of patterns .

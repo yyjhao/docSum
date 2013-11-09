@@ -1,0 +1,7 @@
+after initial experiments along these lines , we stepped back and built a generative model of the transliteration process , which goes like this : an english phrase is written .
+bayes
+extending this notion , we settled down to build five probability distributions : following pereira and riley -LRB- 1997 -RRB- , we implement p -LRB- w -RRB- in a weighted finite-state acceptor -LRB- wfsa -RRB- and we implement the other distributions in weighted finite-state transducers -LRB- wfsts -RRB- .
+the second is a recently discovered k-shortest-paths algorithm -LRB- eppstein 1994 -RRB- that makes it possible for us to identify the top k translations in efficient 0 -LRB- m + n log n + kn -RRB- time , where the wfsa contains n states and m arcs .
+for consistency , we continue to print written english word sequences in italics -LRB- golf ball -RRB- , english sound sequences in all capitals -LRB- g aa l f b ao l -RRB- , japanese sound sequences in lower case -LRB- goruhubooru -RRB- and katakana sequences naturally -LRB- = ' -RRB- 1 -RRB- .
+we face two immediate problems : an obvious target inventory is the japanese syllabary itself , written down in katakana -LRB- e.g. , - = -RRB- or a roman equivalent -LRB- e.g. , ni -RRB- .
+for each glossary entry , we converted english words into english sounds using the model described in the previous section , and we converted katakana words into japanese sounds using the model we describe in the next section .

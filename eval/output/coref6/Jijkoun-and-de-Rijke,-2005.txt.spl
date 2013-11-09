@@ -1,0 +1,7 @@
+our method seems very cautious : it prefers to reject the
+it is not clear whether this is due to the test corpus being more difficult , or our system overfits the development corpus in ways other than threshold selection .
+manual examination of the entailment candidate pairs from the cd subtask shows that the pairs usually have many words in common : in the second example the similarity is substantially lower since numbers -LRB- which occur relatively rarely in our newspaper collection , and thus get higher weight -RRB- are different .
+otherwise , we subtract the weight of the word , penalizing words in the hypothesis without matching words in the text .
+for example , for positive decisions -LRB- sim ^ threshold -RRB- : the algorithm is parametrized with two functions : weight -LRB- w -RRB- : importance of the word for the similarity identification ; wordsim -LRB- w1 , w2 -RRB- : similarity between two words , with range -LSB- 0 , 1 -RSB- .
+although , in principle , we can tune the precision \/ recall balance by varying the thresholds , the experimental results on which we report in this note show that the thresholds are very corpus-specific and thus can hardly be used for this tuning .
+we described our participation in the pascal-2005 recognizing textual entailment challenge , with a simple sentence similarity-based system that uses two different word similarity measures .

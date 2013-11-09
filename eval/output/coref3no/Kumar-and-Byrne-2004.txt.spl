@@ -1,0 +1,7 @@
+this rapid progress has been greatly facilitated by the development of automatic translation evaluation metrics such as bleu score -LRB- papineni et al. , 2001 -RRB- , nist score -LRB- doddington , 2002 -RRB- and position independent word error rate -LRB- per -RRB- -LRB- och , 2002 -RRB- .
+we apply the minimum bayes-risk -LRB- mbr -RRB- techniques developed for automatic speech recognition -LRB- goel and byrne , 2000 -RRB- and bitext word alignment for statistical mt -LRB- kumar and byrne , 2002 -RRB- , to the problem of building automatic mt systems tuned for specific metrics .
+we start with an example of two competing english translations for a chinese sentence -LRB- in pinyin without tones -RRB- , with their word-to-word alignments in figure
+we consider three loss functions in this category : the bleu score -LRB- papineni et al. , 2001 -RRB- , word-error rate , and the position-independent word-error rate -LRB- och , 2002 -RRB- .
+for all performance metrics , we show the 70 % confidence interval with respect to the map baseline computed using bootstrap resampling -LRB- press et al. , 2002 ; och , 2003 -RRB- .
+we have shown the construction of a bitree loss function to compare parse - trees of any two translations using alignments with respect to a parse-tree for the source sentence .
+while we have focused on developing mbr procedures for loss functions that measure various aspects of translation quality , this framework can also be used with loss functions which measure application-specific error criteria .

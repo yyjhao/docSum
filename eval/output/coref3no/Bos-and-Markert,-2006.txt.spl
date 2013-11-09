@@ -1,0 +1,6 @@
+in this paper we summarise the results of our efforts in the 2005 \/ 2006 recognizing textual entailment -LRB- rte-2 -RRB- challenge -LRB- the task of deciding , given two text fragments , whether the meaning of one text is entailed \/ inferred from another text -RRB- .
+we will introduce the shallow semantic analysis -LRB- section 2 -RRB- and the deep semantic analysis -LRB- section 3 -RRB- , present the results of our two runs -LRB- section 4 -RRB- , and discuss them -LRB- section 5 -RRB- .
+in 1 and 2 we are directly checking for a logical entailment between t and h ; in 1 we try so without , and in 2 with background knowledge .
+if vampire finds a proof for 1 , it is very likely that t entails h. if vampire finds a proof for 3 or 4 , then we are -LRB- unfortunately -RRB- dealing with inconsistent background knowledge and there is nothing we can say about the relationship between t and h -LRB- however , it could be the case that t + h is inconsistent , which would mean that t does not entail h -RRB- .
+this way the models they output are generally minimal models ; in other words , the models do not contain entities that are not mentioned in the input -LRB- see also -LRB- blackburn and bos , 2005 -RRB- -RRB- .
+the theorem prover provides us with

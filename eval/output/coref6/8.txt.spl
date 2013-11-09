@@ -1,0 +1,7 @@
+we begin by reviewing the use of logistic regression in text classification , and the bayesian approach in particular -LRB- section 2 -RRB- , then discuss previous approaches to integrating domain knowledge in text classification -LRB- section 3 -RRB- .
+chelba and acero -LSB- 5 -RSB- use out-of-task labeled examples in logistic regression training of a text capitalizer , and use the resulting map estimate as the mode vector of a bayesian prior for training with in-task examples .
+for methods mode and mode \/ tfidf , the cdkrw values were 0.5 , 1 , 2 , 3 , 4 , 5 , 10 , 20 , 50 , 100 , and 10000 .
+another simple baseline is to create x copies of the prior knowledge text for a class and add these copies to the training data as additional positive examples -LRB- dk examples in table 1 -RRB- , as in some relevance feedback approaches .
+our four methods for using domain
+the resulting training sets had 2 to 139 positive examples for categories in the bio articles collection , 9 to 184 positive examples for categories in the modapte top 10 collection , and 0 to 22 positive examples for categories in the rcv1 a-b regions collection .
+on three data sets , with three diverse sources of domain knowledge , we found large improvements in effectiveness , particularly when only small training sets are available .
