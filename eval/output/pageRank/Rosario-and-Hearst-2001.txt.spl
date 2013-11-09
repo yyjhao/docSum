@@ -1,0 +1,6 @@
+note that because we are concerned with the semantic relations that
+we use the metathesaurus component to map lexical items into unique concept ids -LRB- cuis -RRB- .3 the umls also has a mapping from these cuis into the mesh lexical hierarchy -LRB- lowe and barnett , 1994 -RRB- ; we mapped the cuis into mesh terms .
+for these experiments , we considered only those noun compounds for which both nouns can be mapped into mesh terms , resulting in a total of 2245 ncs .
+it turns out that the test set for relationship 7 -LRB- produces on a genetic level -RRB- is dominated by ncs containing the words alleles and mrna and that all the ncs in the training set containing these words are assigned relation label 7 .
+other words in the test set for 14 are varicella which is present in the trainig set only in varicella serology labeled as attribute of clinical study , drainage which is in the training set only as location -LRB- gallbladder drainage and tract drainage -RRB- and activity -LRB- bile drainage -RRB- .
+it is interesting to note that the accuracy for case 1 -LRB- first noun not present in the training set -RRB- is much higher than the accuracy for case 2 -LRB- second noun not present in the training set -RRB- .

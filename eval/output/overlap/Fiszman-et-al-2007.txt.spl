@@ -1,0 +1,6 @@
+an adjective or noun is used to denote the scale , and words such as than , as , with , and to serve as cues to identify the compared terms , the scale , and the relative position of the terms on the scale .
+when this processing is applied to -LRB- 13 -RRB- , the semantic predication -LRB- 14 -RRB- is produced , in which the predicate is compared _ with ; the first argument
+in addition to identifying two compared terms when processing comp2 patterns , a scale must be named and the relative position of the terms on that scale indicated .
+these were annotated with the pubmed id of the citation , names of two drugs -LRB- compared _ with predication -RRB- , the scale on which they are compared -LRB- scale -RRB- , and the relative position of the primary drug with respect to the secondary -LRB- same _ as , higher _ than , or lower _ than -RRB- .
+in addition , correct identification of the comp2 structures depends on recognition of the scale on which the drugs are compared and the relative position of the drugs on the scale .
+although , in this paper , we tested the method on structures in which the compared terms belong to the semantic group chemicals &amp; drugs , we can straightforwardly generalize the method by adding other semantic groups to the algorithm .

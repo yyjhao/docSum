@@ -1,0 +1,6 @@
+for example , when learning a model for penn treebank-style part-of-speech tagging in english , we may list the 45 target tags and a few examples of each tag -LRB- see figure 4 for a concrete prototype list for this task -RRB- .
+we assume prior knowledge about the target structure via a prototype list , which specifies the set of target labels y and , for each label y e y , a set of prototypes words , py e py .
+we
+each prototype word is also its own prototype -LRB- since a word has maximum similarity to itself -RRB- , so when we lock the prototype to a label , we are also pushing all the words distributionally similar to that prototype towards that label .
+adding distributional similarity fea tures to our model -LRB- proto + sim -RRB- improves accuracy substantially , yielding 71.5 % , a 38.4 % error reduction over base .6 another feature of this domain that grenager et al. -LRB- 2005 -RRB- take advantage of is that end of sentence punctuation tends to indicate the end of a field and the beginning of a new one .
+roughly 25 % of the data had to be labeled in order to achieve an accuracy equal to our proto + sim + bound model , suggesting that the use of prior knowledge in the prototype system is particularly efficient .

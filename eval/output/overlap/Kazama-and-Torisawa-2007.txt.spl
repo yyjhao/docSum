@@ -1,0 +1,7 @@
+as a first step towards such approach , we demonstrate in this paper that category labels extracted from the first sentence of a wikipedia article , which can be thought of as the definition of the entity described in the article , are really useful to improve the accuracy of ner .
+we compiled these files into one gazetteer , where each entry has its
+gazetteer category label -LRB- gaz c -RRB- this feature represents the matching with a gazetteer entry and its category by using b-x , i-x , and o tags , where x is one of per , loc , org , and misc .
+wikipedia match -LRB- wp m -RRB- this feature represents the matching with a wikipedia entity by using b , i , and o tags .
+wikipedia category label -LRB- wp c -RRB- this feature represents the matching with a wikipedia entity and its category in the way described section in 3.3 .
+we can see that gazzetta dello sport in the sentence was correctly labeled as an entity of org category by model -LRB- e -RRB- , because the wikipedia feature identified it as a newspaper entity.an issue , which we should treat , is the disambiguation of ambiguous entities .
+we extracted a category label from the first sentence of a wikipedia article and used it as a feature of a crf-based ne tagger .

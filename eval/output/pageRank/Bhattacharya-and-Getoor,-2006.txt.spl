@@ -1,0 +1,6 @@
+the generative process in our model may be viewed as an extension of the dirichlet process mixture model : the group labels in our model influence the choice of entities for each author reference in a paper .
+the sampling algorithm now also samples the author attributes vi iteratively , conditioned on the references and current author assignments , along with sampling the group and entity labels for each reference .
+basic inference with gibbs sampling we first describe a novel but simple gibbs sampling algorithm for iteratively sampling the values of the hidden group and entity labels for each reference conditioned on the existing labels of all other references .
+instead , in our algorithm we restrict the space of candidates such that the cluster of references assigned to a particular author label may -LRB- a -RRB- merge with a cluster currently assigned to another author label , -LRB- b -RRB- stay unchanged or -LRB- c -RRB- split and have a part assigned to a hitherto unassigned author label j ' .
+the full conditional distribution we need to derive is p -LRB- a5
+similarly , when 0 = 0 , a reference has to pick a group label from other references to the same author , and also an author label from other references with the same group label .

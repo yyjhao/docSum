@@ -1,0 +1,6 @@
+as a first step towards such approach , we demonstrate in this paper that category labels extracted from the first sentence of a wikipedia article , which can be thought of as the definition of the entity described in the article , are really useful to improve the accuracy of ner .
+in our experiments using the conll 2003 ner dataset -LRB- tjong et al. , 2003 -RRB- , we demonstrate that we can improve performance by using the wikipedia features by 1.58 points in f-measure from the baseline , and by 1.21 points from the model that only uses the gazetteers provided in the conll 2003 dataset .
+we compiled these files into one gazetteer , where each entry has its entity category , and used it in the same way as the wikipedia feature described in section 3.3 .
+wikipedia category label -LRB- wp c -RRB- this feature represents the matching with a wikipedia entity and its category in the way described section in 3.3 .
+we can see that gazzetta dello sport in the sentence was correctly labeled as an entity of org category by model -LRB- e -RRB- , because the wikipedia feature identified it as a newspaper entity.an issue , which we should treat , is the disambiguation of ambiguous entities .
+we extracted a category label from the first sentence of a wikipedia

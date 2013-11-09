@@ -1,0 +1,6 @@
+we also entered a
+the features that apply to the entities in a relation -LRB- e 1 , e2 -RRB- are extracted for term 1 -LRB- t1 -RRB- and term 2 -LRB- t2 -RRB- of the relation , where t1 is the first term in the relation name , and t2 is the second term .
+exclusively for the content container relation we furthermore included two binary features that test whether the two entities in the relation are hyponyms of the synset container in wn .
+for the partwhole relation we also experimented with binary features expressing whether the two entities in the relation have some type of meronym and holonym relation , but these features did not prove to be predictive .
+while the features were selected independently for all relations , the seven classifiers in the wnbased system all make use of the wn semantic class features ; in the system that did not use wn , the seven classifiers make use of the cluster class features instead .
+the system using all training data with wordnet features , b4 -LRB- table 5 -RRB- , performs better in terms of f-measure on six out of the seven subtasks as compared to the system that does not use the word - net features but the semantic cluster information instead , a4 -LRB- table 4 -RRB- .

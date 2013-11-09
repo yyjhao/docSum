@@ -1,0 +1,6 @@
+this work could predict words for a given image by computing words that had a high posterior probability given the image .
+in -LSB- 9,10 -RSB- , maron et al. study automatic annotation of images , but work one word at a time , and offer no method of finding the correspondence between words and regions .
+by saying that words that can be reliably attached to image regions are easy to recognize and those that can not , are not ; and which objects are indistinguishable
+evaluation method : each image in the test set is automatically annotated , by taking every region larger than the threshold , quantizing the region to a blob , and using the lexicon to determine the most likely word given that blob ; if the probability of the word given the blob is greater than the relevant threshold , then the image is annotated with that word .
+for some good words -LRB- e.g : ocean -RRB- we have up to 70 % correct prediction as shown in figure 7 ; this means that , on this test set , when the word ocean is predicted , 70 % of the time it will be predicted on an ocean region .
+we can predict the words with high recall correctly , but we can not predict some words which have very low recall .

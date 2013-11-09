@@ -1,0 +1,5 @@
+we classify a point x e x by its membership in concept c : we write c -LRB- x -RRB- = 1 if x e c , and c -LRB- x -RRB- = 0 otherwise .
+a popular use of artificial neural networks is as
+the generalization problem is posed as follows : for a given concept class c , an unknown target t , an arbitrary error rate e , and confidence 6 , how many examples do we have to draw and classify from an arbitrary distribution -LRB- p in order to find a concept c e c consistent with the examples such that e -LRB- c , t , -LRB- p -RRB- 5 .
+the backpropagation algorithm -LRB- rumelhart et al. , 1986 -RRB- is a supervised neural network learning technique , in that the network is presented with a training set of input \/ output pairs -LRB- x , t -LRB- x -RRB- -RRB- and learns to output t -LRB- x -RRB- when given input x .
+for any consistent concept c , it must be the case that s g c g for some s e s and g e g. one may do active learning with a version space by examining instances that fall in the '' difference '' of s and g , that is , the region sag u -LCB- sag : s e s , g e gi -LRB- where a is the symmetric difference operator -RRB- .

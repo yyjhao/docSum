@@ -1,0 +1,7 @@
+in addition to learning lexical paraphrases , the method also learns syntactic paraphrases , by generalizing syntactic patterns of the extracted paraphrases .
+in contrast , in our corpus the same word is usually used in both translations , and only sometimes its paraphrases are used , which means that wordparaphrase pairs will have lower co-occurrence rates than word translation pairs in mt .
+identical words play two roles in this process : first , they are used to learn context rules ; second , identical words are used in application of these rules , because the rules contain information about the equality of words in context .
+however , training of the classifier demands negative examples as well ; in our case it requires pairs of words in aligned sentences which are not paraphrases of each other .
+to find negative examples , we match identical words in the alignment against all different words in the aligned sentence , assuming that identical words can match
+to evaluate the quality of produced paraphrases , we picked at random 500 paraphrasing pairs from the lexical paraphrases produced by our algorithm .
+of the 500 pairs produced by our system , 354 -LRB- 70.8 % -RRB- were single word pairs and 146 -LRB- 29.2 % -RRB- were multi-word paraphrases , while the majority of pairs produced by melameds system were single word pairs -LRB- 90 % -RRB- .

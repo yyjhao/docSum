@@ -1,0 +1,7 @@
+our model computes a joint probability of image features over different regions in an image using a training set and uses this joint probability to annotate and retrieve images .
+given a training set of images with annotations , we show that probabilistic models allow us to predict the probability of generating a word given the features computed over different regions in an image .
+their translation model applies one of the classical statistical machine translation models to translate from the set of keywords of an image to the set of blobs forming the image .
+jeon et al -LSB- 5 -RSB- instead assumed that this could be viewed as analogous to the cross-lingual retrieval problem and used a cross-media relevance model -LRB- cmrm -RRB- to perform both image annotation and ranked
+image pixels are produced by first picking a set of i.i.d. feature vectors , then generating image regions from the feature vectors , and finally stacking the regions on top of each other .
+we divided the dataset into 3 parts - with 4,000 training set images , 500 evaluation set images and 500 images in the test set .
+we compare the annotation performance of the four models : the co-occurrence model -LSB- 9 -RSB- , the translation model -LSB- 4 -RSB- , cmrm -LSB- 5 -RSB- and the model proposed in this paper -LRB- crm -RRB- .

@@ -1,0 +1,8 @@
+we use a discrete fourier transform -LRB- arfken , 1985 -RRB- based metric for computing similarity of time distributions , and we score nes similarity with a linear transliteration model .
+in essence , the algorithm we present uses temporal alignment as a supervision signal to iteratively train a discriminative transliteration model , which can be viewed as a distance metric between and english ne and a potential transliteration .
+positive examples used for iterative training are pairs of nes and their best temporally aligned -LRB- thresholded -RRB- transliteration candidates .
+unless mentioned otherwise , the transliteration model was initialized with a subset of 254 pairs of nes and their transliteration equivalence classes .
+in each iteration , we used the current transliteration model to find a list of 30 best transliteration equivalence classes for each ne .
+we then computed time sequence similarity score between ne and each class from its list to find the one with the best matching time sequence .
+the weak transliteration model selects the correct transliteration
+in keeping with our objective to provide as little language knowledge as possible , we introduced a simplistic approach to identifying transliteration equivalence classes , which sometimes produced erroneous groupings -LRB- e.g. an equivalence class for ne lincoln in russian included both lincoln and lincolnshire on figure 6 -RRB- .

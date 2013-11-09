@@ -1,0 +1,7 @@
+the latent dirichlet allocation -LRB- lda -RRB- model -LSB- 3 -RSB- introduces a more consistent probabilistic approach as it ties the
+only the latent variables of the syntactic classes are treated as a sequence with local dependencies while latent assignments of topics are treated similar to the lda model , namely topics extraction is not benefited from the additional information conveyed in the structure of words .
+these are the bigram topic model -LSB- 15 -RSB- , the lda collocation model and the topical n-grams model -LSB- 16 -RSB- .
+our model is similar to the lda model in tying together parameters of different documents via a hierarchical generative model , but unlike the lda model it does not assume documents are bags of words .
+the lda model ties parameters between different documents by drawing ^ of all documents from a common dirichlet prior parameterized by ^ .
+applied to the htmm model , the latent variables are the topics zn and the variables ^ n that determine whether the topic n will be identical to topic n 1 or will it be drawn according to ^ d .
+here , in contrast , we use em to estimate the map parameters in a hierarchical generative model similar to lda -LRB- note that our m step explicitly takes into account the dirichlet priors on ^ , ^ -RRB- .

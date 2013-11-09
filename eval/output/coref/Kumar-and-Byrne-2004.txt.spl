@@ -1,0 +1,7 @@
+while string based metrics such as bleu , wer and per are insensitive to the syntactic structure of the translations , bitree loss is able to measure this aspect of translation quality , and assigns different scores to the two translations .
+we provide this example to show how a loss function which makes use of syntactic structure from source and target parse trees , can capture properties of translations that string based loss functions are unable to measure .
+this illustrates why we
+for each sentence , we compute the error rate of the hypothesis translation with respect to the most similar reference translation under the corresponding loss function .
+given an mt evaluation metric of interest such as bleu , per or wer , we can use this metric as a loss function within the mbr framework to design decoders optimized for the evaluation criterion .
+we present results under the bitree loss function as an example of incorporating linguistic information into a loss function ; we have not yet measured its correlation with human assessments of translation quality .
+while we have focused on developing mbr procedures for loss functions that measure various aspects of translation quality , this framework can also be used with loss functions which measure application-specific error criteria .

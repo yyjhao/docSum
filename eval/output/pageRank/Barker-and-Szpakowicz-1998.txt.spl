@@ -1,0 +1,6 @@
+we have built a system for noun modifier relationship -LRB- nmr -RRB- analysis that assigns semantic relationships in complex noun phrases .
+most of the research on relationships between nouns and modifiers deals with noun compounds , but these relationships also hold between nouns and adjective premodifiers or postmodifying prepositional phrases .
+leonards system -LRB- 1984 -RRB- assigns semantic labels to noun-noun compounds based on a dictionary that includes taxonomic and meronymic -LRB- part - whole -RRB- information , information about the syntactic behavior of nouns and about the relationships between nouns and verbs .
+instead of memorizing complete noun phrases -LRB- or even complete subphrases -RRB- and analyses , the system reduces compound modifiers and compound heads to their own local heads and stores these reduced pairs with their assigned nmr .
+a preposition is an overt indicator of the relationship between m and h -LRB- see quirk , 1985 : chapter 9 -RRB- so a correlation is more likely between the preposition and the nmr than between a given
+if the minimum distance was 3 or 6 , there may be two candidate lists : lm contains the nmrs previously assigned to triples with matching m , lhwith matching h. the analyzer attempts to choose a set r of candidates to suggest to the user as the best nmrs for the current triple .

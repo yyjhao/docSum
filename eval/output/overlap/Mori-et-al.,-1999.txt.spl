@@ -1,0 +1,6 @@
+the key concept of the method is as follows : -LRB- 1 -RRB- each image is divided into many parts and at the same time all attached words for each image are inherited to each part ; -LRB- 2 -RRB- parts of all images are vector quantized to make clusters ; -LRB- 3 -RRB- the likelihood for each word in each cluster is estimated statistically .
+to find the detailed correlation between text and image -LRB- not simply discriminating an image into a few categories -RRB- , each portion of the image should be correlated to words instead of the whole image to words .
+to avoid this problem , we propose a simple method to correlate each portion of an image to key words only using key words for the whole image .
+using a morpheme analysis program called ~ chasen '' -LRB- resulting in about 100,000 vocabularies -RRB- , select only -LRB- common and proper -RRB- nouns and adjectives -LRB- resulting in about 51,708 vocabularies -RRB- , eliminate rare words -LRB- those which less than frequency of 64 -RRB- , finally 1,585 words are remain -LRB- their frequencies range from 5,150 to 64 -RRB- after the extraction on average 32 words are attached to each image in average .
+tables 1 and 2 show the examples of output
+in tables 1 and 2 , bold words indicate ' hit ' words -LRB- i.e. originally attached words for the image -RRB- .

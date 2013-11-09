@@ -1,0 +1,7 @@
+first , is a treelet smt system sensitive to parse quality ?
+as the amount of data used to train the parser increases , both english-to-german and english-tojapanese treelet smt improve , and produce results that are statistically significantly better than the phrasal baseline .
+a parser that achieves 90.8 % dependency accuracy when trained on the penn treebank wall street journal corpus and evaluated on comparable text degrades to 84.3 % accuracy when evaluated on technical text .
+despite the degradation in parse accuracy caused by the dramatic differences between the wall street journal text and the technical articles , the treelet smt system was able to extract useful patterns .
+one concern in applying the treelet smt framework to translation from languages other than english has been the expense of data annotation : would we require 40,000 sentences annotated for syntactic dependencies , i.e. , an amount comparable to the penn treebank , in order to train a parser that was sufficiently accurate to achieve the machine translation quality that we have seen when translating from english ?
+as more data is annotated with syntactic dependencies and more accurate parsers are trained , we would hope to
+we challenge others who are conducting research on syntactically-informed smt to verify whether or to what extent their systems are sensitive to parse quality .

@@ -9,7 +9,6 @@ python read_overlap.py eval/contents/19.txt.spl | tee eval/output/overlap/19.txt
 python read_overlap.py eval/contents/20.txt.spl | tee eval/output/overlap/20.txt.spl
 python read_overlap.py eval/contents/21.txt.spl | tee eval/output/overlap/21.txt.spl
 python read_overlap.py eval/contents/22.txt.spl | tee eval/output/overlap/22.txt.spl
-python read_overlap.py eval/contents/23.txt.spl | tee eval/output/overlap/23.txt.spl
 python read_overlap.py eval/contents/24.txt.spl | tee eval/output/overlap/24.txt.spl
 python read_overlap.py eval/contents/25.txt.spl | tee eval/output/overlap/25.txt.spl
 python read_overlap.py eval/contents/26.txt.spl | tee eval/output/overlap/26.txt.spl

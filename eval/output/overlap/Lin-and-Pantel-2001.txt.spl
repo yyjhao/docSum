@@ -1,0 +1,7 @@
+while richardson used paths as features to compute the similarity between words , we use words as features to
+the mutual information between two events x and y is given by : mi -LRB- x , y -RRB- = log p -LRB- x , y -RRB- | p -LRB- x -RRB- p -LRB- y -RRB- .
+the mutual information between two random variables x and y is given by : mi -LRB- x , y -RRB- = p -LRB- x , y -RRB- log pr -LRB- x , p -RRB- -RRB- .
+given a path p , our algorithm for finding the most similar paths of p takes three steps : retrieve all the paths that share at least one feature with p and call them candidate paths .
+for each of the paths p in the second column of table 5 , we ran the dirt algorithm to compute its top-40 most similar paths using the triple database .
+although the triple database contains plenty of features for '' x leaves p '' , all of the similar paths found by dirt refer to the travel sense of leave , such as '' x flees p '' and '' x visits p '' .
+another source of error in our algorithm is exemplified by the following : among the most similar paths of '' x asks p '' , we have '' x informs p '' -LRB- which is correct -RRB- , but also '' p asks x '' and '' p informs x '' .

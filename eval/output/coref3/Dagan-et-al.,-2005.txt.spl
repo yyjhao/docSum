@@ -1,0 +1,6 @@
+as in other evaluation tasks our definition of textual entailment is operational , and corresponds to the judgment criteria given to the annotators who decide whether this relationship holds between a given pair of texts or not .
+within each application setting the annotators selected both positive entailment examples -LRB- true -RRB- , where t is judged to entail h , as well as negative examples -LRB- false -RRB- , where entailment does not hold -LRB- a 50 % -50 % split -RRB- .
+for this task the annotators used an available dataset annotated for the ie relations '' kill '' and '' birth place '' produced by uiuc -LRB- see acknowledgments -RRB- , as well as general news stories in which they identified manually '' typical '' ie relations .
+annotators selected a text t from some news story which includes a certain relation , for which a paraphrase acquisition system produced a set of paraphrases -LRB- see acknowledgements -RRB- .
+the remaining examples were considered as the gold standard for evaluation , split to 567 examples in the development set and 800 in the test set , and evenly split to true \/ false examples .
+it is interesting to note that few participants have independently judged portions of the dataset and reached high agreement levels with the gold standard judgments , of 95 % on all the test set -LRB- bos and markert

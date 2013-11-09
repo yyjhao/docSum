@@ -1,0 +1,7 @@
+we apply our model to four data sets with varying degrees of divergence between the in-domain and out-of-domain data and obtain predictive accuracies higher
+one can intuitively view the q -LRB- -RRB- distribution as a distribution of data that is truly out-of-domain , q -LRB- i -RRB- as a distribution of data that is truly in-domain and q -LRB- 9 -RRB- as a distribution of data that is general to both domains .
+onlyo : this model is obtained by training a standard maximum entropy model on the out-of-domain data , completely ignoring the in-domain data .
+mixw : this model is also obtained by training a maximum entropy model on the union of the out-of-domain and in-domain data sets , but where the out-of-domain data is down - weighted so that is effectively equinumerous with the in-domain data .
+as the out-of-domain data , we use the newswire and broadcast news portions of the ace 2005 training data ; as the in-domain data , we use the fisher conversations data .
+as the out-of-domain data , we use again the newswire and broadcast news data ; as the in-domain data , we use broadcast news data that has been transcribed by automatic speech recognition .
+the prior model and the feats model perform roughly comparably , with the prior model edging out by a small margin .2 our model outperforms both the prior model and the feats model .

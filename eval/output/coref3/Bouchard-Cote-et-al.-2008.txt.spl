@@ -1,0 +1,6 @@
+inspired by the prevalence of multi-scale rules in diachronic phonology and modern phonological theory , we develop a new scheme in which rules possess a set of features , and a distribution over rules is defined using a log - linear model .
+assume we have a fixed set of word types -LRB- cognate sets -RRB- in our vocabulary v and a set of languages l. each word type i has a word form wil in each language l e l , which is represented as a sequence of phonemes which might or might not be observed .
+the rule probabilities are then deterministically related to the weights via the softmax function : for each rule x &gt; ^ \/ cl ct , we defined features based on whether x = ^ -LRB- i.e. self-substitution -RRB- , and whether | ^ | = n for each n = 0 , 1 , 2 -LRB- corresponding to deletion , substitution , and insertion -RRB- .
+recent work in computational
+for example , reconstructed ibero \/ trinta \/ to spanish \/ treinta \/ -LRB- thirty -RRB- is generated in an odd fashion using rules \/ e \/ to \/ i \/ and \/ n \/ to \/ in \/ .
+using a log-linear model to define the probability of a rule being applied results in a straightforward inference procedure which can be used to both produce accurate reconstructions as measured by edit distance and identify linguistically plausible rules that account for phonological changes .

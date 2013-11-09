@@ -1,0 +1,6 @@
+each example consists of a sentence , two nominals to be judged on whether they are in the target semantic relation , manually annotated wordnet 3.0 sense keys for these nominals , and the web query used to obtain that example : related work .
+girju et al. -LRB- 2005 -RRB- apply svm
+given an entity-annotated example sentence , we reduce the target entities e1 and e2 to single nouns noun1 and noun2 , by keeping their last nouns only , which we assume to be the heads .
+we then mine the web for sentences containing both noun1 and noun2 , from which we extract features , consisting of word -LRB- s -RRB- , part of speech -LRB- verb , preposition , verb + preposition , coordinating conjunction -RRB- , and whether noun1 precedes noun2 .
+table 3 and 4 show the results for our a and c runs for different amounts of training data : 45 -LRB- a1 , c1 -RRB- , 90 -LRB- a2 , c2 -RRB- , 105 -LRB- a3 , c3 -RRB- and 140 -LRB- a4 , c4 -RRB- .
+in fact , our category c system is the best-performing -LRB- in terms of f and acc -RRB- among the participating systems , and we achieved the third best results for category a. our category c results are slightly but consistently better than for a for all measures -LRB- p , r , features used leave-1-out test ucb f , acc -RRB- , which suggests that knowing the query is helpful .

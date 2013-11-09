@@ -1,0 +1,7 @@
+the set of features used for the classification of semantic relations includes information
+semantic features are only applied in categories b and d. on the lexical level , the set of word features include the two nominals , their heads in case one of the nominals in question or both are compound nominals -LRB- e.g. the relation between &lt; e1 &gt; tumor shrinkage &lt; \/ e1 &gt; and &lt; e2 &gt; radiation therapy &lt; \/ e2 &gt; is actually between the head of the first '' shrinkage '' and '' radiation therapy '' -RRB- .
+for each relation and for each category -LRB- a , b , c , d -RRB- we selected the set of features that obtained the best results using the indicated cross validation .
+for all the relations in the category a4 , we obtained an average of f = 43.1 % -LSB- average score of all participating teams : f = 58.0 % and top average score : f = 64.8 % -RSB- .
+for the relation theme-tool , other set of features was employed : nominals , their heads , verb , preposition and the list of word between both nominals .
+for example , in training the instrument-agent relation , the system achieved an average f = 78 % using 10-fold cross-validation , while for the final score it only obtained f = 50.7 % .
+in our first approach to automatic classification of semantic relations between nominals and as expected from the training phase , our system achieved its best performance using wordnet information .

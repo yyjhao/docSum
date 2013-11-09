@@ -1,0 +1,7 @@
+what is especially novel about this approach is paraphrasing noun compound semantics in terms of concrete verbs , rather than a fixed number of abstract predicates -LRB- e.g. , have , make , use -RRB- , relations -LRB- e.g. , location , instrument , agent -RRB- , or prepositions -LRB- e.g. , of , for , in -RRB- , as is traditional in the literature .
+there is currently no consensus as to which set of relations should hold between nouns in a noun compound , but most existing approaches make use of a set of a small number of abstract relations , typically less than 50 .
+in later work , -LSB- 9 -RSB- provide a semi-supervised approach for characterizing the relation between two nouns in a bioscience noun-noun compound based on the semantic category each of the constituent nouns belongs to .
+most other approaches to noun compound interpretation used hand-coded rules for at least one component of the algorithm -LSB- 16 -RSB- , or rules combined with lexical resources -LSB- 17 -RSB- -LRB- 52 % accuracy , 13 relations -RRB- .
+in
+they could be also directly integrated into a paraphrase-augmented machine translation system -LSB- 24 -RSB- , machine translation evaluation system -LSB- 25 -RSB- -LSB- 26 -RSB- , or summarization evaluation system -LSB- 27 -RSB- .
+assuming annotated training data , the verbs could be used as features in the prediction of abstract relations like time and location , as is done by -LSB- 14 -RSB- and -LSB- 15 -RSB- , who used the vector-space model and a nearest-neighbor classifier .

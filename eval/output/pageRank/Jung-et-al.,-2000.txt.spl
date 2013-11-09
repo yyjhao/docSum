@@ -1,0 +1,8 @@
+the orthography for foreign word transliteration to korean provides a simple mapping from english to korean phonetic units .
+table
+for example , the english phonetic unit '' u @ '' can be mapped to a korean phonetic unit -LSB- u @ -RSB- '' or '' 1 -LSB- w @ 1 '' even though the composition of each unit mapping of '' u '' and can result in other composite mappings such as '' - ph -LSB- ju @ -RSB- '' , '' -1 0 -RSB- -LSB- wi @ i '' , -LSB- wujal '' , etc .
+this composite phonetic unit mapping is also useful for statistical tagging since composite units provide more accurate statistical information when they are well devised .
+lee -LSB- 7 , 8 , 91 proposed a statistical transliteration model based on the statistical translation model-1 by brown -LSB- 2 -RSB- that uses only a simple information source of a word pair .
+the tagging model proposed in this paper exploits not only simple pronunciation unit-to-unit mapping from english to korean , but also more complex contextual information of multiple units mapping .
+lee 's model is a fully statistical approach even in pronunciation unit alignment and syllabification that may cause inaccurate results , while we use a heuristic approach in pronunciation unit alignment .
+another significant difference is that lee 's model uses only conventional information sources such as a bigram while our model use various information sources from extended markov window .

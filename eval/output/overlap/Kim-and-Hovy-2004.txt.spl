@@ -1,0 +1,7 @@
+for our purposes , we describe an opinion as a quadruple -LSB- topic , holder , claim , sentiment -RSB- in which the holder believes a claim about the topic , and in many cases associates a sentiment , such as good or bad , with the belief .
+section 2.1 describes the word sentiment classifier and section 2.2 describes the sentence sentiment classifier .
+using these expanded lists , we extracted an additional cycle of words from wordnet , to obtain finally 5880 positive adjectives , 6233 negative adjectives , 2840 positive verbs , and 3239 negative verbs .
+this indicated the need to develop a measure of strength of sentiment polarity -LRB- the alternative was simply to discard such ambiguous words -RRB- to determine how strongly a word is positive and also how strongly it is negative .
+manual analysis showed that such sentiments can be found most reliably close to the holder ; without either holder or topic \/ claim nearby as anchor points , even
+the first experiment examines the two word sentiment classifier models and the second the three sentence sentiment classifier models .
+we experimented on section 2.2.3 3 models of sentiment classifiers , using the 4 different window definitions and 4 variations of word-level classifiers -LRB- the two word sentiment equations introduced in section 2.1.1 , first with and then without normalization , to compare performance -RRB- .

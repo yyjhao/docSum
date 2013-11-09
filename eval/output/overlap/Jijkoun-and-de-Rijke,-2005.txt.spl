@@ -1,0 +1,7 @@
+in this paper we describe a simple system based on lexical similarity , with two different word similarity measures .
+for example , for positive decisions -LRB- sim ^ threshold -RRB- : the algorithm is parametrized with two functions : weight -LRB- w -RRB- : importance of the word for the similarity identification ; wordsim -LRB- w1 , w2 -RRB- : similarity between two words , with range -LSB- 0 , 1 -RSB- .
+the table below summarizes the results on the test and development corpora : accuracy -LRB- a -RRB- , confidence - weighted score -LRB- cws -RRB- , and also precision -LRB- p -RRB- and recall -LRB- r -RRB- for the entailment
+surprisingly , the performance of the system on the test corpus -LRB- thick lines -RRB- is substantially worse than on the development corpus even if optimal similarity thresholds are taken .
+moreover , whereas the difference between the two similarity measures seems substantial on the development corpus , they perform very similarly on the test corpus .
+manual examination of the entailment candidate pairs from the cd subtask shows that the pairs usually have many words in common : in the second example the similarity is substantially lower since numbers -LRB- which occur relatively rarely in our newspaper collection , and thus get higher weight -RRB- are different .
+we described our participation in the pascal-2005 recognizing textual entailment challenge , with a simple sentence similarity-based system that uses two different word similarity measures .

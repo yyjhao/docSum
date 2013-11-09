@@ -7,6 +7,7 @@ import splitAndParse
 import os
 import shutil
 
+word_regex = re.compile(r"^[a-zA-Z0-9]*$")
 def findOverlap(sen1, sen2, words_used):
     words1 = filter(lambda x: x not in config.ignored and not x.isdigit(), sen1)
     words2 = filter(lambda x: x not in config.ignored and not x.isdigit(), sen2)
@@ -51,7 +52,6 @@ def cutoffScore(sentences, l):
     r.sort()
     return [sentences[ss] for ss in r]
 
-word_regex = re.compile(r"^[a-zA-Z0-9]*$")
 def words(sentence):
     count = 0
     for w in sentence:
@@ -133,7 +133,10 @@ def summarise(filepath, co_ref=True, page_rank=True, debug_output=True, num_word
             for s in dic:
                 for ss in dic:
                     if s != ss:
-                        adjMax[s][ss] += (dic[s] + 0.0) / dic[ss]
+                        adjMax[s][ss] += dic[ss] + dic[s]
+                        # adjMax[s][ss] += dic[ss] + dic[s] 3
+                        # adjMax[s][ss] += (dic[ss] + 0.0) / dic[s] 2
+                        # adjMax[s][ss] += (dic[s] + 0.0) / dic[ss] 1
 
     words_used = set()
 

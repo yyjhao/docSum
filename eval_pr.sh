@@ -9,7 +9,6 @@ python read_without_co.py eval/contents/19.txt.spl | tee eval/output/pageRank/19
 python read_without_co.py eval/contents/20.txt.spl | tee eval/output/pageRank/20.txt.spl
 python read_without_co.py eval/contents/21.txt.spl | tee eval/output/pageRank/21.txt.spl
 python read_without_co.py eval/contents/22.txt.spl | tee eval/output/pageRank/22.txt.spl
-python read_without_co.py eval/contents/23.txt.spl | tee eval/output/pageRank/23.txt.spl
 python read_without_co.py eval/contents/24.txt.spl | tee eval/output/pageRank/24.txt.spl
 python read_without_co.py eval/contents/25.txt.spl | tee eval/output/pageRank/25.txt.spl
 python read_without_co.py eval/contents/26.txt.spl | tee eval/output/pageRank/26.txt.spl
