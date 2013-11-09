@@ -8,9 +8,10 @@ import os
 import shutil
 
 word_regex = re.compile(r"^[a-zA-Z0-9]*$")
+overlappable_word_regex = re.compile(r"^[a-zA-Z][a-zA-Z-]+$")
 def findOverlap(sen1, sen2, words_used):
-    words1 = filter(lambda x: x not in config.ignored and not x.isdigit(), sen1)
-    words2 = filter(lambda x: x not in config.ignored and not x.isdigit(), sen2)
+    words1 = filter(lambda x: overlappable_word_regex.match(x) and x not in config.ignored, sen1)
+    words2 = filter(lambda x: overlappable_word_regex.match(x) and x not in config.ignored, sen2)
     count = 0
     for w in words1:
         for ww in words2:
@@ -70,10 +71,17 @@ def cut_words(sentence, wc):
             break;
     return r
 
-def cutoff_words(sentences, wc):
+def cutoff_words(order, sentences, wc, adjMax):
     r = []
     w = 0
-    for sentence in sentences:
+    can_take = [True for i in range(len(order))]
+    for k in order:
+        if not can_take[k[1]]:
+            continue
+        for i in range(len(adjMax)):
+            if adjMax[k[1]][i] > 20:
+                can_take[i] = False
+        sentence = sentences[k[1]]
         swc = words(sentence)
         if swc + w > wc:
             r.append(cut_words(sentence, wc - w))
@@ -105,7 +113,7 @@ def de_nlp(article):
     article = re.sub(r" ''", "\"", article)
     return article
 
-def summarise(filepath, co_ref=True, page_rank=True, debug_output=True, num_words=200):
+def summarise(filepath, co_ref=1, page_rank=True, debug_output=True, num_words=200):
     if not os.path.isdir("stanford-corenlp"):
         print >> sys.stderr, "Please put the Stanford CoreNLP package into the stanford-corenlp directory."
         quit()
@@ -120,6 +128,9 @@ def summarise(filepath, co_ref=True, page_rank=True, debug_output=True, num_word
 
     sentences, coref = splitAndParse.splitSentencesAndParse("stanford-corenlp/" + filename + ".xml")
 
+    if debug_output:
+        print "coref", coref
+
     adjMax = [[0 for s in sentences] for s in sentences]
 
     if co_ref:
@@ -133,10 +144,16 @@ def summarise(filepath, co_ref=True, page_rank=True, debug_output=True, num_word
             for s in dic:
                 for ss in dic:
                     if s != ss:
-                        adjMax[s][ss] += dic[ss] + dic[s]
-                        # adjMax[s][ss] += dic[ss] + dic[s] 3
-                        # adjMax[s][ss] += (dic[ss] + 0.0) / dic[s] 2
-                        # adjMax[s][ss] += (dic[s] + 0.0) / dic[ss] 1
+                        if co_ref == 1:
+                            adjMax[s][ss] += (dic[s] + 0.0) / dic[ss]
+                        elif co_ref == 2:
+                            adjMax[s][ss] += (dic[ss] + 0.0) / dic[s]
+                        elif co_ref == 3:
+                            adjMax[s][ss] += dic[ss] + dic[s]
+                        elif co_ref == 4:
+                            adjMax[s][ss] += dic[ss] * dic[s]
+                        elif co_ref == 5:
+                            adjMax[s][ss] += (dic[ss] + dic[s]) * 2
 
     words_used = set()
 
@@ -177,7 +194,8 @@ def summarise(filepath, co_ref=True, page_rank=True, debug_output=True, num_word
             print sentences[k[1]]
             print k[0]
             print "==============="
-    best_first = cutoff_words([sentences[k[1]] for k in l], 200)
+
+    best_first = cutoff_words(l, sentences, 200, adjMax)
     by_order = []
     for i in range(0, len(best_first)):
         by_order.append((l[i][1], best_first[i]))
