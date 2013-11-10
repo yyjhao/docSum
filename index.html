@@ -80,11 +80,13 @@
 			.reveal table{
 				border-collapse: collapse;
 				border: 1px solid black;
+				margin: 0 auto;
 			}
 
 			.reveal td, .reveal th{
 				border: 1px solid black;
 				padding: 15px;
+				font-size: 0.7em;
 			}
 
 			.reveal th{
@@ -323,7 +325,7 @@
 						* We use 178 papers in _Scholarly Paper Recommendation Dataset_ from WING, NUS
 						* The abstracts are used as model summaries and the contents are used as input
 						* We use ROUGE to evaluate the quality of our summaries based on the abstracts
-						* For our experiment, we use the R-score from ROGUE since the model summaries do not have a word limit
+						* For our experiment, we use the R-score from ROUGE since the model summaries do not have a word limit
 						* For our algorithms, the word limit is set to $200$
 						* $m$ used in removing overlapping sentences is set to $20$
 					</section>
@@ -344,7 +346,7 @@
 						<h2>Results</h2>
 						<table>
 							<caption>
-								Mean values of ROGUE scores
+								Mean values of ROUGE scores
 							</caption>
 							<tbody>
 								<tr>
@@ -406,23 +408,33 @@
 							</tbody>	
 						</table>
 					</section>
-					<section data-markdown>
-						## Comparison
+					<section>
+						<h2>Comparison</h2>
 
-						* We perform 1-tailed paired t-tests for ROGUE-L scores of the following algorithms
+						<p>We perform 1-tailed paired t-tests for ROUGE-L scores of the following algorithms</p>
 
-						* Random &lt; Degree
-							* $p-value = 0.000$
-						* Degree &lt; PageRank
-							* $p-value = 0.055$
-						* PageRank &lt; Coref_equal
-							* $p-value = 0.307$
-						* PageRank &lt; Coref_twice
-							* $p-value = 0.032$
-						* PageRank &lt; Coref_large
-							* $p-value = 0.307$
-						* PageRank &lt; Coref_only
-							* $p-value = 0.008$
+						<table>
+							<tbody>
+								<tr>
+									<th>Test</th>
+									<td>Random &lt; Degree</td>
+									<td>Degree &lt; PageRank</td>
+									<td>PageRank &lt; Coref_equal</td>
+									<td>PageRank &lt; Coref_twice</td>
+									<td>PageRank &lt; Coref_large</td>
+									<td>Coref_only &lt; PageRank</td>
+								</tr>
+								<tr>
+									<th>p-value</th>
+									<td>0.000</td>
+									<td>0.055</td>
+									<td>0.307</td>
+									<td>0.032</td>
+									<td>0.307</td>
+									<td>0.008</td>
+								</tr>
+							</tbody>
+						</table>
 					</section>
 				</section>
 				<section>
