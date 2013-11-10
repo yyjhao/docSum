@@ -227,19 +227,31 @@
 						
 						* We use Stanford Corenlp to compute co-references
 					</section>
-					<section data-markdown>
-						## Algorithm
-						#### Tokenize &rarr; Compute Co-reference &rarr; **Parse Co-reference** &rarr; Count Overlap &rarr; Build Adjacency Matrix &rarr; Run PageRank &rarr; Generate Summary
+					<section>
+						<h2>Algorithm</h2>
+						<h4>Tokenize &rarr; Compute Co-reference &rarr; <strong>Parse Co-reference</strong> &rarr; Count Overlap &rarr; Build Adjacency Matrix &rarr; Run PageRank &rarr; Generate Summary</h4>
 
-						-----
-						
-						* The co-reference data is a list of tuples $(c_1, c_2,...,c_n)$
-							* Note that there can be some $i, j$ such that $i \neq j$ and $c_i = c_j$ in some tuples
-						* Using the co-reference information, we build an adjacency Matrix $$A_{ij} = a_i + a_j$$
-							* where
-								* $k$ is some constant
-								* $a_i$ is the number of times $i$th sentence appearing in tuples that contains $j$th sentences
-								* Conversely for $a_j$
+						<hr />
+						<ul>
+							<li> The co-reference data is a list of tuples $(c_1, c_2,...,c_n)$
+								<ul>
+									<li> Note that there can be some $i, j$ such that $i \neq j$ and $c_i = c_j$ in some tuples
+									</li>
+								</ul>
+							</li>
+							<li> Using the co-reference information, we build an adjacency Matrix $$A_{ij} = a_{ij} + a_{ji}$$
+								<ul>
+									<li> where
+										<ul>
+											<li> $a_{ij}$ is the number of times $i$th sentence appearing in tuples that contains $j$th sentences
+											</li>
+											<li> If we have (1, 1, 2, 3) and (1, 3), then $a_{12} = 2$ and $a_{13} = 3$
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</section>
 					<section>
 						<h2>Algorithm</h2>
