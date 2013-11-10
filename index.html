@@ -312,10 +312,68 @@
 						* Coref_large: $k_a = 5, k_b = 1$
 						* Coref_only: $k_a = 1, k_b = 0$ (only consider co-reference)
 					</section>
-					<section data-markdown>
-						## Results
-
-						..mean table here..
+					<section>
+						<h2>Results</h2>
+						<table>
+							<tbody>
+								<tr>
+									<th>Algorighm</th>
+									<th>ROUGE-1</th>
+									<th>ROUGE-2</th>
+									<th>ROUGE-3</th>
+									<th>ROUGE-L</th>
+								</tr>
+								<tr>
+									<td>Random</td>
+									<td>0.266158</td>
+									<td>-</td>
+									<td>-</td>
+									<td>0.251459</td>
+								</tr>
+								<tr>
+									<td>Degree</td>
+									<td>0.302039</td>
+									<td>-</td>
+									<td>-</td>
+									<td>0.279868</td>
+								</tr>
+								<tr>
+									<td>PageRank</td>
+									<td>0.308187</td>
+									<td>-</td>
+									<td>-</td>
+									<td>0.285539</td>
+								</tr>
+								<tr>
+									<td>Coref_equal</td>
+									<td>0.312450</td>
+									<td>-</td>
+									<td>-</td>
+									<td>0.287519</td>
+								</tr>
+								<tr>
+									<td>Coref_twice</td>
+									<td>0.321284</td>
+									<td>-</td>
+									<td>-</td>
+									<td>0.294462</td>
+								</tr>
+								<tr>
+									<td>Coref_large</td>
+									<td>0.312604</td>
+									<td>-</td>
+									<td>-</td>
+									<td>0.288393</td>
+								</tr>
+								<tr>
+									<td>Coref_only</td>
+									<td>0..287429</td>
+									<td>-</td>
+									<td>-</td>
+									<td>0.268019</td>
+								</tr>
+							</tbody>	
+						</table>
 					</section>
 					<section data-markdown>
 						## Comparison
