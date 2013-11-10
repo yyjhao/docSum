@@ -297,7 +297,7 @@
 						* We use ROUGE to evaluate the quality of our summaries based on the abstracts
 						* For our experiment, we use the R-score from ROGUE since the model summaries do not have a word limit
 						* For our algorithms, the word limit is set to $200$
-						* $m$ used in removing overlapping sentence is set to $20$
+						* $m$ used in removing overlapping sentences is set to $20$
 					</section>
 					<section data-markdown>
 						## Algorithms
@@ -378,12 +378,32 @@
 					<section data-markdown>
 						## Comparison
 
+						* We perform 1-tailed paired t-tests for ROGUE-L scores of the following algorithms
+
 						* Random &lt; Degree
+							* $p-value = 0$
+						* Degree &lt; PageRank
+							* $p-value = 0$
+						* PageRank &lt; Coref_equal
+							* $p-value = 0$
+						* PageRank &lt; Coref_twice
+							* $p-value = 0$
+						* PageRank &lt; Coref_large
+							* $p-value = 0$
+						* PageRank &lt; Coref_only
+							* $p-value = 0$
 					</section>
 				</section>
 				<section>
 					<section data-markdown>
 						## Conclusion
+
+						* The summary quality is reasonable
+						* PageRank seems to improve the quality slightly
+						* Co-reference can improve the quality
+							* but the performance depends on the coefficient
+							* and co-reference alone is insufficient
+							* it can be that the co-reference data is not good enough
 					</section>
 				</section>
 				<section data-markdown>
