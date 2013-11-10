@@ -20,8 +20,9 @@ for i in range(len(files)):
                     reading = False
                     cur_data += 1
             else:
+                line = line.split("\n")[0]
                 reading = True
-                num = line.split("P:")[-1].split(" ")[0]
+                num = line.split("F:")[-1].split(" ")[0]
                 data[cur_data][i].append(num)
 
 out_files = ["rogue-1.csv", "rogue-2.csv", "rogue-3.csv", "rogue-4.csv", "rogue-l.csv"]
