@@ -50,7 +50,44 @@
 			.reveal .dark-back h2{
 				color: white;
 			}
+
+			.reveal .dark-back h1{
+				color: white;
+				text-transform: none;
+			}
+
+			.two-col{
+				margin: 0;
+				padding: 0;
+			}
+
+			.two-col li{
+				width: 50%;
+				float: left;
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				text-align: center;
+			}
+
+			.reveal h4{
+				font-size: 0.7em;
+				font-style: normal;
+				font-family: inherit;
+				text-transform: none;
+			}
 		</style>
+		<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+		<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 	</head>
 
 	<body>
@@ -59,7 +96,8 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section data-markdown data-background="images/info.jpg" class="dark-back">
-					## Document Summarisation
+					# SenRank
+					## A novel automatic summarisation algorithm
 				</section>
 				<section>
 					<section data-markdown data-background="images/Infomation-Overload.jpg" data-background-position="130% 130%" data-background-size="60%">
@@ -70,14 +108,21 @@
 						1. Automatic summarisation aids readers in such processes
 
 					</section>
-					<section data-markdown>
-						## Examples: 
-						![](images/search-engine.png)
+					<section>
+						<h2>
+							Examples
+						</h2>
+						<ol class="two-col">
+							<li>
+								<div>Search Engine Previews</div>
+								<img src="images/search-engine.png" />
+							</li>
+							<li>
+								<div>Automatic highlights</div>
+								<img src="images/Highlight.jpg" />
+							</li>
 
-						1. Search engine previews
-						1. Automatic highlights
-
-						![](images/Highlight.jpg)
+						</ol>
 					</section>
 				</section>
 				<section>
@@ -97,6 +142,7 @@
 
 						* A sentence is *summarising* if ideas from many other sentences flow to it
 						* A set of sentences with such characteristics can be a summary
+							* Note that overlapping of ideas in sentences within such a set should be minimized to achieve a _succinct_ summary.
 					</section>
 					<section data-markdown>
 						## Fomulation
@@ -106,7 +152,7 @@
 							* A sentence is more likely to flow to another if the edge has a higher weight.
 							* The weight of the edge is proportional to their relation
 						* Compute how likely it is to flow to a certain sentence
-						* Aggregate the top few sentences as summary
+						* Aggregate the top few (non-overlapping) sentences as summary
 
 					</section>
 				</section>
@@ -117,13 +163,9 @@
 
 						1. The relation of two sentence, therefore the weight of edge connecting them
 							* = number of word overlaps
-							* An improvement will be to consider
-								1. Different word forms
-								1. Synonyms
-								1. Co-reference
-									* Replacing words by considering the context
+								* Not all words can be counted
+							* plus number of shared references in both sentences
 						1. The edges are bi-directional
-							* Consider using extra infomation to add direction
 					</section>
 					<section data-markdown>
 						## Solution
@@ -131,14 +173,159 @@
 						1. Simulate a random walk on such a graph
 							* With PageRank&trade;
 						1. Rank the sentences with their PageRank&trade; score
-						1. Pick the top sentences
+						1. Pick the top sentences that do not overlap too much
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Algorithm
+						#### **Tokenize** &rarr; Compute Co-reference &rarr; Parse Co-reference &rarr; Count Overlap &rarr; Build Adjacency Matrix &rarr; Run PageRank &rarr; Generate Summary
+
+						-----
+						
+						* We use Stanford Corenlp to tokenize articles
 					</section>
 					<section data-markdown>
-						## Solution
-						### Potential problems	
+						## Algorithm
+						#### Tokenize &rarr; **Compute Co-reference** &rarr; Parse Co-reference &rarr; Count Overlap &rarr; Build Adjacency Matrix &rarr; Run PageRank &rarr; Generate Summary
 
-						1. Repeated *summarising* sentences may be picked
-						2. Number of top sentences to be picked is unsure
+						-----
+						
+						* We use Stanford Corenlp to compute co-references
+					</section>
+					<section data-markdown>
+						## Algorithm
+						#### Tokenize &rarr; Compute Co-reference &rarr; **Parse Co-reference** &rarr; Count Overlap &rarr; Build Adjacency Matrix &rarr; Run PageRank &rarr; Generate Summary
+
+						-----
+						
+						* The co-reference data is a list of tuples $(c_1, c_2,...,c_n)$
+							* Note that there can be some $i, j$ such that $i \neq j$ and $c_i = c_j$ in some tuples
+						* Using the co-reference information, we build an adjacency Matrix $$A_{ij} = a_i + a_j$$
+							* where
+								* $k$ is some constant
+								* $a_i$ is the number of times $i$th sentence appearing in tuples that contains $j$th sentences
+								* Conversely for $a_j$
+					</section>
+					<section>
+						<h2>Algorithm</h2>
+						<h4>
+							Tokenize &rarr; Compute Co-reference &rarr; Parse Co-reference &rarr; <strong>Count Overlap</strong> &rarr; Build Adjacency Matrix &rarr; Run PageRank &rarr; Generate Summary
+						</h4>
+
+						<hr />
+						
+						<ul>
+							<li> Build another adjacency Matrix
+								$$B_{ij} = \sum\limits_{w \in W} w_iw_j$$
+								where $W$ is the set of words we consider for overlapping and $w_i$ is the number of times Word $w$ appears in sentence $i$
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Algorithm</h2>
+						<h4>
+							Tokenize &rarr; Compute Co-reference &rarr; Parse Co-reference &rarr; Count Overlap &rarr; <strong>Build Adjacency Matrix</strong> &rarr; Run PageRank &rarr; Generate Summary
+						</h4>
+
+						<hr />
+						
+						<ul>
+							<li> 
+								The final adjancency Matrix is
+
+								$$ C = k_aA + k_bB $$
+
+								where $k_a, k_b$ are some constants
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Algorithm</h2>
+						<h4>
+							Tokenize &rarr; Compute Co-reference &rarr; Parse Co-reference &rarr; Count Overlap &rarr; Build Adjacency Matrix &rarr; <strong>Run PageRank</strong> &rarr; Generate Summary
+						</h4>
+
+						<hr />
+						
+						<ul>
+							<li> 
+								We run PageRank on $C$ to obtain a PageRank score for all sentences
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Algorithm</h2>
+						<h4>
+							Tokenize &rarr; Compute Co-reference &rarr; Parse Co-reference &rarr; Count Overlap &rarr; Build Adjacency Matrix &rarr; Run PageRank &rarr; <strong>Generate Summary</strong>
+						</h4>
+
+						<hr />
+						
+						<ol>
+							<li> 
+								$S$ is the set of all sentences
+							</li>
+							<li>
+								$R$ is the set of sentences in the summary
+							<li>
+								Loop while $S \neq \emptyset$
+								<ol>
+									<li>Pick $s \in S$ such that s has a highest score</li>
+									<li>$R = R \cup \{s\}$</li>
+									<li>Let $T = \{\text{sentence } i \mid C_{si} > m\}$</li>
+									<li>$S = S - T$</li>
+									<li>If $R$ exceeds the word limit, trancate the last sentence added to match the word limit</li>
+									<li>If $R$ is matches the word limit, terminate the loop</li>
+								</ol>
+							</li>
+							<li>
+								Output sentences in $R$ according to their original order in $S$
+							</li>
+						</ol>
+					</section>
+					<section data-markdown>
+						## Example
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Experiment Setup
+
+						* We use 178 papers in _Scholarly Paper Recommendation Dataset_ from WING, NUS
+						* The abstracts are used as model summaries and the contents are used as input
+						* We use ROUGE to evaluate the quality of our summaries based on the abstracts
+						* For our experiment, we use the R-score from ROGUE since the model summaries do not have a word limit
+						* For our algorithms, the word limit is set to $200$
+						* $m$ used in removing overlapping sentence is set to $20$
+					</section>
+					<section data-markdown>
+						## Algorithms
+						
+						### $$ C = k_aA + k_bB $$
+
+						* Random: randomly pick sentences from content
+						* Degree: $k_a = 0$ (do not consider co-reference), and do not run PageRank, just rank by the degrees
+						* PageRank: $k_a = 0$ (do not consider co-reference)
+						* Coref_equal: $k_a = 1, k_b = 1$
+						* Coref_twice: $k_a = 2, k_b = 1$
+						* Coref_large: $k_a = 5, k_b = 1$
+						* Coref_only: $k_a = 1, k_b = 0$ (only consider co-reference)
+					</section>
+					<section data-markdown>
+						## Results
+
+						..mean table here..
+					</section>
+					<section data-markdown>
+						## Comparison
+
+						* Random &lt; Degree
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						## Conclusion
 					</section>
 				</section>
 				<section data-markdown>
@@ -183,8 +370,8 @@
 				}, 49000);
 			}
 
-			retick();
-			Reveal.addEventListener('slidechanged', retick);
+			// retick();
+			// Reveal.addEventListener('slidechanged', retick);
 
 		</script>
 
