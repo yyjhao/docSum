@@ -301,7 +301,21 @@
 						</ol>
 					</section>
 					<section data-markdown>
-						## Example
+						## Referenced Summary
+
+						* we have developed a bootstrapping process for subjectivity classification that explores three ideas : -LRB- 1 -RRB- high - precision classifiers can be used to automatically identify subjective and objective sentences from unannotated texts , -LRB- 2 -RRB- this data can be used as a training set to automatically learn extraction patterns associated with subjectivity , and -LRB- 3 -RRB- the learned patterns can be used to grow the training set , allowing this entire process to be bootstrapped .
+						the performance of the high-precision objective classifier is a bit lower than the subjective classifier : 82.6 % precision and 16.4 % recall on the test set mentioned above -LRB- that is , 82.6 % of the sentences selected by the objective classifier are objective , and the objective classifier found 16.4 % of the objective sentences in the test set -RRB- .
+						the pattern - based subjective sentence classifier classifies a sentence as subjective
+						the labeled sentences are then fed to an extraction pattern learner , which produces a set of extraction patterns that are statistically correlated with the subjective sentences -LRB- we will call these the subjective pat terns -RRB- .
+						in other words , the training set that we used during the second bootstrapping cycle contained exactly the same objective sentences as the first cycle , half of the same subjective sentences as the first cycle , and 9,500 brand new subjective sentences .
+
+						## Generated Summary
+
+						*this paper presents a bootstrapping process that learns linguistically rich extraction patterns for subjective ( opinionated ) expressions .
+						high-precision classifiers label unannotated data to automatically create a large training set , which is then given to an extraction pattern learning algorithm .
+						the learned patterns are then used to identify more subjective sentences .
+						the bootstrapping process learns many subjective patterns and increases recall while maintaining high precision .
+
 					</section>
 				</section>
 				<section>
