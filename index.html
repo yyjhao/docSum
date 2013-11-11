@@ -371,28 +371,30 @@
 					</section>
 				</section>
 				<section>
-					<section data-markdown>
-						## Experiment Setup
-
-						* We use 178 papers in _Scholarly Paper Recommendation Dataset_ from WING, NUS
-						* The abstracts are used as model summaries and the contents are used as input
-						* We use ROUGE to evaluate the quality of our summaries based on the abstracts
-						* For our experiment, we use the R-score from ROUGE since the model summaries do not have a word limit
-						* For our algorithms, the word limit is set to $200$
-						* $m$ used in removing overlapping sentences is set to $20$
+					<section>
+						<h2>Experiment Setup</h2>
+						<ul>
+						<li>We use 178 papers in <em>Scholarly Paper Recommendation Dataset</em> from WING, NUS</li>
+						<li>The abstracts are used as model summaries and the contents are used as input</li>
+						<li>We use ROUGE to evaluate the quality of our summaries based on the abstracts</li>
+						<li>For our experiment, we use the R-score from ROUGE since the model summaries do not have a word limit</li>
+						<li>For our algorithms, the word limit is set to $200$</li>
+						<li>$m$ used in removing overlapping sentences is set to $20$</li>
+						</ul>
 					</section>
-					<section data-markdown>
-						## Algorithms
-						
-						### $$ C = k_aA + k_bB $$
-
-						* Random: randomly pick sentences from content
-						* Degree: $k_a = 0$ (do not consider co-reference), and do not run PageRank, just rank by the degrees
-						* PageRank: $k_a = 0$ (do not consider co-reference)
-						* Coref_equal: $k_a = 1, k_b = 1$
-						* Coref_twice: $k_a = 2, k_b = 1$
-						* Coref_large: $k_a = 5, k_b = 1$
-						* Coref_only: $k_a = 1, k_b = 0$ (only consider co-reference)
+					<section>
+											
+					<h2>Algorithms</h2>
+					<h3>$$ C = k_aA + k_bB $$</h3>
+					<ul>
+					<li>Random: randomly pick sentences from content</li>
+					<li>Degree: $k_a = 0$ (do not consider co-reference), and do not run PageRank, just rank by the degrees</li>
+					<li>PageRank: $k_a = 0$ (do not consider co-reference)</li>
+					<li>Coref_equal: $k_a = 1, k_b = 1$</li>
+					<li>Coref_twice: $k_a = 2, k_b = 1$</li>
+					<li>Coref_large: $k_a = 5, k_b = 1$</li>
+					<li>Coref_only: $k_a = 1, k_b = 0$ (only consider co-reference)</li>
+					</ul>
 					</section>
 					<section>
 						<h2>Results</h2>
