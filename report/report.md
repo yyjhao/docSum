@@ -31,12 +31,119 @@ SenRank. The results show that SenRank has a good performance as what we expect.
 
 
 
+# Formulation
+
+## Assumptions
+
+We start the formulation with the following assumptions:
+
+1. Articles consist of ideas
+1. Ideas flow
+1. Each sentence presents some ideas
+1. Ideas are expressed through words
+1. Overlap of words signifies relation of ideas
+
+We can then assume that a sentence is significant, thus _summarizing_, if
+ideas from many other sentences flow to it.
+
+We further assume that by assembling a set of _summarizing_ sentences, we
+can produce a good summary. Further, to shorten the length of the summary,
+we should try to minimize overlaps among sentences in this set.
+
+## Construction of article graph
+
+To make use of the assumptions, we formulate the article as a graph of
+sentences.
+
+Formally, we can build a complete graph $\mathcal{G} = (V, E)$, where $V$ is the
+set of sentences, and $\forall (u, v) \in E, weight(e) = relation(u, v)$.
+
+Further, we define $relation(u, v)$ to be the number of word overlaps
+(where only a subset of all words are considered) plus the number of shared
+references (by making use of co-reference _(citation)_). Moreover, we assume
+that $relation(u, v) = relation(v, u)$, as both word-overlap and co-reference
+has no direction.
+
+With the graph, we can then find out the probability of ideas flowing to a
+sentence with the PageRank _(citation)_ algorithm. Then we can rank the
+sentences with their PageRank score and pick the top few sentences that
+do not overlap too much as the summary.
+
 # Algorithm
 
-$$ C_{ij} = \sum a_{ij} $$
+With the graph formulation, SenRank works by following the steps detailed in
+this section.
 
+## Tokenization and derivation of co-references
+
+We use Stanford Corenlp _(citation)_ to tokenize the article and then generate
+the co-reference data.
+
+## Parsing co-references
+
+The co-reference data obtained from Stanford Corenlp is a list of tuples:
+$(c_1, c_2,...,c_n), (d_1, d_2,...,d_n)...$, where $c_i, d_i$ refers to a
+sentence in the article. Each tuple represents the occurrence of one entity
+in sentences. So $(c_1, c_2,...,c_n)$ means that a particular entity appears
+in Sentence $c_1, c_2,...c_n$. Moreover, there can be some $i, j$ such that
+$i /neq j$ and $c_i = c_j$ in some tuples, i.e., if an entity appears for
+multiple times in a sentence, that sentence will be recorded for multiple
+times in the tuple.
+
+SenRank then use this co-reference data to build an adjacency matrix
+
+$$ A_{ij} = a_{ij} + a_{ji}$$
+
+where $a_{ij}$ is the number of times Sentence $i$ appearing in tuples that
+also contains Sentence $j$.
+
+For example, we may have obtained the co-reference data $(1,1,2,3), (1,3)$.
+Then $a_{12} = 2$, $a_{21} = 1$, thus $A_{12} = A_{21} = 3$
+
+## Counting word overlap
+
+SenRank then process all sentences and form another adjacency matrix
+
+$$ B_{ij} = \sum\limits_{w \in W} w_iw_j$$
+
+where $W$ is the set of words that are considered for word overlap and $w_i$
+refers to the number of time Word $w$ appears in Sentence $i$.
+
+## Building article graph
+
+With $A$ and $B$, SenRank builds the final adjacency matrix
+
+$$ C = k_aA + k_bB $$
+
+where $k_a$ and $k_b$ are some constants that can be tweaked for optimal
+performance.
+
+## Running PageRank
+
+SenRank then runs the PageRank algorithm on $C$ to obtain PageRank scores
+for all sentences
+
+## Generating a summary
+
+Finally SenRank generates a summary with the following algorithm:
+
+Firstly we define $m$ as the threshold such that
+$weight(u, v) > m $ means that u and v are similar enough that they cannot
+both appear in the summary.
+
+1. $S$ is the set of all sentences
+1. $R$ is the set of sentences in the summary, initially $R = \emptyset$
+1. Loop while $S \neq \emptyset$
+    1. Pick $s \in S$ such that $s$ has a highest score
+    1. $R = R \cup \{s\}$
+    1. Let $T = \{i \mid C_{si} > m\}$
+    1. $S = S - T$
+    1. If $R$ exceeds the word limit, trancate the last sentence added to R to match the word limit
+    1. If $R$ matches the word limit, terminate the loop
+1. Output sentences in $R$ according to their original order in the article
 
 # Experiment Setup
+
 
 
 # Results
