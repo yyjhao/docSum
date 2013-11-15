@@ -153,4 +153,13 @@ both appear in the summary.
 
 # Conclusion
 
+In this paper, we propose a novel automatic document summarization algorithm called 
+SenRank which model an article as a graph of sentences related to each other. By 
+using co-reference and counting overlap of words, the weight of edges is constructed. 
+Then we run PageRank on this weighted graph and generate our summary by aggregating top
+few non-overlaping sentences. The experiment results show that the quality of generated 
+summary is reasonable. However, the dataset we test only includes science papers. To make 
+the results more convincible, we need to test on different types of articles. Also, 
+the coefficients of matrix A and B are still can be tweaked to make SenRank achieve a better performance.
+
 # References
