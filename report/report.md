@@ -13,21 +13,22 @@ abstract: |
 # Introduction
 
 With the scaling of Internet, people are overwhelmed by a large number
-of documents on-line. To filter out useful information becomes harder
+of documents on-line. To filter useful information becomes harder
 and harder. As a result, it is necessary to develop a fast way which can be used 
 to generate a short piece of text covering all the main topics of a document and 
 catching all relevant points. Automatic document summarization can help users in 
 such process.
 
 In this paper, we propose a novel automatic document summarization algorithm which
-is named as SenRank. We model an article as a graph of continuous floating ideas as
-well as sentences. Consequently, the overlap of words between sentences is able to 
-signify their relations. With the aid of co-reference, we run PageRank on such graph 
-and aggregate top few sentences as a summary. To make this summary succinct, we remove
-some sentences which have overlap with others.
+is named as SenRank. We model an article as a graph of continuous floating ideas 
+expressed through sentences. Consequently, the overlap of words between sentences 
+is able to signify their relations. With the aid of co-reference, we run PageRank 
+on such graph and aggregate top few sentences as a summary. Additionally, we remove 
+some sentences which have overlap with others to achieve a succinct summary.
 
 Then we use the ROUGE(Recall-Oriented Understudy for Gisting Evalution) toolkit to test
-SenRank. The results show that SenRank has a good performance as what we expect.
+SenRank. The results show that the quality of generated summary by SenRank is good 
+as we expect.
 
 
 
