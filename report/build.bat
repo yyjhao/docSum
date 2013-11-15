@@ -1,0 +1,1 @@
+pandoc -N --template=report.template -o report.pdf report.md
