@@ -126,11 +126,43 @@ both appear in the summary.
 
 # Experiment Setup
 
+We test our algorithm on 178 papers in Scholarly Paper Recommendation Dataset
+_(citation)_. The abstracts are used as model summaries and the contents are
+used as input articles. We then use ROUGE _(citation)_ to evaluate the quality
+of the generated summaries. We use the R-score of ROGUE since the model
+summaries do not have a word limit.
 
+We setup our algorithm such that the word limit is 200 and $m = 20$.
+
+Moreover, we run the experiments on the following algorithms:
+
+1. Random: randomly pick sentences from the article until word limit is matched
+1. Degree: Set $k_a = 0$, so we do not consider co-reference. Further, we do not run PageRank and instead rank sentences by their degrees in the graph (sum of the row in $C$)
+1. PageRank: Set $k_a = 0$. Again we do not consider co-reference.
+1. Coref_equal: Set $k_a = 1$ and $k_b = 1$
+1. Coref_twice: Set $k_a = 2$ and $k_b = 1$
+1. Coref_large: Set $k_a = 5$ and $k_b = 1$
+1. Coref_only: Set $k_a = 1$ and $k_b = 0$, so we only consider co-reference but not word overlap.
 
 # Results
 
-
++-------------+----------+----------+----------+----------+
+| Algorithm   | ROUGE-1  | ROUGE-2  | ROUGE-3  | ROUGE-L  |
++=============+==========+==========+==========+==========+
+| Random      | 0.266158 | 0.056647 | 0.015765 | 0.251459 |
++-------------+----------+----------+----------+----------+
+| Degree      | 0.302039 | 0.079483 | 0.023131 | 0.279868 |
++-------------+----------+----------+----------+----------+
+| PageRank    | 0.308187 | 0.080359 | 0.024296 | 0.285539 |
++-------------+----------+----------+----------+----------+
+| Coref_equal | 0.312450 | 0.078048 | 0.022415 | 0.287519 |
++-------------+----------+----------+----------+----------+
+| Coref_twice | 0.321284 | 0.083117 | 0.025682 | 0.294462 |
++-------------+----------+----------+----------+----------+
+| Coref_large | 0.312604 | 0.080656 | 0.025286 | 0.288393 |
++-------------+----------+----------+----------+----------+
+| Coref_only  | 0.287429 | 0.072876 | 0.022825 | 0.268019 |
++-------------+----------+----------+----------+----------+
 
 # Conclusion
 
