@@ -2,12 +2,12 @@
 title: CS2309 Report
 author: ['Yao Yujian', 'Wang Chao']
 abstract: |
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  We propose a novel automatic document summarization algorithm SenRank
+  that finds relation between sentences by counting word overlaps and 
+  shared references, then makes use of PageRank scores derived from
+  such relation to generate a summary. Experiments shows that it can
+  produce summaries of reasonable quality. Moreover, the quality of
+  the summary depends on the relative weight of co-references information.
 ---
 
 # Introduction
@@ -61,12 +61,12 @@ set of sentences, and $\forall (u, v) \in E, weight(e) = relation(u, v)$.
 
 Further, we define $relation(u, v)$ to be the number of word overlaps
 (where only a subset of all words are considered) plus the number of shared
-references (by making use of co-reference _(citation)_). Moreover, we assume
+references (by making use of co-reference). Moreover, we assume
 that $relation(u, v) = relation(v, u)$, as both word-overlap and co-reference
 has no direction.
 
 With the graph, we can then find out the probability of ideas flowing to a
-sentence with the PageRank _(citation)_ algorithm. Then we can rank the
+sentence with the PageRank _(@page1999pagerank)_ algorithm. Then we can rank the
 sentences with their PageRank score and pick the top few sentences that
 do not overlap too much as the summary.
 
@@ -77,7 +77,7 @@ this section.
 
 ## Tokenization and derivation of co-references
 
-We use Stanford Corenlp _(citation)_ to tokenize the article and then generate
+We use Stanford Corenlp _(@recasens2013life, @lee2013deterministic, @lee2011stanford, @raghunathan2010multi)_ to tokenize the article and then generate
 the co-reference data.
 
 ## Parsing co-references
@@ -145,11 +145,64 @@ both appear in the summary.
 
 # Experiment Setup
 
+We test our algorithm on 178 papers in Scholarly Paper Recommendation Dataset
+_(sugiyama2013exploiting)_. The abstracts are used as model summaries and the contents are
+used as input articles. We then use ROUGE _(lin2004rouge)_ to evaluate the quality
+of the generated summaries. We use the R-score of ROGUE since the model
+summaries do not have a word limit.
 
+We setup our algorithm such that the word limit is 200 and $m = 20$.
+
+Moreover, we run the experiments on the following algorithms:
+
+1. Random: randomly pick sentences from the article until word limit is matched
+1. Degree: Set $k_a = 0$, so we do not consider co-reference. Further, we do not run PageRank and instead rank sentences by their degrees in the graph (sum of the row in $C$)
+1. PageRank: Set $k_a = 0$. Again we do not consider co-reference.
+1. Coref_equal: Set $k_a = 1$ and $k_b = 1$
+1. Coref_twice: Set $k_a = 2$ and $k_b = 1$
+1. Coref_large: Set $k_a = 5$ and $k_b = 1$
+1. Coref_only: Set $k_a = 1$ and $k_b = 0$, so we only consider co-reference but not word overlap.
 
 # Results
 
+: Mean values of ROUGE-R Scores \label{1}
 
++-------------+----------+----------+----------+----------+
+| Algorithm   | ROUGE-1  | ROUGE-2  | ROUGE-3  | ROUGE-L  |
++=============+==========+==========+==========+==========+
+| Random      | 0.266158 | 0.056647 | 0.015765 | 0.251459 |
++-------------+----------+----------+----------+----------+
+| Degree      | 0.302039 | 0.079483 | 0.023131 | 0.279868 |
++-------------+----------+----------+----------+----------+
+| PageRank    | 0.308187 | 0.080359 | 0.024296 | 0.285539 |
++-------------+----------+----------+----------+----------+
+| Coref_equal | 0.312450 | 0.078048 | 0.022415 | 0.287519 |
++-------------+----------+----------+----------+----------+
+| Coref_twice | 0.321284 | 0.083117 | 0.025682 | 0.294462 |
++-------------+----------+----------+----------+----------+
+| Coref_large | 0.312604 | 0.080656 | 0.025286 | 0.288393 |
++-------------+----------+----------+----------+----------+
+| Coref_only  | 0.287429 | 0.072876 | 0.022825 | 0.268019 |
++-------------+----------+----------+----------+----------+
+
+: 1-tailed paired t-tests on ROUGE-L scores on various algorithms \label{2}
+
++---------+-----------------+-------------------+------------------------+------------------------+------------------------+-----------------------+
+| Test    | Random < Degree | Degree < PageRank | PageRank < Coref_equal | PageRank < Coref_twice | PageRank < Coref_large | Coref_only < PageRank |
++=========+=================+===================+========================+========================+========================+=======================+
+| p-value | 0.000           | 0.055             | 0.307                  | 0.032                  | 0.307                  | 0.008                 |
++---------+-----------------+-------------------+------------------------+------------------------+------------------------+-----------------------+
+
+This shows that the SenRank algorithm (even the stripped down version)
+can produce summaries of reasonable quality. Moreover, by t-test results,
+we can see that PageRank seems to perform better than Degree, although the
+difference is not very significant.
+
+Furthermore, the coefficients $k_a$ and $k_b$ affect the performance
+of SenRank, and co-reference alone is even worse than using word overlaps.
+While this can mean that co-reference data along cannot adequately represent
+the relation between sentences, it can also be due to the fact that the
+co-reference resolution is not good enough.
 
 # Conclusion
 
@@ -161,5 +214,9 @@ few non-overlaping sentences. The experiment results show that the quality of ge
 summary is reasonable. However, the dataset we test only includes science papers. To make 
 the results more convincible, we need to test on different types of articles. Also, 
 the coefficients of matrix A and B are still can be tweaked to make SenRank achieve a better performance.
+
+
+\setlength{\parindent}{0in}
+
 
 # References
