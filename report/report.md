@@ -200,6 +200,9 @@ difference is not very significant.
 
 Furthermore, the coefficients $k_a$ and $k_b$ affect the performance
 of SenRank, and co-reference alone is even worse than using word overlaps.
+While this can mean that co-reference data along cannot adequately represent
+the relation between sentences, it can also be due to the fact that the
+co-reference resolution is not good enough.
 
 # Conclusion
 
