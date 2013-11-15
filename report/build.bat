@@ -1,1 +1,1 @@
-pandoc -N --template=report.template -o report.pdf report.md
+pandoc -N --template=report.template --bibliography=references.bib -o report.pdf report.md

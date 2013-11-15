@@ -61,12 +61,12 @@ set of sentences, and $\forall (u, v) \in E, weight(e) = relation(u, v)$.
 
 Further, we define $relation(u, v)$ to be the number of word overlaps
 (where only a subset of all words are considered) plus the number of shared
-references (by making use of co-reference _(citation)_). Moreover, we assume
+references (by making use of co-reference). Moreover, we assume
 that $relation(u, v) = relation(v, u)$, as both word-overlap and co-reference
 has no direction.
 
 With the graph, we can then find out the probability of ideas flowing to a
-sentence with the PageRank _(citation)_ algorithm. Then we can rank the
+sentence with the PageRank _(@page1999pagerank)_ algorithm. Then we can rank the
 sentences with their PageRank score and pick the top few sentences that
 do not overlap too much as the summary.
 
@@ -77,7 +77,7 @@ this section.
 
 ## Tokenization and derivation of co-references
 
-We use Stanford Corenlp _(citation)_ to tokenize the article and then generate
+We use Stanford Corenlp _(@recasens2013life, @lee2013deterministic, @lee2011stanford, @raghunathan2010multi)_ to tokenize the article and then generate
 the co-reference data.
 
 ## Parsing co-references
@@ -146,8 +146,8 @@ both appear in the summary.
 # Experiment Setup
 
 We test our algorithm on 178 papers in Scholarly Paper Recommendation Dataset
-_(citation)_. The abstracts are used as model summaries and the contents are
-used as input articles. We then use ROUGE _(citation)_ to evaluate the quality
+_(sugiyama2013exploiting)_. The abstracts are used as model summaries and the contents are
+used as input articles. We then use ROUGE _(lin2004rouge)_ to evaluate the quality
 of the generated summaries. We use the R-score of ROGUE since the model
 summaries do not have a word limit.
 
@@ -202,5 +202,8 @@ Furthermore, the coefficients $k_a$ and $k_b$ affect the performance
 of SenRank, and co-reference alone is even worse than using word overlaps.
 
 # Conclusion
+
+
+\setlength{\parindent}{0in}
 
 # References
