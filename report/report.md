@@ -164,6 +164,8 @@ Moreover, we run the experiments on the following algorithms:
 
 # Results
 
+: Mean values of ROUGE-R Scores \label{1}
+
 +-------------+----------+----------+----------+----------+
 | Algorithm   | ROUGE-1  | ROUGE-2  | ROUGE-3  | ROUGE-L  |
 +=============+==========+==========+==========+==========+
@@ -181,6 +183,22 @@ Moreover, we run the experiments on the following algorithms:
 +-------------+----------+----------+----------+----------+
 | Coref_only  | 0.287429 | 0.072876 | 0.022825 | 0.268019 |
 +-------------+----------+----------+----------+----------+
+
+: 1-tailed paired t-tests on ROUGE-L scores on various algorithms \label{2}
+
++---------+-----------------+-------------------+------------------------+------------------------+------------------------+-----------------------+
+| Test    | Random < Degree | Degree < PageRank | PageRank < Coref_equal | PageRank < Coref_twice | PageRank < Coref_large | Coref_only < PageRank |
++=========+=================+===================+========================+========================+========================+=======================+
+| p-value | 0.000           | 0.055             | 0.307                  | 0.032                  | 0.307                  | 0.008                 |
++---------+-----------------+-------------------+------------------------+------------------------+------------------------+-----------------------+
+
+This shows that the SenRank algorithm (even the stripped down version)
+can produce summaries of reasonable quality. Moreover, by t-test results,
+we can see that PageRank seems to perform better than Degree, although the
+difference is not very significant.
+
+Furthermore, the coefficients $k_a$ and $k_b$ affect the performance
+of SenRank, and co-reference alone is even worse than using word overlaps.
 
 # Conclusion
 
