@@ -1,5 +1,5 @@
 {
     "file": "report.md",
     "port": 3000,
-    "command": "pandoc --mathjax -N -t HTML5 --bibliography=references.bib"
+    "command": "pandoc --mathjax -N -t HTML5 --template=preview.template --bibliography=references.bib"
 }

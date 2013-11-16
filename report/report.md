@@ -2,7 +2,7 @@
 title: CS2309 Report
 author: ['Yao Yujian', 'Wang Chao']
 abstract: |
-  We propose a novel automatic document summarization algorithm SenRank
+  We propose a novel automatic document summarization algorithm _SenRank_
   that finds relation between sentences by counting word overlaps and 
   shared references, then makes use of PageRank scores derived from
   such relation to generate a summary. Experiments shows that it can
@@ -20,16 +20,12 @@ topics and relevant points of a document. Automatic document summarization can
 be helpful for such processes.
 
 In this paper, we propose a novel automatic document summarization algorithm
-called SenRank. We model an article as a graph of continuous floating ideas
-expressed through sentences. Consequently, the overlap of words between
-sentences  is able to signify their relations. With the aid of co-reference,
-we run PageRank  on such graph and aggregate top few sentences as a summary.
-Additionally, we remove  some sentences which have overlap with others to
-achieve a succinct summary.
+called _SenRank_. In short, SenRank treats the article as a graph of ideas and
+uses PageRank on sentences to extract main text.
 
 Then we use the ROUGE(Recall-Oriented Understudy for Gisting Evalution)
 toolkit to test SenRank. The results show that the quality of generated
-summary by SenRank is reasonably  good.
+summary by SenRank is reasonably good.
 
 # Formulation
 
@@ -41,7 +37,7 @@ We start the formulation with the following assumptions:
 1. Ideas flow
 1. Each sentence presents some ideas
 1. Ideas are expressed through words and references
-1. Overlap of words signifies relation of ideas
+1. Overlap of words signifies relation, thus flow, of ideas
 
 We can then assume that a sentence is significant and expressing the main
 ideas, thus _summarizing_, if ideas from many other sentences flow to it.
@@ -65,8 +61,7 @@ has no direction.
 
 With the graph, we can then compute the probability of ideas flowing to a
 sentence with the PageRank _(@page1999pagerank)_ algorithm. Then we can rank
-the sentences with their PageRank score and aggregate the top few non-
-overlapping sentences as the summary.
+the sentences with their PageRank score and aggregate the top few non-overlapping sentences as the summary.
 
 # Algorithm
 
@@ -81,11 +76,11 @@ the co-reference data.
 ## Parsing co-references
 
 The co-reference data obtained from Stanford Corenlp is a list of tuples:
-$(c_1, c_2,...,c_n), (d_1, d_2,...,d_n)...$, where $c_i, d_i$ refers to a
+$\{(c_1, c_2,...,c_n), (d_1, d_2,...,d_n)...\}$, where $c_i, d_i$ refers to a
 sentence in the article. Each tuple represents the occurrences of one entity
 in sentences. So $(c_1, c_2,...,c_n)$ means that a particular entity appears
 in Sentences $c_1, c_2,...c_n$. Moreover, there can be some $i, j$ such that
-$i /neq j$ and $c_i = c_j$ in some tuples, i.e., if an entity appears for
+$i \neq j$ and $c_i = c_j$ in some tuples, i.e., if an entity appears for
 multiple times in a sentence, that sentence will appear for multiple
 times in the tuple.
 
@@ -120,15 +115,17 @@ performance.
 ## Running PageRank
 
 SenRank then runs the PageRank algorithm on $C$ to obtain PageRank scores
-for all sentences
+for all sentences.
 
 ## Generating a summary
 
 Finally SenRank generates a summary with the following algorithm:
 
 Firstly we define $m$ as the threshold such that
-$weight(u, v) > m $ means that u and v are so similar that they should
+$weight(u, v) > m $ means that u and v are so similar that they cannot
 both appear in the summary.
+
+Then the algorithm proceeds as the following:
 
 1. $S$ is the set of all sentences
 1. $R$ is the set of sentences in the summary, initially $R = \emptyset$
@@ -155,12 +152,12 @@ We setup our algorithm such that the word limit is 200 and $m = 20$.
 
 Moreover, we run the experiments on the following algorithms:
 
-1. Random: randomly pick sentences from the article until word limit is matched
-1. Degree: Set $k_a = 0$, so we do not consider co-reference. Further, we do not run PageRank and instead rank sentences by their degrees in the graph (sum of the row in $C$)
+1. Random: randomly pick sentences from the article until word limit is matched.
+1. Degree: Set $k_a = 0$, so we do not consider co-reference. Further, we do not run PageRank and instead rank sentences by their degrees in the graph (sum of the row in $C$).
 1. PageRank: Set $k_a = 0$. Again we do not consider co-references.
-1. Coref_equal: Set $k_a = 1$ and $k_b = 1$
-1. Coref_twice: Set $k_a = 2$ and $k_b = 1$
-1. Coref_large: Set $k_a = 5$ and $k_b = 1$
+1. Coref_equal: Set $k_a = 1$ and $k_b = 1$.
+1. Coref_twice: Set $k_a = 2$ and $k_b = 1$.
+1. Coref_large: Set $k_a = 5$ and $k_b = 1$.
 1. Coref_only: Set $k_a = 1$ and $k_b = 0$, so we only consider co-reference but not word overlaps.
 
 # Results
@@ -202,7 +199,7 @@ Furthermore, the coefficients $k_a$ and $k_b$ affect the performance of
 SenRank, as coref_twice performs the best while the other algorithms that uses
 co-references does not perform significantly better than PageRank and word
 overlaps alone. Interestingly, co-reference alone is even worse than using
-word overlaps. While this can mean that co-reference data along cannot
+word overlaps. While this can mean that co-reference data alone cannot
 adequately represent the relation between sentences, it can also be due to the
 fact that the co-reference resolution is not good enough. Moreover, this also
 shows that machine learning can be applied to derive an optimal set of
@@ -211,7 +208,7 @@ variables used in SenRank to achieve better performance.
 # Conclusion
 
 In this paper, we propose a novel automatic document summarization algorithm
-SenRank which model an article as a graph of sentences related to each other.
+SenRank which models an article as a graph of sentences related to each other.
 By  using co-reference and counting overlap of words, the weight of edges is
 constructed.  Then we run PageRank on this weighted graph and generate our
 summary by aggregating top few non-overlaping sentences. The experiment
@@ -221,6 +218,10 @@ algorithm.
 
 However, the dataset we test only includes science papers which are usually
 long and very well structured. It may be worthwhile to investigate the performance of SenRank on different types of articles such as news articles.
+
+To better access the performance of SenRank, we should apply machine learning
+techniques to derive a good set of variables $k_a, k_b$ and $m$, also, other
+co-reference resolution algorithm can be tested.
 
 \setlength{\parindent}{0in}
 
