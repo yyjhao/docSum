@@ -219,7 +219,7 @@ algorithm.
 However, the dataset we test only includes science papers which are usually
 long and very well structured. It may be worthwhile to investigate the performance of SenRank on different types of articles such as news articles.
 
-To better access the performance of SenRank, we should apply machine learning
+To better assess the performance of SenRank, we should apply machine learning
 techniques to derive a good set of variables $k_a, k_b$ and $m$, also, other
 co-reference resolution algorithm can be tested.
 
