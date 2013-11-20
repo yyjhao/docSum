@@ -208,8 +208,9 @@ variables used in SenRank to achieve better performance.
 # Related works
 
 Two similar PageRank-based document summarization algorithms have been
-independently proposed. They both run PageRank on a graph constructed from
-sentences, then aggregate the highest ranking sentences to produce a summary.
+independently proposed previously. They both run PageRank on a graph
+constructed from sentences, then aggregate the highest ranking sentences to
+produce a summary.
 
 TextRank _(@mihalcea2004textrank)_ was developed as a model for general text
 processing and it allows one to define the vertices as any text units as the
@@ -225,15 +226,22 @@ directly, LexRank can also build an unweighted graph by cutting off edges
 whose weights are below a threshold. These two methods, however, did not
 result in statistically significant results.
 
-However, both methods do not consider the case where similar sentences may be
-extracted. This means that these two methods may not be able to succinctly
-summarizes articles that tend to repeat ideas often. With the DUC dataset that
-both papers run experiments on, this may not be a problem, but it will likely
-be so for scientific paper. Moreover, both algorithms in the papers use only
-the textual information without any further processing. This means that they
-cannot account for similarity between different tokens that actually refer to
-the same entity, and thus the graphs built may not be representative of the
-article.
+However, in contrast to SenRank, both methods do not consider the case
+where similar sentences may be extracted. This means that these two methods
+may not be able to succinctly summarize articles that tend to repeat ideas
+often. With the DUC dataset that both papers run experiments on, this may not
+be a problem, but it will likely be so for scientific articles. Moreover, both
+algorithms in the papers use only the textual information without any further
+processing. This means that they cannot account for similarity between
+different tokens that actually refer to the same entity, and thus the graphs
+built may not be representative of the article.
+
+Generally, PageRank-based methods have the advantage of not requiring
+supervised learning. Other methods usually applies machine learning to derive
+a function to map a set of various features such as sentences position,
+occurrence frequency of words etc. to a score, and thus strongly rely on the
+availability of training sets. (@das2007survey) While machine learning can
+improve the quality of summarization of SenRank, it is not necessary.
 
 # Conclusion
 
