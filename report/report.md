@@ -5,7 +5,7 @@ abstract: |
   We propose a novel automatic document summarization algorithm _SenRank_
   that finds relation between sentences by counting word overlaps and 
   shared references, then makes use of PageRank scores derived from
-  such relation to generate a summary. Experiments shows that it can
+  such relation to generate a summary. Experiments show that it can
   produce summaries of reasonable quality. Moreover, the quality of
   the summary depends on the relative weight of co-references information.
 ---
@@ -103,7 +103,7 @@ $$ B_{ij} = \sum\limits_{w \in W} w_iw_j$$
 where $W$ is the set of words that are considered for word overlaps and $w_i$
 refers to the number of times Word $w$ appears in Sentence $i$.
 
-## Building article graph
+## Building the article graph
 
 With $A$ and $B$, SenRank builds the final adjacency matrix
 
@@ -205,23 +205,54 @@ fact that the co-reference resolution is not good enough. Moreover, this also
 shows that machine learning can be applied to derive an optimal set of
 variables used in SenRank to achieve better performance.
 
+# Related works
+
+Two similar PageRank-based document summarization algorithms have been
+independently proposed. They both run PageRank on a graph constructed from
+sentences, then aggregate the highest ranking sentences to produce a summary.
+
+TextRank _(@mihalcea2004textrank)_ was developed as a model for general text
+processing and it allows one to define the vertices as any text units as the
+task requires. A TextRank solution for document summarization was proposed by
+defining sentences as vertices and also using word overlaps as relations,
+although the authors used a different formula for counting word overlaps and
+normalized the result by the length of two sentences.
+
+LexRank _(@erkan2004lexrank)_ employs similar methods, but use consine
+similarity as the measure for relation. Moreover, it proposed an additional
+method in constructing the graph. Other than using the weighted edges
+directly, LexRank can also build an unweighted graph by cutting off edges
+whose weights are below a threshold. These two methods, however, did not
+result in statistically significant results.
+
+However, both methods do not consider the case where similar sentences may be
+extracted. This means that these two methods may not be able to succinctly
+summarizes articles that tend to repeat ideas often. With the DUC dataset that
+both papers run experiments on, this may not be a problem, but it will likely
+be so for scientific paper. Moreover, both algorithms in the papers use only
+the textual information without any further processing. This means that they
+cannot account for similarity between different tokens that actually refer to
+the same entity, and thus the graphs built may not be representative of the
+article.
+
 # Conclusion
 
 In this paper, we propose a novel automatic document summarization algorithm
 SenRank which models an article as a graph of sentences related to each other.
-By  using co-reference and counting overlap of words, the weight of edges is
-constructed.  Then we run PageRank on this weighted graph and generate our
-summary by aggregating top few non-overlaping sentences. The experiment
-results show that the quality of generated summary is reasonable, and that
-the co-efficients uses in constructing the edges affect the performance of the
-algorithm.
+We then construct the weight of edges by using co-reference and counting
+overlap of words. After which we can run PageRank on this weighted graph and
+generate a summary by aggregating a number of top non-overlaping sentences. The
+experiment results show that the quality of generated summary is reasonable,
+and that the co-efficients used in constructing the edges affect the
+performance of the algorithm.
 
 However, the dataset we test only includes science papers which are usually
-long and very well structured. It may be worthwhile to investigate the performance of SenRank on different types of articles such as news articles.
+long and very well structured. It may be worthwhile to investigate the
+performance of SenRank on different types of articles such as news articles.
 
 To better assess the performance of SenRank, we should apply machine learning
 techniques to derive a good set of variables $k_a, k_b$ and $m$, also, other
-co-reference resolution algorithm can be tested.
+co-reference resolution algorithms can be tested.
 
 \setlength{\parindent}{0in}
 
